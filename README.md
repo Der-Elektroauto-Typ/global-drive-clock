@@ -1,71 +1,40 @@
-# Global Drive Clock V2.2
+# Global Drive Clock V2.4
 
-Statische GitHub-Pages-Website mit mehrsprachiger Oberfläche.
+V2.4 focuses on data integrity and laptop readability.
 
-## Neu in V2.2
+## Data model
 
-- Sprachschalter oben rechts
-- 10 Sprachen:
-  - Deutsch
-  - Englisch
-  - Französisch
-  - Spanisch
-  - Italienisch
-  - Polnisch
-  - Niederländisch
-  - Portugiesisch
-  - Norwegisch
-  - Chinesisch
-- automatische Erkennung der Browsersprache
-- Speicherung der Auswahl im Browser
-- lokalisierte Zahlenformate
-- vollständige Übersetzung der sichtbaren Oberfläche
-- responsive Sprachwahl für Mobilgeräte
+Reference date: 2026-09-30
 
-## Dateien
+Modeled global passenger-car fleet: 1.380 billion vehicles.
 
-- `index.html`
-- `style.css`
-- `app.js`
-- `data.js`
+Visible model categories:
+- BEV: 58.0m; modeled annual net change +14.5m
+- HEV + PHEV: 135.0m; modeled annual net change +10.0m
+- Petrol ICE incl. MHEV: 850.0m; modeled annual net change -2.0m
+- Diesel ICE incl. MHEV: 322.0m; modeled annual net change -3.0m
 
-## Update auf GitHub
+Hidden but included in the global total:
+- Other (LPG/CNG/FCEV/etc.): 15.0m; +0.5m/year
 
-Am einfachsten alle vier Dateien im Repository ersetzen.
+Total annual model change: +20.0m passenger cars.
 
-## Facebook-Link
+Percent trends and vehicles/second are no longer independently entered numbers.
+They are calculated in app.js from annualChange/base, preventing internal contradictions.
 
-In `data.js`:
+## Published anchors
 
-```js
-facebookUrl: "https://www.facebook.com/",
-```
+- IEA Global EV Outlook 2026: >20m electric-car sales in 2025; around 5% of global car stock electrified; ~23m EV sales expected in 2026. IEA EV = BEV + PHEV.
+- IEA H1 2026 update: EV sales in H1 2026 were only slightly below H1 2025 despite a weaker overall car market.
+- ACEA: 77.6m worldwide passenger-car registrations in 2025.
+- VDA: 19.1m global new registrations with electric drive (BEV/PHEV/FCEV) in 2025; 12.7m were BEV.
 
-durch die echte Facebook-Seite ersetzen.
+The worldwide split of the *entire existing fleet* into BEV / HEV+PHEV / petrol / diesel is not available as a harmonised current public census. Therefore these category stocks are explicitly disclosed as model estimates.
 
-## Methodischer Hinweis
+## UI changes
 
-Die Website zeigt eine modellierte Echtzeitschätzung. Es handelt sich nicht um eine amtliche sekundengenaue Live-Zählung.
-
-
-## V2.2.1
-
-- Facebook-Link von „Der Elektroauto Typ“ eingetragen.
-- Die kleine Uhr oben verwendet jetzt automatisch die lokale Zeitzone des Besuchers.
-- Darstellung der Uhrzeit folgt der gewählten Sprache/Locale.
-- Die Zeitzone stammt aus Browser/Betriebssystem, nicht aus der ausgewählten Sprache.
-
-
-## V2.2.2
-
-- Cache-Busting für `style.css`, `data.js` und `app.js`.
-- Behebt den Fall, dass GitHub Pages bzw. der Browser neue HTML-/JS-Dateien lädt,
-  aber noch eine ältere CSS-Version aus dem Cache verwendet.
-
-
-## V2.3
-
-- Smartphone-Headline korrigiert.
-- Lange Überschriften bleiben vollständig innerhalb des Viewports.
-- Mobile Hero-Typografie kompakter.
-- Desktop-Layout unverändert.
+- Smaller desktop/laptop hero headline, optimized for 16-inch MacBook Pro.
+- V2.3 smartphone headline fix retained.
+- Expandable “Data & Methodology” section with primary-source links.
+- Existing language switcher, local timezone clock and Facebook link retained.
+- Cache-busting updated to V2.4.

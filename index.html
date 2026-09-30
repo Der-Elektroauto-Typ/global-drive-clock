@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#05070a">
   <meta name="description" content="Global Drive Clock – modellierte Echtzeitschätzung des weltweiten Pkw-Bestands nach Antriebsart.">
   <title>Global Drive Clock</title>
-  <link rel="stylesheet" href="style.css?v=2.3">
+  <link rel="stylesheet" href="style.css?v=2.4">
 </head>
 <body>
   <div class="language-switcher" id="languageSwitcher">
@@ -119,8 +119,38 @@
       <div class="method-meta">
         <span id="modelVersion">Datenmodell: –</span>
         <span id="dataDate">Stand: –</span>
-        <span data-i18n="sourceBase">Quellenbasis: IEA · ACEA · globale Marktdaten</span>
+        <span data-i18n="sourceBase">Quellenbasis: IEA · ACEA · VDA/UBA · Modell</span>
       </div>
+
+      <details class="method-details">
+        <summary data-i18n="methodDetails">DATEN &amp; METHODIK</summary>
+        <div class="method-details-body">
+          <p>
+            <strong>Was ist gemessen?</strong> Die Referenzpunkte stammen aus veröffentlichten Markt- und Bestandsdaten.
+            Die IEA meldet für 2025 mehr als 20 Mio. verkaufte Elektro-Pkw (BEV + PHEV), rund 5 % Anteil am
+            weltweiten Pkw-Bestand und erwartet für 2026 rund 23 Mio. Verkäufe.
+          </p>
+          <p>
+            <strong>Was ist modelliert?</strong> Für den weltweiten Gesamtbestand existiert keine einheitliche,
+            aktuelle öffentliche Statistik, die alle Pkw gleichzeitig nach BEV, HEV/PHEV, Benzin und Diesel trennt.
+            Deshalb sind die vier großen Zähler modellierte Bestandswerte. Zwischen dem Referenzdatum und dem
+            aktuellen Zeitpunkt wird linear interpoliert. Die angezeigte Prozentänderung und „Fahrzeuge/Sekunde“
+            werden direkt aus derselben jährlichen Nettoänderung berechnet.
+          </p>
+          <p>
+            <strong>Systemgrenze:</strong> Pkw weltweit. Nutzfahrzeuge und elektrische Zwei-/Dreiräder sind nicht
+            enthalten. Mildhybride werden soweit möglich ihrer Verbrenner-Kraftstoffklasse zugerechnet.
+            LPG, CNG, FCEV und sonstige kleine Gruppen werden im Gesamtbestand berücksichtigt, aber nicht als
+            eigener großer Zähler dargestellt.
+          </p>
+          <div class="source-links">
+            <a href="https://www.iea.org/reports/global-ev-outlook-2026/trends-in-electric-cars" target="_blank" rel="noopener noreferrer">IEA · Global EV Outlook 2026</a>
+            <a href="https://www.iea.org/reports/electric-car-markets-in-a-time-of-uncertainty/executive-summary" target="_blank" rel="noopener noreferrer">IEA · H1 2026 Update</a>
+            <a href="https://www.acea.auto/publication/economic-and-market-report-global-and-eu-auto-industry-full-year-2025/" target="_blank" rel="noopener noreferrer">ACEA · Global market 2025</a>
+            <a href="https://www.vda.de/de/themen/Automobil-Insight-2025/2025-Elektromobilitaet" target="_blank" rel="noopener noreferrer">VDA · Elektromobilität 2025</a>
+          </div>
+        </div>
+      </details>
     </section>
 
     <section class="brand">
@@ -138,7 +168,7 @@
     </footer>
   </main>
 
-  <script src="data.js?v=2.3"></script>
-  <script src="app.js?v=2.3"></script>
+  <script src="data.js?v=2.4"></script>
+  <script src="app.js?v=2.4"></script>
 </body>
 </html>

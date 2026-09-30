@@ -26,8 +26,9 @@
       sinceOpened: "SEIT DU DIESE SEITE GEÖFFNET HAST",
       observationTime: "Beobachtungszeit:",
       modeledEstimate: "MODELLIERTE ECHTZEITSCHÄTZUNG",
+      methodDetails: "DATEN & METHODIK",
       methodText: "Die Zähler stellen keine sekundengenau erhobenen Zulassungsdaten dar. Sie interpolieren den weltweiten Pkw-Bestand anhand veröffentlichter Bestands-, Absatz- und Marktdaten. Die Werte für Benzin, Diesel und Hybrid sind Modellwerte.",
-      sourceBase: "Quellenbasis: IEA · ACEA · globale Marktdaten",
+      sourceBase: "Quellenbasis: IEA · ACEA · VDA/UBA · Modell",
       dataModel: "Datenmodell",
       dataAsOf: "Stand",
       dataIdeaBy: "EINE DATENIDEE VON",
@@ -53,8 +54,9 @@
       sinceOpened: "SINCE YOU OPENED THIS PAGE",
       observationTime: "Observation time:",
       modeledEstimate: "MODELED REAL-TIME ESTIMATE",
+      methodDetails: "DATA & METHODOLOGY",
       methodText: "The counters are not second-by-second official registration data. They interpolate the global passenger-car fleet using published stock, sales and market data. Petrol, diesel and hybrid values are model estimates.",
-      sourceBase: "Source base: IEA · ACEA · global market data",
+      sourceBase: "Source base: IEA · ACEA · VDA/UBA · model",
       dataModel: "Data model",
       dataAsOf: "As of",
       dataIdeaBy: "A DATA IDEA BY",
@@ -80,8 +82,9 @@
       sinceOpened: "DEPUIS L’OUVERTURE DE CETTE PAGE",
       observationTime: "Temps d’observation :",
       modeledEstimate: "ESTIMATION MODÉLISÉE EN TEMPS RÉEL",
+      methodDetails: "DONNÉES & MÉTHODOLOGIE",
       methodText: "Les compteurs ne sont pas des immatriculations officielles relevées seconde par seconde. Ils interpolent le parc mondial de voitures particulières à partir de données publiées sur le parc, les ventes et le marché. Les valeurs essence, diesel et hybride sont des estimations de modèle.",
-      sourceBase: "Sources : IEA · ACEA · données de marché mondiales",
+      sourceBase: "Sources : IEA · ACEA · VDA/UBA · modèle",
       dataModel: "Modèle de données",
       dataAsOf: "Données au",
       dataIdeaBy: "UNE IDÉE DE DONNÉES PAR",
@@ -107,8 +110,9 @@
       sinceOpened: "DESDE QUE ABRISTE ESTA PÁGINA",
       observationTime: "Tiempo de observación:",
       modeledEstimate: "ESTIMACIÓN MODELADA EN TIEMPO REAL",
+      methodDetails: "DATOS & METODOLOGÍA",
       methodText: "Los contadores no son datos oficiales de matriculación medidos segundo a segundo. Interpolan el parque mundial de turismos a partir de datos publicados de parque, ventas y mercado. Los valores de gasolina, diésel e híbridos son estimaciones del modelo.",
-      sourceBase: "Fuentes: IEA · ACEA · datos globales de mercado",
+      sourceBase: "Fuentes: IEA · ACEA · VDA/UBA · modelo",
       dataModel: "Modelo de datos",
       dataAsOf: "Datos a",
       dataIdeaBy: "UNA IDEA DE DATOS DE",
@@ -134,8 +138,9 @@
       sinceOpened: "DA QUANDO HAI APERTO QUESTA PAGINA",
       observationTime: "Tempo di osservazione:",
       modeledEstimate: "STIMA MODELLATA IN TEMPO REALE",
+      methodDetails: "DATI & METODOLOGIA",
       methodText: "I contatori non rappresentano immatricolazioni ufficiali rilevate secondo per secondo. Interpolano il parco mondiale di autovetture usando dati pubblicati su stock, vendite e mercato. I valori di benzina, diesel e ibrido sono stime del modello.",
-      sourceBase: "Fonti: IEA · ACEA · dati di mercato globali",
+      sourceBase: "Fonti: IEA · ACEA · VDA/UBA · modello",
       dataModel: "Modello dati",
       dataAsOf: "Aggiornato a",
       dataIdeaBy: "UN’IDEA BASATA SUI DATI DI",
@@ -161,8 +166,9 @@
       sinceOpened: "OD OTWARCIA TEJ STRONY",
       observationTime: "Czas obserwacji:",
       modeledEstimate: "MODELOWANA ESTYMACJA W CZASIE RZECZYWISTYM",
+      methodDetails: "DANE & METODOLOGIA",
       methodText: "Liczniki nie przedstawiają oficjalnych rejestracji mierzonych co sekundę. Interpolują światową flotę samochodów osobowych na podstawie opublikowanych danych o parku, sprzedaży i rynku. Wartości dla benzyny, diesla i hybryd są estymacjami modelu.",
-      sourceBase: "Źródła: IEA · ACEA · globalne dane rynkowe",
+      sourceBase: "Źródła: IEA · ACEA · VDA/UBA · model",
       dataModel: "Model danych",
       dataAsOf: "Stan na",
       dataIdeaBy: "POMYSŁ DANYCH OD",
@@ -188,6 +194,7 @@
       sinceOpened: "SINDS JE DEZE PAGINA OPNENDE",
       observationTime: "Observatietijd:",
       modeledEstimate: "GEMODELLEERDE REALTIME-SCHATTING",
+      methodDetails: "DATA & METHODIEK",
       methodText: "De tellers zijn geen officiële registraties die per seconde worden gemeten. Ze interpoleren het wereldwijde personenwagenpark op basis van gepubliceerde wagenpark-, verkoop- en marktgegevens. De waarden voor benzine, diesel en hybride zijn modelschattingen.",
       sourceBase: "Bronnen: IEA · ACEA · wereldwijde marktgegevens",
       dataModel: "Datamodel",
@@ -215,8 +222,9 @@
       sinceOpened: "DESDE QUE ABRIU ESTA PÁGINA",
       observationTime: "Tempo de observação:",
       modeledEstimate: "ESTIMATIVA MODELADA EM TEMPO REAL",
+      methodDetails: "DADOS & METODOLOGIA",
       methodText: "Os contadores não representam matrículas oficiais medidas segundo a segundo. Interpolam a frota mundial de automóveis de passageiros com base em dados publicados de frota, vendas e mercado. Os valores de gasolina, diesel e híbridos são estimativas do modelo.",
-      sourceBase: "Fontes: IEA · ACEA · dados globais de mercado",
+      sourceBase: "Fontes: IEA · ACEA · VDA/UBA · modelo",
       dataModel: "Modelo de dados",
       dataAsOf: "Dados de",
       dataIdeaBy: "UMA IDEIA DE DADOS DE",
@@ -242,6 +250,7 @@
       sinceOpened: "SIDEN DU ÅPNET DENNE SIDEN",
       observationTime: "Observasjonstid:",
       modeledEstimate: "MODELLERT SANNTIDSESTIMAT",
+      methodDetails: "DATA & METODE",
       methodText: "Tellerne er ikke offisielle registreringstall målt sekund for sekund. De interpolerer den globale personbilparken ved hjelp av publiserte data om bestand, salg og marked. Verdiene for bensin, diesel og hybrid er modellestimater.",
       sourceBase: "Kilder: IEA · ACEA · globale markedsdata",
       dataModel: "Datamodell",
@@ -269,8 +278,9 @@
       sinceOpened: "自你打开此页面以来",
       observationTime: "观察时间：",
       modeledEstimate: "模型化实时估算",
+      methodDetails: "数据与方法",
       methodText: "这些计数器并非逐秒采集的官方注册数据，而是根据已发布的保有量、销量和市场数据，对全球乘用车保有量进行插值估算。汽油、柴油和混合动力数据属于模型估算值。",
-      sourceBase: "数据来源：IEA · ACEA · 全球市场数据",
+      sourceBase: "数据来源：IEA · ACEA · VDA/UBA · 模型",
       dataModel: "数据模型",
       dataAsOf: "数据截至",
       dataIdeaBy: "数据创意来自",
@@ -379,8 +389,10 @@
       const item = DATA.categories[key];
       const bar = el(`bar-${key}`);
       const trend = el(`trend-${key}`);
-      if (bar) bar.style.width = `${Math.max(0, Math.min(100, item.share))}%`;
-      if (trend) trend.textContent = `${signed(item.trend, 1)} %`;
+      const share = DATA.globalFleet?.base ? (item.base / DATA.globalFleet.base) * 100 : 0;
+      const trendValue = item.base ? (item.annualChange / item.base) * 100 : 0;
+      if (bar) bar.style.width = `${Math.max(0, Math.min(100, share))}%`;
+      if (trend) trend.textContent = `${signed(trendValue, 1)} %`;
     });
   }
 
