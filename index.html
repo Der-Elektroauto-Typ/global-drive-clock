@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#05070a">
+  <meta name="description" content="Global Drive Clock – modellierte Echtzeitschätzung des weltweiten Pkw-Bestands nach Antriebsart.">
+  <title>Global Drive Clock</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page-shell">
+    <section class="hero">
+      <div class="eyebrow"><span class="pulse-dot"></span> LIVE-MODELL</div>
+      <div class="brand-top">GLOBAL DRIVE CLOCK</div>
+      <h1>DER WELTWEITE<br><span>ANTRIEBSWANDEL.</span></h1>
+      <p class="hero-copy">
+        Rund um die Uhr verändert sich der globale Fahrzeugbestand.
+        Diese Uhr macht den Wandel sichtbar.
+      </p>
+      <div class="utc" id="utcClock">--:--:-- UTC</div>
+    </section>
+
+    <section class="cards" aria-label="Antriebsarten">
+      <article class="card card-electric">
+        <div class="card-head">
+          <div>
+            <div class="icon">⚡</div>
+            <div class="label">ELEKTRO</div>
+          </div>
+          <div class="trend trend-up"><span>▲</span><strong id="trend-electric">+0,0 %</strong></div>
+        </div>
+        <div class="number" id="count-electric">0</div>
+        <div class="rate"><span id="rate-electric">+0,00</span> Fahrzeuge / Sekunde</div>
+        <div class="progress"><div class="progress-fill" id="bar-electric"></div></div>
+        <div class="card-foot"><span>REINE BATTERIEFAHRZEUGE</span><span>BEV</span></div>
+      </article>
+
+      <article class="card card-hybrid">
+        <div class="card-head">
+          <div>
+            <div class="icon">◐</div>
+            <div class="label">HYBRID</div>
+          </div>
+          <div class="trend trend-up"><span>▲</span><strong id="trend-hybrid">+0,0 %</strong></div>
+        </div>
+        <div class="number" id="count-hybrid">0</div>
+        <div class="rate"><span id="rate-hybrid">+0,00</span> Fahrzeuge / Sekunde</div>
+        <div class="progress"><div class="progress-fill" id="bar-hybrid"></div></div>
+        <div class="card-foot"><span>HEV + PLUG-IN-HYBRID</span><span>HYBRID</span></div>
+      </article>
+
+      <article class="card card-petrol">
+        <div class="card-head">
+          <div>
+            <div class="icon">●</div>
+            <div class="label">BENZIN</div>
+          </div>
+          <div class="trend trend-down"><span>▼</span><strong id="trend-petrol">−0,0 %</strong></div>
+        </div>
+        <div class="number" id="count-petrol">0</div>
+        <div class="rate"><span id="rate-petrol">−0,00</span> Fahrzeuge / Sekunde</div>
+        <div class="progress"><div class="progress-fill" id="bar-petrol"></div></div>
+        <div class="card-foot"><span>VERBRENNUNGSMOTOR</span><span>ICE</span></div>
+      </article>
+
+      <article class="card card-diesel">
+        <div class="card-head">
+          <div>
+            <div class="icon">●</div>
+            <div class="label">DIESEL</div>
+          </div>
+          <div class="trend trend-down"><span>▼</span><strong id="trend-diesel">−0,0 %</strong></div>
+        </div>
+        <div class="number" id="count-diesel">0</div>
+        <div class="rate"><span id="rate-diesel">−0,00</span> Fahrzeuge / Sekunde</div>
+        <div class="progress"><div class="progress-fill" id="bar-diesel"></div></div>
+        <div class="card-foot"><span>VERBRENNUNGSMOTOR</span><span>ICE</span></div>
+      </article>
+    </section>
+
+    <section class="session">
+      <div class="section-kicker">LIVE SESSION</div>
+      <h2>SEIT DU DIESE SEITE GEÖFFNET HAST</h2>
+      <div class="session-grid">
+        <div class="session-item"><span>ELEKTRO</span><strong class="positive" id="since-electric">+0</strong></div>
+        <div class="session-item"><span>HYBRID</span><strong class="positive" id="since-hybrid">+0</strong></div>
+        <div class="session-item"><span>BENZIN</span><strong class="negative" id="since-petrol">−0</strong></div>
+        <div class="session-item"><span>DIESEL</span><strong class="negative" id="since-diesel">−0</strong></div>
+      </div>
+      <div class="session-time">Beobachtungszeit: <strong id="sessionTime">00:00:00</strong></div>
+    </section>
+
+    <section class="method">
+      <div class="status"><span class="pulse-dot"></span> MODELLIERTE ECHTZEITSCHÄTZUNG</div>
+      <p>
+        Die Zähler stellen keine sekundengenau erhobenen Zulassungsdaten dar.
+        Sie interpolieren den weltweiten Pkw-Bestand anhand veröffentlichter Bestands-,
+        Absatz- und Marktdaten. Die Werte für Benzin, Diesel und Hybrid sind Modellwerte.
+      </p>
+      <div class="method-meta">
+        <span id="modelVersion">Datenmodell: –</span>
+        <span id="dataDate">Stand: –</span>
+        <span>Quellenbasis: IEA · ACEA · globale Marktdaten</span>
+      </div>
+    </section>
+
+    <section class="brand">
+      <div class="brand-small">EINE DATENIDEE VON</div>
+      <div class="brand-name">DER <span>ELEKTROAUTO</span> TYP</div>
+      <div class="brand-copy">Elektromobilität. Fakten. Alltag.</div>
+      <a class="facebook-button" id="facebookLink" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+        AUF FACEBOOK FOLGEN →
+      </a>
+    </section>
+
+    <footer class="footer">
+      <span>GLOBAL DRIVE CLOCK</span>
+      <span>Modellierte Echtzeitschätzung – keine amtliche Live-Zählung</span>
+    </footer>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
