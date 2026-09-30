@@ -9,16 +9,36 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="language-switcher" id="languageSwitcher">
+    <button class="language-button" id="languageButton" type="button" aria-haspopup="true" aria-expanded="false">
+      <span class="language-globe">🌐</span>
+      <span id="languageFlag">🇩🇪</span>
+      <span id="languageCode">DE</span>
+      <span class="language-chevron">▾</span>
+    </button>
+    <div class="language-menu" id="languageMenu" role="menu" aria-hidden="true">
+      <button type="button" data-lang="de"><span>🇩🇪</span><span>Deutsch</span></button>
+      <button type="button" data-lang="en"><span>🇬🇧</span><span>English</span></button>
+      <button type="button" data-lang="fr"><span>🇫🇷</span><span>Français</span></button>
+      <button type="button" data-lang="es"><span>🇪🇸</span><span>Español</span></button>
+      <button type="button" data-lang="it"><span>🇮🇹</span><span>Italiano</span></button>
+      <button type="button" data-lang="pl"><span>🇵🇱</span><span>Polski</span></button>
+      <button type="button" data-lang="nl"><span>🇳🇱</span><span>Nederlands</span></button>
+      <button type="button" data-lang="pt"><span>🇵🇹</span><span>Português</span></button>
+      <button type="button" data-lang="no"><span>🇳🇴</span><span>Norsk</span></button>
+      <button type="button" data-lang="zh"><span>🇨🇳</span><span>中文</span></button>
+    </div>
+  </div>
+
   <main class="page-shell">
     <section class="hero">
-      <div class="eyebrow"><span class="pulse-dot"></span> LIVE-MODELL</div>
+      <div class="eyebrow"><span class="pulse-dot"></span> <span data-i18n="liveModel">LIVE-MODELL</span></div>
       <div class="brand-top">GLOBAL DRIVE CLOCK</div>
-      <h1>DER WELTWEITE<br><span>ANTRIEBSWANDEL.</span></h1>
-      <p class="hero-copy">
-        Rund um die Uhr verändert sich der globale Fahrzeugbestand.
-        Diese Uhr macht den Wandel sichtbar.
+      <h1><span data-i18n="headline1">DER WELTWEITE</span><br><span data-i18n="headline2">ANTRIEBSWANDEL.</span></h1>
+      <p class="hero-copy" data-i18n="heroCopy">
+        Rund um die Uhr verändert sich der globale Fahrzeugbestand. Diese Uhr macht den Wandel sichtbar.
       </p>
-      <div class="utc" id="utcClock">--:--:-- UTC</div>
+      <div class="utc" id="utcClock" title="">--:--:--</div>
     </section>
 
     <section class="cards" aria-label="Antriebsarten">
@@ -26,97 +46,95 @@
         <div class="card-head">
           <div>
             <div class="icon">⚡</div>
-            <div class="label">ELEKTRO</div>
+            <div class="label" data-i18n="electric">ELEKTRO</div>
           </div>
           <div class="trend trend-up"><span>▲</span><strong id="trend-electric">+0,0 %</strong></div>
         </div>
         <div class="number" id="count-electric">0</div>
-        <div class="rate"><span id="rate-electric">+0,00</span> Fahrzeuge / Sekunde</div>
+        <div class="rate"><span id="rate-electric">+0,00</span> <span data-i18n="vehiclesPerSecond">Fahrzeuge / Sekunde</span></div>
         <div class="progress"><div class="progress-fill" id="bar-electric"></div></div>
-        <div class="card-foot"><span>REINE BATTERIEFAHRZEUGE</span><span>BEV</span></div>
+        <div class="card-foot"><span data-i18n="bevLabel">REINE BATTERIEFAHRZEUGE</span><span>BEV</span></div>
       </article>
 
       <article class="card card-hybrid">
         <div class="card-head">
           <div>
             <div class="icon">◐</div>
-            <div class="label">HYBRID</div>
+            <div class="label" data-i18n="hybrid">HYBRID</div>
           </div>
           <div class="trend trend-up"><span>▲</span><strong id="trend-hybrid">+0,0 %</strong></div>
         </div>
         <div class="number" id="count-hybrid">0</div>
-        <div class="rate"><span id="rate-hybrid">+0,00</span> Fahrzeuge / Sekunde</div>
+        <div class="rate"><span id="rate-hybrid">+0,00</span> <span data-i18n="vehiclesPerSecond">Fahrzeuge / Sekunde</span></div>
         <div class="progress"><div class="progress-fill" id="bar-hybrid"></div></div>
-        <div class="card-foot"><span>HEV + PLUG-IN-HYBRID</span><span>HYBRID</span></div>
+        <div class="card-foot"><span data-i18n="hybridLabel">HEV + PLUG-IN-HYBRID</span><span>HYBRID</span></div>
       </article>
 
       <article class="card card-petrol">
         <div class="card-head">
           <div>
             <div class="icon">●</div>
-            <div class="label">BENZIN</div>
+            <div class="label" data-i18n="petrol">BENZIN</div>
           </div>
           <div class="trend trend-down"><span>▼</span><strong id="trend-petrol">−0,0 %</strong></div>
         </div>
         <div class="number" id="count-petrol">0</div>
-        <div class="rate"><span id="rate-petrol">−0,00</span> Fahrzeuge / Sekunde</div>
+        <div class="rate"><span id="rate-petrol">−0,00</span> <span data-i18n="vehiclesPerSecond">Fahrzeuge / Sekunde</span></div>
         <div class="progress"><div class="progress-fill" id="bar-petrol"></div></div>
-        <div class="card-foot"><span>VERBRENNUNGSMOTOR</span><span>ICE</span></div>
+        <div class="card-foot"><span data-i18n="iceLabel">VERBRENNUNGSMOTOR</span><span>ICE</span></div>
       </article>
 
       <article class="card card-diesel">
         <div class="card-head">
           <div>
             <div class="icon">●</div>
-            <div class="label">DIESEL</div>
+            <div class="label" data-i18n="diesel">DIESEL</div>
           </div>
           <div class="trend trend-down"><span>▼</span><strong id="trend-diesel">−0,0 %</strong></div>
         </div>
         <div class="number" id="count-diesel">0</div>
-        <div class="rate"><span id="rate-diesel">−0,00</span> Fahrzeuge / Sekunde</div>
+        <div class="rate"><span id="rate-diesel">−0,00</span> <span data-i18n="vehiclesPerSecond">Fahrzeuge / Sekunde</span></div>
         <div class="progress"><div class="progress-fill" id="bar-diesel"></div></div>
-        <div class="card-foot"><span>VERBRENNUNGSMOTOR</span><span>ICE</span></div>
+        <div class="card-foot"><span data-i18n="iceLabel">VERBRENNUNGSMOTOR</span><span>ICE</span></div>
       </article>
     </section>
 
     <section class="session">
-      <div class="section-kicker">LIVE SESSION</div>
-      <h2>SEIT DU DIESE SEITE GEÖFFNET HAST</h2>
+      <div class="section-kicker" data-i18n="liveSession">LIVE SESSION</div>
+      <h2 data-i18n="sinceOpened">SEIT DU DIESE SEITE GEÖFFNET HAST</h2>
       <div class="session-grid">
-        <div class="session-item"><span>ELEKTRO</span><strong class="positive" id="since-electric">+0</strong></div>
-        <div class="session-item"><span>HYBRID</span><strong class="positive" id="since-hybrid">+0</strong></div>
-        <div class="session-item"><span>BENZIN</span><strong class="negative" id="since-petrol">−0</strong></div>
-        <div class="session-item"><span>DIESEL</span><strong class="negative" id="since-diesel">−0</strong></div>
+        <div class="session-item"><span data-i18n="electric">ELEKTRO</span><strong class="positive" id="since-electric">+0</strong></div>
+        <div class="session-item"><span data-i18n="hybrid">HYBRID</span><strong class="positive" id="since-hybrid">+0</strong></div>
+        <div class="session-item"><span data-i18n="petrol">BENZIN</span><strong class="negative" id="since-petrol">−0</strong></div>
+        <div class="session-item"><span data-i18n="diesel">DIESEL</span><strong class="negative" id="since-diesel">−0</strong></div>
       </div>
-      <div class="session-time">Beobachtungszeit: <strong id="sessionTime">00:00:00</strong></div>
+      <div class="session-time"><span data-i18n="observationTime">Beobachtungszeit:</span> <strong id="sessionTime">00:00:00</strong></div>
     </section>
 
     <section class="method">
-      <div class="status"><span class="pulse-dot"></span> MODELLIERTE ECHTZEITSCHÄTZUNG</div>
-      <p>
-        Die Zähler stellen keine sekundengenau erhobenen Zulassungsdaten dar.
-        Sie interpolieren den weltweiten Pkw-Bestand anhand veröffentlichter Bestands-,
-        Absatz- und Marktdaten. Die Werte für Benzin, Diesel und Hybrid sind Modellwerte.
+      <div class="status"><span class="pulse-dot"></span> <span data-i18n="modeledEstimate">MODELLIERTE ECHTZEITSCHÄTZUNG</span></div>
+      <p data-i18n="methodText">
+        Die Zähler stellen keine sekundengenau erhobenen Zulassungsdaten dar. Sie interpolieren den weltweiten Pkw-Bestand anhand veröffentlichter Bestands-, Absatz- und Marktdaten. Die Werte für Benzin, Diesel und Hybrid sind Modellwerte.
       </p>
       <div class="method-meta">
         <span id="modelVersion">Datenmodell: –</span>
         <span id="dataDate">Stand: –</span>
-        <span>Quellenbasis: IEA · ACEA · globale Marktdaten</span>
+        <span data-i18n="sourceBase">Quellenbasis: IEA · ACEA · globale Marktdaten</span>
       </div>
     </section>
 
     <section class="brand">
-      <div class="brand-small">EINE DATENIDEE VON</div>
+      <div class="brand-small" data-i18n="dataIdeaBy">EINE DATENIDEE VON</div>
       <div class="brand-name">DER <span>ELEKTROAUTO</span> TYP</div>
-      <div class="brand-copy">Elektromobilität. Fakten. Alltag.</div>
-      <a class="facebook-button" id="facebookLink" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+      <div class="brand-copy" data-i18n="brandCopy">Elektromobilität. Fakten. Alltag.</div>
+      <a class="facebook-button" id="facebookLink" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" data-i18n="facebook">
         AUF FACEBOOK FOLGEN →
       </a>
     </section>
 
     <footer class="footer">
       <span>GLOBAL DRIVE CLOCK</span>
-      <span>Modellierte Echtzeitschätzung – keine amtliche Live-Zählung</span>
+      <span data-i18n="footerNote">Modellierte Echtzeitschätzung – keine amtliche Live-Zählung</span>
     </footer>
   </main>
 

@@ -4,7 +4,7 @@ window.DRIVECOUNT_DATA = {
   referenceDate: "2026-09-30T00:00:00Z",
 
   // HIER DEINEN ECHTEN FACEBOOK-LINK EINTRAGEN:
-  facebookUrl: "https://www.facebook.com/",
+  facebookUrl: "https://www.facebook.com/share/18Na7ZUv93/?mibextid=wwXIfr",
 
   categories: {
     electric: {

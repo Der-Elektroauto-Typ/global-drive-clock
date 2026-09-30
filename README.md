@@ -1,48 +1,56 @@
-# Global Drive Clock
+# Global Drive Clock V2.2
 
-Eine kostenlose statische Website für GitHub Pages.
+Statische GitHub-Pages-Website mit mehrsprachiger Oberfläche.
 
-## Inhalt
+## Neu in V2.2
 
-- `index.html` – Seitenstruktur
-- `style.css` – komplettes Layout für Desktop und Mobil
-- `data.js` – zentrale Datenbasis
-- `app.js` – Live-Zähler und Zeitlogik
+- Sprachschalter oben rechts
+- 10 Sprachen:
+  - Deutsch
+  - Englisch
+  - Französisch
+  - Spanisch
+  - Italienisch
+  - Polnisch
+  - Niederländisch
+  - Portugiesisch
+  - Norwegisch
+  - Chinesisch
+- automatische Erkennung der Browsersprache
+- Speicherung der Auswahl im Browser
+- lokalisierte Zahlenformate
+- vollständige Übersetzung der sichtbaren Oberfläche
+- responsive Sprachwahl für Mobilgeräte
 
-## Veröffentlichung mit GitHub Pages
+## Dateien
 
-1. Alle Dateien in dieses Repository hochladen.
-2. Repository öffnen.
-3. `Settings` → `Pages`.
-4. Unter `Build and deployment`:
-   - `Source`: `Deploy from a branch`
-   - `Branch`: `main`
-   - Ordner: `/ (root)`
-5. `Save`.
-6. Nach kurzer Zeit erscheint die veröffentlichte URL.
+- `index.html`
+- `style.css`
+- `app.js`
+- `data.js`
 
-## Facebook-Link ändern
+## Update auf GitHub
 
-In `data.js` diese Zeile anpassen:
+Am einfachsten alle vier Dateien im Repository ersetzen.
+
+## Facebook-Link
+
+In `data.js`:
 
 ```js
 facebookUrl: "https://www.facebook.com/",
 ```
 
-und durch die echte URL von „Der Elektroauto Typ“ ersetzen.
-
-## Daten aktualisieren
-
-Nur `data.js` bearbeiten.
-
-Für jede Kategorie:
-
-- `base` = modellierter Bestand am Referenzdatum
-- `annualChange` = Nettoänderung pro Jahr
-- `trend` = angezeigte prozentuale Tendenz
-- `share` = modellierter Anteil am gesamten Pkw-Bestand
-- `referenceDate` = Referenzzeitpunkt der Basiswerte
+durch die echte Facebook-Seite ersetzen.
 
 ## Methodischer Hinweis
 
-Die Website zeigt eine modellierte Echtzeitschätzung. Es handelt sich nicht um eine amtliche sekundengenaue Live-Zählung. Besonders die weltweiten Bestände von Benzin, Diesel und Hybrid sind modellierte Größen, da keine einheitliche globale Echtzeit-Bestandsdatenbank nach Antriebsart verfügbar ist.
+Die Website zeigt eine modellierte Echtzeitschätzung. Es handelt sich nicht um eine amtliche sekundengenaue Live-Zählung.
+
+
+## V2.2.1
+
+- Facebook-Link von „Der Elektroauto Typ“ eingetragen.
+- Die kleine Uhr oben verwendet jetzt automatisch die lokale Zeitzone des Besuchers.
+- Darstellung der Uhrzeit folgt der gewählten Sprache/Locale.
+- Die Zeitzone stammt aus Browser/Betriebssystem, nicht aus der ausgewählten Sprache.

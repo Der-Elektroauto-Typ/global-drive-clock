@@ -396,3 +396,315 @@ body {
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }
 }
+
+
+/* =========================================================
+   V2.1 — Desktop density + emphasis
+   Goal: on 1440p desktop, hero + all four cards + live-session
+   should be visible without scrolling.
+   ========================================================= */
+
+@media (min-width: 901px) and (min-height: 850px) {
+  .page-shell {
+    width: min(100% - 36px, 1540px);
+    padding-top: 30px;
+    padding-bottom: 28px;
+  }
+
+  .hero {
+    max-width: 1040px;
+    margin-bottom: 30px;
+  }
+
+  .eyebrow {
+    font-size: 11px;
+    margin-bottom: 0;
+  }
+
+  .brand-top {
+    margin-top: 10px;
+    font-size: 11px;
+  }
+
+  .hero h1 {
+    margin-top: 10px;
+    font-size: clamp(46px, 5.25vw, 76px);
+    line-height: .91;
+    letter-spacing: -3.5px;
+  }
+
+  .hero-copy {
+    max-width: 700px;
+    margin: 18px auto 10px;
+    font-size: 15px;
+    line-height: 1.45;
+  }
+
+  .utc {
+    font-size: 10px;
+  }
+
+  .cards {
+    gap: 14px;
+  }
+
+  .card {
+    min-height: 222px;
+    padding: 22px 24px 19px;
+    border-radius: 20px;
+  }
+
+  .icon {
+    min-height: 23px;
+    font-size: 19px;
+  }
+
+  .label {
+    margin-top: 3px;
+    font-size: 13px;
+  }
+
+  .trend {
+    padding: 7px 10px;
+    font-size: 12px;
+  }
+
+  .number {
+    margin-top: 25px;
+    font-size: clamp(37px, 4.1vw, 59px);
+    letter-spacing: -3px;
+  }
+
+  .rate {
+    margin-top: 9px;
+    font-size: 14px;
+  }
+
+  .rate span {
+    font-size: 15px;
+  }
+
+  .progress {
+    height: 6px;
+    margin-top: 18px;
+    border-radius: 999px;
+  }
+
+  .progress-fill {
+    border-radius: 999px;
+  }
+
+  .card-foot {
+    margin-top: 10px;
+    font-size: 12px;
+    letter-spacing: 1.15px;
+  }
+
+  .session {
+    margin-top: 26px;
+    padding: 24px 18px 22px;
+  }
+
+  .section-kicker {
+    font-size: 10px;
+  }
+
+  .session h2 {
+    margin: 7px 0 18px;
+    font-size: 24px;
+  }
+
+  .session-item {
+    padding: 7px 18px;
+  }
+
+  .session-item span {
+    margin-bottom: 5px;
+  }
+
+  .session-item strong {
+    font-size: 25px;
+  }
+
+  .session-time {
+    margin-top: 15px;
+  }
+
+  .method {
+    margin-top: 34px;
+  }
+
+  .brand {
+    margin-top: 38px;
+    padding: 42px 22px;
+  }
+
+  .brand-small {
+    font-size: 12px;
+    letter-spacing: 3.2px;
+  }
+}
+
+/* Larger highlighted explanatory labels on every screen */
+.rate {
+  font-size: 14px;
+}
+.rate span {
+  font-size: 15px;
+}
+.card-foot {
+  font-size: 12px;
+}
+
+/* Stronger visual bars */
+.progress {
+  height: 6px;
+  border-radius: 999px;
+}
+.progress-fill {
+  border-radius: 999px;
+}
+
+/* Branding kicker requested larger */
+.brand-small {
+  font-size: 12px;
+  font-weight: 900;
+}
+
+
+/* =========================================================
+   V2.2 — Language switcher
+   ========================================================= */
+
+.language-switcher {
+  position: fixed;
+  top: 18px;
+  right: 22px;
+  z-index: 1000;
+  font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.language-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 0 13px;
+  border: 1px solid rgba(255,255,255,.11);
+  border-radius: 12px;
+  background: rgba(9,14,20,.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  color: #eef3f7;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 850;
+  letter-spacing: .7px;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0,0,0,.22);
+}
+
+.language-button:hover {
+  border-color: rgba(71,221,255,.34);
+  background: rgba(12,19,27,.95);
+}
+
+.language-globe {
+  opacity: .78;
+  font-size: 14px;
+}
+
+.language-chevron {
+  margin-left: 1px;
+  color: #7f8c98;
+  font-size: 10px;
+}
+
+.language-menu {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 205px;
+  padding: 7px;
+  border: 1px solid rgba(255,255,255,.11);
+  border-radius: 14px;
+  background: rgba(9,14,20,.97);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: 0 18px 50px rgba(0,0,0,.36);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-5px);
+  transition: opacity .16s ease, transform .16s ease, visibility .16s ease;
+}
+
+.language-menu.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.language-menu button {
+  display: grid;
+  grid-template-columns: 26px 1fr;
+  align-items: center;
+  width: 100%;
+  gap: 7px;
+  padding: 10px 11px;
+  border: 0;
+  border-radius: 9px;
+  background: transparent;
+  color: #dce3e9;
+  text-align: left;
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.language-menu button:hover,
+.language-menu button.active {
+  background: rgba(71,221,255,.09);
+  color: #fff;
+}
+
+.language-menu button.active {
+  outline: 1px solid rgba(71,221,255,.15);
+}
+
+html[lang="zh"] .hero h1 {
+  letter-spacing: -2px;
+}
+
+html[lang="zh"] .label,
+html[lang="zh"] .brand-top,
+html[lang="zh"] .section-kicker,
+html[lang="zh"] .brand-small {
+  letter-spacing: 1px;
+}
+
+@media (max-width: 650px) {
+  .language-switcher {
+    top: 10px;
+    right: 10px;
+  }
+
+  .language-button {
+    min-height: 38px;
+    padding: 0 10px;
+  }
+
+  .language-globe {
+    display: none;
+  }
+
+  .language-menu {
+    top: 44px;
+    width: 190px;
+    max-height: min(70vh, 470px);
+    overflow-y: auto;
+  }
+
+  .page-shell {
+    padding-top: 64px;
+  }
+}
