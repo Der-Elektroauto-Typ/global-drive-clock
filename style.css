@@ -867,3 +867,14 @@ html[lang="zh"] .brand-small {
   background: rgba(79,220,255,.09);
   border-color: rgba(79,220,255,.35);
 }
+
+
+/* V2.6 — copyright notice */
+.copyright {
+  padding: 12px 4px 0;
+  color: #59636e;
+  font-size: 9px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: .8px;
+}
