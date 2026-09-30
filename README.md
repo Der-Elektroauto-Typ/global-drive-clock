@@ -1,11 +1,9 @@
-# Global Drive Clock V2.6
+# Global Drive Clock V2.7
 
-The social preview now follows the homepage style and includes a compact “Seit du diese Seite geöffnet hast” live-session area. Its displayed session values and observation time are a static example taken from the supplied screenshot; the social image cannot show a visitor-specific live session. The actual page continues to calculate the live session in the browser.
-
-No new software version is introduced. Site asset cache-busting remains at `?v=2.6`; the image URL uses a separate preview query to refresh social-platform caches. The copyright notice and `LICENSE`, data model, methodology, 10 languages, local clock/timezone, Facebook link, and responsive layout are retained.
+V2.7 adds a custom browser icon: a bright lightning bolt inside a round blue disc. SVG, PNG, ICO, and Apple touch icon formats are included. All website styles, model values, wording, sharing preview, and the V2.6 copyright notice are retained. CSS and JavaScript cache-busting is updated to `?v=2.7`.
 
 ## Publish
 
-Upload `index.html`, `style.css`, `app.js`, `data.js`, `README.md`, `LICENSE`, and `social-preview.jpg` to the root of the GitHub Pages repository, replacing the previous files.
+Upload all files in this archive to the root of the GitHub Pages repository, replacing the previous files.
 
 Site: https://der-elektroauto-typ.github.io/global-drive-clock/
