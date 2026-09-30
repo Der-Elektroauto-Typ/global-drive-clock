@@ -132,7 +132,10 @@ body {
   border-color: rgba(71,221,255,.14);
   box-shadow: 0 0 20px rgba(71,221,255,.06);
 }
-.mode-switch button.active[data-mode="germany"] {
+.mode-switch button.active[data-mode="germany"],
+.mode-switch button.active[data-mode="eu"],
+.mode-switch button.active[data-mode="china"],
+.mode-switch button.active[data-mode="usa"] {
   color: #ffd36a;
   background: rgba(255,211,106,.12);
   border-color: rgba(255,211,106,.18);
@@ -919,6 +922,6 @@ html[lang="zh"] .brand-small {
 }
 
 @media (max-width: 650px) {
-  .mode-switch { margin-top: 19px; }
+  .mode-switch { margin-top: 19px; flex-wrap: wrap; justify-content: center; max-width: min(100%, 500px); }
   .mode-switch button { min-width: 0; padding: 10px 14px; font-size: 10px; letter-spacing: 1px; }
 }

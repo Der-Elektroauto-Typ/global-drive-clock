@@ -15,11 +15,13 @@
       headline2: "ANTRIEBSWANDEL.",
       modeGlobal: 'GLOBAL',
       modeGermany: 'DEUTSCHLAND',
+      modeEU: "EU", modeChina: "CHINA", modeUSA: "USA",
       germanyHeadline1: 'DER ANTRIEBSWANDEL',
       germanyHeadline2: 'IN DEUTSCHLAND.',
       germanyHeroCopy: 'Pkw-Bestand und Antriebswechsel in Deutschland – auf Basis der KBA-Bestandszahlen.',
       germanySource: 'Quellen: Kraftfahrt-Bundesamt (KBA) · FZ 27 · Modell',
       germanyModelHeading: 'Deutschland-Modell',
+      regionModelHeading: 'Regionalmodelle',
       germanyBevLabel: 'REINE BATTERIEFAHRZEUGE',
       germanyHybridLabel: 'HYBRID INKL. PLUG-IN',
       germanyIceLabel: 'VERBRENNUNGSMOTOR',
@@ -56,11 +58,13 @@
       headline2: "POWERTRAIN SHIFT.",
       modeGlobal: 'GLOBAL',
       modeGermany: 'GERMANY',
+      modeEU: "EU", modeChina: "CHINA", modeUSA: "USA",
       germanyHeadline1: "GERMANY'S",
       germanyHeadline2: 'POWERTRAIN SHIFT.',
       germanyHeroCopy: 'Germany’s passenger-car fleet and powertrain shift, based on official KBA stock data.',
       germanySource: 'Sources: Federal Motor Transport Authority (KBA) · FZ 27 · model',
       germanyModelHeading: 'Germany model',
+      regionModelHeading: 'Regional models',
       germanyBevLabel: 'BATTERY ELECTRIC VEHICLES',
       germanyHybridLabel: 'HYBRID INCLUDING PLUG-IN',
       germanyIceLabel: 'COMBUSTION ENGINE',
@@ -97,6 +101,7 @@
       headline2: "MONDIALE DES MOTORISATIONS.",
       modeGlobal: 'MONDE',
       modeGermany: 'ALLEMAGNE',
+      modeEU: "UE", modeChina: "CHINE", modeUSA: "USA",
       germanyHeadline1: 'LE PARC AUTO',
       germanyHeadline2: 'ALLEMAND EN TRANSITION.',
       germanyHeroCopy: 'Le parc de voitures particulières et sa transition en Allemagne, selon les données officielles du KBA.',
@@ -138,6 +143,7 @@
       headline2: "DE PROPULSIÓN.",
       modeGlobal: 'GLOBAL',
       modeGermany: 'ALEMANIA',
+      modeEU: "UE", modeChina: "CHINA", modeUSA: "EE. UU.",
       germanyHeadline1: 'EL CAMBIO',
       germanyHeadline2: 'DE PROPULSIÓN EN ALEMANIA.',
       germanyHeroCopy: 'El parque de turismos y su transición en Alemania, según los datos oficiales del KBA.',
@@ -179,6 +185,7 @@
       headline2: "GLOBALE DELLE MOTORIZZAZIONI.",
       modeGlobal: 'GLOBALE',
       modeGermany: 'GERMANIA',
+      modeEU: "UE", modeChina: "CINA", modeUSA: "USA",
       germanyHeadline1: 'IL CAMBIO',
       germanyHeadline2: 'DEI MOTORI IN GERMANIA.',
       germanyHeroCopy: 'Il parco auto e la transizione delle motorizzazioni in Germania, secondo i dati ufficiali KBA.',
@@ -220,6 +227,7 @@
       headline2: "RODZAJÓW NAPĘDU.",
       modeGlobal: 'GLOBALNIE',
       modeGermany: 'NIEMCY',
+      modeEU: "UE", modeChina: "CHINY", modeUSA: "USA",
       germanyHeadline1: 'ZMIANA NAPĘDÓW',
       germanyHeadline2: 'W NIEMCZECH.',
       germanyHeroCopy: 'Park samochodów osobowych i zmiany napędów w Niemczech według oficjalnych danych KBA.',
@@ -261,6 +269,7 @@
       headline2: "AANDRIJFTRANSITIE.",
       modeGlobal: 'WERELDWIJD',
       modeGermany: 'DUITSLAND',
+      modeEU: "EU", modeChina: "CHINA", modeUSA: "VS",
       germanyHeadline1: 'DE AANDRIJFTRANSITIE',
       germanyHeadline2: 'IN DUITSLAND.',
       germanyHeroCopy: 'Het Duitse personenwagenpark en de aandrijftransitie volgens officiële KBA-gegevens.',
@@ -302,6 +311,7 @@
       headline2: "DAS MOTORIZAÇÕES.",
       modeGlobal: 'GLOBAL',
       modeGermany: 'ALEMANHA',
+      modeEU: "UE", modeChina: "CHINA", modeUSA: "EUA",
       germanyHeadline1: 'A TRANSIÇÃO',
       germanyHeadline2: 'DOS AUTOMÓVEIS NA ALEMANHA.',
       germanyHeroCopy: 'O parque automóvel e a transição dos motores na Alemanha, segundo os dados oficiais do KBA.',
@@ -343,6 +353,7 @@
       headline2: "DRIVLINJESKIFTET.",
       modeGlobal: 'GLOBALT',
       modeGermany: 'TYSKLAND',
+      modeEU: "EU", modeChina: "KINA", modeUSA: "USA",
       germanyHeadline1: 'DRIVLINJESKIFTET',
       germanyHeadline2: 'I TYSKLAND.',
       germanyHeroCopy: 'Den tyske personbilparken og endringer i drivlinjer, basert på offisielle KBA-tall.',
@@ -384,6 +395,7 @@
       headline2: "动力转型。",
       modeGlobal: '全球',
       modeGermany: '德国',
+      modeEU: "欧盟", modeChina: "中国", modeUSA: "美国",
       germanyHeadline1: '德国汽车',
       germanyHeadline2: '动力转型。',
       germanyHeroCopy: '根据德国联邦机动车管理局（KBA）数据，展示德国乘用车保有量与动力结构变化。',
@@ -421,6 +433,10 @@
   };
 
   const SECONDS_PER_YEAR = 365.2425 * 24 * 60 * 60;
+  const REGION_INFO = {
+    de: { heading: "Regionale Modelle", eu: "EU: Eurostat meldet den EU-Pkw-Bestand mit Stand 31.12.2025; BEV-Bestand 7,59 Mio. und +31,5 % gegenüber 2024. Die übrigen Antriebsbestände und jährlichen Änderungen sind aus Bestands-/Neuzulassungsdaten modelliert; Eurostat weist auf teils ergänzte Daten und fehlende vollständige Harmonisierung hin.", china: "China: Das Ministerium für Öffentliche Sicherheit meldet zum 30.06.2026 371 Mio. Automobile und 48,97 Mio. NEV. BEV machen 68,77 % der NEV aus. Die amtliche Reihe trennt nicht alle vier Kachel-Kategorien; insbesondere Benzin und Diesel sind Modellzuordnungen. Gesamtbestand und Pkw-Abgrenzung sind nicht identisch mit der Global-/EU-Systemgrenze.", usa: "USA: DOE AFDC/NLR/Experian veröffentlicht Fahrzeugbestände bis 2025, nach Fahrzeugart und Kraftstoff. Die Grundgesamtheit umfasst Light-Duty-Fahrzeuge (auch leichte Trucks), nicht nur Pkw. Die Bestandszahlen wurden gerundet; Wachstumsraten können durch spätere Revisionen bzw. unterschiedliche Publikationstabellen abweichen. Daher sind die Kacheländerungen modellierte Schätzungen, keine amtliche fortlaufende Zählung." },
+    en: { heading: "Regional models", eu: "EU: Eurostat reports the EU passenger-car fleet as of 31 Dec 2025; BEV stock was 7.59m, up 31.5% from 2024. Other fuel stocks and annual changes are modeled from fleet and registration data. Eurostat notes that some national data are supplemented and methods are not fully harmonized.", china: "China: The Ministry of Public Security reports 371m automobiles and 48.97m NEVs at 30 Jun 2026. BEVs are 68.77% of NEVs. The official series does not split all four card categories; petrol and diesel are model allocations. Its total fleet scope is not identical to the global/EU passenger-car definition.", usa: "U.S.: DOE AFDC/NLR/Experian publishes vehicle registrations through 2025 by vehicle and fuel type. The population includes light-duty vehicles (including light trucks), not only passenger cars. Counts are rounded, and growth rates can differ across revised publication tables. Card changes are modeled estimates, not a live official count." }
+  };
   const startTime = Date.now();
   const keys = ["electric", "hybrid", "petrol", "diesel"];
   const el = (id) => document.getElementById(id);
@@ -430,11 +446,12 @@
   let animationFrameScheduled = false;
 
   function detectMode() {
-    return localStorage.getItem("driveclock-mode") === "germany" && DATA.germany ? "germany" : "global";
+    const saved = localStorage.getItem("driveclock-mode");
+    return saved && (saved === "global" || DATA.regions?.[saved]) ? saved : "global";
   }
 
   function activeMarket() {
-    return currentMode === "germany" && DATA.germany ? DATA.germany : DATA;
+    return currentMode === "global" ? DATA : (DATA.regions?.[currentMode] || DATA.germany || DATA);
   }
 
   function detectLanguage() {
@@ -466,7 +483,7 @@
   function currentValue(item, market = activeMarket(), now = Date.now()) {
     const referenceTime = new Date(market.referenceDate).getTime();
     const seconds = (now - referenceTime) / 1000;
-    return item.base + perSecond(item, market) * seconds;
+    return Math.max(0, item.base + perSecond(item, market) * seconds);
   }
 
   function formatInt(value) {
@@ -517,29 +534,36 @@
   function renderStaticMeta() {
     const market = activeMarket();
     const germany = currentMode === "germany";
+    const region = currentMode === "global" ? DATA : (DATA.regions?.[currentMode] || DATA.germany);
     if (el("modelVersion")) {
-      el("modelVersion").textContent = `${t("dataModel")}: ${germany ? "KBA FZ 27 · 12M" : DATA.modelVersion}`;
+      el("modelVersion").textContent = `${t("dataModel")}: V2.9${region?.methodTag ? ` · ${region.methodTag}` : ""}`;
     }
     if (el("dataDate")) {
-      const dataDate = germany
-        ? new Intl.DateTimeFormat(TRANSLATIONS[currentLang].locale, { dateStyle: "long", timeZone: "UTC" }).format(new Date(`${market.dataDate}T00:00:00Z`))
-        : DATA.dataDate;
+      const dataDate = region?.dataDate && /^\d{4}-\d{2}-\d{2}$/.test(region.dataDate)
+        ? new Intl.DateTimeFormat(TRANSLATIONS[currentLang].locale, { dateStyle: "long", timeZone: "UTC" }).format(new Date(`${region.dataDate}T00:00:00Z`))
+        : (region?.dataDate || DATA.dataDate);
       el("dataDate").textContent = `${t("dataAsOf")}: ${dataDate}`;
     }
     const sourceBase = document.querySelector('[data-i18n="sourceBase"]');
-    if (sourceBase) sourceBase.textContent = germany ? t("germanySource") : t("sourceBase");
+    if (sourceBase) sourceBase.textContent = region?.sourceName || (germany ? t("germanySource") : t("sourceBase"));
+    const localizedRegion = region?.translations?.[currentLang] || region?.translations?.en || {};
+    const info = REGION_INFO[currentLang] || REGION_INFO.en;
+    const methodHeading = document.querySelector("[data-i18n=regionModelHeading]");
+    if (methodHeading) methodHeading.textContent = currentMode === "germany" ? t("germanyModelHeading") : (t("regionModelHeading") || info.heading);
+    const regionalMethod = el("regionalMethodText");
+    if (regionalMethod) regionalMethod.textContent = currentMode === "eu" ? info.eu : currentMode === "china" ? info.china : currentMode === "usa" ? info.usa : "";
     const headline1 = document.querySelector('[data-i18n="headline1"]');
     const headline2 = document.querySelector('[data-i18n="headline2"]');
     const heroCopy = document.querySelector('[data-i18n="heroCopy"]');
-    if (headline1) headline1.textContent = germany ? t("germanyHeadline1") : t("headline1");
-    if (headline2) headline2.textContent = germany ? t("germanyHeadline2") : t("headline2");
-    if (heroCopy) heroCopy.textContent = germany ? t("germanyHeroCopy") : t("heroCopy");
+    if (headline1) headline1.textContent = localizedRegion.headline1 || (germany ? t("germanyHeadline1") : t("headline1"));
+    if (headline2) headline2.textContent = localizedRegion.headline2 || (germany ? t("germanyHeadline2") : t("headline2"));
+    if (heroCopy) heroCopy.textContent = localizedRegion.heroCopy || (germany ? t("germanyHeroCopy") : t("heroCopy"));
     const bevLabel = document.querySelector('[data-i18n="bevLabel"]');
     const hybridLabel = document.querySelector('[data-i18n="hybridLabel"]');
     const iceLabels = document.querySelectorAll('[data-i18n="iceLabel"]');
-    if (bevLabel) bevLabel.textContent = germany ? t("germanyBevLabel") : t("bevLabel");
-    if (hybridLabel) hybridLabel.textContent = germany ? t("germanyHybridLabel") : t("hybridLabel");
-    iceLabels.forEach((node) => { node.textContent = germany ? t("germanyIceLabel") : t("iceLabel"); });
+    if (bevLabel) bevLabel.textContent = localizedRegion.bevLabel || (germany ? t("germanyBevLabel") : t("bevLabel"));
+    if (hybridLabel) hybridLabel.textContent = localizedRegion.hybridLabel || (germany ? t("germanyHybridLabel") : t("hybridLabel"));
+    iceLabels.forEach((node) => { node.textContent = localizedRegion.iceLabel || (germany ? t("germanyIceLabel") : t("iceLabel")); });
     document.querySelectorAll(".mode-switch button[data-mode]").forEach((button) => {
       const active = button.dataset.mode === currentMode;
       button.classList.toggle("active", active);
@@ -555,14 +579,14 @@
       const trend = el(`trend-${key}`);
       const share = market.globalFleet?.base ? (item.base / market.globalFleet.base) * 100 : 0;
       const previousBase = item.base - item.annualChange;
-      const trendValue = (germany ? previousBase : item.base) ? (item.annualChange / (germany ? previousBase : item.base)) * 100 : 0;
+      const trendValue = item.trendPercent ?? ((germany || currentMode !== "global") ? (previousBase ? (item.annualChange / previousBase) * 100 : 0) : (item.base ? (item.annualChange / item.base) * 100 : 0));
       if (bar) bar.style.width = `${Math.max(0, Math.min(100, share))}%`;
       if (trend) trend.textContent = `${signed(trendValue, 1)} %`;
     });
   }
 
   function setMode(mode, persist = true) {
-    currentMode = mode === "germany" && DATA.germany ? "germany" : "global";
+    currentMode = mode === "global" || DATA.regions?.[mode] ? mode : "global";
     renderStaticMeta();
     if (persist) localStorage.setItem("driveclock-mode", currentMode);
     tick();

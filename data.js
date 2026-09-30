@@ -1,12 +1,12 @@
 window.DRIVECOUNT_DATA = {
-  modelVersion: "2026.2 / V2.4",
+  modelVersion: "V2.9",
   dataDate: "30. September 2026",
   referenceDate: "2026-09-30T00:00:00Z",
 
   facebookUrl: "https://www.facebook.com/share/18Na7ZUv93/?mibextid=wwXIfr",
 
   /*
-   * GLOBAL DRIVE CLOCK – V2.4
+   * GLOBAL DRIVE CLOCK – V2.9
    *
    * IMPORTANT:
    * These are MODEL VALUES, not an official second-by-second census.
@@ -94,6 +94,79 @@ window.DRIVECOUNT_DATA = {
     }
   },
 
+
+  regions: {
+    germany: {
+      label: "Deutschland", dataDate: "2026-07-01", referenceDate: "2026-07-01T00:00:00Z", annualSeconds: 365 * 24 * 60 * 60, methodTag: "KBA FZ 27 · 12M", lookbackStart: "2025-07-01", sourceName: "Quellen: KBA · FZ 27 · Modell", globalFleet: { base: 49696710, annualChange: 171102 }, categories: { electric: { label: "Elektro (BEV)", definition: "BEV", base: 2365047, annualChange: 529469 }, hybrid: { label: "Hybrid inkl. PHEV", definition: "HEV + PHEV", base: 4807029, annualChange: 837275 }, petrol: { label: "Benzin", definition: "Pkw Benzin", base: 29012909, annualChange: -670154 }, diesel: { label: "Diesel", definition: "Pkw Diesel", base: 13157334, annualChange: -508100 } }, other: { label: "Gas und Sonstige", definition: "Rest", base: 354391, annualChange: -17388 }, translations: {}
+    },
+    eu: {
+      label: "EU",
+      dataDate: "2025-12-31",
+      referenceDate: "2025-12-31T00:00:00Z",
+      annualSeconds: 365 * 24 * 60 * 60,
+      methodTag: "12M Modell",
+      lookbackStart: "2024-12-31",
+      sourceUrl: "https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20260731-1",
+      sourceName: "Quellen: Eurostat · ACEA · Modell",
+      globalFleet: { base: 269000000, annualChange: -260000 },
+      categories: {
+        electric: { label: "Elektro (BEV)", definition: "BEV", base: 7590000, annualChange: 1820000 },
+        hybrid: { label: "Hybrid", definition: "HEV + PHEV", base: 52000000, annualChange: 8700000 },
+        petrol: { label: "Benzin", definition: "Pkw Benzin", base: 147000000, annualChange: -3300000 },
+        diesel: { label: "Diesel", definition: "Pkw Diesel", base: 51000000, annualChange: -4500000 }
+      },
+      other: { label: "Sonstige", definition: "Gas und übrige", base: 11410000, annualChange: -2980000 },
+      translations: {
+        de: { headline1: "EUROPA IM", headline2: "ANTRIEBSWANDEL.", heroCopy: "Der Pkw-Bestand in der Europäischen Union – mit den jüngsten verfügbaren Jahresdaten." },
+        en: { headline1: "EUROPE IN", headline2: "POWERTRAIN SHIFT.", heroCopy: "The European Union passenger-car fleet, using the latest available annual data." }
+      }
+    },
+    china: {
+      label: "China",
+      dataDate: "2026-06-30",
+      referenceDate: "2026-06-30T00:00:00Z",
+      annualSeconds: 365 * 24 * 60 * 60,
+      methodTag: "Bestand + Modell",
+      lookbackStart: "2025-06-30",
+      sourceUrl: "https://english.www.gov.cn/archive/statistics/202607/15/content_WS6a56dd6ec6d00ca5f9a0c307.html",
+      sourceName: "Quellen: MPS · Staatsrat China · Modell",
+      globalFleet: { base: 371000000, annualChange: 12000000 },
+      categories: {
+        electric: { label: "Elektro (BEV)", definition: "BEV", base: 33675000, annualChange: 8135000 },
+        hybrid: { label: "Hybrid / NEV-Rest", definition: "PHEV + EREV + FCEV; Modell", base: 15295000, annualChange: 4065000 },
+        petrol: { label: "Benzin (Modell)", definition: "Restbestand, modelliert", base: 282030000, annualChange: -700000 },
+        diesel: { label: "Diesel (Modell)", definition: "Restbestand, modelliert", base: 40000000, annualChange: 500000 },
+      },
+      other: { label: "Sonstige", definition: "Übrige, modelliert", base: 0, annualChange: 0 },
+      translations: {
+        de: { headline1: "CHINAS", headline2: "ANTRIEBSWANDEL.", heroCopy: "Der Fahrzeugbestand Chinas – amtliche NEV-Anker und klar gekennzeichnete Modellwerte." },
+        en: { headline1: "CHINA'S", headline2: "POWERTRAIN SHIFT.", heroCopy: "China’s vehicle fleet, with official NEV anchors and clearly identified modeled values." }
+      }
+    },
+    usa: {
+      label: "USA",
+      dataDate: "2025-12-31",
+      referenceDate: "2025-12-31T00:00:00Z",
+      annualSeconds: 365 * 24 * 60 * 60,
+      methodTag: "NLR/Experian · 12M",
+      lookbackStart: "2024-12-31",
+      sourceUrl: "https://afdc.energy.gov/vehicle-registration",
+      sourceName: "Quellen: DOE AFDC · NLR/Experian · Modell",
+      globalFleet: { base: 291000000, annualChange: 1700000 },
+      categories: {
+        electric: { label: "Elektro (BEV)", definition: "EV", base: 5689100, annualChange: 990000 },
+        hybrid: { label: "Hybrid inkl. Plug-in", definition: "HEV + PHEV", base: 15695300, annualChange: 2700000 },
+        petrol: { label: "Benzin", definition: "Gasoline", base: 240682100, annualChange: -2638400 },
+        diesel: { label: "Diesel", definition: "Diesel", base: 7176500, annualChange: 25000 }
+      },
+      other: { label: "Sonstige", definition: "Alternative fuels/unknown (Restbestand)", base: 21757000, annualChange: 623400 },
+      translations: {
+        de: { headline1: "DER US-", headline2: "ANTRIEBSWANDEL.", heroCopy: "Der Fahrzeugbestand der USA – aus den jüngsten DOE/AFDC-Bestandsdaten modelliert." },
+        en: { headline1: "THE U.S.", headline2: "POWERTRAIN SHIFT.", heroCopy: "The U.S. vehicle fleet, modeled from the latest DOE/AFDC registration data." }
+      }
+    }
+  },
+
   sources: {
     iea: "https://www.iea.org/reports/global-ev-outlook-2026/trends-in-electric-cars",
     ieaH1: "https://www.iea.org/reports/electric-car-markets-in-a-time-of-uncertainty/executive-summary",
@@ -101,3 +174,4 @@ window.DRIVECOUNT_DATA = {
     vda: "https://www.vda.de/de/themen/Automobil-Insight-2025/2025-Elektromobilitaet"
   }
 };
+window.DRIVECOUNT_DATA.regions.germany = window.DRIVECOUNT_DATA.germany;
