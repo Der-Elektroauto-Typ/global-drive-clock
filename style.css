@@ -708,3 +708,52 @@ html[lang="zh"] .brand-small {
     padding-top: 64px;
   }
 }
+
+
+/* =========================================================
+   V2.3 — Smartphone headline fix
+   Desktop layout intentionally unchanged.
+   ========================================================= */
+@media (max-width: 650px) {
+  .hero {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .hero h1 {
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 2px;
+    font-size: clamp(38px, 10.4vw, 54px);
+    line-height: .96;
+    letter-spacing: -1.6px;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+
+  /* Keep the translated headline lines inside the viewport. */
+  .hero h1 [data-i18n="headline1"],
+  .hero h1 [data-i18n="headline2"] {
+    display: inline-block;
+    max-width: 100%;
+  }
+
+  .hero-copy {
+    width: min(100%, 560px);
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+/* Very narrow phones */
+@media (max-width: 390px) {
+  .hero h1 {
+    font-size: 9.8vw;
+    letter-spacing: -1px;
+  }
+}
