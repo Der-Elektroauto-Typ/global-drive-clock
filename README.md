@@ -1,4 +1,27 @@
-# Global Drive Clock V2.4
+# Global Drive Clock V2.5
+
+V2.5 ergänzt Social Sharing auf Basis der veröffentlichten V2.4.
+Datenmodell, Methodik, alle 10 Sprachen, lokale Uhr/Zeitzone, Facebook-Link und die Laptop-/Smartphone-Anpassungen sind unverändert. style.css, app.js und data.js wurden bytegenau übernommen; die Modellversionsangabe bleibt bewusst V2.4.
+
+## Dateien und Veröffentlichung
+
+Die sechs Dateien index.html, style.css, app.js, data.js, README.md und social-preview.jpg in das Stammverzeichnis des GitHub-Pages-Repositories hochladen und vorhandene Dateien ersetzen. Das ZIP selbst muss nicht hochgeladen werden.
+
+Zieladresse: https://der-elektroauto-typ.github.io/global-drive-clock/
+
+## Social Sharing
+
+- JPEG in 1200 × 630 Pixeln, passend zum dunklen Originaldesign.
+- Open Graph: Website, Titel, Beschreibung, Seiten-URL, absolute Bild-URL, Abmessungen, JPEG-Typ und Alternativtext.
+- Twitter/X: summary_large_image, Titel, Beschreibung, Bild und Alternativtext.
+- Canonical und Seitenbeschreibung im statischen HTML-Head, ohne JavaScript-Abhängigkeit.
+- CSS-/JavaScript-Cache-Busting: ?v=2.5.
+- Vorschaubild ohne Fahrzeugzahlen oder Behauptung einer Echtzeitmessung.
+
+Nach der Veröffentlichung müssen Seite und Bild öffentlich erreichbar sein. Sharing-Dienste können ältere Vorschauen zwischenspeichern; bei Facebook kann die URL im Sharing Debugger erneut abgerufen werden. Die tatsächliche Vorschau hängt auch von der jeweiligen App und dem Veröffentlichungsmodus ab.
+
+## Dokumentation des unveränderten V2.4-Modells
+
 
 V2.4 focuses on data integrity and laptop readability.
 
