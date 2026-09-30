@@ -69,6 +69,31 @@ window.DRIVECOUNT_DATA = {
     annualChange: 500000
   },
 
+  germany: {
+    label: "Deutschland",
+    dataDate: "2026-07-01",
+    referenceDate: "2026-07-01T00:00:00Z",
+    annualSeconds: 365 * 24 * 60 * 60,
+    trendReference: "previous",
+    sourceName: "KBA FZ 27 / rollierende 12-Monats-Änderung",
+    globalFleet: {
+      base: 49696710,
+      annualChange: 171102
+    },
+    categories: {
+      electric: { label: "Elektro (BEV)", definition: "BEV", base: 2365047, annualChange: 529469 },
+      hybrid: { label: "Hybrid insgesamt inkl. PHEV", definition: "HEV + PHEV", base: 4807029, annualChange: 837275 },
+      petrol: { label: "Benzin", definition: "Pkw mit Benzinantrieb", base: 29012909, annualChange: -670154 },
+      diesel: { label: "Diesel", definition: "Pkw mit Dieselantrieb", base: 13157334, annualChange: -508100 }
+    },
+    other: {
+      label: "Gas und Sonstige",
+      definition: "Gas + Sonstige, intern mitgezählt",
+      base: 354391,
+      annualChange: -17388
+    }
+  },
+
   sources: {
     iea: "https://www.iea.org/reports/global-ev-outlook-2026/trends-in-electric-cars",
     ieaH1: "https://www.iea.org/reports/electric-car-markets-in-a-time-of-uncertainty/executive-summary",

@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#05070a">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg?v=2.7">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=2.7">
-  <link rel="icon" type="image/png" sizes="192x192" href="favicon.png?v=2.7">
-  <link rel="shortcut icon" href="favicon.ico?v=2.7">
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=2.7">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg?v=2.8">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=2.8">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon.png?v=2.8">
+  <link rel="shortcut icon" href="favicon.ico?v=2.8">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=2.8">
   <meta name="description" content="Der weltweite Antriebswandel: modellierte Entwicklung des Pkw-Bestands für Elektro, Hybrid, Benzin und Diesel. Mit Datenquellen und Methodik.">
   <link rel="canonical" href="https://der-elektroauto-typ.github.io/global-drive-clock/">
   <meta property="og:type" content="website">
@@ -27,7 +27,7 @@
   <meta name="twitter:image" content="https://der-elektroauto-typ.github.io/global-drive-clock/social-preview.jpg?preview=homepage-session">
   <meta name="twitter:image:alt" content="Global Drive Clock mit vier Modellzählern und einer beispielhaften Live-Session-Ansicht.">
   <title>Global Drive Clock</title>
-  <link rel="stylesheet" href="style.css?v=2.7">
+  <link rel="stylesheet" href="style.css?v=2.8">
 </head>
 <body>
   <div class="language-switcher" id="languageSwitcher">
@@ -60,6 +60,10 @@
         Rund um die Uhr verändert sich der globale Fahrzeugbestand. Diese Uhr macht den Wandel sichtbar.
       </p>
       <div class="utc" id="utcClock" title="">--:--:--</div>
+      <div class="mode-switch" id="modeSwitch" role="group" aria-label="Anzeigebereich">
+        <button type="button" id="mode-global" data-mode="global" aria-pressed="true" data-i18n="modeGlobal">GLOBAL</button>
+        <button type="button" id="mode-germany" data-mode="germany" aria-pressed="false" data-i18n="modeGermany">DEUTSCHLAND</button>
+      </div>
     </section>
 
     <section class="cards" aria-label="Antriebsarten">
@@ -170,6 +174,13 @@
             <a href="https://www.acea.auto/publication/economic-and-market-report-global-and-eu-auto-industry-full-year-2025/" target="_blank" rel="noopener noreferrer">ACEA · Global market 2025</a>
             <a href="https://www.vda.de/de/themen/Automobil-Insight-2025/2025-Elektromobilitaet" target="_blank" rel="noopener noreferrer">VDA · Elektromobilität 2025</a>
           </div>
+          <h3 data-i18n="germanyModelHeading">Deutschland-Modell</h3>
+          <p data-i18n="germanyMethodText">Das Deutschland-Modell verwendet die quartalsweisen Pkw-Bestände des Kraftfahrt-Bundesamts (KBA), FZ 27. Referenz ist der 1. Juli 2026. Für die Zählgeschwindigkeit wird die beobachtete Bestandsänderung vom 1. Juli 2025 bis 1. Juli 2026 gleichmäßig über 365 Tage verteilt. Diese rollierende Jahresrate ist stabiler als die Hochrechnung eines einzelnen Quartals und aktueller als Januar-zu-Januar. „Hybrid insgesamt“ enthält Plug-in-Hybride. Gas und Sonstige sind im Restbestand enthalten, damit die Gesamtzahl aufgeht. Zwischen KBA-Stichtagen ist der laufende Zähler eine lineare Schätzung, keine Live-Registrierung.</p>
+          <p><strong>Stichtagswerte:</strong> Zum 1. Juli 2026 weist das KBA 49.696.710 Pkw aus: 2.365.047 reine Elektro-Pkw, 4.807.029 Hybride insgesamt, 29.012.909 Benziner und 13.157.334 Diesel. Die übrigen 354.391 Pkw (Gas und Sonstige) werden intern mitgerechnet. Für die Geschwindigkeit ergeben sich aus den Veränderungen zum 1. Juli 2025 etwa +0,0168 Elektro-, +0,0265 Hybrid-, −0,0213 Benzin- und −0,0161 Diesel-Pkw pro Sekunde. Die Nettozunahme des Gesamtbestands beträgt rund 171.102 Pkw im Jahr.</p>
+          <div class="source-links">
+            <a href="https://www.govdata.de/suche/daten/fz-27-2026-bestand-an-kraftfahrzeugen-und-kraftfahrzeuganhangern-nach-ausgewahlten-merkmalen-bu" target="_blank" rel="noopener noreferrer" data-i18n="kbaDataset">KBA · FZ 27 · Quartalsbestand 2026</a>
+            <a href="https://www.kba.de/DE/Statistik/Produktkatalog/produkte/Fahrzeuge/fz27_b_uebersicht.html" target="_blank" rel="noopener noreferrer" data-i18n="kbaOverview">KBA · Produktübersicht FZ 27</a>
+          </div>
         </div>
       </details>
     </section>
@@ -190,7 +201,7 @@
     <div class="copyright">© 2026 DER ELEKTROAUTO TYP · GLOBAL DRIVE CLOCK · ALL RIGHTS RESERVED</div>
   </main>
 
-  <script src="data.js?v=2.7"></script>
-  <script src="app.js?v=2.7"></script>
+  <script src="data.js?v=2.8"></script>
+  <script src="app.js?v=2.8"></script>
 </body>
 </html>
