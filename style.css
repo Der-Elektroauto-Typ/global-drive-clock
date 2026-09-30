@@ -922,6 +922,18 @@ html[lang="zh"] .brand-small {
 }
 
 @media (max-width: 650px) {
-  .mode-switch { margin-top: 19px; flex-wrap: wrap; justify-content: center; max-width: min(100%, 500px); }
+  .mode-switch {
+    margin-top: 19px;
+    display: grid;
+    grid-template-columns: repeat(6, max-content);
+    justify-content: center;
+    max-width: min(100%, 500px);
+    gap: 4px;
+  }
   .mode-switch button { min-width: 0; padding: 10px 14px; font-size: 10px; letter-spacing: 1px; }
+  .mode-switch button[data-mode="global"] { grid-column: 1 / span 3; }
+  .mode-switch button[data-mode="germany"] { grid-column: 4 / span 3; }
+  .mode-switch button[data-mode="eu"] { grid-column: 1 / span 2; }
+  .mode-switch button[data-mode="china"] { grid-column: 3 / span 2; }
+  .mode-switch button[data-mode="usa"] { grid-column: 5 / span 2; }
 }

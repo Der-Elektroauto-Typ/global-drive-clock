@@ -1,6 +1,6 @@
-# Global Drive Clock V2.9
+# Global Drive Clock V2.9.1
 
-V2.9 adds five selectable regions: Global, Germany, EU, China and USA. Each region has its own reference date, base counts and annualized change; changing regions does not reset the page-session timer. The footer shows V2.9 and the selected data date.
+V2.9.1 refines the mobile region switch layout while retaining the five selectable regions: Global, Germany, EU, China and USA. Each region has its own reference date, base counts and annualized change; changing regions does not reset the page-session timer. The footer shows V2.9.1 and the selected data date.
 
 ## Data and methodology
 
