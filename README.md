@@ -22,3 +22,7 @@ Kraftstoff und betriebliches CO₂ werden über die Besuchsdauer für die gesamt
 data.js: verwendete Parameter; model.js: Bilanz/Rundung; model-provenance.json: Herleitung; source-extracts.json: Auszüge; data-review-v3-1-3.json: erneute Bestandsprüfung und Intervallvergleich; source-link-audit.json: Quellenlinks; validation.json: Rechenprüfungen. Prüfungen bestätigen Implementierung und Quellenbezug, nicht die Richtigkeit aller Szenarien.
 
 Öffentliche Quelldaten behalten ihre eigenen Lizenzen. IEA-Auszüge: IEA Global EV Outlook 2026, CC BY 4.0. Quellenlinks stehen in der Methodik.
+
+## Neue Social-Vorschau
+
+1200 × 630 Pixel, JPEG. Große Markenüberschrift und Begleittexte, Elektro-Kachel sowie vergrößertes LIVE-MODELL mit passendem grünen Punkt. Statische globale Modellvorschau zum 1. Oktober 2026; das Bild selbst aktualisiert sich nicht. Vorschau-URL mit neuem Cache-Schlüssel innerhalb V3.1.3.
