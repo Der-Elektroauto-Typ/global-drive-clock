@@ -10,6 +10,10 @@
   --lime: #a9ff78;
   --green: #35e58f;
   --red: #ff5c6b;
+  --session-electric: #35e58f;
+  --session-hybrid: #ffd166;
+  --session-petrol: #ff6878;
+  --session-diesel: #df4656;
   --max: 1480px;
 }
 
@@ -251,15 +255,6 @@ body {
   font-variant-numeric: tabular-nums;
 }
 
-.impact-total {
-  display: grid;
-  margin-top: 9px;
-  color: #697580;
-  font-size: 10px;
-  line-height: 1.4;
-  font-variant-numeric: tabular-nums;
-}
-
 .method-impact-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -332,7 +327,7 @@ body {
 }
 
 .session h2 {
-  margin: 11px 0 40px;
+  margin: 11px 0 8px;
   font-size: clamp(24px, 3.4vw, 42px);
   letter-spacing: -1.1px;
 }
@@ -366,6 +361,11 @@ body {
   font-variant-numeric: tabular-nums;
 }
 
+.session-item.session-electric strong { color: var(--session-electric); }
+.session-item.session-hybrid strong { color: var(--session-hybrid); }
+.session-item.session-petrol strong { color: var(--session-petrol); }
+.session-item.session-diesel strong { color: var(--session-diesel); }
+
 .session-impact {
   max-width: 940px;
   margin: 8px auto 0;
@@ -390,18 +390,22 @@ body {
 }
 
 .session-impact-slot:last-child { border-right: 0; }
-.session-impact-item { display: flex; flex-direction: column; align-items: center; gap: 2px; }
-.session-impact-item strong.impact-amount { color: var(--text); font-family: "SFMono-Regular", Consolas, monospace; font-size: 17px; line-height: 1.25; white-space: nowrap; }
+.session-impact-item { display: flex; flex-direction: column; align-items: center; gap: 13px; }
+.session-metric-group { display: flex; flex-direction: column; align-items: center; gap: 2px; }
+.session-metric-co2 { width: 100%; padding-top: 10px; border-top: 1px solid rgba(255,255,255,.06); }
+.session-impact-item strong.impact-amount { color: var(--text); font-family: "SFMono-Regular", Consolas, monospace; font-size: 19px; line-height: 1.2; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.session-impact-item .impact-unit { color: currentColor; font-size: 10px; line-height: 1.25; }
 .session-impact-item .impact-status { color: var(--muted); font-size: 9px; line-height: 1.15; letter-spacing: .35px; }
-.session-impact-item .impact-co2 { margin-top: 5px; }
-.impact-electric .impact-amount { color: var(--cyan) !important; }
-.impact-hybrid .impact-amount { color: var(--green) !important; }
+.session-electric .session-impact-item .impact-amount { color: var(--session-electric); }
+.session-hybrid .session-impact-item .impact-amount { color: var(--session-hybrid); }
+.session-petrol .session-impact-item .impact-amount { color: var(--session-petrol); }
+.session-diesel .session-impact-item .impact-amount { color: var(--session-diesel); }
 
 .positive { color: var(--green); }
 .negative { color: var(--red); }
 
 .session-time {
-  margin-top: 34px;
+  margin: 0 auto 28px;
   color: #64707c;
   font-size: 12px;
 }
@@ -506,11 +510,16 @@ body {
   .number { margin-top: 34px; font-size: clamp(36px, 12vw, 58px); letter-spacing: -2px; }
   .session { padding: 46px 10px; }
   .session-grid { grid-template-columns: repeat(2, 1fr); }
-  .session-impact { grid-template-columns: repeat(2, 1fr); }
-  .session-impact-slot { padding: 8px 6px; }
+  .session h2 { margin-bottom: 6px; }
+  .session-time { margin-bottom: 26px; }
+  .session-impact { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 12px; }
+  .session-impact-slot { padding: 20px 6px 22px; }
   .session-impact-slot:nth-child(2) { border-right: 0; }
   .session-impact-slot:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
-  .session-impact-item strong.impact-amount { font-size: 14px; }
+  .session-impact-item { gap: 16px; }
+  .session-metric-co2 { padding-top: 14px; }
+  .session-impact-item strong.impact-amount { font-size: 17px; }
+  .session-impact-item .impact-unit { font-size: 10px; }
   .session-impact-item .impact-status { font-size: 8px; }
   .method-impact-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .method-impact-item:nth-child(2) { border-right: 0; }
@@ -640,7 +649,7 @@ body {
   }
 
   .session h2 {
-    margin: 7px 0 18px;
+    margin: 7px 0 8px;
     font-size: 24px;
   }
 
@@ -657,7 +666,7 @@ body {
   }
 
   .session-time {
-    margin-top: 15px;
+    margin: 0 auto 18px;
   }
 
   .method {
