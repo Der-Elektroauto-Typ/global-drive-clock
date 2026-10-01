@@ -26,7 +26,7 @@
       germanyBevLabel: 'REINE BATTERIEFAHRZEUGE',
       germanyHybridLabel: 'HYBRID INKL. PLUG-IN',
       germanyIceLabel: 'VERBRENNUNGSMOTOR',
-      germanyMethodText: 'Das Deutschland-Modell nutzt die quartalsweisen Pkw-Bestände des Kraftfahrt-Bundesamts (KBA), FZ 27. Referenz ist der 1. Juli 2026. Die Zählrate basiert auf der beobachteten Bestandsänderung vom 1. Januar bis 1. Juli 2026 und verteilt diese gleichmäßig auf 181 Tage. Das bildet die jüngste verfügbare Entwicklung zeitnäher ab als ein 12-Monats-Vergleich, kann aber stärker auf einzelne Quartale reagieren; die 12-Monatsrate dient als Plausibilitätsvergleich. „Hybrid insgesamt“ enthält Plug-in-Hybride. Gas und Sonstige sind im Restbestand enthalten, damit die Gesamtzahl aufgeht. Der laufende Zähler ist eine lineare Schätzung, keine Live-Registrierung.',
+      germanyMethodText: "Deutschland: KBA-Pkw-Bestände FZ 27 vom 1. Juli 2025 und 1. Juli 2026. Die Differenz wird gleichmäßig über 365 Tage verteilt. Der Zwölfmonatsvergleich glättet kurzfristige Einflüsse, reagiert aber langsamer auf neue Trends; er ist nicht nachweislich genauer für jeden aktuellen Zeitpunkt. Hybrid insgesamt enthält PHEV bereits. Referenzbestand 1. Juli 2026, danach lineare Modellfortschreibung.",
       kbaDataset: 'KBA · FZ 27 · Quartalsbestand 2026',
       kbaOverview: 'KBA · Produktübersicht FZ 27',
       heroCopy: "Rund um die Uhr verändert sich der globale Fahrzeugbestand. Diese Uhr macht den Wandel sichtbar.",
@@ -44,7 +44,7 @@
       impactSinceData: 'Seit Datenstand', millionLitres: 'Millionen Liter', thousandLitres: 'Tausend Liter', tonnesCO2: 'Tonnen CO₂', kilogramsCO2: 'Kilogramm CO₂', litres: 'Liter',
       impactParameterNote: 'Die BEV-Spalten zeigen km/Jahr, Vergleichsverbrauch in L/100 km und BEV-Verbrauch in kWh/100 km. Die Stromfaktoren stammen aus den jeweils neuesten hier verwendeten Veröffentlichungsjahren (Global/EU/China 2025, Deutschland 2025 (vorläufig); USA 2023) und sind Jahresmittel der Erzeugung, keine marginalen Ladefaktoren. Kraftstofffaktoren: Benzin 2,31 kg CO₂/L, Diesel 2,68 kg CO₂/L. Verbrauch und Fahrleistung sind gerundete Modell-Baselines, keine Messung jedes zugelassenen Fahrzeugs; die Sicherheit unterscheidet sich je Region.', impactRegion: 'Region', impactBevCol: 'BEV: km/Jahr · ICE L/100 km · BEV kWh/100 km', impactGridCol: 'Strommix g CO₂/kWh', impactParamsTitle: 'Verwendete Modellparameter je Region: Jahresfahrleistung und Verbrauch',
       impactTableUnitNote: 'Benzin-, Diesel- und Hybridzellen: km/Jahr · L/100 km. BEV-Zelle: km/Jahr · Vergleichs-ICE L/100 km · BEV kWh/100 km.',
-      impactElectric: 'BEV*', impactHybrid: 'Hybrid', impactPetrol: 'Benzin', impactDiesel: 'Diesel', impactAvoided: 'vermieden*', impactProduced: '*erzeugt', fuelSaved: '*gespart', fuelBurned: '*verbrannt',
+      impactElectric: 'BEV', impactHybrid: 'Hybrid', impactPetrol: 'Benzin', impactDiesel: 'Diesel', impactAvoided: 'vermieden', impactProduced: 'erzeugt', fuelSaved: 'gespart', fuelBurned: 'verbrannt',
       bevLabel: "REINE BATTERIEFAHRZEUGE",
       hybridLabel: "HEV + PLUG-IN-HYBRID",
       iceLabel: "VERBRENNUNGSMOTOR",
@@ -59,6 +59,7 @@
       dataAsOf: "Stand",
       dataIdeaBy: "EINE DATENIDEE VON",
       brandCopy: "Elektromobilität. Fakten. Alltag.",
+      sessionModelNote: "Modellschätzung – Berechnung und Grenzen",
       feedback: "Fragen, Ideen oder Feedback?",
       facebook: "AUF FACEBOOK FOLGEN →",
       privateDisclosure: 'Privates, nicht kommerzielles Hobbyprojekt. Keine Werbung, keine Einnahmen.', privateFacebook: 'Kontakt über Facebook (privater Kanal, keine Einnahmen)', lawDdg: '§ 5 DDG',
@@ -81,7 +82,7 @@
       germanyBevLabel: 'BATTERY ELECTRIC VEHICLES',
       germanyHybridLabel: 'HYBRID INCLUDING PLUG-IN',
       germanyIceLabel: 'COMBUSTION ENGINE',
-      germanyMethodText: 'Germany mode uses the quarterly passenger-car stock in the Federal Motor Transport Authority (KBA) FZ 27 data. The reference is 1 July 2026. The counter rate uses the observed stock change from 1 January to 1 July 2026, spread evenly over 181 days. This reflects the latest available trend more closely than a 12-month comparison, but can react more to individual quarters; the 12-month rate remains a plausibility check. “Hybrid total” includes plug-in hybrids. Gas and other vehicles are included in the residual so totals reconcile. The running counter is a linear estimate, not a live registration feed.',
+      germanyMethodText: "Germany: KBA FZ 27 passenger-car stocks on 1 July 2025 and 1 July 2026. Differences are spread over 365 days. Twelve months smooth short-term effects but respond more slowly to new trends; this is not proven more accurate at every current time. Hybrid total already includes PHEV. The July 2026 reference stock is then linearly extrapolated.",
       kbaDataset: 'KBA · FZ 27 · quarterly fleet 2026',
       kbaOverview: 'KBA · FZ 27 data overview',
       heroCopy: "The global vehicle fleet changes around the clock. This clock makes the transition visible.",
@@ -99,7 +100,7 @@
       impactSinceData: 'Since data date', millionLitres: 'million litres', thousandLitres: 'thousand litres', tonnesCO2: 'tonnes CO₂', kilogramsCO2: 'kilograms CO₂', litres: 'litres',
       impactParameterNote: 'The BEV columns show km/year, comparator fuel use in L/100 km and BEV use in kWh/100 km. Grid factors use the latest publication years used here (global/EU/China 2025, Germany 2025 (provisional); U.S. 2023) and are annual-average generation factors, not marginal charging factors. Fuel factors: petrol 2.31 kg CO₂/L, diesel 2.68 kg CO₂/L. Fuel-use and mileage values are rounded model baselines, not measurements of every registered vehicle; confidence varies by region.', impactRegion: 'Region', impactBevCol: 'BEV: km/year · ICE L/100 km · BEV kWh/100 km', impactGridCol: 'Grid g CO₂/kWh', impactParamsTitle: 'Model inputs by region: annual distance and consumption',
       impactTableUnitNote: 'Petrol, diesel and hybrid cells: km/year · L/100 km. BEV cell: km/year · comparator ICE L/100 km · BEV kWh/100 km.',
-      impactElectric: 'BEV*', impactHybrid: 'Hybrid', impactPetrol: 'Petrol', impactDiesel: 'Diesel', impactAvoided: 'avoided*', impactProduced: '*emitted', fuelSaved: '*saved', fuelBurned: '*burned',
+      impactElectric: 'BEV', impactHybrid: 'Hybrid', impactPetrol: 'Petrol', impactDiesel: 'Diesel', impactAvoided: 'avoided', impactProduced: 'emitted', fuelSaved: 'saved', fuelBurned: 'burned',
       bevLabel: "BATTERY ELECTRIC VEHICLES",
       hybridLabel: "HEV + PLUG-IN HYBRID",
       iceLabel: "COMBUSTION ENGINE",
@@ -114,6 +115,7 @@
       dataAsOf: "As of",
       dataIdeaBy: "A DATA IDEA BY",
       brandCopy: "Electric mobility. Facts. Everyday life.",
+      sessionModelNote: "Model estimate – calculation and limits",
       feedback: "Questions, ideas or feedback?",
       facebook: "FOLLOW ON FACEBOOK →",
       privateDisclosure: 'Private, non-commercial hobby project. No advertising or income.', privateFacebook: 'Contact via Facebook (private channel, no income)', lawDdg: '§ 5 DDG',
@@ -135,7 +137,7 @@
       germanyBevLabel: 'VÉHICULES 100 % ÉLECTRIQUES',
       germanyHybridLabel: 'HYBRIDE, RECHARGEABLE INCLUSE',
       germanyIceLabel: 'MOTEUR THERMIQUE',
-      germanyMethodText: 'Le mode Allemagne utilise les stocks trimestriels de voitures particulières du jeu FZ 27 de l’Office fédéral allemand des véhicules (KBA). La référence est le 1er juillet 2026. Le rythme du compteur repose sur la variation observée du 1er janvier au 1er juillet 2026, répartie uniformément sur 181 jours. Cette période reflète plus rapidement la tendance disponible qu’une comparaison sur 12 mois, mais peut réagir davantage aux variations trimestrielles ; le taux sur 12 mois sert de contrôle de cohérence. « Hybride total » inclut les hybrides rechargeables. Le gaz et les autres véhicules sont inclus dans le reste pour équilibrer le total. Le compteur est une estimation linéaire, pas un flux d’immatriculations en direct.',
+      germanyMethodText: "Allemagne : stocks KBA FZ 27 au 1er juillet 2025 et 2026, différence répartie sur 365 jours. Douze mois lissent les effets à court terme mais réagissent plus lentement aux nouvelles tendances. Le total hybride inclut déjà les PHEV. Extrapolation linéaire après juillet 2026.",
       kbaDataset: 'KBA · FZ 27 · parc trimestriel 2026',
       kbaOverview: 'KBA · aperçu FZ 27',
       heroCopy: "Le parc automobile mondial évolue en permanence. Cette horloge rend cette transition visible.",
@@ -153,7 +155,7 @@
       impactSinceData: 'Depuis la date des données', millionLitres: 'millions de litres', thousandLitres: 'milliers de litres', tonnesCO2: 'tonnes de CO₂', kilogramsCO2: 'kilogrammes de CO₂', litres: 'litres',
       impactParameterNote: 'Les colonnes BEV indiquent km/an, consommation du véhicule thermique de comparaison en L/100 km et consommation BEV en kWh/100 km. Les facteurs électriques utilisent les dernières années publiées retenues ici (monde/UE/Chine 2025 ; Allemagne 2025 (provisoire) ; États-Unis 2023) et représentent des moyennes annuelles de production, pas des facteurs marginaux de recharge. Facteurs carburant : essence 2,31 kg CO₂/L, diesel 2,68 kg CO₂/L. Les valeurs sont des bases modélisées arrondies, pas des mesures de chaque véhicule ; la fiabilité varie selon la région.', impactRegion: 'Région', impactBevCol: 'BEV : km/an · thermique L/100 km · BEV kWh/100 km', impactGridCol: 'Réseau g CO₂/kWh', impactParamsTitle: 'Paramètres du modèle par région : distance annuelle et consommation',
       impactTableUnitNote: 'Cellules essence, diesel et hybride : km/an · L/100 km. Cellule BEV : km/an · thermique comparable L/100 km · BEV kWh/100 km.',
-      impactElectric: 'BEV*', impactHybrid: 'Hybride', impactPetrol: 'Essence', impactDiesel: 'Diesel', impactAvoided: 'évités*', impactProduced: '*émis', fuelSaved: '*économisés', fuelBurned: '*consommés',
+      impactElectric: 'BEV', impactHybrid: 'Hybride', impactPetrol: 'Essence', impactDiesel: 'Diesel', impactAvoided: 'évités', impactProduced: 'émis', fuelSaved: 'économisés', fuelBurned: 'consommés',
       bevLabel: "VÉHICULES 100 % ÉLECTRIQUES",
       hybridLabel: "HEV + HYBRIDE RECHARGEABLE",
       iceLabel: "MOTEUR THERMIQUE",
@@ -168,6 +170,7 @@
       dataAsOf: "Données au",
       dataIdeaBy: "UNE IDÉE DE DONNÉES PAR",
       brandCopy: "Mobilité électrique. Faits. Quotidien.",
+      sessionModelNote: "Estimation – calcul et limites",
       feedback: "Questions, idées ou avis ?",
       facebook: "SUIVRE SUR FACEBOOK →",
       privateDisclosure: 'Projet de loisir privé et non commercial. Sans publicité ni revenus.', privateFacebook: 'Contacter via Facebook (canal privé, sans revenus)', lawDdg: '§ 5 DDG',
@@ -189,7 +192,7 @@
       germanyBevLabel: 'VEHÍCULOS ELÉCTRICOS DE BATERÍA',
       germanyHybridLabel: 'HÍBRIDO INCL. ENCHUFABLE',
       germanyIceLabel: 'MOTOR DE COMBUSTIÓN',
-      germanyMethodText: 'El modo Alemania utiliza el parque trimestral de turismos de la estadística FZ 27 del organismo federal alemán de vehículos (KBA). La referencia es el 1 de julio de 2026. La velocidad del contador se basa en el cambio observado entre el 1 de enero y el 1 de julio de 2026, repartido uniformemente en 181 días. Así refleja antes la tendencia disponible que una comparación de 12 meses, aunque puede reaccionar más a variaciones trimestrales; la tasa de 12 meses sirve como control de plausibilidad. «Híbrido total» incluye los híbridos enchufables. El gas y otros vehículos se incluyen en el resto para cuadrar el total. El contador es una estimación lineal, no un registro en directo.',
+      germanyMethodText: "Alemania: parque KBA FZ 27 al 1 de julio de 2025 y 2026; diferencia repartida en 365 días. Doce meses suavizan efectos breves pero reaccionan más despacio a nuevas tendencias. Híbridos incluye PHEV. Extrapolación lineal tras julio de 2026.",
       kbaDataset: 'KBA · FZ 27 · parque trimestral 2026',
       kbaOverview: 'KBA · información de FZ 27',
       heroCopy: "El parque mundial de vehículos cambia a todas horas. Este reloj hace visible esa transición.",
@@ -207,7 +210,7 @@
       impactSinceData: 'Desde la fecha de datos', millionLitres: 'millones de litros', thousandLitres: 'miles de litros', tonnesCO2: 'toneladas de CO₂', kilogramsCO2: 'kilogramos de CO₂', litres: 'litros',
       impactParameterNote: 'Las columnas BEV muestran km/año, consumo del vehículo térmico comparador en L/100 km y consumo BEV en kWh/100 km. Los factores eléctricos usan los últimos años publicados empleados aquí (global/UE/China 2025; Alemania 2025 (provisional); EE. UU. 2023) y son promedios anuales de generación, no factores marginales de recarga. Factores de combustible: gasolina 2,31 kg CO₂/L, diésel 2,68 kg CO₂/L. Son valores base redondeados del modelo, no mediciones de cada vehículo; la confianza varía por región.', impactRegion: 'Región', impactBevCol: 'BEV: km/año · combustión L/100 km · BEV kWh/100 km', impactGridCol: 'Red g CO₂/kWh', impactParamsTitle: 'Parámetros del modelo por región: distancia anual y consumo',
       impactTableUnitNote: 'Celdas gasolina, diésel e híbrido: km/año · L/100 km. Celda BEV: km/año · combustión comparable L/100 km · BEV kWh/100 km.',
-      impactElectric: 'BEV*', impactHybrid: 'Híbrido', impactPetrol: 'Gasolina', impactDiesel: 'Diésel', impactAvoided: 'evitado*', impactProduced: '*emitido', fuelSaved: '*ahorrados', fuelBurned: '*consumidos',
+      impactElectric: 'BEV', impactHybrid: 'Híbrido', impactPetrol: 'Gasolina', impactDiesel: 'Diésel', impactAvoided: 'evitado', impactProduced: 'emitido', fuelSaved: 'ahorrados', fuelBurned: 'consumidos',
       bevLabel: "VEHÍCULOS ELÉCTRICOS DE BATERÍA",
       hybridLabel: "HEV + HÍBRIDO ENCHUFABLE",
       iceLabel: "MOTOR DE COMBUSTIÓN",
@@ -222,6 +225,7 @@
       dataAsOf: "Datos a",
       dataIdeaBy: "UNA IDEA DE DATOS DE",
       brandCopy: "Movilidad eléctrica. Datos. Vida diaria.",
+      sessionModelNote: "Estimación – cálculo y límites",
       feedback: "¿Preguntas, ideas o comentarios?",
       facebook: "SEGUIR EN FACEBOOK →",
       privateDisclosure: 'Proyecto personal y no comercial. Sin publicidad ni ingresos.', privateFacebook: 'Contacto por Facebook (canal privado, sin ingresos)', lawDdg: '§ 5 DDG',
@@ -243,7 +247,7 @@
       germanyBevLabel: 'VEICOLI ELETTRICI A BATTERIA',
       germanyHybridLabel: 'IBRIDO, INCLUSO PLUG-IN',
       germanyIceLabel: 'MOTORE A COMBUSTIONE',
-      germanyMethodText: 'La modalità Germania usa i dati trimestrali del parco auto FZ 27 dell’Ufficio federale tedesco per i veicoli (KBA). Il riferimento è il 1º luglio 2026. La velocità del contatore usa la variazione osservata dal 1º gennaio al 1º luglio 2026, distribuita uniformemente su 181 giorni. Riflette prima l’andamento disponibile rispetto a un confronto di 12 mesi, ma può reagire di più alle variazioni trimestrali; il tasso a 12 mesi resta un controllo di plausibilità. “Ibrido totale” include i plug-in. Gas e altre categorie sono inclusi nel residuo affinché i totali coincidano. Il contatore è una stima lineare, non un flusso di immatricolazioni in diretta.',
+      germanyMethodText: "Germania: parco KBA FZ 27 al 1 luglio 2025 e 2026; differenza distribuita su 365 giorni. Dodici mesi attenuano effetti brevi ma reagiscono più lentamente ai nuovi trend. Ibridi include PHEV. Estrapolazione lineare dopo luglio 2026.",
       kbaDataset: 'KBA · FZ 27 · parco trimestrale 2026',
       kbaOverview: 'KBA · panoramica FZ 27',
       heroCopy: "Il parco auto mondiale cambia continuamente. Questo orologio rende visibile la transizione.",
@@ -261,7 +265,7 @@
       impactSinceData: 'Dalla data dei dati', millionLitres: 'milioni di litri', thousandLitres: 'migliaia di litri', tonnesCO2: 'tonnellate di CO₂', kilogramsCO2: 'chilogrammi di CO₂', litres: 'litri',
       impactParameterNote: 'Le colonne BEV indicano km/anno, consumo del veicolo termico di confronto in L/100 km e consumo BEV in kWh/100 km. I fattori elettrici usano gli ultimi anni pubblicati qui (globale/UE/Cina 2025; Germania 2025 (provvisorio); USA 2023) e sono medie annue della generazione, non fattori marginali di ricarica. Fattori carburante: benzina 2,31 kg CO₂/L, diesel 2,68 kg CO₂/L. I valori sono basi modellate arrotondate, non misure di ogni veicolo; l’affidabilità varia per regione.', impactRegion: 'Regione', impactBevCol: 'BEV: km/anno · termica L/100 km · BEV kWh/100 km', impactGridCol: 'Rete g CO₂/kWh', impactParamsTitle: 'Parametri del modello per regione: distanza annua e consumo',
       impactTableUnitNote: 'Celle benzina, diesel e ibrido: km/anno · L/100 km. Cella BEV: km/anno · termica comparabile L/100 km · BEV kWh/100 km.',
-      impactElectric: 'BEV*', impactHybrid: 'Ibrido', impactPetrol: 'Benzina', impactDiesel: 'Diesel', impactAvoided: 'evitato*', impactProduced: '*emesso', fuelSaved: '*risparmiati', fuelBurned: '*consumati',
+      impactElectric: 'BEV', impactHybrid: 'Ibrido', impactPetrol: 'Benzina', impactDiesel: 'Diesel', impactAvoided: 'evitato', impactProduced: 'emesso', fuelSaved: 'risparmiati', fuelBurned: 'consumati',
       bevLabel: "VEICOLI ELETTRICI A BATTERIA",
       hybridLabel: "HEV + IBRIDO PLUG-IN",
       iceLabel: "MOTORE A COMBUSTIONE",
@@ -276,6 +280,7 @@
       dataAsOf: "Aggiornato a",
       dataIdeaBy: "UN’IDEA BASATA SUI DATI DI",
       brandCopy: "Mobilità elettrica. Fatti. Vita quotidiana.",
+      sessionModelNote: "Stima – calcolo e limiti",
       feedback: "Domande, idee o commenti?",
       facebook: "SEGUI SU FACEBOOK →",
       privateDisclosure: 'Progetto privato e non commerciale per hobby. Nessuna pubblicità o entrata.', privateFacebook: 'Contatto via Facebook (canale privato, senza entrate)', lawDdg: '§ 5 DDG',
@@ -297,7 +302,7 @@
       germanyBevLabel: 'SAMOCHODY ELEKTRYCZNE BEV',
       germanyHybridLabel: 'HYBRYDY, W TYM PLUG-IN',
       germanyIceLabel: 'SILNIK SPALINOWY',
-      germanyMethodText: 'Tryb Niemcy wykorzystuje kwartalne dane o parku samochodów osobowych KBA FZ 27. Punktem odniesienia jest 1 lipca 2026 r. Szybkość licznika wykorzystuje zaobserwowaną zmianę stanu od 1 stycznia do 1 lipca 2026 r., równomiernie rozłożoną na 181 dni. Dzięki temu szybciej odzwierciedla najnowszy dostępny trend niż porównanie 12-miesięczne, ale może mocniej reagować na zmiany kwartalne; wskaźnik 12-miesięczny pozostaje kontrolą wiarygodności. „Hybrydy ogółem” obejmują hybrydy plug-in. Gaz i pozostałe pojazdy są uwzględnione w reszcie, aby sumy się zgadzały. Licznik jest estymacją liniową, a nie bieżącym odczytem rejestracji.',
+      germanyMethodText: "Niemcy: dane KBA FZ 27 z 1 lipca 2025 i 2026; różnica rozłożona na 365 dni. Dwanaście miesięcy wygładza krótkie wahania, lecz wolniej reaguje na nowe trendy. Hybrydy obejmują PHEV. Liniowa ekstrapolacja po lipcu 2026.",
       kbaDataset: 'KBA · FZ 27 · dane kwartalne 2026',
       kbaOverview: 'KBA · opis FZ 27',
       heroCopy: "Światowa flota samochodów zmienia się przez całą dobę. Ten zegar pokazuje tę zmianę na żywo.",
@@ -315,7 +320,7 @@
       impactSinceData: 'Od daty danych', millionLitres: 'miliony litrów', thousandLitres: 'tysiące litrów', tonnesCO2: 'tony CO₂', kilogramsCO2: 'kilogramy CO₂', litres: 'litry',
       impactParameterNote: 'Kolumny BEV pokazują km/rok, zużycie porównywalnego auta spalinowego w L/100 km i zużycie BEV w kWh/100 km. Współczynniki sieci pochodzą z najnowszych użytych publikacji (świat/UE/Chiny 2025; Niemcy 2025 (wstępne); USA 2023) i są rocznymi średnimi emisji wytwarzania, nie krańcowymi wskaźnikami ładowania. Współczynniki paliw: benzyna 2,31 kg CO₂/L, diesel 2,68 kg CO₂/L. Wartości są zaokrąglonymi założeniami modelu, nie pomiarami każdego pojazdu; pewność zależy od regionu.', impactRegion: 'Region', impactBevCol: 'BEV: km/rok · spalinowy L/100 km · BEV kWh/100 km', impactGridCol: 'Sieć g CO₂/kWh', impactParamsTitle: 'Parametry modelu według regionu: roczny dystans i zużycie',
       impactTableUnitNote: 'Komórki benzyna, diesel, hybryda: km/rok · L/100 km. Komórka BEV: km/rok · porównywalne ICE L/100 km · BEV kWh/100 km.',
-      impactElectric: 'BEV*', impactHybrid: 'Hybryda', impactPetrol: 'Benzyna', impactDiesel: 'Diesel', impactAvoided: 'uniknięte*', impactProduced: '*wyemitowano', fuelSaved: '*zaoszczędzono', fuelBurned: '*spalono',
+      impactElectric: 'BEV', impactHybrid: 'Hybryda', impactPetrol: 'Benzyna', impactDiesel: 'Diesel', impactAvoided: 'uniknięte', impactProduced: 'wyemitowano', fuelSaved: 'zaoszczędzono', fuelBurned: 'spalono',
       bevLabel: "SAMOCHODY ELEKTRYCZNE BEV",
       hybridLabel: "HEV + HYBRYDA PLUG-IN",
       iceLabel: "SILNIK SPALINOWY",
@@ -330,6 +335,7 @@
       dataAsOf: "Stan na",
       dataIdeaBy: "POMYSŁ DANYCH OD",
       brandCopy: "Elektromobilność. Fakty. Codzienność.",
+      sessionModelNote: "Model – obliczenia i ograniczenia",
       feedback: "Pytania, pomysły lub uwagi?",
       facebook: "OBSERWUJ NA FACEBOOKU →",
       privateDisclosure: 'Prywatny, niekomercyjny projekt hobbystyczny. Bez reklam i dochodów.', privateFacebook: 'Kontakt przez Facebooka (kanał prywatny, bez dochodów)', lawDdg: '§ 5 DDG',
@@ -351,7 +357,7 @@
       germanyBevLabel: 'BATTERIJ-ELEKTRISCHE VOERTUIGEN',
       germanyHybridLabel: 'HYBRIDE, INCLUSIEF PLUG-IN',
       germanyIceLabel: 'VERBRANDINGSMOTOR',
-      germanyMethodText: 'De Duitsland-modus gebruikt de kwartaalstanden van personenauto’s uit de KBA-statistiek FZ 27. De referentie is 1 juli 2026. De tellersnelheid gebruikt de waargenomen verandering van 1 januari tot 1 juli 2026, gelijkmatig verdeeld over 181 dagen. Dit weerspiegelt de nieuwste trend sneller dan een vergelijking over 12 maanden, maar kan sterker reageren op kwartaalbewegingen; de 12-maandskoers blijft een plausibiliteitscontrole. “Hybride totaal” omvat plug-inhybrides. Gas en overige voertuigen tellen mee in het restant zodat de totalen kloppen. De teller is een lineaire schatting, geen live registratiefeed.',
+      germanyMethodText: "Duitsland: KBA FZ 27 op 1 juli 2025 en 2026; verschil verdeeld over 365 dagen. Twaalf maanden dempen korte schommelingen maar reageren trager op nieuwe trends. Hybride omvat PHEV. Lineaire extrapolatie na juli 2026.",
       kbaDataset: 'KBA · FZ 27 · kwartaalbestand 2026',
       kbaOverview: 'KBA · overzicht FZ 27',
       heroCopy: "Het wereldwijde wagenpark verandert voortdurend. Deze klok maakt die transitie zichtbaar.",
@@ -369,7 +375,7 @@
       impactSinceData: 'Sinds de peildatum', millionLitres: 'miljoen liter', thousandLitres: 'duizend liter', tonnesCO2: 'ton CO₂', kilogramsCO2: 'kilogram CO₂', litres: 'liter',
       impactParameterNote: 'De BEV-kolommen tonen km/jaar, brandstofverbruik van de vergelijkingsauto in L/100 km en BEV-verbruik in kWh/100 km. Netfactoren gebruiken de meest recente hier gebruikte publicatiejaren (wereld/EU/China 2025; Duitsland 2025 (voorlopig); VS 2023) en zijn jaarlijkse gemiddelde opwekfactoren, geen marginale laadfactoren. Brandstoffactoren: benzine 2,31 kg CO₂/L, diesel 2,68 kg CO₂/L. Het zijn afgeronde modelbaselines, geen metingen van elk geregistreerd voertuig; de betrouwbaarheid verschilt per regio.', impactRegion: 'Regio', impactBevCol: 'BEV: km/jaar · brandstof L/100 km · BEV kWh/100 km', impactGridCol: 'Net g CO₂/kWh', impactParamsTitle: 'Modelparameters per regio: jaarlijkse afstand en verbruik',
       impactTableUnitNote: 'Benzine-, diesel- en hybridecellen: km/jaar · L/100 km. BEV-cel: km/jaar · vergelijkbare ICE L/100 km · BEV kWh/100 km.',
-      impactElectric: 'BEV*', impactHybrid: 'Hybride', impactPetrol: 'Benzine', impactDiesel: 'Diesel', impactAvoided: 'vermeden*', impactProduced: '*uitgestoten', fuelSaved: '*bespaard', fuelBurned: '*verbrand',
+      impactElectric: 'BEV', impactHybrid: 'Hybride', impactPetrol: 'Benzine', impactDiesel: 'Diesel', impactAvoided: 'vermeden', impactProduced: 'uitgestoten', fuelSaved: 'bespaard', fuelBurned: 'verbrand',
       bevLabel: "BATTERIJ-ELEKTRISCHE VOERTUIGEN",
       hybridLabel: "HEV + PLUG-IN HYBRIDE",
       iceLabel: "VERBRANDINGSMOTOR",
@@ -384,6 +390,7 @@
       dataAsOf: "Stand",
       dataIdeaBy: "EEN DATA-IDEE VAN",
       brandCopy: "Elektrische mobiliteit. Feiten. Dagelijks leven.",
+      sessionModelNote: "Modelschatting – berekening en grenzen",
       feedback: "Vragen, ideeën of feedback?",
       facebook: "VOLG OP FACEBOOK →",
       privateDisclosure: 'Privé, niet-commercieel hobbyproject. Geen advertenties of inkomsten.', privateFacebook: 'Contact via Facebook (privékanaal, geen inkomsten)', lawDdg: '§ 5 DDG',
@@ -405,7 +412,7 @@
       germanyBevLabel: 'VEÍCULOS ELÉTRICOS A BATERIA',
       germanyHybridLabel: 'HÍBRIDOS, INCLUINDO PLUG-IN',
       germanyIceLabel: 'MOTOR DE COMBUSTÃO',
-      germanyMethodText: 'O modo Alemanha utiliza os dados trimestrais do parque automóvel do KBA FZ 27. A referência é 1 de julho de 2026. A velocidade do contador usa a alteração observada entre 1 de janeiro e 1 de julho de 2026, distribuída uniformemente por 181 dias. Isto reflete mais rapidamente a tendência disponível do que uma comparação de 12 meses, mas pode reagir mais às variações trimestrais; a taxa de 12 meses continua a servir de controlo de plausibilidade. “Híbridos no total” inclui híbridos plug-in. Gás e outras categorias entram no remanescente para fechar os totais. O contador é uma estimativa linear, não um registo de matrículas em direto.',
+      germanyMethodText: "Alemanha: KBA FZ 27 em 1 de julho de 2025 e 2026; diferença distribuída por 365 dias. Doze meses suavizam variações breves mas reagem mais lentamente a novas tendências. Híbridos inclui PHEV. Extrapolação linear após julho de 2026.",
       kbaDataset: 'KBA · FZ 27 · parque trimestral 2026',
       kbaOverview: 'KBA · visão geral FZ 27',
       heroCopy: "A frota automóvel mundial muda continuamente. Este relógio torna essa transição visível.",
@@ -423,7 +430,7 @@
       impactSinceData: 'Desde a data dos dados', millionLitres: 'milhões de litros', thousandLitres: 'mil litros', tonnesCO2: 'toneladas de CO₂', kilogramsCO2: 'quilogramas de CO₂', litres: 'litros',
       impactParameterNote: 'As colunas BEV mostram km/ano, consumo do veículo de combustão comparável em L/100 km e consumo BEV em kWh/100 km. Os fatores elétricos usam os anos mais recentes aqui considerados (global/UE/China 2025; Alemanha 2025 (provisório); EUA 2023) e são médias anuais de geração, não fatores marginais de carregamento. Fatores de combustível: gasolina 2,31 kg CO₂/L, diesel 2,68 kg CO₂/L. São valores-base arredondados do modelo, não medições de cada veículo; a confiança varia por região.', impactRegion: 'Região', impactBevCol: 'BEV: km/ano · combustão L/100 km · BEV kWh/100 km', impactGridCol: 'Rede g CO₂/kWh', impactParamsTitle: 'Parâmetros do modelo por região: distância anual e consumo',
       impactTableUnitNote: 'Células gasolina, diesel e híbrido: km/ano · L/100 km. Célula BEV: km/ano · combustão comparável L/100 km · BEV kWh/100 km.',
-      impactElectric: 'BEV*', impactHybrid: 'Híbrido', impactPetrol: 'Gasolina', impactDiesel: 'Diesel', impactAvoided: 'evitado*', impactProduced: '*emitido', fuelSaved: '*poupados', fuelBurned: '*queimados',
+      impactElectric: 'BEV', impactHybrid: 'Híbrido', impactPetrol: 'Gasolina', impactDiesel: 'Diesel', impactAvoided: 'evitado', impactProduced: 'emitido', fuelSaved: 'poupados', fuelBurned: 'queimados',
       bevLabel: "VEÍCULOS ELÉTRICOS A BATERIA",
       hybridLabel: "HEV + HÍBRIDO PLUG-IN",
       iceLabel: "MOTOR DE COMBUSTÃO",
@@ -438,6 +445,7 @@
       dataAsOf: "Dados de",
       dataIdeaBy: "UMA IDEIA DE DADOS DE",
       brandCopy: "Mobilidade elétrica. Factos. Dia a dia.",
+      sessionModelNote: "Estimativa – cálculo e limites",
       feedback: "Perguntas, ideias ou comentários?",
       facebook: "SEGUIR NO FACEBOOK →",
       privateDisclosure: 'Projeto pessoal e não comercial. Sem publicidade nem receitas.', privateFacebook: 'Contacto pelo Facebook (canal privado, sem receitas)', lawDdg: '§ 5 DDG',
@@ -459,7 +467,7 @@
       germanyBevLabel: 'BATTERIELEKTRISKE BILER',
       germanyHybridLabel: 'HYBRID, INKL. PLUG-IN',
       germanyIceLabel: 'FORBRENNINGSMOTOR',
-      germanyMethodText: 'Tysklandsmodusen bruker de kvartalsvise personbiltallene i KBA-statistikken FZ 27. Referansen er 1. juli 2026. Tellerraten bruker den observerte endringen fra 1. januar til 1. juli 2026, jevnt fordelt over 181 dager. Dette fanger opp den nyeste tilgjengelige trenden raskere enn en 12-måneders sammenligning, men kan reagere mer på kvartalsvariasjoner; 12-månedersraten brukes som en rimelighetskontroll. «Hybrid totalt» inkluderer ladbare hybrider. Gass og øvrige kjøretøy inngår i restkategorien slik at totalene stemmer. Telleren er et lineært estimat, ikke en direktestrøm av registreringer.',
+      germanyMethodText: "Tyskland: KBA FZ 27 per 1. juli 2025 og 2026; forskjellen fordeles over 365 dager. Tolv måneder jevner ut korte svingninger, men reagerer langsommere på nye trender. Hybrid inkluderer PHEV. Lineær ekstrapolering etter juli 2026.",
       kbaDataset: 'KBA · FZ 27 · kvartalstall 2026',
       kbaOverview: 'KBA · FZ 27-oversikt',
       heroCopy: "Den globale bilparken endrer seg hele døgnet. Denne klokken gjør overgangen synlig.",
@@ -477,7 +485,7 @@
       impactSinceData: 'Siden datodato', millionLitres: 'millioner liter', thousandLitres: 'tusen liter', tonnesCO2: 'tonn CO₂', kilogramsCO2: 'kilogram CO₂', litres: 'liter',
       impactParameterNote: 'BEV-kolonnene viser km/år, drivstofforbruk for sammenligningsbilen i L/100 km og BEV-forbruk i kWh/100 km. Nettfaktorene bruker de nyeste publiseringsårene her (globalt/EU/Kina 2025; Tyskland 2025 (foreløpig); USA 2023) og er årlige gjennomsnitt for produksjon, ikke marginale ladefaktorer. Drivstoffaktorer: bensin 2,31 kg CO₂/L, diesel 2,68 kg CO₂/L. Verdiene er avrundede modellforutsetninger, ikke målinger av hver bil; sikkerheten varierer mellom regioner.', impactRegion: 'Region', impactBevCol: 'BEV: km/år · fossil L/100 km · BEV kWh/100 km', impactGridCol: 'Strømnett g CO₂/kWh', impactParamsTitle: 'Modellparametere per region: årlig kjørelengde og forbruk',
       impactTableUnitNote: 'Bensin-, diesel- og hybridceller: km/år · L/100 km. BEV-celle: km/år · sammenlignbar fossilbil L/100 km · BEV kWh/100 km.',
-      impactElectric: 'BEV*', impactHybrid: 'Hybrid', impactPetrol: 'Bensin', impactDiesel: 'Diesel', impactAvoided: 'unngått*', impactProduced: '*sluppet ut', fuelSaved: '*spart', fuelBurned: '*forbrent',
+      impactElectric: 'BEV', impactHybrid: 'Hybrid', impactPetrol: 'Bensin', impactDiesel: 'Diesel', impactAvoided: 'unngått', impactProduced: 'sluppet ut', fuelSaved: 'spart', fuelBurned: 'forbrent',
       bevLabel: "BATTERIELEKTRISKE KJØRETØY",
       hybridLabel: "HEV + LADBAR HYBRID",
       iceLabel: "FORBRENNINGSMOTOR",
@@ -492,6 +500,7 @@
       dataAsOf: "Data per",
       dataIdeaBy: "EN DATAIDÉ FRA",
       brandCopy: "Elektrisk mobilitet. Fakta. Hverdagsliv.",
+      sessionModelNote: "Modellestimat – beregning og grenser",
       feedback: "Spørsmål, ideer eller tilbakemeldinger?",
       facebook: "FØLG PÅ FACEBOOK →",
       privateDisclosure: 'Privat, ikke-kommersielt hobbyprosjekt. Ingen reklame eller inntekter.', privateFacebook: 'Kontakt via Facebook (privat kanal, ingen inntekter)', lawDdg: '§ 5 DDG',
@@ -513,7 +522,7 @@
       germanyBevLabel: '纯电动汽车',
       germanyHybridLabel: '混合动力（含插电式）',
       germanyIceLabel: '内燃机汽车',
-      germanyMethodText: '德国模式使用德国联邦机动车管理局（KBA）FZ 27 的乘用车季度保有量。参考日期为2026年7月1日。计数速度依据2026年1月1日至7月1日观察到的保有量变化，并均匀分摊到181天。这比12个月比较更及时地反映最新趋势，但也更容易受单个季度波动影响；12个月变化仍用于合理性校验。“混合动力总计”包含插电式混合动力。燃气和其他车辆计入剩余类别以使总数相符。计数器是线性估算，并非实时注册数据。',
+      germanyMethodText: "德国：KBA FZ 27 乘用车保有量，2025年7月1日至2026年7月1日。变化均匀分摊至365天。12个月减少短期波动，但对新趋势反应较慢，并不保证每个时点更准确。混合动力已包含插电混动。2026年7月后线性外推。",
       kbaDataset: 'KBA · FZ 27 · 2026季度保有量',
       kbaOverview: 'KBA · FZ 27数据说明',
       heroCopy: "全球乘用车保有量持续变化。这座时钟让动力结构的转型变得直观可见。",
@@ -531,7 +540,7 @@
       impactSinceData: '自数据日期起', millionLitres: '百万升', thousandLitres: '千升', tonnesCO2: '吨 CO₂', kilogramsCO2: '千克 CO₂', litres: '升',
       impactParameterNote: '纯电车列依次为年行驶公里、对照燃油车油耗（L/100 km）和纯电车耗电量（kWh/100 km）。电网因子采用此处使用的最新发布年份（全球/欧盟/中国为2025，德国为2025（暂定）；美国为2023），是年度平均发电因子，并非充电的边际排放因子。燃料因子：汽油 2.31 kg CO₂/L，柴油 2.68 kg CO₂/L。这些是经过取整的模型基线，并非对每辆在用车的实测；各地区可靠性不同。', impactRegion: '地区', impactBevCol: '纯电车：公里/年 · 燃油车 L/100 km · 纯电车 kWh/100 km', impactGridCol: '电网 g CO₂/kWh', impactParamsTitle: '各地区模型参数：年行驶里程与能耗',
       impactTableUnitNote: '汽油、柴油和混合动力单元：公里/年 · L/100 km。纯电单元：公里/年 · 对照燃油车 L/100 km · 纯电 kWh/100 km。',
-      impactElectric: '纯电*', impactHybrid: '混合动力', impactPetrol: '汽油', impactDiesel: '柴油', impactAvoided: '避免*', impactProduced: '*排放', fuelSaved: '*节省', fuelBurned: '*燃烧',
+      impactElectric: '纯电', impactHybrid: '混合动力', impactPetrol: '汽油', impactDiesel: '柴油', impactAvoided: '避免', impactProduced: '排放', fuelSaved: '节省', fuelBurned: '燃烧',
       bevLabel: "纯电动汽车",
       hybridLabel: "HEV + 插电式混合动力",
       iceLabel: "内燃机",
@@ -546,6 +555,7 @@
       dataAsOf: "数据截至",
       dataIdeaBy: "数据创意来自",
       brandCopy: "电动出行。事实。日常。",
+      sessionModelNote: "模型估算：计算方法与局限",
       feedback: "有问题、想法或反馈？",
       facebook: "在 FACEBOOK 上关注 →",
       privateDisclosure: '私人非商业爱好项目。无广告，无收入。', privateFacebook: '通过 Facebook 联系（私人频道，无收入）', lawDdg: '§ 5 DDG',
@@ -659,7 +669,7 @@
     const germany = currentMode === "germany";
     const region = currentMode === "global" ? DATA : (DATA.regions?.[currentMode] || DATA.germany);
     if (el("modelVersion")) {
-      el("modelVersion").textContent = `${t("dataModel")}: V3.1.2${region?.methodTag ? ` · ${region.methodTag}` : ""}`;
+      el("modelVersion").textContent = `${t("dataModel")}: V3.1.3${region?.methodTag ? ` · ${region.methodTag}` : ""}`;
     }
     if (el("dataDate")) {
       const dataDate = region?.dataDate && /^\d{4}-\d{2}-\d{2}$/.test(region.dataDate)
@@ -700,7 +710,7 @@
     });
     if (DATA.facebookUrl) {
       if (el("facebookLink")) el("facebookLink").href = DATA.facebookUrl;
-      if (el("footerFacebookLink")) el("footerFacebookLink").href = DATA.facebookUrl;
+
     }
 
     keys.forEach((key) => {
@@ -1006,6 +1016,10 @@
 
   setupLanguageMenu();
   setupModeSwitch();
+  el("sessionModelNote")?.addEventListener("click", () => {
+    const details = document.querySelector(".method-details");
+    if (details) details.open = true;
+  });
   currentMode = detectMode();
   applyLanguage(detectLanguage(), false);
   tick();

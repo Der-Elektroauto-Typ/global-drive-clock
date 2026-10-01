@@ -525,5 +525,66 @@
     "retainedPriors": "World total 1.38bn/+20m, diesel322m/-3m, other15m/+0.5m originally Sept30 2026, translated to Dec31 2025. Global total growth +20m is replaced by summed regional rates plus explicit ROW +5m scenario. Not verified new statistics."
   },
   "china": "Broad MPS automobile stock (includes commercial vehicles); NEV residual not clean PHEV. HEV6m/+1.5m assumption; petrol balancing residual; diesel40m/+0.5m assumption. Not harmonized passenger-car census.",
-  "scope": "EU/DE passenger cars; USA light-duty; China automobiles. Global is mixed-scope accounting model, not an official harmonized passenger-car census."
+  "scope": "EU/DE passenger cars; USA light-duty; China automobiles. Global is mixed-scope accounting model, not an official harmonized passenger-car census.",
+  "Germany": {
+    "source": "KBA FZ 27.2, passenger-car column, Germany total",
+    "start": "2025-07-01",
+    "end": "2026-07-01",
+    "days": 365,
+    "startStocks": {
+      "Benzin": 29683063,
+      "Diesel": 13665434,
+      "Gas insgesamt": 362235,
+      "Elektro (BEV)": 1835578,
+      "Hybrid insgesamt": 3969754,
+      "  darunter Plug-in": 1041473,
+      "Sonstige": 9544
+    },
+    "endStocks": {
+      "Benzin": 29012909,
+      "Diesel": 13157334,
+      "Gas insgesamt": 344598,
+      "Elektro (BEV)": 2365047,
+      "Hybrid insgesamt": 4807029,
+      "darunter Plug-in": 1226863,
+      "Sonstige": 9793
+    },
+    "hybridNoDoubleCount": "Hybrid insgesamt already includes plug-in; do not add PHEV again",
+    "changeReason": "12-month baseline for a more stable full-year net-stock trend; not guaranteed closer to every current moment",
+    "EUcomplement": "EU without Germany recomputed from unchanged EU total at common accounting date",
+    "comparison6vs12": {
+      "Elektro (BEV)": {
+        "stockJuly2026": 2365047,
+        "delta12Months": 529469,
+        "vehiclesPerMinute12Months": 1.0073611111111112,
+        "delta6Months": 330787,
+        "vehiclesPerMinute6Months": 1.2691336709637815,
+        "rateDifferencePercent": 25.98597037004311
+      },
+      "Hybrid insgesamt": {
+        "stockJuly2026": 4807029,
+        "delta12Months": 837275,
+        "vehiclesPerMinute12Months": 1.5929889649923896,
+        "delta6Months": 444466,
+        "vehiclesPerMinute6Months": 1.7052869858809085,
+        "rateDifferencePercent": 7.049516560151159
+      },
+      "Benzin": {
+        "stockJuly2026": 29012909,
+        "delta12Months": -670154,
+        "vehiclesPerMinute12Months": -1.2750266362252665,
+        "delta6Months": -330823,
+        "vehiclesPerMinute6Months": -1.2692717925107428,
+        "rateDifferencePercent": -0.4513508620934248
+      },
+      "Diesel": {
+        "stockJuly2026": 13157334,
+        "delta12Months": -508100,
+        "vehiclesPerMinute12Months": -0.9667047184170472,
+        "delta6Months": -228328,
+        "vehiclesPerMinute6Months": -0.8760282381829343,
+        "rateDifferencePercent": -9.379956309988147
+      }
+    }
+  }
 }

@@ -1153,3 +1153,7 @@ html[lang="zh"] .brand-small {
   .session-region-switch button.active[data-mode="global"] { color: var(--cyan); background: rgba(71,221,255,.1); border-color: rgba(71,221,255,.35); }
   .session-region-switch button:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
 }
+
+.session-model-note { display: block; width: fit-content; max-width: 100%; margin: 16px auto 0; color: #a4afba; font-size: 11px; line-height: 1.5; text-decoration: underline; text-underline-offset: 3px; }
+.session-model-note:hover { color: var(--cyan); }
+.session-model-note:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }

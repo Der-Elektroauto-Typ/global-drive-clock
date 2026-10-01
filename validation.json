@@ -1,33 +1,10 @@
 {
-  "version": "V3.1.2",
-  "scope": "Display precision and version/cache labels only",
-  "numericInputsUnchanged": true,
+  "version": "V3.1.3",
+  "germanyIntervalDays": 365,
+  "germanyAnnualChangesVerified": true,
+  "accountingCasesPassed": 720,
+  "germanyAndEuComplementRecalculated": true,
   "stockEngineUnchanged": true,
-  "maximumDynamicDecimalPlaces": 1,
-  "formattingLocalesTested": 10,
-  "formattingCasesChecked": 60,
   "javascriptSyntaxChecked": true,
-  "millionLitresDecimalPlaces": 2,
-  "feedbackButton": {
-    "mailto": "way81@gmx.de",
-    "subject": "Global Drive Clock \u2013 Feedback",
-    "translatedLabels": 10,
-    "mobileWidthChecked": 390,
-    "mobileHeightPx": 30,
-    "noHorizontalOverflow": true
-  },
-  "vehicleCardRateUnit": "vehicles/minute",
-  "rateDisplayConversion": 60,
-  "minuteDisplayVerifiedRegions": [
-    "global",
-    "germany"
-  ],
-  "mobileRegionControls": {
-    "fiveEqualButtons": true,
-    "singleCenteredRow": true,
-    "upperLowerSelectionSynchronized": true,
-    "sessionTimePreservedOnSwitch": true,
-    "mobileWidthChecked": 390,
-    "desktopHiddenAt1280": true
-  }
+  "consumptionParametersUnchanged": true
 }

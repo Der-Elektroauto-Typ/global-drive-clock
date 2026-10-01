@@ -1,0 +1,104 @@
+{
+  "version": "V3.1.3",
+  "checkedAt": "2026-10-01",
+  "Germany": {
+    "interval": "2025-07-01/2026-07-01",
+    "days": 365,
+    "start": {
+      "Benzin": 29683063,
+      "Diesel": 13665434,
+      "Gas insgesamt": 362235,
+      "Elektro (BEV)": 1835578,
+      "Hybrid insgesamt": 3969754,
+      "  darunter Plug-in": 1041473,
+      "Sonstige": 9544
+    },
+    "end": {
+      "Benzin": 29012909,
+      "Diesel": 13157334,
+      "Gas insgesamt": 344598,
+      "Elektro (BEV)": 2365047,
+      "Hybrid insgesamt": 4807029,
+      "darunter Plug-in": 1226863,
+      "Sonstige": 9793
+    },
+    "comparison": {
+      "Elektro (BEV)": {
+        "stockJuly2026": 2365047,
+        "delta12Months": 529469,
+        "vehiclesPerMinute12Months": 1.0073611111111112,
+        "delta6Months": 330787,
+        "vehiclesPerMinute6Months": 1.2691336709637815,
+        "rateDifferencePercent": 25.98597037004311
+      },
+      "Hybrid insgesamt": {
+        "stockJuly2026": 4807029,
+        "delta12Months": 837275,
+        "vehiclesPerMinute12Months": 1.5929889649923896,
+        "delta6Months": 444466,
+        "vehiclesPerMinute6Months": 1.7052869858809085,
+        "rateDifferencePercent": 7.049516560151159
+      },
+      "Benzin": {
+        "stockJuly2026": 29012909,
+        "delta12Months": -670154,
+        "vehiclesPerMinute12Months": -1.2750266362252665,
+        "delta6Months": -330823,
+        "vehiclesPerMinute6Months": -1.2692717925107428,
+        "rateDifferencePercent": -0.4513508620934248
+      },
+      "Diesel": {
+        "stockJuly2026": 13157334,
+        "delta12Months": -508100,
+        "vehiclesPerMinute12Months": -0.9667047184170472,
+        "delta6Months": -228328,
+        "vehiclesPerMinute6Months": -0.8760282381829343,
+        "rateDifferencePercent": -9.379956309988147
+      }
+    }
+  },
+  "USA": {
+    "Electric (EV)": 5689100,
+    "Plug-In Hybrid Electric (PHEV)": 1765700,
+    "Hybrid Electric (HEV)": 13929600,
+    "Biodiesel": 3375000,
+    "Ethanol/Flex (E85)": 19561100,
+    "Compressed Natural Gas (CNG)": 23200,
+    "Propane": 5500,
+    "Hydrogen": 16600,
+    "Methanol": 0,
+    "Gasoline": 240682100,
+    "Diesel": 7176500,
+    "Unknown Fuel": 1616900
+  },
+  "sourceFetchChecks": [
+    {
+      "name": "kba202507",
+      "url": "https://www.kba.de/SharedDocs/Downloads/DE/Statistik/Fahrzeuge/FZ27/fz27_202507.xlsx?__blob=publicationFile&v=4",
+      "status": 200,
+      "bytes": 1495758
+    },
+    {
+      "name": "kba202607",
+      "url": "https://www.kba.de/SharedDocs/Downloads/DE/Statistik/Fahrzeuge/FZ27/fz27_202607.xlsx?__blob=publicationFile&v=3",
+      "status": 200,
+      "bytes": 1478376
+    },
+    {
+      "name": "eurostat",
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/road_eqs_carpda?lang=EN&sinceTimePeriod=2024&leg_form=TOTAL",
+      "status": 200,
+      "bytes": 19986
+    },
+    {
+      "name": "iea2025",
+      "url": "https://api.iea.org/evs?parameters=EV%20stock&category=Historical&mode=Cars&year=2025",
+      "status": 200,
+      "bytes": 89711
+    }
+  ],
+  "EU": "Fresh Eurostat source cells agree with bundled inputs. Missing country hybrid details remain documented imputations.",
+  "China": "BEV/PHEV registration anchors; HEV trend remains a scenario.",
+  "RestOfWorld": "IEA global BEV/PHEV anchors and national anchors; HEV remainder contains assumptions.",
+  "limitations": "Checks confirm input transcription and arithmetic, not empirical precision of model assumptions."
+}

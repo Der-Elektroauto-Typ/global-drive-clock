@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#05070a">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg?v=3.1.2">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=3.1.2">
-  <link rel="icon" type="image/png" sizes="192x192" href="favicon.png?v=3.1.2">
-  <link rel="shortcut icon" href="favicon.ico?v=3.1.2">
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=3.1.2">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg?v=3.1.3">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=3.1.3">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon.png?v=3.1.3">
+  <link rel="shortcut icon" href="favicon.ico?v=3.1.3">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=3.1.3">
   <meta name="description" content="Modellierte Pkw-Bestände, Kraftstoffflüsse und betriebliche CO₂-Bilanz für Global, Deutschland, EU, China und USA – mit Quellen und offengelegter Methodik.">
   <link rel="canonical" href="https://der-elektroauto-typ.github.io/global-drive-clock/">
   <meta property="og:type" content="website">
@@ -16,7 +16,7 @@
   <meta property="og:title" content="Global Drive Clock – Der weltweite Antriebswandel">
   <meta property="og:description" content="Modellierte Pkw-Bestände, Kraftstoffflüsse und betriebliche CO₂-Bilanz für Global, Deutschland, EU, China und USA – mit Quellen und offengelegter Methodik.">
   <meta property="og:url" content="https://der-elektroauto-typ.github.io/global-drive-clock/">
-  <meta property="og:image" content="https://der-elektroauto-typ.github.io/global-drive-clock/social-preview.jpg?v=3.1.2">
+  <meta property="og:image" content="https://der-elektroauto-typ.github.io/global-drive-clock/social-preview.jpg?v=3.1.3">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:type" content="image/jpeg">
@@ -24,10 +24,10 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Global Drive Clock – Der weltweite Antriebswandel">
   <meta name="twitter:description" content="Modellierte Pkw-Bestände, Kraftstoffflüsse und betriebliche CO₂-Bilanz für Global, Deutschland, EU, China und USA – mit Quellen und offengelegter Methodik.">
-  <meta name="twitter:image" content="https://der-elektroauto-typ.github.io/global-drive-clock/social-preview.jpg?v=3.1.2">
+  <meta name="twitter:image" content="https://der-elektroauto-typ.github.io/global-drive-clock/social-preview.jpg?v=3.1.3">
   <meta name="twitter:image:alt" content="Global Drive Clock mit vier Modellzählern und einer beispielhaften Live-Session-Ansicht.">
   <title>Global Drive Clock</title>
-  <link rel="stylesheet" href="style.css?v=3.1.2">
+  <link rel="stylesheet" href="style.css?v=3.1.3">
 </head>
 <body>
   <div class="language-switcher" id="languageSwitcher">
@@ -151,6 +151,7 @@
         <button type="button" data-mode="china" aria-label="China" aria-pressed="false"><span class="session-region-icon" aria-hidden="true">🇨🇳</span><span class="session-region-label" aria-hidden="true">CN</span></button>
         <button type="button" data-mode="usa" aria-label="USA" aria-pressed="false"><span class="session-region-icon" aria-hidden="true">🇺🇸</span><span class="session-region-label" aria-hidden="true">USA</span></button>
       </div>
+      <a class="session-model-note" id="sessionModelNote" href="#methodDetails" data-i18n="sessionModelNote">Modellschätzung – Berechnung und Grenzen</a>
     </section>
 
     <section class="method">
@@ -165,10 +166,10 @@
         <span data-i18n="sourceBase">Quellenbasis: IEA · ACEA · VDA/UBA · Modell</span>
       </div>
 
-      <details class="method-details">
+      <details id="methodDetails" class="method-details">
         <summary data-i18n="methodDetails">DATEN &amp; METHODIK</summary>
         <div class="method-details-body">
-          <p>V3.1.2 · Quellenprüfung: 1. Oktober 2026</p>
+          <p>V3.1.3 · Quellenprüfung: 1. Oktober 2026</p>
           <p>Die Zähler sind lineare Modellschätzungen aus veröffentlichten Bestandsankern und gekennzeichneten Annahmen. Global = EU + China + USA + Rest der Welt; Deutschland ist in der EU enthalten. Kraftstoff und betriebliches CO₂ werden für den gesamten modellierten Bestand ab Seitenaufruf kumuliert. Die oberen Kacheln zeigen ausschließlich Fahrzeuge.</p>
           <p>Regionale Abgrenzungen und Datenstände unterscheiden sich. Das ist keine amtliche Live-Zählung und keine vollständige Lebenszyklusbilanz. Ausführliche Herleitung wird mit JavaScript angezeigt. <a href="METHODIK.md">Vollständige Methodik als Text</a> · <a href="model-provenance.json">Datenherleitung</a> · <a href="source-extracts.json">Quellenauszüge</a>.</p>
         </div>
@@ -200,15 +201,13 @@
         <span data-i18n="privateDisclosure">Privates, nicht kommerzielles Hobbyprojekt. Keine Werbung, keine Einnahmen.</span>
         <span aria-hidden="true"> · </span>
         <a href="https://www.gesetze-im-internet.de/ddg/__5.html" target="_blank" rel="noopener noreferrer" data-i18n="lawDdg">§ 5 DDG</a>
-        <span aria-hidden="true"> · </span>
-        <a id="footerFacebookLink" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" data-i18n="privateFacebook">Kontakt über Facebook (privater Kanal, keine Einnahmen)</a>
       </div>
     </div>
   </main>
 
-  <script src="data.js?v=3.1.2"></script>
-  <script src="model.js?v=3.1.2"></script>
-  <script src="methodology.js?v=3.1.2"></script>
-  <script src="app.js?v=3.1.2"></script>
+  <script src="data.js?v=3.1.3"></script>
+  <script src="model.js?v=3.1.3"></script>
+  <script src="methodology.js?v=3.1.3"></script>
+  <script src="app.js?v=3.1.3"></script>
 </body>
 </html>

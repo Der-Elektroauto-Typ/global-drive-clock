@@ -7158,8 +7158,16 @@
       "Elektro (BEV)": 2365047,
       "Hybrid insgesamt": 4807029,
       "darunter Plug-in": 1226863,
-      "Sonstige": 9793,
-      "None": 49696710
+      "Sonstige": 9793
+    },
+    "202507": {
+      "Benzin": 29683063,
+      "Diesel": 13665434,
+      "Gas insgesamt": 362235,
+      "Elektro (BEV)": 1835578,
+      "Hybrid insgesamt": 3969754,
+      "  darunter Plug-in": 1041473,
+      "Sonstige": 9544
     }
   },
   "AFDC_current_vintage_changes": {
@@ -7387,5 +7395,20 @@
       "#3D96AE"
     ],
     "plotOptions": {}
+  },
+  "Germany_current_interval": "2025-07-01 to 2026-07-01, 365 days",
+  "AFDC_current2025": {
+    "Electric (EV)": 5689100,
+    "Plug-In Hybrid Electric (PHEV)": 1765700,
+    "Hybrid Electric (HEV)": 13929600,
+    "Biodiesel": 3375000,
+    "Ethanol/Flex (E85)": 19561100,
+    "Compressed Natural Gas (CNG)": 23200,
+    "Propane": 5500,
+    "Hydrogen": 16600,
+    "Methanol": 0,
+    "Gasoline": 240682100,
+    "Diesel": 7176500,
+    "Unknown Fuel": 1616900
   }
 }

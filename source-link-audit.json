@@ -1,5 +1,5 @@
 {
-  "version": "V3.1.1",
+  "version": "V3.1.3",
   "checkedAt": "2026-10-01",
   "meaning": "HTTP status checks establish reachability at review time, not scientific correctness or permanent availability. Source roles separately checked against content. Some interactive sources require JavaScript.",
   "retainedExternalSources": [
@@ -14,9 +14,9 @@
       "contentReview": "Referenced for the limited role described; not proof of all model assumptions."
     },
     {
-      "url": "https://www.kba.de/SharedDocs/Downloads/DE/Statistik/Fahrzeuge/FZ27/fz27_202601.xlsx?__blob=publicationFile&v=5",
+      "url": "https://www.kba.de/SharedDocs/Downloads/DE/Statistik/Fahrzeuge/FZ27/fz27_202507.xlsx?__blob=publicationFile&v=4",
       "status": 200,
-      "finalUrl": "https://www.kba.de/SharedDocs/Downloads/DE/Statistik/Fahrzeuge/FZ27/fz27_202601.xlsx?__blob=publicationFile&v=5",
+      "finalUrl": "https://www.kba.de/SharedDocs/Downloads/DE/Statistik/Fahrzeuge/FZ27/fz27_202507.xlsx?__blob=publicationFile&v=4",
       "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;charset=UTF-8",
       "title": "",
       "role": "direct published stock anchor or comparison series",
@@ -289,14 +289,9 @@
     }
   ],
   "localEvidenceFiles": [
-    "data.js",
-    "model.js",
-    "app.js",
-    "model-provenance.json",
     "source-extracts.json",
-    "iea-stock-2024.csv",
-    "iea-stock-2025.csv",
-    "validation.json",
-    "METHODIK.md"
+    "model-provenance.json",
+    "data-review-v3-1-3.json",
+    "validation.json"
   ]
 }
