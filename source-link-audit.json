@@ -1,0 +1,302 @@
+{
+  "version": "V3.1.1",
+  "checkedAt": "2026-10-01",
+  "meaning": "HTTP status checks establish reachability at review time, not scientific correctness or permanent availability. Source roles separately checked against content. Some interactive sources require JavaScript.",
+  "retainedExternalSources": [
+    {
+      "url": "https://www.kba.de/DE/Statistik/Produktkatalog/produkte/Fahrzeuge/fz27_b_uebersicht.html",
+      "status": 200,
+      "finalUrl": "https://www.kba.de/DE/Statistik/Produktkatalog/produkte/Fahrzeuge/fz27_b_uebersicht.html",
+      "type": "text/html;charset=utf-8",
+      "title": "Kraftfahrt-Bundesamt - Statistik Kompakt - Bestand nach ausgewählten Merkmalen (FZ 27)",
+      "role": "direct published stock anchor or comparison series",
+      "checkedAt": "2026-10-01",
+      "contentReview": "Referenced for the limited role described; not proof of all model assumptions."
+    },
+    {
+      "url": "https://www.kba.de/SharedDocs/Downloads/DE/Statistik/Fahrzeuge/FZ27/fz27_202601.xlsx?__blob=publicationFile&v=5",
+      "status": 200,
+      "finalUrl": "https://www.kba.de/SharedDocs/Downloads/DE/Statistik/Fahrzeuge/FZ27/fz27_202601.xlsx?__blob=publicationFile&v=5",
+      "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;charset=UTF-8",
+      "title": "",
+      "role": "direct published stock anchor or comparison series",
+      "checkedAt": "2026-10-01",
+      "contentReview": "Referenced for the limited role described; not proof of all model assumptions."
+    },
+    {
+      "url": "https://www.kba.de/SharedDocs/Downloads/DE/Statistik/Fahrzeuge/FZ27/fz27_202607.xlsx?__blob=publicationFile&v=3",
+      "status": 200,
+      "finalUrl": "https://www.kba.de/SharedDocs/Downloads/DE/Statistik/Fahrzeuge/FZ27/fz27_202607.xlsx?__blob=publicationFile&v=3",
+      "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;charset=UTF-8",
+      "title": "",
+      "role": "direct published stock anchor or comparison series",
+      "checkedAt": "2026-10-01",
+      "contentReview": "Referenced for the limited role described; not proof of all model assumptions."
+    },
+    {
+      "url": "https://ec.europa.eu/eurostat/databrowser/view/road_eqs_carpda/default/table?lang=de",
+      "status": 200,
+      "finalUrl": "https://ec.europa.eu/eurostat/databrowser/view/road_eqs_carpda/default/table?lang=de",
+      "type": "text/html; charset=UTF-8",
+      "title": "",
+      "role": "direct published stock anchor or comparison series",
+      "checkedAt": "2026-10-01",
+      "contentReview": "Referenced for the limited role described; not proof of all model assumptions."
+    },
+    {
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/road_eqs_carpda?lang=EN&sinceTimePeriod=2024&leg_form=TOTAL",
+      "status": 200,
+      "finalUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/road_eqs_carpda?lang=EN&sinceTimePeriod=2024&leg_form=TOTAL",
+      "type": "application/json",
+      "title": "",
+      "role": "direct published stock anchor or comparison series",
+      "checkedAt": "2026-10-01",
+      "contentReview": "Referenced for the limited role described; not proof of all model assumptions."
+    },
+    {
+      "url": "https://www.acea.auto/files/ACEA_Report-%E2%80%93-Vehicles_on_European_roads_2026.pdf",
+      "status": 200,
+      "finalUrl": "https://www.acea.auto/files/ACEA_Report-%E2%80%93-Vehicles_on_European_roads_2026.pdf",
+      "type": "application/pdf",
+      "title": "",
+      "role": "rounded-share transfer for missing EU data; scopes/date differ",
+      "checkedAt": "2026-10-01",
+      "contentReview": "Referenced for the limited role described; not proof of all model assumptions."
+    },
+    {
+      "url": "https://afdc.energy.gov/vehicle-registration",
+      "status": 200,
+      "finalUrl": "https://afdc.energy.gov/vehicle-registration",
+      "type": "text/html; charset=utf-8",
+      "title": "Alternative Fuels Data Center: Vehicle Registration Counts by State",
+      "role": "direct published stock anchor or comparison series",
+      "checkedAt": "2026-10-01",
+      "contentReview": "Referenced for the limited role described; not proof of all model assumptions."
+    },
+    {
+      "url": "https://afdc.energy.gov/data/10881",
+      "status": 200,
+      "finalUrl": "https://afdc.energy.gov/data/10881",
+      "type": "text/html; charset=utf-8",
+      "title": "Alternative Fuels Data Center: Maps and Data - Change in U.S. Light-Duty Vehicle Registration Counts",
+      "role": "direct published stock anchor or comparison series",
+      "checkedAt": "2026-10-01",
+      "contentReview": "Referenced for the limited role described; not proof of all model assumptions."
+    },
+    {
+      "url": "https://english.www.gov.cn/archive/statistics/202607/15/content_WS6a56dd6ec6d00ca5f9a0c307.html",
+      "status": 200,
+      "finalUrl": "https://english.www.gov.cn/archive/statistics/202607/15/content_WS6a56dd6ec6d00ca5f9a0c307.html",
+      "type": "text/html;charset=UTF-8",
+      "title": "NEVs make up nearly half of China's newly registered automobiles in H1 2026",
+      "role": "direct published stock anchor or comparison series",
+      "checkedAt": "2026-10-01",
+      "contentReview": "Referenced for the limited role described; not proof of all model assumptions."
+    },
+    {
+      "url": "https://www.iea.org/data-and-statistics/data-tools/global-ev-data-explorer",
+      "status": 200,
+      "finalUrl": "https://www.iea.org/data-and-statistics/data-tools/global-ev-data-explorer",
+      "type": "text/html; charset=utf-8",
+      "title": "Global EV Data Explorer – Data Tools - IEA",
+      "role": "direct published stock anchor or comparison series",
+      "checkedAt": "2026-10-01",
+      "contentReview": "Referenced for the limited role described; not proof of all model assumptions."
+    },
+    {
+      "url": "https://www.airia.or.jp/publish/file/HVEV_2025.pdf",
+      "status": 200,
+      "finalUrl": "https://www.airia.or.jp/publish/file/HVEV_2025.pdf",
+      "type": "application/pdf",
+      "title": "",
+      "role": "direct published stock anchor or comparison series",
+      "checkedAt": "2026-10-01",
+      "contentReview": "Referenced for the limited role described; not proof of all model assumptions."
+    },
+    {
+      "url": "https://www.iea.org/reports/electricity-2026/emissions",
+      "status": 200,
+      "finalUrl": "https://www.iea.org/reports/electricity-2026/emissions",
+      "type": "text/html; charset=utf-8",
+      "title": "Emissions – Electricity 2026 – Analysis - IEA",
+      "role": "2025 electricity factors; world factor is substitute for rest",
+      "checkedAt": "2026-10-01",
+      "contentReview": "Referenced for the limited role described; not proof of all model assumptions."
+    },
+    {
+      "url": "https://www.umweltbundesamt.de/system/files/medien/11850/publikationen/2026-03/16_2026_CC.pdf",
+      "status": 200,
+      "finalUrl": "https://www.umweltbundesamt.de/system/files/medien/11850/publikationen/2026-03/16_2026_CC.pdf",
+      "type": "application/pdf",
+      "title": "",
+      "role": "estimated2025 German344g without trade balance",
+      "checkedAt": "2026-10-01",
+      "contentReview": "Referenced for the limited role described; not proof of all model assumptions."
+    },
+    {
+      "url": "https://www.epa.gov/egrid/summary-data",
+      "status": 200,
+      "finalUrl": "https://www.epa.gov/egrid/summary-data",
+      "type": "text/html; charset=UTF-8",
+      "title": "Summary Data | US EPA",
+      "role": "2023 U.S. factor rounded to350g; not measured2025 charging",
+      "checkedAt": "2026-10-01",
+      "contentReview": "Referenced for the limited role described; not proof of all model assumptions."
+    },
+    {
+      "url": "https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Umwelt/UGR/verkehr-tourismus/Tabellen/fahrleistungen-kraftstoffverbrauch.html",
+      "status": 200,
+      "finalUrl": "https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Umwelt/UGR/verkehr-tourismus/Tabellen/fahrleistungen-kraftstoffverbrauch.html",
+      "type": "text/html;charset=utf-8",
+      "title": "Fahrleistungen, Energieverbräuche und spezifischer Kraftstoffverbrauch je 100 Kilometer mit Personenkraftwagen - Statistisches Bundesamt",
+      "role": "consumption context; petrol7.8 matches, diesel/electric differ; not source of every model input",
+      "checkedAt": "2026-10-01",
+      "contentReview": "Referenced for the limited role described; not proof of all model assumptions."
+    },
+    {
+      "url": "https://climate-energy.eea.europa.eu/topics/transport/real-world-emissions/intro",
+      "status": 200,
+      "finalUrl": "https://climate-energy.eea.europa.eu/topics/transport/real-world-emissions/intro",
+      "type": "text/html; charset=utf-8",
+      "title": "Intro",
+      "role": "newer-vehicle context; not current whole fleet input",
+      "checkedAt": "2026-10-01",
+      "contentReview": "Referenced for the limited role described; not proof of all model assumptions."
+    },
+    {
+      "url": "https://www.epa.gov/automotive-trends/download-automotive-trends-report",
+      "status": 200,
+      "finalUrl": "https://www.epa.gov/automotive-trends/download-automotive-trends-report",
+      "type": "text/html; charset=UTF-8",
+      "title": "Download the Automotive Trends Report | US EPA",
+      "role": "new-vehicle context; not whole fleet input",
+      "checkedAt": "2026-10-01",
+      "contentReview": "Referenced for the limited role described; not proof of all model assumptions."
+    },
+    {
+      "url": "https://www.epa.gov/greenvehicles/greenhouse-gas-emissions-typical-passenger-vehicle",
+      "status": 200,
+      "finalUrl": "https://www.epa.gov/greenvehicles/greenhouse-gas-emissions-typical-passenger-vehicle",
+      "type": "text/html; charset=UTF-8",
+      "title": "Greenhouse Gas Emissions from a Typical Passenger Vehicle | US EPA",
+      "role": "physical emissions context; not exact source of2.31/2.68 model factors",
+      "checkedAt": "2026-10-01",
+      "contentReview": "Referenced for the limited role described; not proof of all model assumptions."
+    }
+  ],
+  "checkedThenRemoved": [
+    {
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/07/PD26_233_32421.html",
+      "status": 200,
+      "finalUrl": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/07/PD26_233_32421.html",
+      "type": "text/html;charset=utf-8",
+      "title": "Straßenverkehr macht im Jahr 2024 gut ein Fünftel des deutschen Energieverbrauchs aus - Statistisches Bundesamt",
+      "reasonRemoved": "No direct input lineage, duplicate or unrelated market/context reference; not needed in revised methodology."
+    },
+    {
+      "url": "https://ec.europa.eu/eurostat/databrowser/view/ROAD_PA_MOV/default/table?lang=en",
+      "status": 200,
+      "finalUrl": "https://ec.europa.eu/eurostat/databrowser/view/ROAD_PA_MOV/default/table?lang=en",
+      "type": "text/html; charset=UTF-8",
+      "title": "",
+      "reasonRemoved": "No direct input lineage, duplicate or unrelated market/context reference; not needed in revised methodology."
+    },
+    {
+      "url": "https://ec.europa.eu/eurostat/databrowser/product/view/ten00126?lang=en",
+      "status": 200,
+      "finalUrl": "https://ec.europa.eu/eurostat/databrowser/product/view/ten00126?lang=en",
+      "type": "text/html; charset=UTF-8",
+      "title": "",
+      "reasonRemoved": "No direct input lineage, duplicate or unrelated market/context reference; not needed in revised methodology."
+    },
+    {
+      "url": "https://www.iea.org/reports/global-ev-outlook-2026/outlook-for-electric-mobility-chap-9-11",
+      "status": 200,
+      "finalUrl": "https://www.iea.org/reports/global-ev-outlook-2026/outlook-for-electric-mobility-chap-9-11",
+      "type": "text/html; charset=utf-8",
+      "title": "Outlook for electric mobility – Global EV Outlook 2026 – Analysis - IEA",
+      "reasonRemoved": "No direct input lineage, duplicate or unrelated market/context reference; not needed in revised methodology."
+    },
+    {
+      "url": "https://www.mee.gov.cn/ywdt/zbft/202601/t20260105_1139911.shtml",
+      "status": 200,
+      "finalUrl": "https://www.mee.gov.cn/ywdt/zbft/202601/t20260105_1139911.shtml",
+      "type": "text/html",
+      "title": "生态环境部应对气候变化司有关负责人就《关于发布2023年电力二氧化碳排放因子的公告》答记者问_中华人民共和国生态环境部",
+      "reasonRemoved": "No direct input lineage, duplicate or unrelated market/context reference; not needed in revised methodology."
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2025",
+      "status": 200,
+      "finalUrl": "https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2025",
+      "type": "text/html; charset=utf-8",
+      "title": "Greenhouse gas reporting: conversion factors 2025 - GOV.UK",
+      "reasonRemoved": "No direct input lineage, duplicate or unrelated market/context reference; not needed in revised methodology."
+    },
+    {
+      "url": "https://www.iea.org/reports/global-ev-outlook-2026/trends-in-electric-cars",
+      "status": 200,
+      "finalUrl": "https://www.iea.org/reports/global-ev-outlook-2026/trends-in-electric-cars",
+      "type": "text/html; charset=utf-8",
+      "title": "Trends in electric cars – Global EV Outlook 2026 – Analysis - IEA",
+      "reasonRemoved": "No direct input lineage, duplicate or unrelated market/context reference; not needed in revised methodology."
+    },
+    {
+      "url": "https://www.iea.org/reports/electric-car-markets-in-a-time-of-uncertainty/executive-summary",
+      "status": 200,
+      "finalUrl": "https://www.iea.org/reports/electric-car-markets-in-a-time-of-uncertainty/executive-summary",
+      "type": "text/html; charset=utf-8",
+      "title": "Executive summary – Electric Car Markets in a Time of Uncertainty – Analysis - IEA",
+      "reasonRemoved": "No direct input lineage, duplicate or unrelated market/context reference; not needed in revised methodology."
+    },
+    {
+      "url": "https://www.acea.auto/publication/economic-and-market-report-global-and-eu-auto-industry-full-year-2025/",
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden",
+      "reasonRemoved": "No direct input lineage, duplicate or unrelated market/context reference; not needed in revised methodology."
+    },
+    {
+      "url": "https://www.vda.de/de/themen/Automobil-Insight-2025/2025-Elektromobilitaet",
+      "status": 200,
+      "finalUrl": "https://www.vda.de/de/themen/Automobil-Insight-2025/2025-Elektromobilitaet",
+      "type": "text/html; charset=utf-8",
+      "title": "2025 hat sich das Wachstum der Elektromobilität bei den Pkw-Neuzulassungen fortgesetzt. | VDA",
+      "reasonRemoved": "No direct input lineage, duplicate or unrelated market/context reference; not needed in revised methodology."
+    },
+    {
+      "url": "https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20260731-1",
+      "status": 200,
+      "finalUrl": "https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20260731-1",
+      "type": "text/html;charset=UTF-8",
+      "title": "New battery-only electric cars up 30% in 2025 - News articles - Eurostat",
+      "reasonRemoved": "No direct input lineage, duplicate or unrelated market/context reference; not needed in revised methodology."
+    },
+    {
+      "url": "https://www.govdata.de/suche/daten/fz-27-2026-bestand-an-kraftfahrzeugen-und-kraftfahrzeuganhangern-nach-ausgewahlten-merkmalen-bu",
+      "status": 200,
+      "finalUrl": "https://www.govdata.de/suche/daten/fz-27-2026-bestand-an-kraftfahrzeugen-und-kraftfahrzeuganhangern-nach-ausgewahlten-merkmalen-bu",
+      "type": "text/html; charset=utf-8",
+      "title": "FZ 27 - 2026 - Bestand an Kraftfahrzeugen und Kraftfahrzeuganhängern nach ausgewählten Merkmalen (Bundesländer und Fahrzeugarten) - GovData",
+      "reasonRemoved": "No direct input lineage, duplicate or unrelated market/context reference; not needed in revised methodology."
+    },
+    {
+      "url": "https://www.kba.de/DE/Presse/Pressemitteilungen/Fahrzeugbestand/2026/pm09_fz_bestand_pm_komplett.html",
+      "status": 200,
+      "finalUrl": "https://www.kba.de/DE/Presse/Pressemitteilungen/Fahrzeugbestand/2026/pm09_fz_bestand_pm_komplett.html",
+      "type": "text/html;charset=utf-8",
+      "title": "Kraftfahrt-Bundesamt - Pressemitteilungen - Der Fahrzeugbestand am 1. Januar 2026",
+      "reasonRemoved": "No direct input lineage, duplicate or unrelated market/context reference; not needed in revised methodology."
+    }
+  ],
+  "localEvidenceFiles": [
+    "data.js",
+    "model.js",
+    "app.js",
+    "model-provenance.json",
+    "source-extracts.json",
+    "iea-stock-2024.csv",
+    "iea-stock-2025.csv",
+    "validation.json",
+    "METHODIK.md"
+  ]
+}

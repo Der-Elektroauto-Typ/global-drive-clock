@@ -1,0 +1,208 @@
+region,category,parameter,mode,powertrain,year,unit,value
+Advanced Economies,Historical,EV stock,Cars,BEV,2025,Vehicles,19000000
+Advanced Economies,Historical,EV stock,Cars,FCEV,2025,Vehicles,75000
+Advanced Economies,Historical,EV stock,Cars,PHEV,2025,Vehicles,9000000
+Advanced Economies,Historical,EV stock,Cars,EV,2025,Vehicles,28000000
+Africa,Historical,EV stock,Cars,BEV,2025,Vehicles,35000
+Africa,Historical,EV stock,Cars,FCEV,2025,Vehicles,3
+Africa,Historical,EV stock,Cars,PHEV,2025,Vehicles,11000
+Africa,Historical,EV stock,Cars,EV,2025,Vehicles,46000
+Asia Pacific,Historical,EV stock,Cars,BEV,2025,Vehicles,32000000
+Asia Pacific,Historical,EV stock,Cars,FCEV,2025,Vehicles,52000
+Asia Pacific,Historical,EV stock,Cars,PHEV,2025,Vehicles,16000000
+Asia Pacific,Historical,EV stock,Cars,EV,2025,Vehicles,48000000
+Australia,Historical,EV stock,Cars,BEV,2025,Vehicles,350000
+Australia,Historical,EV stock,Cars,FCEV,2025,Vehicles,94
+Australia,Historical,EV stock,Cars,EV,2025,Vehicles,430000
+Australia,Historical,EV stock,Cars,PHEV,2025,Vehicles,84000
+Austria,Historical,EV stock,Cars,PHEV,2025,Vehicles,95000
+Austria,Historical,EV stock,Cars,FCEV,2025,Vehicles,53
+Austria,Historical,EV stock,Cars,BEV,2025,Vehicles,260000
+Austria,Historical,EV stock,Cars,EV,2025,Vehicles,350000
+Belgium,Historical,EV stock,Cars,BEV,2025,Vehicles,420000
+Belgium,Historical,EV stock,Cars,FCEV,2025,Vehicles,110
+Belgium,Historical,EV stock,Cars,PHEV,2025,Vehicles,350000
+Belgium,Historical,EV stock,Cars,EV,2025,Vehicles,770000
+Brazil,Historical,EV stock,Cars,EV,2025,Vehicles,400000
+Brazil,Historical,EV stock,Cars,PHEV,2025,Vehicles,220000
+Brazil,Historical,EV stock,Cars,FCEV,2025,Vehicles,3
+Brazil,Historical,EV stock,Cars,BEV,2025,Vehicles,170000
+Cambodia,Historical,EV stock,Cars,BEV,2025,Vehicles,7200
+Cambodia,Historical,EV stock,Cars,PHEV,2025,Vehicles,140
+Cambodia,Historical,EV stock,Cars,EV,2025,Vehicles,7300
+Canada,Historical,EV stock,Cars,EV,2025,Vehicles,1000000
+Canada,Historical,EV stock,Cars,PHEV,2025,Vehicles,300000
+Canada,Historical,EV stock,Cars,BEV,2025,Vehicles,730000
+Canada,Historical,EV stock,Cars,FCEV,2025,Vehicles,350
+Chile,Historical,EV stock,Cars,FCEV,2025,Vehicles,2
+Chile,Historical,EV stock,Cars,EV,2025,Vehicles,20000
+Chile,Historical,EV stock,Cars,BEV,2025,Vehicles,14000
+Chile,Historical,EV stock,Cars,PHEV,2025,Vehicles,6000
+China,Historical,EV stock,Cars,BEV,2025,Vehicles,29000000
+China,Historical,EV stock,Cars,FCEV,2025,Vehicles,840
+China,Historical,EV stock,Cars,PHEV,2025,Vehicles,15000000
+China,Historical,EV stock,Cars,EV,2025,Vehicles,44000000
+Colombia,Historical,EV stock,Cars,BEV,2025,Vehicles,37000
+Colombia,Historical,EV stock,Cars,PHEV,2025,Vehicles,12000
+Colombia,Historical,EV stock,Cars,EV,2025,Vehicles,50000
+Costa Rica,Historical,EV stock,Cars,PHEV,2025,Vehicles,700
+Costa Rica,Historical,EV stock,Cars,BEV,2025,Vehicles,34000
+Costa Rica,Historical,EV stock,Cars,EV,2025,Vehicles,35000
+Denmark,Historical,EV stock,Cars,FCEV,2025,Vehicles,43
+Denmark,Historical,EV stock,Cars,BEV,2025,Vehicles,540000
+Denmark,Historical,EV stock,Cars,PHEV,2025,Vehicles,130000
+Denmark,Historical,EV stock,Cars,EV,2025,Vehicles,670000
+Developing Economies excl. China,Historical,EV stock,Cars,EV,2025,Vehicles,2700000
+Developing Economies excl. China,Historical,EV stock,Cars,BEV,2025,Vehicles,2000000
+Developing Economies excl. China,Historical,EV stock,Cars,FCEV,2025,Vehicles,22
+Developing Economies excl. China,Historical,EV stock,Cars,PHEV,2025,Vehicles,650000
+Europe,Historical,EV stock,Cars,EV,2025,Vehicles,17000000
+Europe,Historical,EV stock,Cars,BEV,2025,Vehicles,11000000
+Europe,Historical,EV stock,Cars,FCEV,2025,Vehicles,5200
+Europe,Historical,EV stock,Cars,PHEV,2025,Vehicles,6100000
+European Union,Historical,EV stock,Cars,EV,2025,Vehicles,12000000
+European Union,Historical,EV stock,Cars,BEV,2025,Vehicles,7300000
+European Union,Historical,EV stock,Cars,FCEV,2025,Vehicles,4500
+European Union,Historical,EV stock,Cars,PHEV,2025,Vehicles,4700000
+Finland,Historical,EV stock,Cars,FCEV,2025,Vehicles,17
+Finland,Historical,EV stock,Cars,BEV,2025,Vehicles,160000
+Finland,Historical,EV stock,Cars,EV,2025,Vehicles,350000
+Finland,Historical,EV stock,Cars,PHEV,2025,Vehicles,190000
+France,Historical,EV stock,Cars,PHEV,2025,Vehicles,810000
+France,Historical,EV stock,Cars,EV,2025,Vehicles,2200000
+France,Historical,EV stock,Cars,BEV,2025,Vehicles,1400000
+France,Historical,EV stock,Cars,FCEV,2025,Vehicles,1300
+Germany,Historical,EV stock,Cars,FCEV,2025,Vehicles,1700
+Germany,Historical,EV stock,Cars,BEV,2025,Vehicles,2000000
+Germany,Historical,EV stock,Cars,EV,2025,Vehicles,3100000
+Germany,Historical,EV stock,Cars,PHEV,2025,Vehicles,1100000
+Greece,Historical,EV stock,Cars,PHEV,2025,Vehicles,35000
+Greece,Historical,EV stock,Cars,EV,2025,Vehicles,59000
+Greece,Historical,EV stock,Cars,BEV,2025,Vehicles,24000
+Iceland,Historical,EV stock,Cars,BEV,2025,Vehicles,37000
+Iceland,Historical,EV stock,Cars,FCEV,2025,Vehicles,200
+Iceland,Historical,EV stock,Cars,EV,2025,Vehicles,64000
+Iceland,Historical,EV stock,Cars,PHEV,2025,Vehicles,27000
+India,Historical,EV stock,Cars,BEV,2025,Vehicles,410000
+India,Historical,EV stock,Cars,EV,2025,Vehicles,410000
+Indonesia,Historical,EV stock,Cars,EV,2025,Vehicles,190000
+Indonesia,Historical,EV stock,Cars,PHEV,2025,Vehicles,5800
+Indonesia,Historical,EV stock,Cars,FCEV,2025,Vehicles,3
+Indonesia,Historical,EV stock,Cars,BEV,2025,Vehicles,180000
+Israel,Historical,EV stock,Cars,BEV,2025,Vehicles,210000
+Israel,Historical,EV stock,Cars,PHEV,2025,Vehicles,100000
+Israel,Historical,EV stock,Cars,EV,2025,Vehicles,320000
+Italy,Historical,EV stock,Cars,EV,2025,Vehicles,690000
+Italy,Historical,EV stock,Cars,PHEV,2025,Vehicles,350000
+Italy,Historical,EV stock,Cars,BEV,2025,Vehicles,340000
+Italy,Historical,EV stock,Cars,FCEV,2025,Vehicles,59
+Japan,Historical,EV stock,Cars,BEV,2025,Vehicles,400000
+Japan,Historical,EV stock,Cars,FCEV,2025,Vehicles,8500
+Japan,Historical,EV stock,Cars,PHEV,2025,Vehicles,320000
+Japan,Historical,EV stock,Cars,EV,2025,Vehicles,720000
+Jordan,Historical,EV stock,Cars,EV,2025,Vehicles,14000
+Jordan,Historical,EV stock,Cars,PHEV,2025,Vehicles,820
+Jordan,Historical,EV stock,Cars,BEV,2025,Vehicles,14000
+Korea,Historical,EV stock,Cars,EV,2025,Vehicles,840000
+Korea,Historical,EV stock,Cars,BEV,2025,Vehicles,740000
+Korea,Historical,EV stock,Cars,FCEV,2025,Vehicles,42000
+Korea,Historical,EV stock,Cars,PHEV,2025,Vehicles,94000
+Lao PDR,Historical,EV stock,Cars,EV,2025,Vehicles,9500
+Lao PDR,Historical,EV stock,Cars,PHEV,2025,Vehicles,780
+Lao PDR,Historical,EV stock,Cars,BEV,2025,Vehicles,8700
+Latin America,Historical,EV stock,Cars,EV,2025,Vehicles,710000
+Latin America,Historical,EV stock,Cars,BEV,2025,Vehicles,380000
+Latin America,Historical,EV stock,Cars,FCEV,2025,Vehicles,5
+Latin America,Historical,EV stock,Cars,PHEV,2025,Vehicles,330000
+Malaysia,Historical,EV stock,Cars,EV,2025,Vehicles,110000
+Malaysia,Historical,EV stock,Cars,PHEV,2025,Vehicles,31000
+Malaysia,Historical,EV stock,Cars,BEV,2025,Vehicles,82000
+Malaysia,Historical,EV stock,Cars,FCEV,2025,Vehicles,6
+Mexico,Historical,EV stock,Cars,BEV,2025,Vehicles,82000
+Mexico,Historical,EV stock,Cars,PHEV,2025,Vehicles,76000
+Mexico,Historical,EV stock,Cars,EV,2025,Vehicles,160000
+Middle East and Caspian,Historical,EV stock,Cars,EV,2025,Vehicles,400000
+Middle East and Caspian,Historical,EV stock,Cars,BEV,2025,Vehicles,230000
+Middle East and Caspian,Historical,EV stock,Cars,FCEV,2025,Vehicles,6
+Middle East and Caspian,Historical,EV stock,Cars,PHEV,2025,Vehicles,170000
+Netherlands,Historical,EV stock,Cars,EV,2025,Vehicles,1200000
+Netherlands,Historical,EV stock,Cars,PHEV,2025,Vehicles,520000
+Netherlands,Historical,EV stock,Cars,BEV,2025,Vehicles,680000
+Netherlands,Historical,EV stock,Cars,FCEV,2025,Vehicles,650
+New Zealand,Historical,EV stock,Cars,FCEV,2025,Vehicles,38
+New Zealand,Historical,EV stock,Cars,BEV,2025,Vehicles,87000
+New Zealand,Historical,EV stock,Cars,PHEV,2025,Vehicles,41000
+New Zealand,Historical,EV stock,Cars,EV,2025,Vehicles,130000
+Norway,Historical,EV stock,Cars,PHEV,2025,Vehicles,190000
+Norway,Historical,EV stock,Cars,EV,2025,Vehicles,1100000
+Norway,Historical,EV stock,Cars,BEV,2025,Vehicles,870000
+Norway,Historical,EV stock,Cars,FCEV,2025,Vehicles,61
+Philippines,Historical,EV stock,Cars,BEV,2025,Vehicles,19000
+Philippines,Historical,EV stock,Cars,EV,2025,Vehicles,35000
+Philippines,Historical,EV stock,Cars,PHEV,2025,Vehicles,16000
+Poland,Historical,EV stock,Cars,PHEV,2025,Vehicles,120000
+Poland,Historical,EV stock,Cars,EV,2025,Vehicles,240000
+Poland,Historical,EV stock,Cars,BEV,2025,Vehicles,120000
+Poland,Historical,EV stock,Cars,FCEV,2025,Vehicles,370
+Portugal,Historical,EV stock,Cars,FCEV,2025,Vehicles,6
+Portugal,Historical,EV stock,Cars,BEV,2025,Vehicles,180000
+Portugal,Historical,EV stock,Cars,EV,2025,Vehicles,330000
+Portugal,Historical,EV stock,Cars,PHEV,2025,Vehicles,150000
+Russia,Historical,EV stock,Cars,PHEV,2025,Vehicles,51000
+Russia,Historical,EV stock,Cars,EV,2025,Vehicles,84000
+Russia,Historical,EV stock,Cars,BEV,2025,Vehicles,33000
+Singapore,Historical,EV stock,Cars,BEV,2025,Vehicles,45000
+Singapore,Historical,EV stock,Cars,EV,2025,Vehicles,50000
+Singapore,Historical,EV stock,Cars,PHEV,2025,Vehicles,4600
+South Africa,Historical,EV stock,Cars,PHEV,2025,Vehicles,4800
+South Africa,Historical,EV stock,Cars,EV,2025,Vehicles,9200
+South Africa,Historical,EV stock,Cars,BEV,2025,Vehicles,4400
+South Africa,Historical,EV stock,Cars,FCEV,2025,Vehicles,3
+Southeast Asia,Historical,EV stock,Cars,EV,2025,Vehicles,1100000
+Southeast Asia,Historical,EV stock,Cars,BEV,2025,Vehicles,910000
+Southeast Asia,Historical,EV stock,Cars,FCEV,2025,Vehicles,10
+Southeast Asia,Historical,EV stock,Cars,PHEV,2025,Vehicles,140000
+Spain,Historical,EV stock,Cars,EV,2025,Vehicles,630000
+Spain,Historical,EV stock,Cars,PHEV,2025,Vehicles,320000
+Spain,Historical,EV stock,Cars,FCEV,2025,Vehicles,65
+Spain,Historical,EV stock,Cars,BEV,2025,Vehicles,310000
+Sweden,Historical,EV stock,Cars,BEV,2025,Vehicles,430000
+Sweden,Historical,EV stock,Cars,FCEV,2025,Vehicles,46
+Sweden,Historical,EV stock,Cars,PHEV,2025,Vehicles,370000
+Sweden,Historical,EV stock,Cars,EV,2025,Vehicles,810000
+Switzerland,Historical,EV stock,Cars,EV,2025,Vehicles,400000
+Switzerland,Historical,EV stock,Cars,PHEV,2025,Vehicles,130000
+Switzerland,Historical,EV stock,Cars,FCEV,2025,Vehicles,210
+Switzerland,Historical,EV stock,Cars,BEV,2025,Vehicles,270000
+Thailand,Historical,EV stock,Cars,BEV,2025,Vehicles,280000
+Thailand,Historical,EV stock,Cars,FCEV,2025,Vehicles,1
+Thailand,Historical,EV stock,Cars,PHEV,2025,Vehicles,84000
+Thailand,Historical,EV stock,Cars,EV,2025,Vehicles,370000
+Turkiye,Historical,EV stock,Cars,EV,2025,Vehicles,420000
+Turkiye,Historical,EV stock,Cars,PHEV,2025,Vehicles,61000
+Turkiye,Historical,EV stock,Cars,BEV,2025,Vehicles,360000
+United Arab Emirates,Historical,EV stock,Cars,BEV,2025,Vehicles,120000
+United Arab Emirates,Historical,EV stock,Cars,FCEV,2025,Vehicles,6
+United Arab Emirates,Historical,EV stock,Cars,PHEV,2025,Vehicles,76000
+United Arab Emirates,Historical,EV stock,Cars,EV,2025,Vehicles,200000
+United Kingdom,Historical,EV stock,Cars,EV,2025,Vehicles,2500000
+United Kingdom,Historical,EV stock,Cars,PHEV,2025,Vehicles,860000
+United Kingdom,Historical,EV stock,Cars,FCEV,2025,Vehicles,270
+United Kingdom,Historical,EV stock,Cars,BEV,2025,Vehicles,1600000
+Uruguay,Historical,EV stock,Cars,BEV,2025,Vehicles,19000
+Uruguay,Historical,EV stock,Cars,PHEV,2025,Vehicles,5500
+Uruguay,Historical,EV stock,Cars,EV,2025,Vehicles,24000
+USA,Historical,EV stock,Cars,EV,2025,Vehicles,7800000
+USA,Historical,EV stock,Cars,BEV,2025,Vehicles,5900000
+USA,Historical,EV stock,Cars,FCEV,2025,Vehicles,19000
+USA,Historical,EV stock,Cars,PHEV,2025,Vehicles,1900000
+Uzbekistan,Historical,EV stock,Cars,EV,2025,Vehicles,63000
+Uzbekistan,Historical,EV stock,Cars,PHEV,2025,Vehicles,47000
+Uzbekistan,Historical,EV stock,Cars,BEV,2025,Vehicles,16000
+Viet Nam,Historical,EV stock,Cars,BEV,2025,Vehicles,280000
+Viet Nam,Historical,EV stock,Cars,PHEV,2025,Vehicles,240
+Viet Nam,Historical,EV stock,Cars,EV,2025,Vehicles,280000
+World,Historical,EV stock,Cars,EV,2025,Vehicles,75000000
+World,Historical,EV stock,Cars,BEV,2025,Vehicles,51000000
+World,Historical,EV stock,Cars,FCEV,2025,Vehicles,76000
+World,Historical,EV stock,Cars,PHEV,2025,Vehicles,25000000

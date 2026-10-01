@@ -1,0 +1,7391 @@
+{
+  "accessed": "2026-10-01",
+  "Eurostat_source": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/road_eqs_carpda?lang=EN&sinceTimePeriod=2024&leg_form=TOTAL",
+  "Eurostat_rows": [
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "AT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 205359
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "AT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 262053
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "BE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 361730
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "BE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 453624
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "BG",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 450009
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "CY",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 3911
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "CY",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 5787
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "CZ",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 287461
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "CZ",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 297652
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "DE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 2034591
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "DE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 2394672
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "DK",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 344556
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "DK",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 541082
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "EE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 10864
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "EE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 12829
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "EL",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 244155
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "EL",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 258075
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "ES",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 435853
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "ES",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 602702
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "EU27_2020",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 17000923
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "FI",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 144556
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "FI",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 192476
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "FR",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 1711530
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "HR",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 66943
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "HR",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 66909
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "HU",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 90491
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "HU",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 116145
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "IE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 84673
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "IE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 110174
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "IT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 4365090
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "IT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 4526016
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "LT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 125306
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "LT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 134162
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "LU",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 33116
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "LU",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 40445
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "LV",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 42579
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "LV",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 44187
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "MT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 9228
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "MT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 11700
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "NL",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 669678
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "PL",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 4230027
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "PT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 257863
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "PT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 354014
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "RO",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 138708
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "RO",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 175020
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "SE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 559436
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "SE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 624108
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "SI",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 25983
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "SI",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 33259
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ALT",
+      "geo": "SK",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 67227
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE",
+      "geo": "AT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 2582446
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE",
+      "geo": "AT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 2497846
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE",
+      "geo": "BE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 1923183
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE",
+      "geo": "BE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 1772885
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE",
+      "geo": "BG",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 1529021
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE",
+      "geo": "BG",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 1604366
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE",
+      "geo": "CY",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 135829
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE",
+      "geo": "CY",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 137315
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE",
+      "geo": "CZ",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 2524164
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE",
+      "geo": "CZ",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 2547071
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE",
+      "geo": "DE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 14592567
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE",
+      "geo": "DE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 14254484
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE",
+      "geo": "DK",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 649811
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE",
+      "geo": "DK",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 689409
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE",
+      "geo": "EE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 369142
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE",
+      "geo": "EE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 351417
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE",
+      "geo": "ES",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 14157909
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE",
+      "geo": "ES",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 14017092
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE",
+      "geo": "FI",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 908124
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE",
+      "geo": "FI",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 892124
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE",
+      "geo": "FR",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 19404333
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE",
+      "geo": "HR",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 1110070
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE",
+      "geo": "HR",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 1144825
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE",
+      "geo": "HU",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 1365075
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE",
+      "geo": "HU",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 1396159
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE",
+      "geo": "IE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 1357639
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE",
+      "geo": "IE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 1341757
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE",
+      "geo": "IT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 16796038
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE",
+      "geo": "IT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 16496092
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE",
+      "geo": "LT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 1130750
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE",
+      "geo": "LT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 1161793
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE",
+      "geo": "LU",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 181450
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE",
+      "geo": "LU",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 167299
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE",
+      "geo": "LV",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 523451
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE",
+      "geo": "LV",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 525567
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE",
+      "geo": "MT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 93513
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE",
+      "geo": "MT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 91905
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE",
+      "geo": "NL",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 683003
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE",
+      "geo": "PL",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 8392960
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE",
+      "geo": "PT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 3326068
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE",
+      "geo": "PT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 3364441
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE",
+      "geo": "RO",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 4322854
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE",
+      "geo": "RO",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 4499536
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE",
+      "geo": "SE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 1572610
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE",
+      "geo": "SE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 1537970
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE",
+      "geo": "SI",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 602520
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE",
+      "geo": "SI",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 605585
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE_X_HYB",
+      "geo": "AT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 2510099
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE_X_HYB",
+      "geo": "AT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 2407428
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE_X_HYB",
+      "geo": "BE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 1849251
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE_X_HYB",
+      "geo": "BE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 1699797
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE_X_HYB",
+      "geo": "BG",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 1516294
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE_X_HYB",
+      "geo": "BG",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 1587802
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE_X_HYB",
+      "geo": "CY",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 133723
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE_X_HYB",
+      "geo": "CY",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 134442
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE_X_HYB",
+      "geo": "CZ",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 2516157
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE_X_HYB",
+      "geo": "CZ",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 2537462
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE_X_HYB",
+      "geo": "DE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 13829261
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE_X_HYB",
+      "geo": "DE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 13385662
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE_X_HYB",
+      "geo": "DK",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 645132
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE_X_HYB",
+      "geo": "DK",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 684368
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE_X_HYB",
+      "geo": "EE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 358904
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE_X_HYB",
+      "geo": "EE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 339912
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE_X_HYB",
+      "geo": "ES",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 13952057
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE_X_HYB",
+      "geo": "ES",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 13758092
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE_X_HYB",
+      "geo": "FI",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 891115
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE_X_HYB",
+      "geo": "FI",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 874110
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE_X_HYB",
+      "geo": "FR",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 19201010
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE_X_HYB",
+      "geo": "HR",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 1110070
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE_X_HYB",
+      "geo": "HR",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 1144825
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE_X_HYB",
+      "geo": "HU",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 1338743
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE_X_HYB",
+      "geo": "HU",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 1364343
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE_X_HYB",
+      "geo": "IE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 1346910
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE_X_HYB",
+      "geo": "IE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 1328687
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE_X_HYB",
+      "geo": "IT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 16437562
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE_X_HYB",
+      "geo": "IT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 16051400
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE_X_HYB",
+      "geo": "LT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 1122031
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE_X_HYB",
+      "geo": "LT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 1149671
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE_X_HYB",
+      "geo": "LU",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 168206
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE_X_HYB",
+      "geo": "LU",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 152743
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE_X_HYB",
+      "geo": "LV",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 517507
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE_X_HYB",
+      "geo": "LV",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 517762
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE_X_HYB",
+      "geo": "MT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 93039
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE_X_HYB",
+      "geo": "MT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 91331
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE_X_HYB",
+      "geo": "NL",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 664475
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE_X_HYB",
+      "geo": "PT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 3277095
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE_X_HYB",
+      "geo": "PT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 3305514
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE_X_HYB",
+      "geo": "RO",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 4284499
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE_X_HYB",
+      "geo": "RO",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 4445905
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE_X_HYB",
+      "geo": "SE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 1557502
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE_X_HYB",
+      "geo": "SE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 1519841
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE_X_HYB",
+      "geo": "SI",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 602520
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "DIE_X_HYB",
+      "geo": "SI",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 605585
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "AT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 200603
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "AT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 257717
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "BE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 303784
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "BE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 395188
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "BG",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 17826
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "BG",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 21545
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "CY",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 3317
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "CY",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 5244
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "CZ",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 36341
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "CZ",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 57611
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "DE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 1651643
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "DE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 2034260
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "DK",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 344438
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "DK",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 540979
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "EE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 8111
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "EE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 10171
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "EL",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 17987
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "EL",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 30108
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "ES",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 208240
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "ES",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 312914
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "EU27_2020",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 5774179
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "EU27_2020",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 7592725
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "FI",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 121539
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "FI",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 169458
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "FR",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 1132210
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "FR",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 1543440
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "HR",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 10045
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "HR",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 12616
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "HU",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 60211
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "HU",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 86372
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "IE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 77336
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "IE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 103299
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "IT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 279607
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "IT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 362224
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "LT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 15741
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "LT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 23148
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "LU",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 32618
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "LU",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 39986
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "LV",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 9234
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "LV",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 13916
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "MT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 7301
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "MT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 9790
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "NL",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 569144
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "NL",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 680605
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "PL",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 62182
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "PL",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 102710
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "PT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 165316
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "PT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 241819
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "RO",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 49594
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "RO",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 61453
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "SE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 358255
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "SE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 432709
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "SI",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 16944
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "SI",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 24548
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "SK",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 14612
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC",
+      "geo": "SK",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 18895
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_HYB",
+      "geo": "AT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 66843
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_HYB",
+      "geo": "AT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 82692
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_HYB",
+      "geo": "BE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 41826
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_HYB",
+      "geo": "BE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 39706
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_HYB",
+      "geo": "BG",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 11758
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_HYB",
+      "geo": "BG",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 15468
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_HYB",
+      "geo": "CY",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 2055
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_HYB",
+      "geo": "CY",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 2804
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_HYB",
+      "geo": "CZ",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 3543
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_HYB",
+      "geo": "CZ",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 2079
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_HYB",
+      "geo": "DE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 692054
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_HYB",
+      "geo": "DE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 790538
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_HYB",
+      "geo": "EE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 9640
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_HYB",
+      "geo": "EE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 10693
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_HYB",
+      "geo": "ES",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 192829
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_HYB",
+      "geo": "ES",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 238002
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_HYB",
+      "geo": "FI",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 9173
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_HYB",
+      "geo": "FI",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 9627
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_HYB",
+      "geo": "FR",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 176378
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_HYB",
+      "geo": "HR",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_HYB",
+      "geo": "HR",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_HYB",
+      "geo": "HU",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 26332
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_HYB",
+      "geo": "HU",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 30865
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_HYB",
+      "geo": "IE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 8002
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_HYB",
+      "geo": "IE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 9439
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_HYB",
+      "geo": "IT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 315465
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_HYB",
+      "geo": "IT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 387203
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_HYB",
+      "geo": "LT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 8719
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_HYB",
+      "geo": "LT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 10683
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_HYB",
+      "geo": "LU",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 12103
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_HYB",
+      "geo": "LU",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 13558
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_HYB",
+      "geo": "LV",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 5615
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_HYB",
+      "geo": "LV",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 7327
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_HYB",
+      "geo": "MT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 401
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_HYB",
+      "geo": "MT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 472
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_HYB",
+      "geo": "NL",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 7906
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_HYB",
+      "geo": "PT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 32907
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_HYB",
+      "geo": "PT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 36577
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_HYB",
+      "geo": "RO",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 36250
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_HYB",
+      "geo": "RO",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 50809
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_HYB",
+      "geo": "SE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 729
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_HYB",
+      "geo": "SE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 1249
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_HYB",
+      "geo": "SI",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_HYB",
+      "geo": "SI",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "AT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 5504
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "AT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 7726
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "BE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 32106
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "BE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 33382
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "BG",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 969
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "BG",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 1096
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "CY",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 51
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "CY",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 69
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "CZ",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 4464
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "CZ",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 7530
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "DE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 71252
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "DE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 78284
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "DK",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 4679
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "DK",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 5041
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "EE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 598
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "EE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 812
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "EL",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "EL",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "ES",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 13023
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "ES",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 20998
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "EU27_2020",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 262021
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "EU27_2020",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 322363
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "FI",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 7836
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "FI",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 8387
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "FR",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 26945
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "FR",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 31308
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "HR",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "HR",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "HU",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "HU",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 951
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "IE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 2727
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "IE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 3631
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "IT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 43011
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "IT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 57489
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "LT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "LT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 1439
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "LU",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 1141
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "LU",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 998
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "LV",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 329
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "LV",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 478
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "MT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 73
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "MT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 102
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "NL",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 10622
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "NL",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 14673
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "PL",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 3443
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "PL",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 5012
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "PT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 16066
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "PT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 22350
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "RO",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 2105
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "RO",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 2822
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "SE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 14379
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "SE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 16880
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "SI",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "SI",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "SK",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 698
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_DIE_PI",
+      "geo": "SK",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 905
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_HYB",
+      "geo": "AT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 188324
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_HYB",
+      "geo": "AT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 252649
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_HYB",
+      "geo": "BE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 384033
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_HYB",
+      "geo": "BE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 420255
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_HYB",
+      "geo": "BG",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 56281
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_HYB",
+      "geo": "CY",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 41106
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_HYB",
+      "geo": "CY",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 56896
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_HYB",
+      "geo": "CZ",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 13163
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_HYB",
+      "geo": "CZ",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 16368
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_HYB",
+      "geo": "DE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 1897379
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_HYB",
+      "geo": "DE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 2448955
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_HYB",
+      "geo": "EE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 39810
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_HYB",
+      "geo": "EE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 44511
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_HYB",
+      "geo": "ES",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 1383928
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_HYB",
+      "geo": "ES",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 1793876
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_HYB",
+      "geo": "FI",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 175028
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_HYB",
+      "geo": "FI",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 195461
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_HYB",
+      "geo": "FR",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 2020476
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_HYB",
+      "geo": "HR",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 49859
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_HYB",
+      "geo": "HR",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 37858
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_HYB",
+      "geo": "HU",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 212383
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_HYB",
+      "geo": "HU",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 268572
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_HYB",
+      "geo": "IE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 159462
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_HYB",
+      "geo": "IE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 193650
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_HYB",
+      "geo": "IT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 2298150
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_HYB",
+      "geo": "IT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 2880887
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_HYB",
+      "geo": "LT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 70072
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_HYB",
+      "geo": "LT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 94277
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_HYB",
+      "geo": "LU",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 29091
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_HYB",
+      "geo": "LU",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 39473
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_HYB",
+      "geo": "LV",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 26733
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_HYB",
+      "geo": "LV",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 35541
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_HYB",
+      "geo": "MT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 9691
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_HYB",
+      "geo": "MT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 11648
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_HYB",
+      "geo": "NL",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 668700
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_HYB",
+      "geo": "PT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 140662
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_HYB",
+      "geo": "PT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 190329
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_HYB",
+      "geo": "RO",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 215706
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_HYB",
+      "geo": "RO",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 309047
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_HYB",
+      "geo": "SE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 208416
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_HYB",
+      "geo": "SE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 222891
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_HYB",
+      "geo": "SI",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 50299
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_HYB",
+      "geo": "SI",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 68650
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "AT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 69264
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "AT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 97655
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "BE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 294362
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "BE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 353118
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "BG",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 5057
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "BG",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 5717
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "CY",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 1510
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "CY",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 2429
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "CZ",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 16590
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "CZ",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 27983
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "DE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 896109
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "DE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 1044644
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "DK",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 122887
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "DK",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 122813
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "EE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 5010
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "EE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 7216
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "EL",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 27290
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "EL",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 38323
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "ES",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 226621
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "ES",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 349744
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "EU27_2020",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 3745689
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "EU27_2020",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 4656839
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "FI",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 164650
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "FI",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 185379
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "FR",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 683360
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "FR",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 794005
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "HR",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 6108
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "HR",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 5051
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "HU",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 12620
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "HU",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 9829
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "IE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 61955
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "IE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 88471
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "IT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 243726
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "IT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 325769
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "LT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 12291
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "LT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 19582
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "LU",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 16031
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "LU",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 17309
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "LV",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 2581
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "LV",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 6359
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "MT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 4598
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "MT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 5141
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "NL",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 364769
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "NL",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 503472
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "PL",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 65423
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "PL",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 95233
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "PT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 117768
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "PT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 159422
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "RO",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 12529
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "RO",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 16800
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "SE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 299151
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "SE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 356932
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "SI",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 3223
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "SI",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 5213
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "SK",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 10206
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "ELC_PET_PI",
+      "geo": "SK",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 13230
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "AT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 2172
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "AT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 1940
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "BE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 8544
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "BE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 8052
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "BG",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 4490
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "CY",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "CY",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "CZ",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 23066
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "CZ",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 22916
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "DE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 73123
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "DE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 66396
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "DK",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 91
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "DK",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 81
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "EE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 2672
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "EE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 2570
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "EL",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 6371
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "EL",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 5773
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "ES",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 12169
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "ES",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 12154
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "FI",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 8441
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "FI",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 17923
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "FR",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 1347
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "FR",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 5447
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "HR",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 21
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "HR",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 408
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "HU",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 859
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "HU",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 1580
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "IE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 173
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "IE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 172
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "IT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 925583
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "IT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 899801
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "LT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 142
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "LT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 184
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "LU",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 2
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "LU",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 96
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "LV",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 405
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "LV",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 354
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "MT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "MT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "NL",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 6881
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "PL",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 4807
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "PT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 261
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "PT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 287
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "RO",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 460
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "RO",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 3473
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "SE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 14626
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "SE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 31396
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "SI",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 470
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "SI",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 460
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "GAS",
+      "geo": "SK",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 3529
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "AT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 62
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "AT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 53
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "BE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 63
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "BE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 26
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "BG",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 4
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "BG",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 1
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "CY",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "CY",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "CZ",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 29
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "CZ",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 29
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "DE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 1902
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "DE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 1685
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "DK",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 17
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "DK",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 13
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "EE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "EE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "EL",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "EL",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "ES",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 42
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "ES",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 65
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "EU27_2020",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 3704
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "EU27_2020",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 4271
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "FI",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 2
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "FI",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 19
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "FR",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 1304
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "FR",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 1277
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "HR",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 1
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "HR",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 1
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "HU",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 4
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "HU",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 5
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "IE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "IE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "IT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 58
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "IT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 59
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "LT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "LT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 1
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "LU",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 12
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "LU",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 6
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "LV",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "LV",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 6
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "MT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "MT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "NL",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 2
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "NL",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 647
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "PL",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 159
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "PL",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 340
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "PT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 1
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "PT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 1
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "RO",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "RO",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "SE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 39
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "SE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 36
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "SI",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "SI",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "SK",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 3
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "HYD_FCELL",
+      "geo": "SK",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 1
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "AT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 1
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "AT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 2
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "BE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 38
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "BE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 38
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "BG",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 389462
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "CY",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "CY",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "CZ",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 120873
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "CZ",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 123041
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "DE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 299922
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "DE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 284455
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "DK",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 9
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "DK",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 9
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "EE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 81
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "EE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 88
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "EL",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 219797
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "EL",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 222194
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "ES",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 18907
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "ES",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 18894
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "EU27_2020",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 7666822
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "FI",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 1
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "FI",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 20
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "FR",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 122
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "FR",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 320536
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "HR",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 51
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "HR",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 53278
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "HU",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 37
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "HU",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 26728
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "IE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 516
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "IE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 920
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "IT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 3153648
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "IT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 3257734
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "LT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 117
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "LT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 150
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "LU",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "LU",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 339
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "LV",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 20558
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "LV",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 19575
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "MT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 4
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "MT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 4
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "NL",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 89909
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "NL",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 94536
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "PL",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 3203935
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "PL",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 3455671
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "PT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 91024
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "PT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 110507
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "RO",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 27
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "RO",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 109179
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "SE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 209
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "SE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 217
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "SI",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 8491
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "SI",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 8176
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "SK",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 49083
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "LPG",
+      "geo": "SK",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 50228
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "OTH",
+      "geo": "AT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "OTH",
+      "geo": "AT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 2341
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "OTH",
+      "geo": "BE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 19016
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "OTH",
+      "geo": "BE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 50205
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "OTH",
+      "geo": "BG",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 8665
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "OTH",
+      "geo": "CY",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 594
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "OTH",
+      "geo": "CY",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 543
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "OTH",
+      "geo": "DE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 8001
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "OTH",
+      "geo": "DE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 7876
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "OTH",
+      "geo": "DK",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 1
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "OTH",
+      "geo": "DK",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "OTH",
+      "geo": "ES",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 11253
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "OTH",
+      "geo": "ES",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 11248
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "OTH",
+      "geo": "FI",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 107
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "OTH",
+      "geo": "FI",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 113
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "OTH",
+      "geo": "FR",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 2372
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "OTH",
+      "geo": "HR",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 3
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "OTH",
+      "geo": "HR",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 604
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "OTH",
+      "geo": "HU",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 237
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "OTH",
+      "geo": "HU",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 1460
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "OTH",
+      "geo": "IE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 459
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "OTH",
+      "geo": "IE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 60
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "OTH",
+      "geo": "IT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 6194
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "OTH",
+      "geo": "IT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 6198
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "OTH",
+      "geo": "LT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 109306
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "OTH",
+      "geo": "LT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 110679
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "OTH",
+      "geo": "LU",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "OTH",
+      "geo": "LU",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 3
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "OTH",
+      "geo": "LV",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 12382
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "OTH",
+      "geo": "LV",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 10336
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "OTH",
+      "geo": "MT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "OTH",
+      "geo": "MT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 1906
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "OTH",
+      "geo": "NL",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "OTH",
+      "geo": "PL",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 963132
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "OTH",
+      "geo": "PT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 9
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "OTH",
+      "geo": "PT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 1263
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "OTH",
+      "geo": "RO",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 20
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "OTH",
+      "geo": "RO",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 914
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "OTH",
+      "geo": "SE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 23
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "OTH",
+      "geo": "SE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 24
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "OTH",
+      "geo": "SI",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 78
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "OTH",
+      "geo": "SI",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 75
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET",
+      "geo": "AT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 2444088
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET",
+      "geo": "AT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 2526202
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET",
+      "geo": "BE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 3814082
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET",
+      "geo": "BE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 3909525
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET",
+      "geo": "BG",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 1138681
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET",
+      "geo": "CY",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 507587
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET",
+      "geo": "CY",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 524739
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET",
+      "geo": "CZ",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 3816058
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET",
+      "geo": "CZ",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 3920021
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET",
+      "geo": "DE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 32712008
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET",
+      "geo": "DE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 32837331
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET",
+      "geo": "DK",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 1870536
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET",
+      "geo": "DK",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 1787533
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET",
+      "geo": "EE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 489660
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET",
+      "geo": "EE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 444849
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET",
+      "geo": "ES",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 12107210
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET",
+      "geo": "ES",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 12661579
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET",
+      "geo": "FI",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 2703162
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET",
+      "geo": "FI",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 2708318
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET",
+      "geo": "FR",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 18623070
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET",
+      "geo": "HR",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 810143
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET",
+      "geo": "HR",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 846579
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET",
+      "geo": "HU",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 2807501
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET",
+      "geo": "HU",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 2862459
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET",
+      "geo": "IE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 1092635
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET",
+      "geo": "IE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 1167152
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET",
+      "geo": "IT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 20178631
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET",
+      "geo": "IT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 20771442
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET",
+      "geo": "LT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 473657
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET",
+      "geo": "LT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 520901
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET",
+      "geo": "LU",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 242669
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET",
+      "geo": "LU",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 254018
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET",
+      "geo": "LV",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 222045
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET",
+      "geo": "LV",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 233030
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET",
+      "geo": "MT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 227743
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET",
+      "geo": "MT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 232088
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET",
+      "geo": "NL",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 7895129
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET",
+      "geo": "PL",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 10328226
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET",
+      "geo": "PT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 2551586
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET",
+      "geo": "PT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 2692299
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET",
+      "geo": "RO",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 3988219
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET",
+      "geo": "RO",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 4100252
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET",
+      "geo": "SE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 2844941
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET",
+      "geo": "SE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 2877353
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET",
+      "geo": "SI",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 622005
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET",
+      "geo": "SI",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 647744
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET_X_HYB",
+      "geo": "AT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 2186500
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET_X_HYB",
+      "geo": "AT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 2175898
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET_X_HYB",
+      "geo": "BE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 3135687
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET_X_HYB",
+      "geo": "BE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 3136152
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET_X_HYB",
+      "geo": "BG",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 1077343
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET_X_HYB",
+      "geo": "BG",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 1093248
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET_X_HYB",
+      "geo": "CY",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 464971
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET_X_HYB",
+      "geo": "CY",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 465414
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET_X_HYB",
+      "geo": "CZ",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 3786305
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET_X_HYB",
+      "geo": "CZ",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 3875670
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET_X_HYB",
+      "geo": "DE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 29918520
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET_X_HYB",
+      "geo": "DE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 29343732
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET_X_HYB",
+      "geo": "DK",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 1747649
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET_X_HYB",
+      "geo": "DK",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 1664720
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET_X_HYB",
+      "geo": "EE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 444840
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET_X_HYB",
+      "geo": "EE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 393122
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET_X_HYB",
+      "geo": "ES",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 10496661
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET_X_HYB",
+      "geo": "ES",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 10517959
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET_X_HYB",
+      "geo": "FI",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 2363484
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET_X_HYB",
+      "geo": "FI",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 2327478
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET_X_HYB",
+      "geo": "FR",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 15919234
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET_X_HYB",
+      "geo": "HR",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 754176
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET_X_HYB",
+      "geo": "HR",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 803670
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET_X_HYB",
+      "geo": "HU",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 2582498
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET_X_HYB",
+      "geo": "HU",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 2584058
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET_X_HYB",
+      "geo": "IE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 871218
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET_X_HYB",
+      "geo": "IE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 885031
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET_X_HYB",
+      "geo": "IT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 17636755
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET_X_HYB",
+      "geo": "IT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 17564786
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET_X_HYB",
+      "geo": "LT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 391294
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET_X_HYB",
+      "geo": "LT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 407042
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET_X_HYB",
+      "geo": "LU",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 197547
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET_X_HYB",
+      "geo": "LU",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 197236
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET_X_HYB",
+      "geo": "LV",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 192731
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET_X_HYB",
+      "geo": "LV",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 191130
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET_X_HYB",
+      "geo": "MT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 213454
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET_X_HYB",
+      "geo": "MT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 215299
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET_X_HYB",
+      "geo": "NL",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 6861660
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET_X_HYB",
+      "geo": "PT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 2293156
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET_X_HYB",
+      "geo": "PT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 2342548
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET_X_HYB",
+      "geo": "RO",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 3759984
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET_X_HYB",
+      "geo": "RO",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 3774405
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET_X_HYB",
+      "geo": "SE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 2337374
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET_X_HYB",
+      "geo": "SE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 2297530
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET_X_HYB",
+      "geo": "SI",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 568483
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "PET_X_HYB",
+      "geo": "SI",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 573881
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "REN_OTH",
+      "geo": "AT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "REN_OTH",
+      "geo": "AT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "REN_OTH",
+      "geo": "BE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 131
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "REN_OTH",
+      "geo": "BE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 115
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "REN_OTH",
+      "geo": "BG",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 9
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "REN_OTH",
+      "geo": "CY",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "REN_OTH",
+      "geo": "CY",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "REN_OTH",
+      "geo": "CZ",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 107152
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "REN_OTH",
+      "geo": "CZ",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 94055
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "REN_OTH",
+      "geo": "DE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "REN_OTH",
+      "geo": "DK",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "REN_OTH",
+      "geo": "DK",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "REN_OTH",
+      "geo": "EE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "REN_OTH",
+      "geo": "EL",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "REN_OTH",
+      "geo": "ES",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 172
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "REN_OTH",
+      "geo": "ES",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 247427
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "REN_OTH",
+      "geo": "EU27_2020",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 529298
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "REN_OTH",
+      "geo": "FI",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 4912
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "REN_OTH",
+      "geo": "FI",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 4943
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "REN_OTH",
+      "geo": "FR",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 239454
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "REN_OTH",
+      "geo": "HR",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 2
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "REN_OTH",
+      "geo": "HR",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 2
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "REN_OTH",
+      "geo": "HU",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "REN_OTH",
+      "geo": "HU",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "REN_OTH",
+      "geo": "IE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 6189
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "REN_OTH",
+      "geo": "IE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 5723
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "REN_OTH",
+      "geo": "IT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "REN_OTH",
+      "geo": "LT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "REN_OTH",
+      "geo": "LT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "REN_OTH",
+      "geo": "LU",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 55
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "REN_OTH",
+      "geo": "LU",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 15
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "REN_OTH",
+      "geo": "LV",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "REN_OTH",
+      "geo": "LV",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "REN_OTH",
+      "geo": "MT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "REN_OTH",
+      "geo": "MT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "REN_OTH",
+      "geo": "NL",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 3742
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "REN_OTH",
+      "geo": "PL",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 619
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "REN_OTH",
+      "geo": "PT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 80
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "REN_OTH",
+      "geo": "PT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 138
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "REN_OTH",
+      "geo": "RO",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "REN_OTH",
+      "geo": "RO",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 1
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "REN_OTH",
+      "geo": "SE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 166781
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "REN_OTH",
+      "geo": "SE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 159726
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "REN_OTH",
+      "geo": "SI",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "REN_OTH",
+      "geo": "SK",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 0
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "AT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 5231893
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "AT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 5286101
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "BE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 6099089
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "BE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 6136034
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "BG",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 3116742
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "BG",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 3254325
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "CY",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 647327
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "CY",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 667841
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "CZ",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 6638172
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "CZ",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 6774399
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "DE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 49339166
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "DE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 49486487
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "DK",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 2864904
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "DK",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 3018026
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "EE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 869666
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "EE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 809095
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "EL",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 6027946
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "EL",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 6188525
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "ES",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 26700972
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "ES",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 27281373
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "EU27_2020",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 260195837
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "EU27_2020",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 263847868
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "FI",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 3755842
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "FI",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 3792918
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "FR",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 39738933
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "FR",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 39957994
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "HR",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 1987156
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "HR",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 2058313
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "HU",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 4263067
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "HU",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 4374763
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "IE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 2534636
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "IE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 2619083
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "IT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 41340516
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "IT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 41795962
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "LT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 1729713
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "LT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 1816856
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "LU",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 457231
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "LU",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 461762
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "LV",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 788075
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "LV",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 802784
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "MT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 330484
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "MT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 335693
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "NL",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 9247810
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "NL",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 9415540
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "PL",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 22951213
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "PL",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 23233513
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "PT",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 6135517
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "PT",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 6410754
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "RO",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 8449781
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "RO",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 8774808
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "SE",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 4976987
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "SE",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 5039431
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "SI",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 1250508
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "SI",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 1286588
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "SK",
+      "time": "2024",
+      "leg_form": "TOTAL",
+      "value": 2722491
+    },
+    {
+      "freq": "A",
+      "unit": "NR",
+      "mot_nrg": "TOTAL",
+      "geo": "SK",
+      "time": "2025",
+      "leg_form": "TOTAL",
+      "value": 2768900
+    }
+  ],
+  "KBA_verified": {
+    "202601": {
+      "Benzin": 29343732,
+      "Diesel": 13385662,
+      "Gas insgesamt": 350851,
+      "Elektro (BEV)": 2034260,
+      "Hybrid insgesamt": 4362563,
+      "  darunter Plug-in": 1122958,
+      "Sonstige": 9419,
+      "None": 49486487
+    },
+    "202607": {
+      "Benzin": 29012909,
+      "Diesel": 13157334,
+      "Gas insgesamt": 344598,
+      "Elektro (BEV)": 2365047,
+      "Hybrid insgesamt": 4807029,
+      "darunter Plug-in": 1226863,
+      "Sonstige": 9793,
+      "None": 49696710
+    }
+  },
+  "AFDC_current_vintage_changes": {
+    "id": 10881,
+    "renderer": "highcharts",
+    "series": [
+      {
+        "name": "Gasoline",
+        "data": [
+          1.12595568379844,
+          0.723957880877847,
+          0.987513766496023,
+          0.273026420715869,
+          3.61749816680134,
+          0.278987409108479,
+          0.616788590152217,
+          0.184776868369085,
+          1.29755079697399
+        ]
+      },
+      {
+        "name": "Ethanol/Flex (E85)",
+        "data": [
+          10.0350703235166,
+          6.39331416137916,
+          4.54708849085172,
+          1.63052019487663,
+          -31.7831573695334,
+          -1.61766323714407,
+          -3.29091034850746,
+          -1.64617733317263,
+          -1.02328129835473
+        ]
+      },
+      {
+        "name": "Diesel",
+        "data": [
+          4.70440375563715,
+          1.98072417208145,
+          3.17042650481236,
+          3.4941594718131,
+          -24.6149951478841,
+          0.651119898279982,
+          0.381387191514831,
+          -0.137990633363069,
+          0.347209634362433
+        ]
+      },
+      {
+        "name": "Hybrid Electric (HEV)",
+        "data": [
+          7.29435084241824,
+          4.86517065811805,
+          5.99392851603182,
+          6.24883146020732,
+          12.3474999089552,
+          12.7149623319241,
+          14.8871122654654,
+          13.0583586197163,
+          18.2363688816232
+        ]
+      },
+      {
+        "name": "Electric (EV)",
+        "data": [
+          25.6695836648104,
+          34.1425078588893,
+          26.9270035732517,
+          23.0935322406517,
+          29.9436193619362,
+          40.4495762191377,
+          31.3169661689024,
+          21.044918622466,
+          20.964147201797
+        ]
+      },
+      {
+        "name": "Biodiesel",
+        "data": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          13.1427892799177,
+          9.89798830075617,
+          7.49026595393651,
+          46.8166502878001
+        ]
+      },
+      {
+        "name": "Plug-In Hybrid Electric (PHEV)",
+        "data": [
+          26.2913522925131,
+          25.2980706698461,
+          14.0327991054789,
+          9.72409152086137,
+          24.4534824605999,
+          22.2836823389964,
+          22.5520195838433,
+          14.0452393477117,
+          14.1373080397471
+        ]
+      },
+      {
+        "name": "Compressed Natural Gas (CNG)",
+        "data": [
+          -8.82219876338411,
+          -8.84766907419567,
+          -8.64990190832887,
+          -7.49616564417178,
+          -1178.43137254902,
+          -59.375,
+          -3.64372469635627,
+          -4.21940928270042,
+          -36.9942196531792
+        ]
+      },
+      {
+        "name": "Hydrogen",
+        "data": [
+          59.375,
+          65.9574468085106,
+          26.5625,
+          9.85915492957746,
+          -20.3389830508475,
+          20.8053691275168,
+          11.8343195266272,
+          null,
+          0.588235294117647
+        ]
+      },
+      {
+        "name": "Propane",
+        "data": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          -15.1515151515152,
+          -10.0,
+          -5.26315789473684,
+          3.38983050847458
+        ]
+      },
+      {
+        "name": "Unknown Fuel",
+        "data": [
+          -7.55609721126962,
+          -4.54170726223488,
+          -2.57533825338253,
+          -4.64162175207143,
+          -35.1048799043582,
+          null,
+          -3.46496664895815,
+          -1.77831180534695,
+          7.80656049512502
+        ]
+      }
+    ],
+    "categories": [
+      "2016-2017",
+      "2017-2018",
+      "2018-2019",
+      "2019-2020",
+      "2020-2021",
+      "2021-2022",
+      "2022-2023",
+      "2023-2024",
+      "2024-2025"
+    ],
+    "title": "Change in U.S. Light-Duty Vehicle Registration Counts",
+    "chart_type": "line",
+    "display_type": "chart-line",
+    "source": "Vehicle registration counts derived by the National Laboratory of the Rockies with data from Experian Information Solutions",
+    "notes": "Data represent registered vehicles in operation in the United States in the given years.<p>\r\nData is subject to changes in reporting methods and definitions through the years.<p>\r\nFor more detailed vehicle registration counts, visit the AFDC Vehicle Registration Counts website (https://afdc.energy.gov/vehicle-registration)\r\nThe distinction between \"Diesel\" and \"Biodiesel\" vehicle registrations in this dataset is derived from original equipment manufacturer (OEM) VIN-decoding, which typically flags vehicles specifically marketed with B20 capability. However, virtually all diesel vehicles on the U.S. road today are approved by OEMs to operate on at least a B5 biodiesel blend (5% biodiesel), and a significant majority of modern diesel engines are fully warranted for B20 (20% biodiesel). Therefore, the specific \"Biodiesel\" registration count underestimates the true physical capability of the U.S. diesel fleet to utilize biodiesel fuels.<p>",
+    "context": "The chart illustrates the annual percent change of light-duty vehicles, by fuel type, registered in the United States from 2016 through 2025. Hydrogen fuel cell vehicles (HFCVs) consistently showed the greatest growth in registration counts until 2020. This is largely because initial vehicle registration counts were low. Annual changes are more volatile for vehicle fuel types with small populations, such as hydrogen, compressed natural gas, and propane. From 2016 to 2023, the highest average percentage increases are from electric vehicles with 28.2%, HFCVs with 19.4%, and Plug-in Hybrid Electric Vehicles (PHEVs) with 19.2%. The largest percent decrease is found in compressed natural gas vehicles, averaging -146.3% because of very limited fueling stations.  See relative vehicle population sizes at <a href=\"http://www.afdc.energy.gov/data/10861\">Light-Duty AFV Registrations</a>, <a href=\"http://www.afdc.energy.gov/data/10304\">AFV and HEV Model Offerings, by Manufacturer</a>, <a href=\"http://www.afdc.energy.gov/data/10567\">U.S. Plug-in Electric Vehicle Sales by Model</a>, and the Energy Information Administration's <a href=\"http://www.eia.gov/renewable/afv/users.cfm#tabs_charts-2\">Fleet and Fuel Data</a>. </p><p> To view more details, notes, and acronyms, please download the Excel spreadsheet.",
+    "thumbnail": "/files/u/data_set/10881/thumbnail/2f127a9631d3cbbe345a4bced8819a61.png",
+    "last_update": "June 2026",
+    "tags": [
+      "ethanol",
+      "electricity",
+      "hydrogen",
+      "natural-gas",
+      "propane",
+      "compressed-natural-gas",
+      "all-electric-vehicles",
+      "plug-in-hybrid-electric-vehicles",
+      "hybrid-electric-vehicles",
+      "flex-fuel-vehicles",
+      "natural-gas-vehicles",
+      "propane-vehicles",
+      "diesel-vehicles",
+      "fuel-trends"
+    ],
+    "spreadsheet": "/files/u/data_set/10881/data_source/d6e35e79b1f80c60238b12cc8717ff59.xlsx",
+    "xaxis": "",
+    "yaxis": "Percent Change",
+    "has_negatives": true,
+    "round_percents": false,
+    "credits": {
+      "enabled": true
+    },
+    "colors": [
+      "#2F7ED8",
+      "#FABD17",
+      "#7AB800",
+      "#910000",
+      "#00B2FF",
+      "#492970",
+      "#F28F43",
+      "#007934",
+      "#AA4643",
+      "#A6C96A",
+      "#005B82",
+      "#30C386",
+      "#E37222",
+      "#3226E5",
+      "#C9B519",
+      "#BE00AC",
+      "#0C4746",
+      "#89A54E",
+      "#C96219",
+      "#3D96AE"
+    ],
+    "plotOptions": {}
+  }
+}

@@ -1091,3 +1091,9 @@ html[lang="zh"] .brand-small {
   .session-impact-item .impact-unit { font-size: 7px; }
   .session-impact-item .impact-status { font-size: 6px; }
 }
+
+/* V3.1.0 accounting: aligned numeric columns, readable without changing the hero. */
+#accountingLive td { text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap; }
+#accountingLive th:first-child { text-align:left; }
+#accountingLive tbody tr:first-child { color:var(--cyan,#3ed9f5); font-weight:800; }
+#accountingExplanation { overflow-wrap:anywhere; }

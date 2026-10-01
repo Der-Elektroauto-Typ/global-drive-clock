@@ -1,0 +1,529 @@
+{
+  "researchDate": "2026-10-01",
+  "EU": {
+    "source": "Eurostat road_eqs_carpda, 2024/2025, TOTAL legal form",
+    "countries": [
+      "AT",
+      "BE",
+      "BG",
+      "HR",
+      "CY",
+      "CZ",
+      "DK",
+      "EE",
+      "FI",
+      "FR",
+      "DE",
+      "EL",
+      "HU",
+      "IE",
+      "IT",
+      "LV",
+      "LT",
+      "LU",
+      "MT",
+      "NL",
+      "PL",
+      "PT",
+      "RO",
+      "SK",
+      "SI",
+      "ES",
+      "SE"
+    ],
+    "annualTotals": {
+      "2024": {
+        "electric": 5774179,
+        "hybrid": 16798173,
+        "petrol": 126890701,
+        "diesel": 100495501,
+        "other": 10237283
+      },
+      "2025": {
+        "electric": 7592725,
+        "hybrid": 20954273,
+        "petrol": 125797035,
+        "diesel": 99061551,
+        "other": 10442284
+      }
+    },
+    "imputedCells": [
+      {
+        "country": "EL",
+        "year": 2024,
+        "estimated": "HEV/diesel/other shares from ACEA 2026 (Greece: 2023); petrol is balancing residual",
+        "total": 6027946
+      },
+      {
+        "country": "SK",
+        "year": 2024,
+        "estimated": "HEV/diesel/other shares from ACEA 2026 (Greece: 2023); petrol is balancing residual",
+        "total": 2722491
+      },
+      {
+        "country": "PL",
+        "year": 2024,
+        "estimated": "HEV/diesel/other shares from ACEA 2026 (Greece: 2023); petrol is balancing residual",
+        "total": 22951213
+      },
+      {
+        "country": "BG",
+        "year": 2025,
+        "estimated": "matched-country HEV/diesel trends; observed total/BEV/PHEV retained; other stable share; petrol residual (BG: hybrid residual)",
+        "total": 3254325
+      },
+      {
+        "country": "FR",
+        "year": 2025,
+        "estimated": "matched-country HEV/diesel trends; observed total/BEV/PHEV retained; other stable share; petrol residual (BG: hybrid residual)",
+        "total": 39957994
+      },
+      {
+        "country": "EL",
+        "year": 2025,
+        "estimated": "matched-country HEV/diesel trends; observed total/BEV/PHEV retained; other stable share; petrol residual (BG: hybrid residual)",
+        "total": 6188525
+      },
+      {
+        "country": "NL",
+        "year": 2025,
+        "estimated": "matched-country HEV/diesel trends; observed total/BEV/PHEV retained; other stable share; petrol residual (BG: hybrid residual)",
+        "total": 9415540
+      },
+      {
+        "country": "PL",
+        "year": 2025,
+        "estimated": "matched-country HEV/diesel trends; observed total/BEV/PHEV retained; other stable share; petrol residual (BG: hybrid residual)",
+        "total": 23233513
+      },
+      {
+        "country": "SK",
+        "year": 2025,
+        "estimated": "matched-country HEV/diesel trends; observed total/BEV/PHEV retained; other stable share; petrol residual (BG: hybrid residual)",
+        "total": 2768900
+      }
+    ],
+    "matchedCountryMultipliers": {
+      "hybrid": 1.2456987864116327,
+      "diesel": 0.9847901668397908
+    },
+    "countryPanels": {
+      "AT-2024": {
+        "electric": 200603,
+        "hybrid": 329935,
+        "petrol": 2186500,
+        "diesel": 2510099,
+        "other": 4756
+      },
+      "AT-2025": {
+        "electric": 257717,
+        "hybrid": 440722,
+        "petrol": 2175898,
+        "diesel": 2407428,
+        "other": 4336
+      },
+      "BE-2024": {
+        "electric": 303784,
+        "hybrid": 752327,
+        "petrol": 3135687,
+        "diesel": 1849251,
+        "other": 58040
+      },
+      "BE-2025": {
+        "electric": 395188,
+        "hybrid": 846461,
+        "petrol": 3136152,
+        "diesel": 1699797,
+        "other": 58436
+      },
+      "BG-2024": {
+        "electric": 17826,
+        "hybrid": 74065,
+        "petrol": 1077343,
+        "diesel": 1516294,
+        "other": 431214
+      },
+      "HR-2024": {
+        "electric": 10045,
+        "hybrid": 55967,
+        "petrol": 754176,
+        "diesel": 1110070,
+        "other": 56898
+      },
+      "HR-2025": {
+        "electric": 12616,
+        "hybrid": 42909,
+        "petrol": 803670,
+        "diesel": 1144825,
+        "other": 54293
+      },
+      "CY-2024": {
+        "electric": 3317,
+        "hybrid": 44722,
+        "petrol": 464971,
+        "diesel": 133723,
+        "other": 594
+      },
+      "CY-2025": {
+        "electric": 5244,
+        "hybrid": 62198,
+        "petrol": 465414,
+        "diesel": 134442,
+        "other": 543
+      },
+      "CZ-2024": {
+        "electric": 36341,
+        "hybrid": 37760,
+        "petrol": 3786305,
+        "diesel": 2516157,
+        "other": 261609
+      },
+      "CZ-2025": {
+        "electric": 57611,
+        "hybrid": 53960,
+        "petrol": 3875670,
+        "diesel": 2537462,
+        "other": 249696
+      },
+      "DK-2024": {
+        "electric": 344438,
+        "hybrid": 127566,
+        "petrol": 1747649,
+        "diesel": 645132,
+        "other": 119
+      },
+      "DK-2025": {
+        "electric": 540979,
+        "hybrid": 127854,
+        "petrol": 1664720,
+        "diesel": 684368,
+        "other": 105
+      },
+      "EE-2024": {
+        "electric": 8111,
+        "hybrid": 55058,
+        "petrol": 444840,
+        "diesel": 358904,
+        "other": 2753
+      },
+      "EE-2025": {
+        "electric": 10171,
+        "hybrid": 63232,
+        "petrol": 393122,
+        "diesel": 339912,
+        "other": 2658
+      },
+      "FI-2024": {
+        "electric": 121539,
+        "hybrid": 356687,
+        "petrol": 2363484,
+        "diesel": 891115,
+        "other": 23017
+      },
+      "FI-2025": {
+        "electric": 169458,
+        "hybrid": 398854,
+        "petrol": 2327478,
+        "diesel": 874110,
+        "other": 23018
+      },
+      "FR-2024": {
+        "electric": 1132210,
+        "hybrid": 2907159,
+        "petrol": 15919234,
+        "diesel": 19201010,
+        "other": 579320
+      },
+      "DE-2024": {
+        "electric": 1651643,
+        "hybrid": 3556794,
+        "petrol": 29918520,
+        "diesel": 13829261,
+        "other": 382948
+      },
+      "DE-2025": {
+        "electric": 2034260,
+        "hybrid": 4362421,
+        "petrol": 29343732,
+        "diesel": 13385662,
+        "other": 360412
+      },
+      "HU-2024": {
+        "electric": 60211,
+        "hybrid": 251335,
+        "petrol": 2582498,
+        "diesel": 1338743,
+        "other": 30280
+      },
+      "HU-2025": {
+        "electric": 86372,
+        "hybrid": 310217,
+        "petrol": 2584058,
+        "diesel": 1364343,
+        "other": 29773
+      },
+      "IE-2024": {
+        "electric": 77336,
+        "hybrid": 232146,
+        "petrol": 871218,
+        "diesel": 1346910,
+        "other": 7026
+      },
+      "IE-2025": {
+        "electric": 103299,
+        "hybrid": 295191,
+        "petrol": 885031,
+        "diesel": 1328687,
+        "other": 6875
+      },
+      "IT-2024": {
+        "electric": 279607,
+        "hybrid": 2900352,
+        "petrol": 17636755,
+        "diesel": 16437562,
+        "other": 4086240
+      },
+      "IT-2025": {
+        "electric": 362224,
+        "hybrid": 3651348,
+        "petrol": 17564786,
+        "diesel": 16051400,
+        "other": 4166204
+      },
+      "LV-2024": {
+        "electric": 9234,
+        "hybrid": 35258,
+        "petrol": 192731,
+        "diesel": 517507,
+        "other": 33345
+      },
+      "LV-2025": {
+        "electric": 13916,
+        "hybrid": 49705,
+        "petrol": 191130,
+        "diesel": 517762,
+        "other": 30271
+      },
+      "LT-2024": {
+        "electric": 15741,
+        "hybrid": 91082,
+        "petrol": 391294,
+        "diesel": 1122031,
+        "other": 109565
+      },
+      "LT-2025": {
+        "electric": 23148,
+        "hybrid": 125981,
+        "petrol": 407042,
+        "diesel": 1149671,
+        "other": 111014
+      },
+      "LU-2024": {
+        "electric": 32618,
+        "hybrid": 58366,
+        "petrol": 197547,
+        "diesel": 168206,
+        "other": 494
+      },
+      "LU-2025": {
+        "electric": 39986,
+        "hybrid": 71338,
+        "petrol": 197236,
+        "diesel": 152743,
+        "other": 459
+      },
+      "MT-2024": {
+        "electric": 7301,
+        "hybrid": 14763,
+        "petrol": 213454,
+        "diesel": 93039,
+        "other": 1927
+      },
+      "MT-2025": {
+        "electric": 9790,
+        "hybrid": 17363,
+        "petrol": 215299,
+        "diesel": 91331,
+        "other": 1910
+      },
+      "NL-2024": {
+        "electric": 569144,
+        "hybrid": 1051997,
+        "petrol": 6861660,
+        "diesel": 664475,
+        "other": 100534
+      },
+      "PT-2024": {
+        "electric": 165316,
+        "hybrid": 307403,
+        "petrol": 2293156,
+        "diesel": 3277095,
+        "other": 92547
+      },
+      "PT-2025": {
+        "electric": 241819,
+        "hybrid": 408678,
+        "petrol": 2342548,
+        "diesel": 3305514,
+        "other": 112195
+      },
+      "RO-2024": {
+        "electric": 49594,
+        "hybrid": 266590,
+        "petrol": 3759984,
+        "diesel": 4284499,
+        "other": 89114
+      },
+      "RO-2025": {
+        "electric": 61453,
+        "hybrid": 379478,
+        "petrol": 3774405,
+        "diesel": 4445905,
+        "other": 113567
+      },
+      "SI-2024": {
+        "electric": 16944,
+        "hybrid": 53522,
+        "petrol": 568483,
+        "diesel": 602520,
+        "other": 9039
+      },
+      "SI-2025": {
+        "electric": 24548,
+        "hybrid": 73863,
+        "petrol": 573881,
+        "diesel": 605585,
+        "other": 8711
+      },
+      "ES-2024": {
+        "electric": 208240,
+        "hybrid": 1816401,
+        "petrol": 10496661,
+        "diesel": 13952057,
+        "other": 227613
+      },
+      "ES-2025": {
+        "electric": 312914,
+        "hybrid": 2402620,
+        "petrol": 10517959,
+        "diesel": 13758092,
+        "other": 289788
+      },
+      "SE-2024": {
+        "electric": 358255,
+        "hybrid": 522675,
+        "petrol": 2337374,
+        "diesel": 1557502,
+        "other": 201181
+      },
+      "SE-2025": {
+        "electric": 432709,
+        "hybrid": 597952,
+        "petrol": 2297530,
+        "diesel": 1519841,
+        "other": 191399
+      },
+      "EL-2024": {
+        "electric": 17987,
+        "hybrid": 135793,
+        "petrol": 5180952,
+        "diesel": 578683,
+        "other": 114531
+      },
+      "SK-2024": {
+        "electric": 14612,
+        "hybrid": 119804,
+        "petrol": 1311227,
+        "diesel": 1203341,
+        "other": 73507
+      },
+      "PL-2024": {
+        "electric": 62182,
+        "hybrid": 642646,
+        "petrol": 10196998,
+        "diesel": 8790315,
+        "other": 3259072
+      },
+      "BG-2025": {
+        "electric": 21545,
+        "hybrid": 101481,
+        "petrol": 1093248,
+        "diesel": 1587802,
+        "other": 450249
+      },
+      "FR-2025": {
+        "electric": 1543440,
+        "hybrid": 3567473,
+        "petrol": 15355601,
+        "diesel": 18908966,
+        "other": 582514
+      },
+      "EL-2025": {
+        "electric": 30108,
+        "hybrid": 173759,
+        "petrol": 5297195,
+        "diesel": 569881,
+        "other": 117582
+      },
+      "NL-2025": {
+        "electric": 680605,
+        "hybrid": 1362699,
+        "petrol": 6615511,
+        "diesel": 654368,
+        "other": 102357
+      },
+      "PL-2025": {
+        "electric": 102710,
+        "hybrid": 816450,
+        "petrol": 10358578,
+        "diesel": 8656616,
+        "other": 3299159
+      },
+      "SK-2025": {
+        "electric": 18895,
+        "hybrid": 150066,
+        "petrol": 1340141,
+        "diesel": 1185038,
+        "other": 74760
+      }
+    }
+  },
+  "USA": {
+    "current2025": {
+      "Electric (EV)": 5689100,
+      "Plug-In Hybrid Electric (PHEV)": 1765700,
+      "Hybrid Electric (HEV)": 13929600,
+      "Biodiesel": 3375000,
+      "Ethanol/Flex (E85)": 19561100,
+      "Compressed Natural Gas (CNG)": 23200,
+      "Propane": 5500,
+      "Hydrogen": 16600,
+      "Methanol": 0,
+      "Gasoline": 240682100,
+      "Diesel": 7176500,
+      "Unknown Fuel": 1616900
+    },
+    "percentChange2024to2025": {
+      "Gasoline": 1.29755079697399,
+      "Ethanol/Flex (E85)": -1.02328129835473,
+      "Diesel": 0.347209634362433,
+      "Hybrid Electric (HEV)": 18.2363688816232,
+      "Electric (EV)": 20.964147201797,
+      "Biodiesel": 46.8166502878001,
+      "Plug-In Hybrid Electric (PHEV)": 14.1373080397471,
+      "Compressed Natural Gas (CNG)": -36.9942196531792,
+      "Hydrogen": 0.588235294117647,
+      "Propane": 3.38983050847458,
+      "Unknown Fuel": 7.80656049512502
+    },
+    "reconstructedPrevious": "base/(1+percent/100); no archived-vintage subtraction",
+    "rounding": "counts rounded to 100; classification revisions may affect trend"
+  },
+  "rest": {
+    "BEV": "IEA Cars World 51m/38m; regional residual at common date",
+    "hybrid": "Japan March 2025 13,785,608 minus assumed Japan PHEV 300,000; other-country HEV scenario 10m; IEA world PHEV 25m minus EU 4,979,202, China 15m and USA 1,765,700. Different reference dates; approximate scenario. Change 3,088,405/year is a scenario, not observed global growth.",
+    "retainedPriors": "World total 1.38bn/+20m, diesel322m/-3m, other15m/+0.5m originally Sept30 2026, translated to Dec31 2025. Global total growth +20m is replaced by summed regional rates plus explicit ROW +5m scenario. Not verified new statistics."
+  },
+  "china": "Broad MPS automobile stock (includes commercial vehicles); NEV residual not clean PHEV. HEV6m/+1.5m assumption; petrol balancing residual; diesel40m/+0.5m assumption. Not harmonized passenger-car census.",
+  "scope": "EU/DE passenger cars; USA light-duty; China automobiles. Global is mixed-scope accounting model, not an official harmonized passenger-car census."
+}

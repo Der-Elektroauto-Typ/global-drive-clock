@@ -2,6 +2,7 @@
   "use strict";
 
   const DATA = window.DRIVECOUNT_DATA;
+  const MODEL = window.DRIVECOUNT_MODEL;
   if (!DATA) {
     console.error("DRIVECOUNT_DATA missing.");
     return;
@@ -52,7 +53,7 @@
       observationTime: "Beobachtungszeit:",
       modeledEstimate: "MODELLIERTE ECHTZEITSCHÄTZUNG",
       methodDetails: "DATEN & METHODIK",
-      methodText: "Die Zähler stellen keine sekundengenau erhobenen Zulassungsdaten dar. Sie interpolieren den weltweiten Pkw-Bestand anhand veröffentlichter Bestands-, Absatz- und Marktdaten. Die Werte für Benzin, Diesel und Hybrid sind Modellwerte.",
+      methodText: "Die Zähler schreiben veröffentlichte Bestände und ausdrücklich gekennzeichnete Annahmen linear fort. Global addiert EU, China, USA und den modellierten Rest der Welt; Deutschland ist in der EU enthalten. Die regionalen Fahrzeugabgrenzungen unterscheiden sich. Keine amtliche Live-Zählung.",
       sourceBase: "Quellenbasis: IEA · ACEA · VDA/UBA · Modell",
       dataModel: "Datenmodell",
       dataAsOf: "Stand",
@@ -106,7 +107,7 @@
       observationTime: "Observation time:",
       modeledEstimate: "MODELED REAL-TIME ESTIMATE",
       methodDetails: "DATA & METHODOLOGY",
-      methodText: "The counters are not second-by-second official registration data. They interpolate the global passenger-car fleet using published stock, sales and market data. Petrol, diesel and hybrid values are model estimates.",
+      methodText: "The counters linearly extend published stocks and explicitly labeled assumptions. Global sums EU, China, USA and modeled rest of world; Germany is included in the EU. Regional vehicle scopes differ. Not an official live census.",
       sourceBase: "Source base: IEA · ACEA · VDA/UBA · model",
       dataModel: "Data model",
       dataAsOf: "As of",
@@ -159,7 +160,7 @@
       observationTime: "Temps d’observation :",
       modeledEstimate: "ESTIMATION MODÉLISÉE EN TEMPS RÉEL",
       methodDetails: "DONNÉES & MÉTHODOLOGIE",
-      methodText: "Les compteurs ne sont pas des immatriculations officielles relevées seconde par seconde. Ils interpolent le parc mondial de voitures particulières à partir de données publiées sur le parc, les ventes et le marché. Les valeurs essence, diesel et hybride sont des estimations de modèle.",
+      methodText: "Les compteurs prolongent linéairement des parcs publiés et des hypothèses explicites. Global additionne UE, Chine, États-Unis et reste du monde modélisé ; l’Allemagne est incluse dans l’UE. Les périmètres diffèrent. Pas de recensement officiel en direct.",
       sourceBase: "Sources : IEA · ACEA · VDA/UBA · modèle",
       dataModel: "Modèle de données",
       dataAsOf: "Données au",
@@ -212,7 +213,7 @@
       observationTime: "Tiempo de observación:",
       modeledEstimate: "ESTIMACIÓN MODELADA EN TIEMPO REAL",
       methodDetails: "DATOS & METODOLOGÍA",
-      methodText: "Los contadores no son datos oficiales de matriculación medidos segundo a segundo. Interpolan el parque mundial de turismos a partir de datos publicados de parque, ventas y mercado. Los valores de gasolina, diésel e híbridos son estimaciones del modelo.",
+      methodText: "Los contadores prolongan linealmente flotas publicadas y supuestos explícitos. Global suma UE, China, EE. UU. y resto del mundo modelado; Alemania está incluida en la UE. Los ámbitos regionales difieren. No es un censo oficial en directo.",
       sourceBase: "Fuentes: IEA · ACEA · VDA/UBA · modelo",
       dataModel: "Modelo de datos",
       dataAsOf: "Datos a",
@@ -265,7 +266,7 @@
       observationTime: "Tempo di osservazione:",
       modeledEstimate: "STIMA MODELLATA IN TEMPO REALE",
       methodDetails: "DATI & METODOLOGIA",
-      methodText: "I contatori non rappresentano immatricolazioni ufficiali rilevate secondo per secondo. Interpolano il parco mondiale di autovetture usando dati pubblicati su stock, vendite e mercato. I valori di benzina, diesel e ibrido sono stime del modello.",
+      methodText: "I contatori proiettano linearmente flotte pubblicate e ipotesi esplicite. Global somma UE, Cina, USA e resto del mondo modellato; la Germania è inclusa nell’UE. Gli ambiti regionali differiscono. Non è un censimento ufficiale in diretta.",
       sourceBase: "Fonti: IEA · ACEA · VDA/UBA · modello",
       dataModel: "Modello dati",
       dataAsOf: "Aggiornato a",
@@ -318,7 +319,7 @@
       observationTime: "Czas obserwacji:",
       modeledEstimate: "MODELOWANA ESTYMACJA W CZASIE RZECZYWISTYM",
       methodDetails: "DANE & METODOLOGIA",
-      methodText: "Liczniki nie przedstawiają oficjalnych rejestracji mierzonych co sekundę. Interpolują światową flotę samochodów osobowych na podstawie opublikowanych danych o parku, sprzedaży i rynku. Wartości dla benzyny, diesla i hybryd są estymacjami modelu.",
+      methodText: "Liczniki liniowo ekstrapolują opublikowane stany i jawne założenia. Global sumuje UE, Chiny, USA i modelowaną resztę świata; Niemcy są częścią UE. Zakresy regionalne różnią się. To nie jest oficjalny pomiar na żywo.",
       sourceBase: "Źródła: IEA · ACEA · VDA/UBA · model",
       dataModel: "Model danych",
       dataAsOf: "Stan na",
@@ -371,7 +372,7 @@
       observationTime: "Observatietijd:",
       modeledEstimate: "GEMODELLEERDE REALTIME-SCHATTING",
       methodDetails: "DATA & METHODIEK",
-      methodText: "De tellers zijn geen officiële registraties die per seconde worden gemeten. Ze interpoleren het wereldwijde personenwagenpark op basis van gepubliceerde wagenpark-, verkoop- en marktgegevens. De waarden voor benzine, diesel en hybride zijn modelschattingen.",
+      methodText: "De tellers extrapoleren gepubliceerde wagenparken en expliciete aannames lineair. Global telt EU, China, VS en gemodelleerde rest van de wereld op; Duitsland valt binnen de EU. De regionale afbakeningen verschillen. Geen officiële live telling.",
       sourceBase: "Bronnen: IEA · ACEA · wereldwijde marktgegevens",
       dataModel: "Datamodel",
       dataAsOf: "Stand",
@@ -424,7 +425,7 @@
       observationTime: "Tempo de observação:",
       modeledEstimate: "ESTIMATIVA MODELADA EM TEMPO REAL",
       methodDetails: "DADOS & METODOLOGIA",
-      methodText: "Os contadores não representam matrículas oficiais medidas segundo a segundo. Interpolam a frota mundial de automóveis de passageiros com base em dados publicados de frota, vendas e mercado. Os valores de gasolina, diesel e híbridos são estimativas do modelo.",
+      methodText: "Os contadores extrapolam linearmente frotas publicadas e hipóteses explícitas. Global soma UE, China, EUA e resto do mundo modelado; a Alemanha está incluída na UE. Os âmbitos regionais diferem. Não é um censo oficial ao vivo.",
       sourceBase: "Fontes: IEA · ACEA · VDA/UBA · modelo",
       dataModel: "Modelo de dados",
       dataAsOf: "Dados de",
@@ -477,7 +478,7 @@
       observationTime: "Observasjonstid:",
       modeledEstimate: "MODELLERT SANNTIDSESTIMAT",
       methodDetails: "DATA & METODE",
-      methodText: "Tellerne er ikke offisielle registreringstall målt sekund for sekund. De interpolerer den globale personbilparken ved hjelp av publiserte data om bestand, salg og marked. Verdiene for bensin, diesel og hybrid er modellestimater.",
+      methodText: "Tellerne fremskriver publiserte bestander og tydelige antakelser lineært. Global summerer EU, Kina, USA og modellert resten av verden; Tyskland inngår i EU. Regionale kjøretøyavgrensninger varierer. Ingen offisiell direktetelling.",
       sourceBase: "Kilder: IEA · ACEA · globale markedsdata",
       dataModel: "Datamodell",
       dataAsOf: "Data per",
@@ -530,7 +531,7 @@
       observationTime: "观察时间：",
       modeledEstimate: "模型化实时估算",
       methodDetails: "数据与方法",
-      methodText: "这些计数器并非逐秒采集的官方注册数据，而是根据已发布的保有量、销量和市场数据，对全球乘用车保有量进行插值估算。汽油、柴油和混合动力数据属于模型估算值。",
+      methodText: "计数器根据公布的保有量与明确标注的假设进行线性外推。全球等于欧盟、中国、美国和模型估算的世界其他地区之和；德国包含在欧盟内。各地区车辆统计范围不同，并非官方实时统计。",
       sourceBase: "数据来源：IEA · ACEA · VDA/UBA · 模型",
       dataModel: "数据模型",
       dataAsOf: "数据截至",
@@ -593,7 +594,8 @@
   function currentValue(item, market = activeMarket(), now = Date.now()) {
     const referenceTime = new Date(market.referenceDate).getTime();
     const seconds = (now - referenceTime) / 1000;
-    return Math.max(0, item.base + perSecond(item, market) * seconds);
+    const key = keys.find(k => market.categories[k] === item);
+    return key ? MODEL.current(market, key, now) : Math.max(0, item.base + perSecond(item, market) * seconds);
   }
 
   function formatInt(value) {
@@ -646,7 +648,7 @@
     const germany = currentMode === "germany";
     const region = currentMode === "global" ? DATA : (DATA.regions?.[currentMode] || DATA.germany);
     if (el("modelVersion")) {
-      el("modelVersion").textContent = `${t("dataModel")}: V3.0.7${region?.methodTag ? ` · ${region.methodTag}` : ""}`;
+      el("modelVersion").textContent = `${t("dataModel")}: V3.1.1${region?.methodTag ? ` · ${region.methodTag}` : ""}`;
     }
     if (el("dataDate")) {
       const dataDate = region?.dataDate && /^\d{4}-\d{2}-\d{2}$/.test(region.dataDate)
@@ -654,14 +656,17 @@
         : (region?.dataDate || DATA.dataDate);
       el("dataDate").textContent = `${t("dataAsOf")}: ${dataDate}`;
     }
+    if (el("researchDate")) el("researchDate").textContent = (ACCOUNTING_LABELS[currentLang] || ACCOUNTING_LABELS.en)[4];
+    if (currentMode === "global" && el("dataDate")) el("dataDate").textContent += currentLang === "de" ? " (gemeinsamer Rechenstichtag; Regionalstände abweichend)" : " (common accounting date; regional anchors differ)";
     const sourceBase = document.querySelector('[data-i18n="sourceBase"]');
     if (sourceBase) sourceBase.textContent = region?.sourceName || (germany ? t("germanySource") : t("sourceBase"));
     const localizedRegion = region?.translations?.[currentLang] || region?.translations?.en || {};
     const info = REGION_INFO[currentLang] || REGION_INFO.en;
     const methodHeading = document.querySelector("[data-i18n=regionModelHeading]");
     if (methodHeading) methodHeading.textContent = currentMode === "germany" ? t("germanyModelHeading") : (t("regionModelHeading") || info.heading);
+    renderAccountingMethod();
     const regionalMethod = el("regionalMethodText");
-    if (regionalMethod) regionalMethod.textContent = currentMode === "eu" ? info.eu : currentMode === "china" ? info.china : currentMode === "usa" ? info.usa : "";
+    if (regionalMethod) regionalMethod.textContent = "";
     const headline1 = document.querySelector('[data-i18n="headline1"]');
     const headline2 = document.querySelector('[data-i18n="headline2"]');
     const heroCopy = document.querySelector('[data-i18n="heroCopy"]');
@@ -690,9 +695,15 @@
       const trend = el(`trend-${key}`);
       const share = market.globalFleet?.base ? (item.base / market.globalFleet.base) * 100 : 0;
       const previousBase = item.base - item.annualChange;
-      const trendValue = item.trendPercent ?? ((germany || currentMode !== "global") ? (previousBase ? (item.annualChange / previousBase) * 100 : 0) : (item.base ? (item.annualChange / item.base) * 100 : 0));
+      const trendValue = item.trendPercent ?? (previousBase ? (item.annualChange / previousBase) * 100 : 0);
       if (bar) bar.style.width = `${Math.max(0, Math.min(100, share))}%`;
-      if (trend) trend.textContent = `${signed(trendValue, 1)} %`;
+      if (trend) {
+        trend.textContent = `${signed(trendValue, 1)} %`;
+        const up = item.annualChange >= 0;
+        trend.parentElement.classList.toggle("trend-up", up);
+        trend.parentElement.classList.toggle("trend-down", !up);
+        trend.parentElement.querySelector("span").textContent = up ? "▲" : "▼";
+      }
     });
   }
 
@@ -754,6 +765,9 @@
     const now = Date.now();
     const sessionSeconds = (now - startTime) / 1000;
     const market = activeMarket();
+    const counts = MODEL.ledger(now, startTime);
+    const changes = MODEL.ledger(now, startTime, true);
+    renderAccountingLive(changes);
 
     keys.forEach((key) => {
       const item = market.categories[key];
@@ -761,9 +775,9 @@
       const count = currentValue(item, market, now);
       const sessionChange = rate * sessionSeconds;
 
-      if (el(`count-${key}`)) el(`count-${key}`).textContent = formatInt(count);
+      if (el(`count-${key}`)) el(`count-${key}`).textContent = formatInt(counts[currentMode][key]);
       if (el(`rate-${key}`)) el(`rate-${key}`).textContent = signed(rate, 2);
-      if (el(`since-${key}`)) el(`since-${key}`).textContent = signedInt(sessionChange);
+      if (el(`since-${key}`)) el(`since-${key}`).textContent = signedInt(changes[currentMode][key]);
       renderImpact(key, market, count, sessionSeconds);
     });
 
@@ -785,6 +799,12 @@
   }
 
   function impactFlow(key, market, fleetCount) {
+    const components = MODEL.parts(market);
+    if (components.length) return components.reduce((sum, part) => {
+      const flow = impactFlow(key, part, MODEL.current(part,key,Date.now()));
+      for (const name of ["litres","co2kg","avoidedTailpipe","chargingKwh","chargingCO2"]) sum[name]=(sum[name]||0)+(flow[name]||0);
+      sum.avoided=key === "electric";return sum;
+    }, {});
     const p = impactParams(key, market);
     const factors = DATA.impactFactors;
     const seconds = SECONDS_PER_YEAR;
@@ -820,9 +840,14 @@
   }
 
   function accumulatedImpact(key, market, now = Date.now(), from = new Date(market.referenceDate).getTime()) {
+    const components = MODEL.parts(market);
+    if (components.length) return components.reduce((sum, part) => {
+      const amount = accumulatedImpact(key,part,now,from);
+      sum.litres += amount.litres;sum.co2kg += amount.co2kg;return sum;
+    }, {litres:0,co2kg:0});
     const p = impactParams(key, market);
     if (!p) return { litres: 0, co2kg: 0 };
-    const start = Math.min(Math.max(from, new Date(market.referenceDate).getTime()), now);
+    const start = Math.min(from, now);
     const duration = Math.max(0, (now - start) / 1000);
     const initialCount = currentValue(market.categories[key], market, start);
     const countRate = perSecond(market.categories[key], market);
@@ -899,6 +924,28 @@
       appendMetric(sessionTotal.co2kg, "kg", true);
       target.appendChild(entry);
     });
+  }
+
+
+  const ACCOUNTING_LABELS = {
+    de:["Bestände, Datenlücken und globale Bilanz","Rest der Welt","EU ohne Deutschland","Modelländerung seit Seitenaufruf","Datenprüfung: 1. Oktober 2026"],
+    en:["Stocks, data gaps and global accounting","Rest of world","EU excluding Germany","Modeled change since page opened","Sources checked: 1 October 2026"],
+    fr:["Parcs, lacunes et bilan mondial","Reste du monde","UE hors Allemagne","Variation modélisée depuis l’ouverture","Sources vérifiées : 1 octobre 2026"],
+    es:["Flotas, lagunas y balance mundial","Resto del mundo","UE sin Alemania","Cambio modelado desde la apertura","Fuentes revisadas: 1 octubre 2026"],
+    it:["Flotte, lacune e bilancio mondiale","Resto del mondo","UE esclusa Germania","Variazione modellata dall’apertura","Fonti verificate: 1 ottobre 2026"],
+    pl:["Floty, braki danych i bilans globalny","Reszta świata","UE bez Niemiec","Modelowana zmiana od otwarcia strony","Weryfikacja źródeł: 1 października 2026"],
+    nl:["Wagenparken, ontbrekende gegevens en wereldbalans","Rest van de wereld","EU zonder Duitsland","Gemodelleerde verandering sinds openen","Bronnen gecontroleerd: 1 oktober 2026"],
+    pt:["Frotas, lacunas e balanço mundial","Resto do mundo","UE sem Alemanha","Variação modelada desde a abertura","Fontes verificadas: 1 outubro 2026"],
+    no:["Bilbestand, datamangler og global balanse","Resten av verden","EU uten Tyskland","Modellert endring siden siden ble åpnet","Kilder kontrollert: 1. oktober 2026"],
+    zh:["保有量、数据缺口与全球核算","世界其他地区","欧盟（不含德国）","自页面打开以来的模型变化","来源核查：2026年10月1日"]
+  };
+  function renderAccountingMethod() {
+    window.DRIVECOUNT_METHOD.render(currentLang, t, DATA, ACCOUNTING_LABELS[currentLang]);
+  }
+  function renderAccountingLive(ledger) {
+    for(const [id,values] of Object.entries(ledger)) for(const key of keys) {
+      const cell=el(`audit-${id}-${key}`);if(cell)cell.textContent=signedInt(values[key]);
+    }
   }
 
   function setupModeSwitch() {
