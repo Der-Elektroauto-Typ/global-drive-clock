@@ -43,4 +43,10 @@ Nur die Methodikdarstellung sowie Versions-/Cachekennzeichnung wurden geändert.
 methodology.js enthält die ausführliche Dokumentation (Deutsch/Englisch). Die zehn UI-Sprachen bleiben bestehen; bei anderen Sprachen wird die englische Detailfassung mit einem Hinweis in der gewählten Sprache angezeigt. METHODIK.md ist die lesbare deutsche Fassung ohne JavaScript. source-link-audit.json dokumentiert die Linkprüfung, einschließlich aus dem Panel entfernter Hintergrundlinks. Ein HTTP200 allein gilt nicht als Beleg für eine Rechenannahme.
 
 ## V3.1.2 – Ruhigere Zähler
-Alle dynamischen Dezimalanzeigen zeigen höchstens eine Nachkommastelle. Fahrzeugzahlen bleiben ganzzahlig. Interne Berechnungen und statische Quellen-/Parameterangaben behalten ihre Genauigkeit. Kleine Raten können gerundet als +0,0 oder −0,0 erscheinen; sie laufen intern weiter.
+Alle dynamischen Dezimalanzeigen zeigen höchstens eine Nachkommastelle; Millionen Liter zeigen zwei Nachkommastellen. Fahrzeugzahlen bleiben ganzzahlig. Interne Berechnungen und statische Quellen-/Parameterangaben behalten ihre Genauigkeit. Kleine Raten können gerundet als +0,0 oder −0,0 erscheinen; sie laufen intern weiter.
+
+V3.1.2 ergänzt außerdem einen schmalen E-Mail-Kontaktbutton unter Facebook. Empfänger: way81@gmx.de; Betreff: Global Drive Clock – Feedback. Die Beschriftung folgt der gewählten Sprache.
+
+Die vier Fahrzeugkacheln zeigen Fahrzeuge pro Minute (interne Sekundenrate × 60), mit einer Nachkommastelle. Bestands- und Live-Session-Berechnungen bleiben unverändert.
+
+Auf mobilen Ansichten bis 650 px steht unter der Live-Session eine Reihe aus fünf gleich großen Regionsbuttons. Beide Umschalter teilen die Auswahl und denselben Besuchsbeginn; Desktop zeigt weiterhin nur den oberen Umschalter.

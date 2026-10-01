@@ -79,7 +79,7 @@
           <div class="trend trend-up"><span>▲</span><strong id="trend-electric">+0,0 %</strong></div>
         </div>
         <div class="number" id="count-electric">0</div>
-        <div class="rate"><span id="rate-electric">+0,00</span> <span data-i18n="vehiclesPerSecond">Fahrzeuge / Sekunde</span></div>
+        <div class="rate"><span id="rate-electric">+0,0</span> <span data-i18n="vehiclesPerMinute">Fahrzeuge / Minute</span></div>
         <div class="progress"><div class="progress-fill" id="bar-electric"></div></div>
         <div class="card-foot"><span data-i18n="bevLabel">REINE BATTERIEFAHRZEUGE</span><span>BEV</span></div>
       </article>
@@ -93,7 +93,7 @@
           <div class="trend trend-up"><span>▲</span><strong id="trend-hybrid">+0,0 %</strong></div>
         </div>
         <div class="number" id="count-hybrid">0</div>
-        <div class="rate"><span id="rate-hybrid">+0,00</span> <span data-i18n="vehiclesPerSecond">Fahrzeuge / Sekunde</span></div>
+        <div class="rate"><span id="rate-hybrid">+0,0</span> <span data-i18n="vehiclesPerMinute">Fahrzeuge / Minute</span></div>
         <div class="progress"><div class="progress-fill" id="bar-hybrid"></div></div>
         <div class="card-foot"><span data-i18n="hybridLabel">HEV + PLUG-IN-HYBRID</span><span>HYBRID</span></div>
       </article>
@@ -107,7 +107,7 @@
           <div class="trend trend-down"><span>▼</span><strong id="trend-petrol">−0,0 %</strong></div>
         </div>
         <div class="number" id="count-petrol">0</div>
-        <div class="rate"><span id="rate-petrol">−0,00</span> <span data-i18n="vehiclesPerSecond">Fahrzeuge / Sekunde</span></div>
+        <div class="rate"><span id="rate-petrol">−0,0</span> <span data-i18n="vehiclesPerMinute">Fahrzeuge / Minute</span></div>
         <div class="progress"><div class="progress-fill" id="bar-petrol"></div></div>
         <div class="card-foot"><span data-i18n="iceLabel">VERBRENNUNGSMOTOR</span><span>ICE</span></div>
       </article>
@@ -121,7 +121,7 @@
           <div class="trend trend-down"><span>▼</span><strong id="trend-diesel">−0,0 %</strong></div>
         </div>
         <div class="number" id="count-diesel">0</div>
-        <div class="rate"><span id="rate-diesel">−0,00</span> <span data-i18n="vehiclesPerSecond">Fahrzeuge / Sekunde</span></div>
+        <div class="rate"><span id="rate-diesel">−0,0</span> <span data-i18n="vehiclesPerMinute">Fahrzeuge / Minute</span></div>
         <div class="progress"><div class="progress-fill" id="bar-diesel"></div></div>
         <div class="card-foot"><span data-i18n="iceLabel">VERBRENNUNGSMOTOR</span><span>ICE</span></div>
       </article>
@@ -143,6 +143,13 @@
         <div class="session-impact-slot session-hybrid" id="session-impact-hybrid"></div>
         <div class="session-impact-slot session-petrol" id="session-impact-petrol"></div>
         <div class="session-impact-slot session-diesel" id="session-impact-diesel"></div>
+      </div>
+      <div class="session-region-switch" role="group" aria-label="Region für die Live-Session">
+        <button type="button" data-mode="global" aria-label="Global" aria-pressed="true"><span class="session-region-icon" aria-hidden="true">🌐</span><span class="session-region-label" aria-hidden="true">GLOBAL</span></button>
+        <button type="button" data-mode="germany" aria-label="Deutschland" aria-pressed="false"><span class="session-region-icon" aria-hidden="true">🇩🇪</span><span class="session-region-label" aria-hidden="true">DE</span></button>
+        <button type="button" data-mode="eu" aria-label="EU" aria-pressed="false"><span class="session-region-icon" aria-hidden="true">🇪🇺</span><span class="session-region-label" aria-hidden="true">EU</span></button>
+        <button type="button" data-mode="china" aria-label="China" aria-pressed="false"><span class="session-region-icon" aria-hidden="true">🇨🇳</span><span class="session-region-label" aria-hidden="true">CN</span></button>
+        <button type="button" data-mode="usa" aria-label="USA" aria-pressed="false"><span class="session-region-icon" aria-hidden="true">🇺🇸</span><span class="session-region-label" aria-hidden="true">USA</span></button>
       </div>
     </section>
 
@@ -175,6 +182,12 @@
       <a class="facebook-button" id="facebookLink" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" data-i18n="facebook">
         AUF FACEBOOK FOLGEN →
       </a>
+      <div class="feedback-row">
+        <a class="feedback-button" href="mailto:way81@gmx.de?subject=Global%20Drive%20Clock%20%E2%80%93%20Feedback">
+          <span data-i18n="feedback">Fragen, Ideen oder Feedback?</span>
+          <svg class="feedback-icon" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg>
+        </a>
+      </div>
     </section>
 
     <footer class="footer">

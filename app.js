@@ -34,7 +34,7 @@
       hybrid: "HYBRID",
       petrol: "BENZIN",
       diesel: "DIESEL",
-      vehiclesPerSecond: "Fahrzeuge / Sekunde",
+      vehiclesPerMinute: "Fahrzeuge / Minute",
       impactShort: '≈ Modellierter Kraftstoff- und betrieblicher CO₂-Fluss auf Basis des jeweiligen Fahrzeugbestands.',
       impactHeading: 'Kraftstoff- und CO₂-Modell', impactWhatTitle: 'Anzeige', impactCalcTitle: 'Berechnung', impactBevTitle: 'BEV-Vergleich', impactSourcesTitle: 'Quellen und Grenzen', impactUnitsTitle: 'Einheiten',
       impactCalc: 'Fahrzeugbestand × km/Jahr × L/100 km ÷ 100 ÷ Sekunden/Jahr ergibt Liter/s; Kraftstoff × kg CO₂/L ergibt Auspuff-CO₂. Für BEV: vermiedene Benziner-Emissionen minus BEV-kWh × regionaler Jahresmittel-Stromfaktor. Jahresmengen werden gleichmäßig verteilt; keine Messung tatsächlicher Fahrten.',
@@ -59,6 +59,7 @@
       dataAsOf: "Stand",
       dataIdeaBy: "EINE DATENIDEE VON",
       brandCopy: "Elektromobilität. Fakten. Alltag.",
+      feedback: "Fragen, Ideen oder Feedback?",
       facebook: "AUF FACEBOOK FOLGEN →",
       privateDisclosure: 'Privates, nicht kommerzielles Hobbyprojekt. Keine Werbung, keine Einnahmen.', privateFacebook: 'Kontakt über Facebook (privater Kanal, keine Einnahmen)', lawDdg: '§ 5 DDG',
       footerNote: "Modellierte Echtzeitschätzung – keine amtliche Live-Zählung"
@@ -88,7 +89,7 @@
       hybrid: "HYBRID",
       petrol: "PETROL",
       diesel: "DIESEL",
-      vehiclesPerSecond: "vehicles / second",
+      vehiclesPerMinute: "vehicles / minute",
       impactShort: '≈ Modeled fuel and operational CO₂ flow based on each region’s vehicle stock.',
       impactHeading: 'Fuel and CO₂ model', impactWhatTitle: 'Display', impactCalcTitle: 'Calculation', impactBevTitle: 'BEV comparison', impactSourcesTitle: 'Sources and limits', impactUnitsTitle: 'Units',
       impactCalc: 'Vehicle stock × km/year × L/100 km ÷ 100 ÷ seconds/year gives L/s; fuel × kg CO₂/L gives tailpipe CO₂. For BEVs: comparator gasoline emissions avoided minus BEV kWh × regional annual-average grid factor. Annual flows are spread evenly; driving is not measured.',
@@ -113,6 +114,7 @@
       dataAsOf: "As of",
       dataIdeaBy: "A DATA IDEA BY",
       brandCopy: "Electric mobility. Facts. Everyday life.",
+      feedback: "Questions, ideas or feedback?",
       facebook: "FOLLOW ON FACEBOOK →",
       privateDisclosure: 'Private, non-commercial hobby project. No advertising or income.', privateFacebook: 'Contact via Facebook (private channel, no income)', lawDdg: '§ 5 DDG',
       footerNote: "Modeled real-time estimate – not an official live count"
@@ -141,7 +143,7 @@
       hybrid: "HYBRIDE",
       petrol: "ESSENCE",
       diesel: "DIESEL",
-      vehiclesPerSecond: "véhicules / seconde",
+      vehiclesPerMinute: "véhicules / minute",
       impactShort: '≈ Flux modélisé de carburant et de CO₂ opérationnel selon le parc régional.',
       impactHeading: 'Modèle carburant et CO₂', impactWhatTitle: 'Affichage', impactCalcTitle: 'Calcul', impactBevTitle: 'Comparaison BEV', impactSourcesTitle: 'Sources et limites', impactUnitsTitle: 'Unités',
       impactCalc: 'Parc × km/an × L/100 km ÷ 100 ÷ secondes/an donne les L/s ; carburant × kg CO₂/L donne le CO₂ à l’échappement. Pour les BEV : émissions essence de référence évitées moins kWh BEV × facteur annuel moyen régional du réseau. Flux répartis uniformément, trajets non mesurés.',
@@ -166,6 +168,7 @@
       dataAsOf: "Données au",
       dataIdeaBy: "UNE IDÉE DE DONNÉES PAR",
       brandCopy: "Mobilité électrique. Faits. Quotidien.",
+      feedback: "Questions, idées ou avis ?",
       facebook: "SUIVRE SUR FACEBOOK →",
       privateDisclosure: 'Projet de loisir privé et non commercial. Sans publicité ni revenus.', privateFacebook: 'Contacter via Facebook (canal privé, sans revenus)', lawDdg: '§ 5 DDG',
       footerNote: "Estimation modélisée en temps réel – pas un comptage officiel en direct"
@@ -194,7 +197,7 @@
       hybrid: "HÍBRIDO",
       petrol: "GASOLINA",
       diesel: "DIÉSEL",
-      vehiclesPerSecond: "vehículos / segundo",
+      vehiclesPerMinute: "vehículos / minuto",
       impactShort: '≈ Flujo modelado de combustible y CO₂ operativo según el parque regional.',
       impactHeading: 'Modelo de combustible y CO₂', impactWhatTitle: 'Visualización', impactCalcTitle: 'Cálculo', impactBevTitle: 'Comparación BEV', impactSourcesTitle: 'Fuentes y límites', impactUnitsTitle: 'Unidades',
       impactCalc: 'Parque × km/año × L/100 km ÷ 100 ÷ segundos/año da L/s; combustible × kg CO₂/L da CO₂ de escape. Para BEV: emisiones de gasolina comparables evitadas menos kWh BEV × factor anual medio regional de la red. Flujos anuales repartidos uniformemente; no se miden trayectos.',
@@ -219,6 +222,7 @@
       dataAsOf: "Datos a",
       dataIdeaBy: "UNA IDEA DE DATOS DE",
       brandCopy: "Movilidad eléctrica. Datos. Vida diaria.",
+      feedback: "¿Preguntas, ideas o comentarios?",
       facebook: "SEGUIR EN FACEBOOK →",
       privateDisclosure: 'Proyecto personal y no comercial. Sin publicidad ni ingresos.', privateFacebook: 'Contacto por Facebook (canal privado, sin ingresos)', lawDdg: '§ 5 DDG',
       footerNote: "Estimación modelada en tiempo real – no es un recuento oficial en directo"
@@ -247,7 +251,7 @@
       hybrid: "IBRIDO",
       petrol: "BENZINA",
       diesel: "DIESEL",
-      vehiclesPerSecond: "veicoli / secondo",
+      vehiclesPerMinute: "veicoli / minuto",
       impactShort: '≈ Flusso modellato di carburante e CO₂ operativo in base al parco regionale.',
       impactHeading: 'Modello carburante e CO₂', impactWhatTitle: 'Visualizzazione', impactCalcTitle: 'Calcolo', impactBevTitle: 'Confronto BEV', impactSourcesTitle: 'Fonti e limiti', impactUnitsTitle: 'Unità',
       impactCalc: 'Parco × km/anno × L/100 km ÷ 100 ÷ secondi/anno dà L/s; carburante × kg CO₂/L dà CO₂ allo scarico. Per BEV: emissioni di benzina comparabili evitate meno kWh BEV × fattore medio annuo regionale della rete. Flussi distribuiti uniformemente; i viaggi non sono misurati.',
@@ -272,6 +276,7 @@
       dataAsOf: "Aggiornato a",
       dataIdeaBy: "UN’IDEA BASATA SUI DATI DI",
       brandCopy: "Mobilità elettrica. Fatti. Vita quotidiana.",
+      feedback: "Domande, idee o commenti?",
       facebook: "SEGUI SU FACEBOOK →",
       privateDisclosure: 'Progetto privato e non commerciale per hobby. Nessuna pubblicità o entrata.', privateFacebook: 'Contatto via Facebook (canale privato, senza entrate)', lawDdg: '§ 5 DDG',
       footerNote: "Stima modellata in tempo reale – non è un conteggio ufficiale live"
@@ -300,7 +305,7 @@
       hybrid: "HYBRYDOWE",
       petrol: "BENZYNA",
       diesel: "DIESEL",
-      vehiclesPerSecond: "pojazdów / sekundę",
+      vehiclesPerMinute: "pojazdów / minutę",
       impactShort: '≈ Modelowany przepływ paliwa i operacyjnego CO₂ według regionalnego parku.',
       impactHeading: 'Model paliwa i CO₂', impactWhatTitle: 'Wskazanie', impactCalcTitle: 'Obliczenie', impactBevTitle: 'Porównanie BEV', impactSourcesTitle: 'Źródła i ograniczenia', impactUnitsTitle: 'Jednostki',
       impactCalc: 'Park × km/rok × L/100 km ÷ 100 ÷ sekund/rok daje L/s; paliwo × kg CO₂/L daje emisje z rury. Dla BEV: uniknięte emisje porównywalnej benzyny minus kWh BEV × regionalny roczny średni współczynnik sieci. Roczne przepływy rozłożone równomiernie; przejazdy nie są mierzone.',
@@ -325,6 +330,7 @@
       dataAsOf: "Stan na",
       dataIdeaBy: "POMYSŁ DANYCH OD",
       brandCopy: "Elektromobilność. Fakty. Codzienność.",
+      feedback: "Pytania, pomysły lub uwagi?",
       facebook: "OBSERWUJ NA FACEBOOKU →",
       privateDisclosure: 'Prywatny, niekomercyjny projekt hobbystyczny. Bez reklam i dochodów.', privateFacebook: 'Kontakt przez Facebooka (kanał prywatny, bez dochodów)', lawDdg: '§ 5 DDG',
       footerNote: "Modelowana estymacja w czasie rzeczywistym – nieoficjalny licznik live"
@@ -353,7 +359,7 @@
       hybrid: "HYBRIDE",
       petrol: "BENZINE",
       diesel: "DIESEL",
-      vehiclesPerSecond: "voertuigen / seconde",
+      vehiclesPerMinute: "voertuigen / minuut",
       impactShort: '≈ Berekende brandstof- en operationele CO₂-stroom op basis van het regionale wagenpark.',
       impactHeading: 'Brandstof- en CO₂-model', impactWhatTitle: 'Weergave', impactCalcTitle: 'Berekening', impactBevTitle: 'BEV-vergelijking', impactSourcesTitle: 'Bronnen en beperkingen', impactUnitsTitle: 'Eenheden',
       impactCalc: 'Wagenpark × km/jaar × L/100 km ÷ 100 ÷ seconden/jaar geeft L/s; brandstof × kg CO₂/L geeft uitlaat-CO₂. Voor BEV: vermeden benzine-uitstoot minus BEV-kWh × regionale jaarlijkse gemiddelde netfactor. Jaarstromen zijn gelijkmatig verdeeld; ritten worden niet gemeten.',
@@ -378,6 +384,7 @@
       dataAsOf: "Stand",
       dataIdeaBy: "EEN DATA-IDEE VAN",
       brandCopy: "Elektrische mobiliteit. Feiten. Dagelijks leven.",
+      feedback: "Vragen, ideeën of feedback?",
       facebook: "VOLG OP FACEBOOK →",
       privateDisclosure: 'Privé, niet-commercieel hobbyproject. Geen advertenties of inkomsten.', privateFacebook: 'Contact via Facebook (privékanaal, geen inkomsten)', lawDdg: '§ 5 DDG',
       footerNote: "Gemodelleerde realtime-schatting – geen officiële live telling"
@@ -406,7 +413,7 @@
       hybrid: "HÍBRIDO",
       petrol: "GASOLINA",
       diesel: "DIESEL",
-      vehiclesPerSecond: "veículos / segundo",
+      vehiclesPerMinute: "veículos / minuto",
       impactShort: '≈ Fluxo modelado de combustível e CO₂ operacional com base na frota regional.',
       impactHeading: 'Modelo de combustível e CO₂', impactWhatTitle: 'Visualização', impactCalcTitle: 'Cálculo', impactBevTitle: 'Comparação BEV', impactSourcesTitle: 'Fontes e limites', impactUnitsTitle: 'Unidades',
       impactCalc: 'Frota × km/ano × L/100 km ÷ 100 ÷ segundos/ano dá L/s; combustível × kg CO₂/L dá CO₂ no escape. Para BEV: emissões de gasolina comparáveis evitadas menos kWh BEV × fator anual médio regional da rede. Fluxos anuais distribuídos uniformemente; viagens não são medidas.',
@@ -431,6 +438,7 @@
       dataAsOf: "Dados de",
       dataIdeaBy: "UMA IDEIA DE DADOS DE",
       brandCopy: "Mobilidade elétrica. Factos. Dia a dia.",
+      feedback: "Perguntas, ideias ou comentários?",
       facebook: "SEGUIR NO FACEBOOK →",
       privateDisclosure: 'Projeto pessoal e não comercial. Sem publicidade nem receitas.', privateFacebook: 'Contacto pelo Facebook (canal privado, sem receitas)', lawDdg: '§ 5 DDG',
       footerNote: "Estimativa modelada em tempo real – não é uma contagem oficial ao vivo"
@@ -459,7 +467,7 @@
       hybrid: "HYBRID",
       petrol: "BENSIN",
       diesel: "DIESEL",
-      vehiclesPerSecond: "kjøretøy / sekund",
+      vehiclesPerMinute: "kjøretøy / minutt",
       impactShort: '≈ Modellert drivstoff- og operativ CO₂-strøm basert på regional bilpark.',
       impactHeading: 'Drivstoff- og CO₂-modell', impactWhatTitle: 'Visning', impactCalcTitle: 'Beregning', impactBevTitle: 'BEV-sammenligning', impactSourcesTitle: 'Kilder og begrensninger', impactUnitsTitle: 'Enheter',
       impactCalc: 'Bilpark × km/år × L/100 km ÷ 100 ÷ sekunder/år gir L/s; drivstoff × kg CO₂/L gir eksos-CO₂. For BEV: unngåtte bensinutslipp minus BEV-kWh × regional årlig gjennomsnittlig nettfaktor. Årsflyten fordeles jevnt; kjøreturer måles ikke.',
@@ -484,6 +492,7 @@
       dataAsOf: "Data per",
       dataIdeaBy: "EN DATAIDÉ FRA",
       brandCopy: "Elektrisk mobilitet. Fakta. Hverdagsliv.",
+      feedback: "Spørsmål, ideer eller tilbakemeldinger?",
       facebook: "FØLG PÅ FACEBOOK →",
       privateDisclosure: 'Privat, ikke-kommersielt hobbyprosjekt. Ingen reklame eller inntekter.', privateFacebook: 'Kontakt via Facebook (privat kanal, ingen inntekter)', lawDdg: '§ 5 DDG',
       footerNote: "Modellert sanntidsestimat – ikke en offisiell live-telling"
@@ -512,7 +521,7 @@
       hybrid: "混合动力",
       petrol: "汽油",
       diesel: "柴油",
-      vehiclesPerSecond: "辆 / 秒",
+      vehiclesPerMinute: "辆 / 分钟",
       impactShort: '≈ 根据各地区车辆保有量计算的燃料与运行 CO₂ 模型流量。',
       impactHeading: '燃料与 CO₂ 模型', impactWhatTitle: '显示内容', impactCalcTitle: '计算方法', impactBevTitle: '纯电车对比', impactSourcesTitle: '来源与限制', impactUnitsTitle: '单位',
       impactCalc: '车辆保有量 × 公里/年 × L/100 km ÷ 100 ÷ 每年秒数 = L/s；燃料 × kg CO₂/L = 尾气 CO₂。纯电车净值 = 避免的汽油车排放 − 纯电耗电量 × 地区年度平均电网因子。年度流量均匀分摊；并非实测行驶。',
@@ -537,6 +546,7 @@
       dataAsOf: "数据截至",
       dataIdeaBy: "数据创意来自",
       brandCopy: "电动出行。事实。日常。",
+      feedback: "有问题、想法或反馈？",
       facebook: "在 FACEBOOK 上关注 →",
       privateDisclosure: '私人非商业爱好项目。无广告，无收入。', privateFacebook: '通过 Facebook 联系（私人频道，无收入）', lawDdg: '§ 5 DDG',
       footerNote: "模型化实时估算——并非官方实时计数"
@@ -602,8 +612,8 @@
     return Math.round(value).toLocaleString(TRANSLATIONS[currentLang].locale);
   }
 
-  function formatDecimal(value, decimals = 1) {
-    decimals = Math.min(decimals, 1);
+  function formatDecimal(value, decimals = 1, allowTwoDecimals = false) {
+    decimals = Math.min(decimals, allowTwoDecimals ? 2 : 1);
     return Math.abs(value).toLocaleString(
       TRANSLATIONS[currentLang].locale,
       { minimumFractionDigits: decimals, maximumFractionDigits: decimals }
@@ -680,10 +690,13 @@
     if (bevLabel) bevLabel.textContent = localizedRegion.bevLabel || (germany ? t("germanyBevLabel") : t("bevLabel"));
     if (hybridLabel) hybridLabel.textContent = localizedRegion.hybridLabel || (germany ? t("germanyHybridLabel") : t("hybridLabel"));
     iceLabels.forEach((node) => { node.textContent = localizedRegion.iceLabel || (germany ? t("germanyIceLabel") : t("iceLabel")); });
-    document.querySelectorAll(".mode-switch button[data-mode]").forEach((button) => {
+    document.querySelectorAll(".mode-switch button[data-mode], .session-region-switch button[data-mode]").forEach((button) => {
       const active = button.dataset.mode === currentMode;
       button.classList.toggle("active", active);
       button.setAttribute("aria-pressed", String(active));
+      const regionLabelKey = { global: "modeGlobal", germany: "modeGermany", eu: "modeEU", china: "modeChina", usa: "modeUSA" }[button.dataset.mode];
+      button.setAttribute("aria-label", t(regionLabelKey));
+      button.title = t(regionLabelKey);
     });
     if (DATA.facebookUrl) {
       if (el("facebookLink")) el("facebookLink").href = DATA.facebookUrl;
@@ -777,7 +790,7 @@
       const sessionChange = rate * sessionSeconds;
 
       if (el(`count-${key}`)) el(`count-${key}`).textContent = formatInt(counts[currentMode][key]);
-      if (el(`rate-${key}`)) el(`rate-${key}`).textContent = signed(rate, 2);
+      if (el(`rate-${key}`)) el(`rate-${key}`).textContent = signed(rate * 60, 1);
       if (el(`since-${key}`)) el(`since-${key}`).textContent = signedInt(changes[currentMode][key]);
       renderImpact(key, market, count, sessionSeconds);
     });
@@ -835,7 +848,7 @@
   function formatAccumulated(value, unit) {
     const abs = Math.abs(value);
     if (unit === "kg" && abs >= 1000) return `${formatDecimal(value / 1000, 2)} t`;
-    if (unit === "L" && abs >= 1000000) return `${formatDecimal(value / 1000000, 2)} M L`;
+    if (unit === "L" && abs >= 1000000) return `${formatDecimal(value / 1000000, 2, true)} M L`;
     if (unit === "L" && abs >= 1000) return `${formatDecimal(value / 1000, 2)} k L`;
     return `${formatDecimal(value, 2)} ${unit}`;
   }
@@ -885,7 +898,7 @@
   function splitSessionAmount(value, unit) {
     const abs = Math.abs(value);
     if (unit === "L") {
-      if (abs >= 1_000_000) return { number: formatDecimal(value / 1_000_000, 2), label: t("millionLitres") };
+      if (abs >= 1_000_000) return { number: formatDecimal(value / 1_000_000, 2, true), label: t("millionLitres") };
       if (abs >= 1_000) return { number: formatDecimal(value / 1_000, 2), label: t("thousandLitres") };
       return { number: formatDecimal(value, 2), label: t("litres") };
     }
@@ -950,7 +963,7 @@
   }
 
   function setupModeSwitch() {
-    document.querySelectorAll(".mode-switch button[data-mode]").forEach((button) => {
+    document.querySelectorAll(".mode-switch button[data-mode], .session-region-switch button[data-mode]").forEach((button) => {
       button.addEventListener("click", () => setMode(button.dataset.mode));
     });
   }
