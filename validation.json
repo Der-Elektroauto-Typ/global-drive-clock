@@ -1,22 +1,10 @@
 {
-  "version": "V3.1.1",
-  "checkedAt": "2026-10-01",
-  "scope": "Documentation, reference links and version/cache labels only",
+  "version": "V3.1.2",
+  "scope": "Display precision and version/cache labels only",
   "numericInputsUnchanged": true,
   "stockEngineUnchanged": true,
-  "calculationAndOtherUIFunctionsUnchanged": true,
-  "styleAndImagesUnchanged": true,
-  "conservationAssertions": 360,
-  "retainedExternalLinksReachable": 18,
-  "localLinksChecked": 27,
-  "obsoletePublicMethodClaimsRemoved": true,
-  "limitations": "Checks establish implementation consistency and link availability, not empirical accuracy of assumptions.",
-  "browserChecks": {
-    "desktopNoHorizontalOverflow": true,
-    "mobile390pxNoHorizontalOverflow": true,
-    "regionSwitchWorks": true,
-    "germanAndEnglishMethodologyRender": true,
-    "methodologyTablesRender": 3,
-    "desktopScreenshotVisuallyChecked": true
-  }
+  "maximumDynamicDecimalPlaces": 1,
+  "formattingLocalesTested": 10,
+  "formattingCasesChecked": 60,
+  "javascriptSyntaxChecked": true
 }

@@ -1,6 +1,6 @@
-# Global Drive Clock V3.1.1
+# Global Drive Clock V3.1.2
 
-Statische Website; index.html, style.css, data.js, model.js und app.js sowie alle Assets gemeinsam hochladen. Kein Build und kein Server erforderlich. Bestehende Dateien vollständig ersetzen. Version/Cache-Busting: 3.1.1. Quellenprüfung: 1. Oktober 2026.
+Statische Website; index.html, style.css, data.js, model.js und app.js sowie alle Assets gemeinsam hochladen. Kein Build und kein Server erforderlich. Bestehende Dateien vollständig ersetzen. Version/Cache-Busting: 3.1.2. Quellenprüfung: 1. Oktober 2026.
 
 ## Änderungen
 
@@ -36,8 +36,11 @@ Primärquellen: KBA FZ27; Eurostat road_eqs_carpda; ergänzend ACEA Vehicles on 
 
 Öffentliche Quelldaten und ihre eigenen Lizenzen bleiben vom Copyright des Projekts unberührt. Quellen werden nicht als eigene Erhebung ausgegeben. Versionsdateien stets gemeinsam aktualisieren.
 
-## V3.1.1 – Dokumentationsprüfung
+## V3.1.2 – Dokumentationsprüfung
 
 Nur die Methodikdarstellung sowie Versions-/Cachekennzeichnung wurden geändert. Rechenfunktionen und numerische Parameter sind unverändert. Veraltete Einheiten/Kachelhinweise und überflüssige Quellenlinks entfernt. Veröffentlichte Anker, rekonstruiertes US-Vorjahr, EU-Lückenmodell, China-/Rest-Szenarien, tatsächliche Verbrauchsparameter, Strommixdefinitionen, Gesamtflottenbezug und Grenzen sind erklärt. Neue direkte KBA-Dateilinks und nachvollziehbare Quellenrollen.
 
 methodology.js enthält die ausführliche Dokumentation (Deutsch/Englisch). Die zehn UI-Sprachen bleiben bestehen; bei anderen Sprachen wird die englische Detailfassung mit einem Hinweis in der gewählten Sprache angezeigt. METHODIK.md ist die lesbare deutsche Fassung ohne JavaScript. source-link-audit.json dokumentiert die Linkprüfung, einschließlich aus dem Panel entfernter Hintergrundlinks. Ein HTTP200 allein gilt nicht als Beleg für eine Rechenannahme.
+
+## V3.1.2 – Ruhigere Zähler
+Alle dynamischen Dezimalanzeigen zeigen höchstens eine Nachkommastelle. Fahrzeugzahlen bleiben ganzzahlig. Interne Berechnungen und statische Quellen-/Parameterangaben behalten ihre Genauigkeit. Kleine Raten können gerundet als +0,0 oder −0,0 erscheinen; sie laufen intern weiter.

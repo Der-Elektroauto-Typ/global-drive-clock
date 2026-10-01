@@ -602,14 +602,15 @@
     return Math.round(value).toLocaleString(TRANSLATIONS[currentLang].locale);
   }
 
-  function formatDecimal(value, decimals = 2) {
+  function formatDecimal(value, decimals = 1) {
+    decimals = Math.min(decimals, 1);
     return Math.abs(value).toLocaleString(
       TRANSLATIONS[currentLang].locale,
       { minimumFractionDigits: decimals, maximumFractionDigits: decimals }
     );
   }
 
-  function signed(value, decimals = 2) {
+  function signed(value, decimals = 1) {
     const sign = value >= 0 ? "+" : "−";
     return sign + formatDecimal(value, decimals);
   }
@@ -648,7 +649,7 @@
     const germany = currentMode === "germany";
     const region = currentMode === "global" ? DATA : (DATA.regions?.[currentMode] || DATA.germany);
     if (el("modelVersion")) {
-      el("modelVersion").textContent = `${t("dataModel")}: V3.1.1${region?.methodTag ? ` · ${region.methodTag}` : ""}`;
+      el("modelVersion").textContent = `${t("dataModel")}: V3.1.2${region?.methodTag ? ` · ${region.methodTag}` : ""}`;
     }
     if (el("dataDate")) {
       const dataDate = region?.dataDate && /^\d{4}-\d{2}-\d{2}$/.test(region.dataDate)

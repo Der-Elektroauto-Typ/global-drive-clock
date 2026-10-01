@@ -1,4 +1,4 @@
-# Global Drive Clock V3.1.1 — Daten & Methodik
+# Global Drive Clock V3.1.2 — Daten & Methodik
 
 Quellenprüfung: 1. Oktober 2026. Daten und Berechnungen gegenüber V3.1.0 unverändert.
 
@@ -31,7 +31,7 @@ Für einen einfachen Regionalbestand gilt: Änderungsrate = (Endbestand − Anfa
 „Fahrzeuge / Sekunde“ ist eine gleichmäßig verteilte Nettoänderung: Zugänge abzüglich Abgänge, gegebenenfalls einschließlich Änderungen der Registererfassung. Sie ist keine Neuzulassungsrate. Eine Bestandsabnahme bedeutet weder automatisch Verschrottung noch, dass jeder verschwundene Verbrenner durch ein BEV ersetzt wurde; auch Exporte, Ummeldungen und Statistikrevisionen können eine Rolle spielen.
 
 
-Die Prozentzahl ist die Änderung gegenüber dem Anfangsbestand des jeweiligen Modellintervalls: Änderung ÷ (Referenzbestand − Änderung) × 100. Bei Deutschland bezieht sie sich auf sechs Monate, bei den 12-Monatsmodellen auf zwölf Monate. Wo eine Änderung angenommen oder rekonstruiert ist, ist auch die Prozentzahl eine Modellgröße. Die Zahl der sichtbaren Nachkommastellen beschreibt die Darstellung, nicht die Messgenauigkeit.
+Die Prozentzahl ist die Änderung gegenüber dem Anfangsbestand des jeweiligen Modellintervalls: Änderung ÷ (Referenzbestand − Änderung) × 100. Bei Deutschland bezieht sie sich auf sechs Monate, bei den 12-Monatsmodellen auf zwölf Monate. Wo eine Änderung angenommen oder rekonstruiert ist, ist auch die Prozentzahl eine Modellgröße. Dynamische Dezimalanzeigen sind auf eine Nachkommastelle begrenzt; intern wird mit voller Genauigkeit gerechnet. Kleine Raten können als +0,0 oder −0,0 erscheinen, ohne dass der Zähler stillsteht. Die Zahl der sichtbaren Nachkommastellen beschreibt die Darstellung, nicht die Messgenauigkeit.
 
 
 Die Live-Session für Fahrzeuge berechnet Rate × Zeit seit Seitenaufruf. Ein gemeinsamer Besuchsbeginn gilt für alle Regionen. Das Umschalten startet die Zähler nicht neu; ein Neuladen der Seite beginnt eine neue Live-Session. Die lokale Uhr verwendet die Zeitzone deines Geräts und ist unabhängig von den Datenstichtagen.
@@ -147,4 +147,4 @@ Jahresfahrleistung und Verbrauch bleiben im Modell konstant. Saison, Tageszeit, 
 Die mitgelieferten Dateien ermöglichen die Prüfung der tatsächlich verwendeten Werte: [Bestands- und Verbrauchsparameter](data.js), [Bilanz und gemeinsame Rundung](model.js), [Anzeige und Verbrauchsintegration](app.js), [Herleitung und Lückenmodell](model-provenance.json), [verwendete Quellenauszüge](source-extracts.json) und [Linkprüfung mit Quellenrolle](source-link-audit.json). Die [Rechenprüfungen](validation.json) bestätigen Summen und Funktionen, nicht die empirische Richtigkeit aller Annahmen.
 
 
-V3.1.1 überarbeitet die Dokumentation. Die Bestandswerte, Änderungsraten, Verbrauchsparameter und Berechnungen bleiben gegenüber V3.1.0 unverändert. Eine künftige Datenaktualisierung muss Quellenstände, Vergleichszeiträume, Definitionen, Annahmen und Bilanz gemeinsam prüfen. Quellen können ihre Daten später revidieren; der ausgelieferte Datenabzug hält den für diese Version verwendeten Stand fest.
+V3.1.2 überarbeitet die Dokumentation. Die Bestandswerte, Änderungsraten, Verbrauchsparameter und Berechnungen bleiben gegenüber V3.1.0 unverändert. Eine künftige Datenaktualisierung muss Quellenstände, Vergleichszeiträume, Definitionen, Annahmen und Bilanz gemeinsam prüfen. Quellen können ihre Daten später revidieren; der ausgelieferte Datenabzug hält den für diese Version verwendeten Stand fest.
