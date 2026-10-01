@@ -982,11 +982,12 @@ html[lang="zh"] .brand-small {
   max-width: 1000px;
   margin: 18px auto 0;
   color: #8e9aa5;
-  font-size: 13px;
-  line-height: 1.65;
+  font-size: 14px;
+  line-height: 1.7;
+  text-align: left;
 }
 
-.method-details-body p { margin: 0 0 12px; }
+.method-details-body p { margin: 0 0 14px; }
 .method-details-body strong { color: #c7d0d8; }
 
 .source-links {
@@ -999,7 +1000,7 @@ html[lang="zh"] .brand-small {
 
 .impact-table-note {
   color: #6f7c87;
-  font-size: 11px;
+  font-size: 12px;
 }
 .impact-table-wrap {
   max-width: 100%;
@@ -1012,7 +1013,7 @@ html[lang="zh"] .brand-small {
   width: 100%;
   min-width: 780px;
   border-collapse: collapse;
-  font-size: 11px;
+  font-size: 12px;
   font-variant-numeric: tabular-nums;
 }
 .impact-table th,
@@ -1024,7 +1025,7 @@ html[lang="zh"] .brand-small {
 }
 .impact-table thead th {
   color: #aeb9c3;
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: .4px;
   background: rgba(255,255,255,.035);
 }
@@ -1041,7 +1042,7 @@ html[lang="zh"] .brand-small {
   background: rgba(79,220,255,.04);
   border-radius: 999px;
   padding: 7px 11px;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 750;
 }
 
