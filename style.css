@@ -509,26 +509,30 @@ body {
   .card { min-height: 250px; }
   .number { margin-top: 34px; font-size: clamp(36px, 12vw, 58px); letter-spacing: -2px; }
   .session { padding: 46px 10px; }
-  .session-grid { grid-template-columns: repeat(2, 1fr); }
+  .session-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .session h2 { margin-bottom: 6px; }
   .session-time { margin-bottom: 26px; }
-  .session-impact { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 12px; }
-  .session-impact-slot { padding: 20px 6px 22px; }
-  .session-impact-slot:nth-child(2) { border-right: 0; }
-  .session-impact-slot:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+  .session-impact { grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 12px; }
+  .session-impact-slot { min-width: 0; padding: 17px 3px 19px; }
+  .session-impact-slot:last-child { border-right: 0; }
   .session-impact-item { gap: 16px; }
   .session-metric-co2 { padding-top: 14px; }
-  .session-impact-item strong.impact-amount { font-size: 17px; }
-  .session-impact-item .impact-unit { font-size: 10px; }
-  .session-impact-item .impact-status { font-size: 8px; }
+  .session-impact-item strong.impact-amount { font-size: 12px; letter-spacing: -.35px; }
+  .session-impact-item .impact-unit { font-size: 8px; line-height: 1.2; white-space: normal; overflow-wrap: anywhere; }
+  .session-impact-item .impact-status { font-size: 7px; letter-spacing: 0; }
   .method-impact-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .method-impact-item:nth-child(2) { border-right: 0; }
   .method-impact-item:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
   .impact { font-size: 10px; }
   .impact small { font-size: 9px; }
-  .session-item { border-right: 0; border-bottom: 1px solid var(--line); padding: 18px 10px; }
-  .session-item:nth-last-child(-n+2) { border-bottom: 0; }
+  .session-item { min-width: 0; border-right: 1px solid var(--line); border-bottom: 0; padding: 14px 3px; }
+  .session-item:last-child { border-right: 0; }
+  .session-item span { font-size: 8px; letter-spacing: .55px; margin-bottom: 7px; }
+  .session-item strong { font-size: 20px; letter-spacing: 0; }
   .method-meta { gap: 8px 14px; }
+  .session-impact-item { gap: 12px; }
+  .session-metric-co2 { padding-top: 11px; }
+
   .footer { flex-direction: column; text-align: center; }
 }
 
@@ -1070,4 +1074,13 @@ html[lang="zh"] .brand-small {
   .mode-switch button[data-mode="eu"] { grid-column: 1 / span 2; }
   .mode-switch button[data-mode="china"] { grid-column: 3 / span 2; }
   .mode-switch button[data-mode="usa"] { grid-column: 5 / span 2; }
+}
+
+@media (max-width: 370px) {
+  .session-item span { font-size: 7px; letter-spacing: .35px; }
+  .session-item strong { font-size: 18px; }
+  .session-impact-slot { padding-left: 1px; padding-right: 1px; }
+  .session-impact-item strong.impact-amount { font-size: 11px; }
+  .session-impact-item .impact-unit { font-size: 7px; }
+  .session-impact-item .impact-status { font-size: 6px; }
 }
