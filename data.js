@@ -1,5 +1,5 @@
 window.DRIVECOUNT_DATA = {
-  modelVersion: "V2.9",
+  modelVersion: "V2.9.2",
   dataDate: "30. September 2026",
   referenceDate: "2026-09-30T00:00:00Z",
 
@@ -73,32 +73,32 @@ window.DRIVECOUNT_DATA = {
     label: "Deutschland",
     dataDate: "2026-07-01",
     referenceDate: "2026-07-01T00:00:00Z",
-    annualSeconds: 365 * 24 * 60 * 60,
+    annualSeconds: 181 * 24 * 60 * 60,
     trendReference: "previous",
-    sourceName: "KBA FZ 27 / rollierende 12-Monats-Änderung",
+    methodTag: "KBA FZ 27 · 6M",
+    lookbackStart: "2026-01-01",
+    sourceName: "Quellen: KBA · FZ 27 · 6-Monats-Vergleich",
     globalFleet: {
       base: 49696710,
-      annualChange: 171102
+      annualChange: 210223
     },
     categories: {
-      electric: { label: "Elektro (BEV)", definition: "BEV", base: 2365047, annualChange: 529469 },
-      hybrid: { label: "Hybrid insgesamt inkl. PHEV", definition: "HEV + PHEV", base: 4807029, annualChange: 837275 },
-      petrol: { label: "Benzin", definition: "Pkw mit Benzinantrieb", base: 29012909, annualChange: -670154 },
-      diesel: { label: "Diesel", definition: "Pkw mit Dieselantrieb", base: 13157334, annualChange: -508100 }
+      electric: { label: "Elektro (BEV)", definition: "BEV", base: 2365047, annualChange: 330787 },
+      hybrid: { label: "Hybrid insgesamt inkl. PHEV", definition: "HEV + PHEV", base: 4807029, annualChange: 444466 },
+      petrol: { label: "Benzin", definition: "Pkw mit Benzinantrieb", base: 29012909, annualChange: -330823 },
+      diesel: { label: "Diesel", definition: "Pkw mit Dieselantrieb", base: 13157334, annualChange: -228328 }
     },
     other: {
       label: "Gas und Sonstige",
       definition: "Gas + Sonstige, intern mitgezählt",
       base: 354391,
-      annualChange: -17388
+      annualChange: -5879
     }
   },
 
 
   regions: {
-    germany: {
-      label: "Deutschland", dataDate: "2026-07-01", referenceDate: "2026-07-01T00:00:00Z", annualSeconds: 365 * 24 * 60 * 60, methodTag: "KBA FZ 27 · 12M", lookbackStart: "2025-07-01", sourceName: "Quellen: KBA · FZ 27 · Modell", globalFleet: { base: 49696710, annualChange: 171102 }, categories: { electric: { label: "Elektro (BEV)", definition: "BEV", base: 2365047, annualChange: 529469 }, hybrid: { label: "Hybrid inkl. PHEV", definition: "HEV + PHEV", base: 4807029, annualChange: 837275 }, petrol: { label: "Benzin", definition: "Pkw Benzin", base: 29012909, annualChange: -670154 }, diesel: { label: "Diesel", definition: "Pkw Diesel", base: 13157334, annualChange: -508100 } }, other: { label: "Gas und Sonstige", definition: "Rest", base: 354391, annualChange: -17388 }, translations: {}
-    },
+    germany: null,
     eu: {
       label: "EU",
       dataDate: "2025-12-31",

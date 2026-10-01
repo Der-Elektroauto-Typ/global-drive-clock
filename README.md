@@ -1,11 +1,11 @@
-# Global Drive Clock V2.9.1
+# Global Drive Clock V2.9.2
 
-V2.9.1 refines the mobile region switch layout while retaining the five selectable regions: Global, Germany, EU, China and USA. Each region has its own reference date, base counts and annualized change; changing regions does not reset the page-session timer. The footer shows V2.9.1 and the selected data date.
+V2.9.2 keeps the five selectable regions and uses Germany’s latest measured six-month stock change (1 Jan–1 Jul 2026) for its counter rate: Global, Germany, EU, China and USA. Each region has its own reference date, base counts and interval-specific change rate; changing regions does not reset the page-session timer. The footer shows V2.9.2 and the selected data date.
 
 ## Data and methodology
 
 - **Global — 30 Sep 2026:** modeled worldwide passenger-car stock. Public sources do not provide a harmonized global stock census split into the four displayed powertrains. Values remain a transparent interpolation calibrated to IEA, ACEA and VDA/UBA anchors.
-- **Germany — 1 Jul 2026:** KBA FZ 27 passenger-car stock; annual changes compare 1 Jul 2025 with 1 Jul 2026 and are spread evenly across 365 days.
+- **Germany — 1 Jul 2026:** KBA FZ 27 passenger-car stock; changes compare the observed stock on 1 Jan and 1 Jul 2026, spread across the 181-day interval. This reacts faster to the latest fleet trend than a 12-month window; the longer interval remains a plausibility check because a shorter window can be more affected by quarter-to-quarter variation.
 - **EU — 31 Dec 2025:** Eurostat's latest annual passenger-car stock. Eurostat reports more than 260 million cars and 7.59 million BEVs (+31.5% vs 2024). Other fuel-category stocks and annual changes are model estimates calibrated to published fleet/registration summaries; national data are not fully harmonized and some are supplemented from other sources.
 - **China — 30 Jun 2026:** Ministry of Public Security / State Council anchor: 371 million automobiles, 48.97 million NEVs; 68.77% of NEVs were battery-electric. The official aggregate does not provide all four categories on a directly comparable basis. BEV and NEV remainder are anchored to that release; petrol/diesel allocation and rates are modeled. Fleet scope differs from passenger-car-only definitions elsewhere.
 - **USA — 31 Dec 2025:** DOE Alternative Fuels Data Center / National Laboratory of the Rockies / Experian registrations. The light-duty fleet includes light trucks, not only passenger cars. Counts are rounded and portal rate tables may differ after revisions; annual changes shown are estimates.
@@ -22,7 +22,8 @@ All counters are interpolations, not live registration feeds. They continue from
 - China State Council / MPS, fleet to 30 Jun 2025: https://english.www.gov.cn/archive/statistics/202507/14/content_WS6874b990c6d0868f4e8f4226.html
 - U.S. DOE AFDC vehicle registrations: https://afdc.energy.gov/vehicle-registration
 - U.S. DOE AFDC annual changes: https://afdc.energy.gov/data/10881
-- Germany KBA FZ 27: https://www.kba.de/DE/Statistik/Produktkatalog/produkte/Fahrzeuge/fz27_b_uebersicht.html
+- Germany KBA FZ 27 quarterly series: https://www.kba.de/DE/Statistik/Produktkatalog/produkte/Fahrzeuge/fz27_b_uebersicht.html
+- Germany KBA 1 Jan 2026 stock: https://www.kba.de/DE/Presse/Pressemitteilungen/Fahrzeugbestand/2026/pm09_fz_bestand_pm_komplett.html
 
 ## Publish
 
