@@ -1,6 +1,6 @@
-# Global Drive Clock V3.0.3
+# Global Drive Clock V3.0.4
 
-V3.0.3 moves the live modeled fuel and operational CO₂ flow into the expandable Data & Methodology section. Fuel and CO₂ totals have been removed from the vehicle cards. The observation timer now sits directly below the session heading. Visitor-session estimates are displayed in four aligned color-coded powertrain columns on mobile and desktop, with amounts, full unit names and avoided/produced labels separated into clear stacked groups. The original powertrain stock counters, five-region switch, ten languages, local clock/time zone, Facebook link, favicon and responsive layout remain in place.
+V3.0.4 moves the live modeled fuel and operational CO₂ flow into the expandable Data & Methodology section. Fuel and CO₂ totals have been removed from the vehicle cards. The observation timer now sits directly below the session heading. Visitor-session estimates are displayed in four aligned color-coded powertrain columns on mobile and desktop, slightly wider and more legible on phones, with amounts, full unit names and avoided/produced labels separated into clear stacked groups. The original powertrain stock counters, five-region switch, ten languages, local clock/time zone, Facebook link, favicon and responsive layout remain in place.
 
 ## What the impact counters mean
 

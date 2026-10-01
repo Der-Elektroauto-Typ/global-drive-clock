@@ -508,27 +508,29 @@ body {
   .brand-top { letter-spacing: 3px; }
   .card { min-height: 250px; }
   .number { margin-top: 34px; font-size: clamp(36px, 12vw, 58px); letter-spacing: -2px; }
-  .session { padding: 46px 10px; }
-  .session-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-  .session h2 { margin-bottom: 6px; }
-  .session-time { margin-bottom: 26px; }
-  .session-impact { grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 12px; }
-  .session-impact-slot { min-width: 0; padding: 17px 3px 19px; }
+  .session { padding: 46px 0; }
+  .session-grid { max-width: none; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .session h2 { margin-bottom: 7px; font-size: 25px; }
+  .section-kicker { font-size: 12px; }
+  .session-time { margin-bottom: 27px; font-size: 13px; }
+  .session-impact { max-width: none; grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 13px; }
+  .session-impact-title { font-size: 11px; letter-spacing: .9px; }
+  .session-impact-slot { min-width: 0; padding: 18px 3px 20px; }
   .session-impact-slot:last-child { border-right: 0; }
   .session-impact-item { gap: 16px; }
   .session-metric-co2 { padding-top: 14px; }
-  .session-impact-item strong.impact-amount { font-size: 12px; letter-spacing: -.35px; }
-  .session-impact-item .impact-unit { font-size: 8px; line-height: 1.2; white-space: normal; overflow-wrap: anywhere; }
-  .session-impact-item .impact-status { font-size: 7px; letter-spacing: 0; }
+  .session-impact-item strong.impact-amount { font-size: 13px; letter-spacing: -.25px; }
+  .session-impact-item .impact-unit { font-size: 9px; line-height: 1.2; white-space: normal; overflow-wrap: anywhere; }
+  .session-impact-item .impact-status { font-size: 8px; letter-spacing: 0; }
   .method-impact-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .method-impact-item:nth-child(2) { border-right: 0; }
   .method-impact-item:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
   .impact { font-size: 10px; }
   .impact small { font-size: 9px; }
-  .session-item { min-width: 0; border-right: 1px solid var(--line); border-bottom: 0; padding: 14px 3px; }
+  .session-item { min-width: 0; border-right: 1px solid var(--line); border-bottom: 0; padding: 15px 3px; }
   .session-item:last-child { border-right: 0; }
-  .session-item span { font-size: 8px; letter-spacing: .55px; margin-bottom: 7px; }
-  .session-item strong { font-size: 20px; letter-spacing: 0; }
+  .session-item span { font-size: 9px; letter-spacing: .6px; margin-bottom: 8px; }
+  .session-item strong { font-size: 21px; letter-spacing: 0; }
   .method-meta { gap: 8px 14px; }
   .session-impact-item { gap: 12px; }
   .session-metric-co2 { padding-top: 11px; }
@@ -654,7 +656,7 @@ body {
 
   .session h2 {
     margin: 7px 0 8px;
-    font-size: 24px;
+    font-size: 25px;
   }
 
   .session-item {

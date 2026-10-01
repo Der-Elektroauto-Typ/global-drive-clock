@@ -1,12 +1,12 @@
 window.DRIVECOUNT_DATA = {
-  modelVersion: "V3.0.3",
+  modelVersion: "V3.0.4",
   dataDate: "30. September 2026",
   referenceDate: "2026-09-30T00:00:00Z",
 
   facebookUrl: "https://www.facebook.com/share/18Na7ZUv93/?mibextid=wwXIfr",
 
   /*
-   * GLOBAL DRIVE CLOCK – V3.0.3
+   * GLOBAL DRIVE CLOCK – V3.0.4
    *
    * IMPORTANT:
    * These are MODEL VALUES, not an official second-by-second census.
