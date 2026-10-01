@@ -59,6 +59,7 @@
       dataIdeaBy: "EINE DATENIDEE VON",
       brandCopy: "Elektromobilität. Fakten. Alltag.",
       facebook: "AUF FACEBOOK FOLGEN →",
+      privateDisclosure: 'Privates, nicht kommerzielles Hobbyprojekt. Keine Werbung, keine Einnahmen.', privateFacebook: 'Kontakt über Facebook (privater Kanal, keine Einnahmen)', lawDdg: '§ 5 DDG',
       footerNote: "Modellierte Echtzeitschätzung – keine amtliche Live-Zählung"
     },
     en: {
@@ -112,6 +113,7 @@
       dataIdeaBy: "A DATA IDEA BY",
       brandCopy: "Electric mobility. Facts. Everyday life.",
       facebook: "FOLLOW ON FACEBOOK →",
+      privateDisclosure: 'Private, non-commercial hobby project. No advertising or income.', privateFacebook: 'Contact via Facebook (private channel, no income)', lawDdg: '§ 5 DDG',
       footerNote: "Modeled real-time estimate – not an official live count"
     },
     fr: {
@@ -164,6 +166,7 @@
       dataIdeaBy: "UNE IDÉE DE DONNÉES PAR",
       brandCopy: "Mobilité électrique. Faits. Quotidien.",
       facebook: "SUIVRE SUR FACEBOOK →",
+      privateDisclosure: 'Projet de loisir privé et non commercial. Sans publicité ni revenus.', privateFacebook: 'Contacter via Facebook (canal privé, sans revenus)', lawDdg: '§ 5 DDG',
       footerNote: "Estimation modélisée en temps réel – pas un comptage officiel en direct"
     },
     es: {
@@ -216,6 +219,7 @@
       dataIdeaBy: "UNA IDEA DE DATOS DE",
       brandCopy: "Movilidad eléctrica. Datos. Vida diaria.",
       facebook: "SEGUIR EN FACEBOOK →",
+      privateDisclosure: 'Proyecto personal y no comercial. Sin publicidad ni ingresos.', privateFacebook: 'Contacto por Facebook (canal privado, sin ingresos)', lawDdg: '§ 5 DDG',
       footerNote: "Estimación modelada en tiempo real – no es un recuento oficial en directo"
     },
     it: {
@@ -268,6 +272,7 @@
       dataIdeaBy: "UN’IDEA BASATA SUI DATI DI",
       brandCopy: "Mobilità elettrica. Fatti. Vita quotidiana.",
       facebook: "SEGUI SU FACEBOOK →",
+      privateDisclosure: 'Progetto privato e non commerciale per hobby. Nessuna pubblicità o entrata.', privateFacebook: 'Contatto via Facebook (canale privato, senza entrate)', lawDdg: '§ 5 DDG',
       footerNote: "Stima modellata in tempo reale – non è un conteggio ufficiale live"
     },
     pl: {
@@ -320,6 +325,7 @@
       dataIdeaBy: "POMYSŁ DANYCH OD",
       brandCopy: "Elektromobilność. Fakty. Codzienność.",
       facebook: "OBSERWUJ NA FACEBOOKU →",
+      privateDisclosure: 'Prywatny, niekomercyjny projekt hobbystyczny. Bez reklam i dochodów.', privateFacebook: 'Kontakt przez Facebooka (kanał prywatny, bez dochodów)', lawDdg: '§ 5 DDG',
       footerNote: "Modelowana estymacja w czasie rzeczywistym – nieoficjalny licznik live"
     },
     nl: {
@@ -372,6 +378,7 @@
       dataIdeaBy: "EEN DATA-IDEE VAN",
       brandCopy: "Elektrische mobiliteit. Feiten. Dagelijks leven.",
       facebook: "VOLG OP FACEBOOK →",
+      privateDisclosure: 'Privé, niet-commercieel hobbyproject. Geen advertenties of inkomsten.', privateFacebook: 'Contact via Facebook (privékanaal, geen inkomsten)', lawDdg: '§ 5 DDG',
       footerNote: "Gemodelleerde realtime-schatting – geen officiële live telling"
     },
     pt: {
@@ -424,6 +431,7 @@
       dataIdeaBy: "UMA IDEIA DE DADOS DE",
       brandCopy: "Mobilidade elétrica. Factos. Dia a dia.",
       facebook: "SEGUIR NO FACEBOOK →",
+      privateDisclosure: 'Projeto pessoal e não comercial. Sem publicidade nem receitas.', privateFacebook: 'Contacto pelo Facebook (canal privado, sem receitas)', lawDdg: '§ 5 DDG',
       footerNote: "Estimativa modelada em tempo real – não é uma contagem oficial ao vivo"
     },
     no: {
@@ -476,6 +484,7 @@
       dataIdeaBy: "EN DATAIDÉ FRA",
       brandCopy: "Elektrisk mobilitet. Fakta. Hverdagsliv.",
       facebook: "FØLG PÅ FACEBOOK →",
+      privateDisclosure: 'Privat, ikke-kommersielt hobbyprosjekt. Ingen reklame eller inntekter.', privateFacebook: 'Kontakt via Facebook (privat kanal, ingen inntekter)', lawDdg: '§ 5 DDG',
       footerNote: "Modellert sanntidsestimat – ikke en offisiell live-telling"
     },
     zh: {
@@ -528,6 +537,7 @@
       dataIdeaBy: "数据创意来自",
       brandCopy: "电动出行。事实。日常。",
       facebook: "在 FACEBOOK 上关注 →",
+      privateDisclosure: '私人非商业爱好项目。无广告，无收入。', privateFacebook: '通过 Facebook 联系（私人频道，无收入）', lawDdg: '§ 5 DDG',
       footerNote: "模型化实时估算——并非官方实时计数"
     }
   };
@@ -636,7 +646,7 @@
     const germany = currentMode === "germany";
     const region = currentMode === "global" ? DATA : (DATA.regions?.[currentMode] || DATA.germany);
     if (el("modelVersion")) {
-      el("modelVersion").textContent = `${t("dataModel")}: V3.0.4${region?.methodTag ? ` · ${region.methodTag}` : ""}`;
+      el("modelVersion").textContent = `${t("dataModel")}: V3.0.5${region?.methodTag ? ` · ${region.methodTag}` : ""}`;
     }
     if (el("dataDate")) {
       const dataDate = region?.dataDate && /^\d{4}-\d{2}-\d{2}$/.test(region.dataDate)
@@ -669,8 +679,9 @@
       button.classList.toggle("active", active);
       button.setAttribute("aria-pressed", String(active));
     });
-    if (el("facebookLink") && DATA.facebookUrl) {
-      el("facebookLink").href = DATA.facebookUrl;
+    if (DATA.facebookUrl) {
+      if (el("facebookLink")) el("facebookLink").href = DATA.facebookUrl;
+      if (el("footerFacebookLink")) el("footerFacebookLink").href = DATA.facebookUrl;
     }
 
     keys.forEach((key) => {

@@ -1061,6 +1061,10 @@ html[lang="zh"] .brand-small {
   letter-spacing: .8px;
 }
 
+.copyright-links { margin-top: 3px; }
+.copyright-links a { color: inherit; text-decoration: underline; text-decoration-color: rgba(139,151,164,.35); text-underline-offset: 2px; }
+.copyright-links a:hover { color: var(--muted); }
+
 @media (max-width: 650px) {
   .mode-switch {
     margin-top: 19px;
