@@ -1,12 +1,12 @@
 window.DRIVECOUNT_DATA = {
-  modelVersion: "V2.9.2",
+  modelVersion: "V3.0.0",
   dataDate: "30. September 2026",
   referenceDate: "2026-09-30T00:00:00Z",
 
   facebookUrl: "https://www.facebook.com/share/18Na7ZUv93/?mibextid=wwXIfr",
 
   /*
-   * GLOBAL DRIVE CLOCK – V2.9
+   * GLOBAL DRIVE CLOCK – V3.0.0
    *
    * IMPORTANT:
    * These are MODEL VALUES, not an official second-by-second census.
@@ -26,6 +26,19 @@ window.DRIVECOUNT_DATA = {
    * "other" covers LPG/CNG/FCEV and other small categories and is not shown
    * as a large card, but is included in the global total.
    */
+
+  // Impact model inputs: annual km and fuel/electricity consumption per vehicle.
+  // Electricity factors are annual-average generation factors, not marginal charging factors.
+  // Net BEV operational CO2 = comparable ICE tailpipe CO2 - grid generation CO2.
+  // No vehicle manufacture, fuel upstream or electricity lifecycle is included.
+  impactFactors: { petrolKgCO2PerLitre: 2.31, dieselKgCO2PerLitre: 2.68 },
+  gridKgCO2PerKwh: 0.435, // IEA 2025 estimated global electricity-generation intensity
+  impact: {
+    electric: { annualKm: 12500, comparatorLitresPer100Km: 7.8, comparatorFuel: "petrol", kwhPerKm: 0.20 },
+    hybrid: { annualKm: 12800, litresPer100Km: 5.0, fuel: "petrol" },
+    petrol: { annualKm: 12000, litresPer100Km: 7.8, fuel: "petrol" },
+    diesel: { annualKm: 12000, litresPer100Km: 6.5, fuel: "diesel" }
+  },
 
   globalFleet: {
     base: 1380000000,
@@ -78,6 +91,13 @@ window.DRIVECOUNT_DATA = {
     methodTag: "KBA FZ 27 · 6M",
     lookbackStart: "2026-01-01",
     sourceName: "Quellen: KBA · FZ 27 · 6-Monats-Vergleich",
+    gridKgCO2PerKwh: 0.344, // UBA 2025 preliminary direct CO2 factor for electricity consumed in Germany
+    impact: {
+      electric: { annualKm: 12500, comparatorLitresPer100Km: 7.7, comparatorFuel: "petrol", kwhPerKm: 0.21 },
+      hybrid: { annualKm: 12500, litresPer100Km: 5.4, fuel: "petrol" },
+      petrol: { annualKm: 10300, litresPer100Km: 7.8, fuel: "petrol" },
+      diesel: { annualKm: 17300, litresPer100Km: 7.0, fuel: "diesel" }
+    },
     globalFleet: {
       base: 49696710,
       annualChange: 210223
@@ -108,6 +128,13 @@ window.DRIVECOUNT_DATA = {
       lookbackStart: "2024-12-31",
       sourceUrl: "https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20260731-1",
       sourceName: "Quellen: Eurostat · ACEA · Modell",
+      gridKgCO2PerKwh: 0.170, // IEA 2025 EU electricity-generation intensity
+      impact: {
+        electric: { annualKm: 10000, comparatorLitresPer100Km: 6.5, comparatorFuel: "petrol", kwhPerKm: 0.21 },
+        hybrid: { annualKm: 11000, litresPer100Km: 4.8, fuel: "petrol" },
+        petrol: { annualKm: 10000, litresPer100Km: 6.5, fuel: "petrol" },
+        diesel: { annualKm: 11000, litresPer100Km: 5.5, fuel: "diesel" }
+      },
       globalFleet: { base: 269000000, annualChange: -260000 },
       categories: {
         electric: { label: "Elektro (BEV)", definition: "BEV", base: 7590000, annualChange: 1820000 },
@@ -130,6 +157,13 @@ window.DRIVECOUNT_DATA = {
       lookbackStart: "2025-06-30",
       sourceUrl: "https://english.www.gov.cn/archive/statistics/202607/15/content_WS6a56dd6ec6d00ca5f9a0c307.html",
       sourceName: "Quellen: MPS · Staatsrat China · Modell",
+      gridKgCO2PerKwh: 0.530, // IEA 2025 China electricity-generation intensity; MEE 2023 factor is 0.5306
+      impact: {
+        electric: { annualKm: 8000, comparatorLitresPer100Km: 5.3, comparatorFuel: "petrol", kwhPerKm: 0.16 },
+        hybrid: { annualKm: 9000, litresPer100Km: 4.5, fuel: "petrol" },
+        petrol: { annualKm: 8000, litresPer100Km: 5.3, fuel: "petrol" },
+        diesel: { annualKm: 10000, litresPer100Km: 6.5, fuel: "diesel" }
+      },
       globalFleet: { base: 371000000, annualChange: 12000000 },
       categories: {
         electric: { label: "Elektro (BEV)", definition: "BEV", base: 33675000, annualChange: 8135000 },
@@ -152,6 +186,13 @@ window.DRIVECOUNT_DATA = {
       lookbackStart: "2024-12-31",
       sourceUrl: "https://afdc.energy.gov/vehicle-registration",
       sourceName: "Quellen: DOE AFDC · NLR/Experian · Modell",
+      gridKgCO2PerKwh: 0.350, // EPA eGRID2023 US-average CO2 intensity, converted from lb/MWh
+      impact: {
+        electric: { annualKm: 17000, comparatorLitresPer100Km: 9.9, comparatorFuel: "petrol", kwhPerKm: 0.19 },
+        hybrid: { annualKm: 16000, litresPer100Km: 6.0, fuel: "petrol" },
+        petrol: { annualKm: 17000, litresPer100Km: 9.9, fuel: "petrol" },
+        diesel: { annualKm: 17000, litresPer100Km: 8.0, fuel: "diesel" }
+      },
       globalFleet: { base: 291000000, annualChange: 1700000 },
       categories: {
         electric: { label: "Elektro (BEV)", definition: "EV", base: 5689100, annualChange: 990000 },

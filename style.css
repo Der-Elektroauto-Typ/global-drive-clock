@@ -241,6 +241,22 @@ body {
   font-weight: 850;
 }
 
+.impact {
+  display: grid;
+  gap: 4px;
+  margin-top: 9px;
+  color: #a3afb9;
+  font-size: 11px;
+  line-height: 1.35;
+  font-variant-numeric: tabular-nums;
+}
+.impact small {
+  color: #697580;
+  font-size: 10px;
+}
+.card-electric .impact { color: rgba(79,220,255,.82); }
+.card-hybrid .impact { color: rgba(159,255,112,.82); }
+
 .progress {
   height: 3px;
   margin-top: 30px;
@@ -429,6 +445,11 @@ body {
   .number { margin-top: 34px; font-size: clamp(36px, 12vw, 58px); letter-spacing: -2px; }
   .session { padding: 46px 10px; }
   .session-grid { grid-template-columns: repeat(2, 1fr); }
+  .session-impact { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; }
+  .session-impact-item { padding: 7px; font-size: 9px; }
+  .session-impact-item strong { font-size: 9px; }
+  .impact { font-size: 10px; }
+  .impact small { font-size: 9px; }
   .session-item { border-right: 0; border-bottom: 1px solid var(--line); padding: 18px 10px; }
   .session-item:nth-last-child(-n+2) { border-bottom: 0; }
   .method-meta { gap: 8px 14px; }
@@ -893,6 +914,43 @@ html[lang="zh"] .brand-small {
   gap: 8px;
   margin-top: 14px;
 }
+
+.impact-table-note {
+  color: #6f7c87;
+  font-size: 11px;
+}
+.impact-table-wrap {
+  max-width: 100%;
+  overflow-x: auto;
+  margin: 8px 0 14px;
+  border: 1px solid rgba(255,255,255,.07);
+  border-radius: 8px;
+}
+.impact-table {
+  width: 100%;
+  min-width: 780px;
+  border-collapse: collapse;
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+}
+.impact-table th,
+.impact-table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid rgba(255,255,255,.06);
+  text-align: right;
+  white-space: nowrap;
+}
+.impact-table thead th {
+  color: #aeb9c3;
+  font-size: 10px;
+  letter-spacing: .4px;
+  background: rgba(255,255,255,.035);
+}
+.impact-table th:first-child,
+.impact-table td:first-child { text-align: left; }
+.impact-table tbody th { color: #c8d1d9; }
+.impact-table tbody tr:last-child th,
+.impact-table tbody tr:last-child td { border-bottom: 0; }
 
 .source-links a {
   color: var(--cyan);

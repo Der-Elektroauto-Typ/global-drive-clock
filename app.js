@@ -34,6 +34,16 @@
       petrol: "BENZIN",
       diesel: "DIESEL",
       vehiclesPerSecond: "Fahrzeuge / Sekunde",
+      impactShort: '≈ Modellierter Kraftstoff- und betrieblicher CO₂-Fluss auf Basis des jeweiligen Fahrzeugbestands.',
+      impactHeading: 'Kraftstoff- und CO₂-Modell', impactWhatTitle: 'Anzeige', impactCalcTitle: 'Berechnung', impactBevTitle: 'BEV-Vergleich', impactSourcesTitle: 'Quellen und Grenzen', impactUnitsTitle: 'Einheiten',
+      impactCalc: 'Fahrzeugbestand × km/Jahr × L/100 km ÷ 100 ÷ Sekunden/Jahr ergibt Liter/s; Kraftstoff × kg CO₂/L ergibt Auspuff-CO₂. Für BEV: vermiedene Benziner-Emissionen minus BEV-kWh × regionaler Jahresmittel-Stromfaktor. Jahresmengen werden gleichmäßig verteilt; keine Messung tatsächlicher Fahrten.',
+      impactBev: 'BEV: Netto-Betriebsvergleich pro angenommener gleicher Fahrleistung: vermiedener direkter Auspuffausstoß eines vergleichbaren Benziners minus Emissionen des Ladestroms aus dem regionalen Jahresmittel-Strommix. Fahrzeugherstellung und vorgelagerte Kraftstoffemissionen sind nicht enthalten.',
+      impactSources: 'Deutschland verwendet KBA-Bestände und Destatis-Fahrleistung/Verbrauch. EU kombiniert Eurostat-Verkehrsleistung/Energie mit EEA-Realdaten neuer Fahrzeuge. USA nutzt DOE/EPA-Daten; Global/China IEA-Annahmen und nationale Anker. Wo vollständige Flottenmessungen fehlen, sind Parameter Modellannahmen. Hybridwerte – besonders Plug-in – sind wegen Ladeverhalten unsicherer. Hybrid zeigt Kraftstoff und Auspuff-CO₂; zusätzlicher Ladestrom von Plug-in-Hybriden ist mangels belastbarer Aufteilung noch nicht enthalten.',
+      impactSessionTitle: 'Kraftstoff / betriebliche CO₂-Bilanz seit Seitenaufruf (Modellschätzung)',
+      impactSinceData: 'Seit Datenstand',
+      impactParameterNote: 'Die BEV-Spalten zeigen km/Jahr, Vergleichsverbrauch in L/100 km und BEV-Verbrauch in kWh/100 km. Die Stromfaktoren stammen aus den jeweils neuesten hier verwendeten Veröffentlichungsjahren (Global/EU/China 2025, Deutschland 2025 (vorläufig); USA 2023) und sind Jahresmittel der Erzeugung, keine marginalen Ladefaktoren. Kraftstofffaktoren: Benzin 2,31 kg CO₂/L, Diesel 2,68 kg CO₂/L. Verbrauch und Fahrleistung sind gerundete Modell-Baselines, keine Messung jedes zugelassenen Fahrzeugs; die Sicherheit unterscheidet sich je Region.', impactRegion: 'Region', impactBevCol: 'BEV: km/Jahr · ICE L/100 km · BEV kWh/100 km', impactGridCol: 'Strommix g CO₂/kWh', impactParamsTitle: 'Verwendete Modellparameter je Region: Jahresfahrleistung und Verbrauch',
+      impactTableUnitNote: 'Benzin-, Diesel- und Hybridzellen: km/Jahr · L/100 km. BEV-Zelle: km/Jahr · Vergleichs-ICE L/100 km · BEV kWh/100 km.',
+      impactElectric: 'BEV*', impactHybrid: 'Hybrid', impactPetrol: 'Benzin', impactDiesel: 'Diesel', impactAvoided: 'vermieden*',
       bevLabel: "REINE BATTERIEFAHRZEUGE",
       hybridLabel: "HEV + PLUG-IN-HYBRID",
       iceLabel: "VERBRENNUNGSMOTOR",
@@ -77,6 +87,16 @@
       petrol: "PETROL",
       diesel: "DIESEL",
       vehiclesPerSecond: "vehicles / second",
+      impactShort: '≈ Modeled fuel and operational CO₂ flow based on each region’s vehicle stock.',
+      impactHeading: 'Fuel and CO₂ model', impactWhatTitle: 'Display', impactCalcTitle: 'Calculation', impactBevTitle: 'BEV comparison', impactSourcesTitle: 'Sources and limits', impactUnitsTitle: 'Units',
+      impactCalc: 'Vehicle stock × km/year × L/100 km ÷ 100 ÷ seconds/year gives L/s; fuel × kg CO₂/L gives tailpipe CO₂. For BEVs: comparator gasoline emissions avoided minus BEV kWh × regional annual-average grid factor. Annual flows are spread evenly; driving is not measured.',
+      impactBev: 'BEV: net operational comparison for the same assumed distance: direct tailpipe emissions of a comparable gasoline car avoided minus charging emissions using the region’s annual-average grid mix. Vehicle manufacturing and upstream fuel emissions are excluded.',
+      impactSources: 'Germany uses KBA stock and Destatis mileage/fuel data. The EU combines Eurostat road activity/energy with EEA real-world data for newer cars. The U.S. uses DOE/EPA data; Global/China use IEA assumptions and national anchors. Where full-fleet measurements are unavailable, parameters are model assumptions. Hybrid values, especially plug-in, are more uncertain due to charging behavior. Hybrid shows fuel and tailpipe CO₂; charging electricity for plug-in hybrids is not yet included because a reliable fleet-wide split is unavailable.',
+      impactSessionTitle: 'Fuel / operational CO₂ balance since page opened (modeled estimate)',
+      impactSinceData: 'Since data date',
+      impactParameterNote: 'The BEV columns show km/year, comparator fuel use in L/100 km and BEV use in kWh/100 km. Grid factors use the latest publication years used here (global/EU/China 2025, Germany 2025 (provisional); U.S. 2023) and are annual-average generation factors, not marginal charging factors. Fuel factors: petrol 2.31 kg CO₂/L, diesel 2.68 kg CO₂/L. Fuel-use and mileage values are rounded model baselines, not measurements of every registered vehicle; confidence varies by region.', impactRegion: 'Region', impactBevCol: 'BEV: km/year · ICE L/100 km · BEV kWh/100 km', impactGridCol: 'Grid g CO₂/kWh', impactParamsTitle: 'Model inputs by region: annual distance and consumption',
+      impactTableUnitNote: 'Petrol, diesel and hybrid cells: km/year · L/100 km. BEV cell: km/year · comparator ICE L/100 km · BEV kWh/100 km.',
+      impactElectric: 'BEV*', impactHybrid: 'Hybrid', impactPetrol: 'Petrol', impactDiesel: 'Diesel', impactAvoided: 'avoided*',
       bevLabel: "BATTERY ELECTRIC VEHICLES",
       hybridLabel: "HEV + PLUG-IN HYBRID",
       iceLabel: "COMBUSTION ENGINE",
@@ -119,6 +139,16 @@
       petrol: "ESSENCE",
       diesel: "DIESEL",
       vehiclesPerSecond: "véhicules / seconde",
+      impactShort: '≈ Flux modélisé de carburant et de CO₂ opérationnel selon le parc régional.',
+      impactHeading: 'Modèle carburant et CO₂', impactWhatTitle: 'Affichage', impactCalcTitle: 'Calcul', impactBevTitle: 'Comparaison BEV', impactSourcesTitle: 'Sources et limites', impactUnitsTitle: 'Unités',
+      impactCalc: 'Parc × km/an × L/100 km ÷ 100 ÷ secondes/an donne les L/s ; carburant × kg CO₂/L donne le CO₂ à l’échappement. Pour les BEV : émissions essence de référence évitées moins kWh BEV × facteur annuel moyen régional du réseau. Flux répartis uniformément, trajets non mesurés.',
+      impactBev: 'BEV : comparaison opérationnelle nette à distance supposée égale : émissions directes évitées d’une voiture essence comparable moins celles de la recharge selon le mix électrique annuel moyen régional. Fabrication et amont des carburants exclus.',
+      impactSources: 'Allemagne : parc KBA et données Destatis. UE : activité/énergie Eurostat et mesures réelles EEA des véhicules récents. États-Unis : DOE/EPA ; monde/Chine : hypothèses IEA et repères nationaux. En l’absence de mesures complètes de la flotte, les paramètres sont modélisés. Les hybrides rechargeables sont plus incertains selon leur recharge. Les hybrides montrent le carburant et le CO₂ à l’échappement ; l’électricité de recharge des hybrides rechargeables n’est pas incluse faute de ventilation fiable du parc.',
+      impactSessionTitle: 'Carburant / bilan CO₂ opérationnel depuis l’ouverture (estimation)',
+      impactSinceData: 'Depuis la date des données',
+      impactParameterNote: 'Les colonnes BEV indiquent km/an, consommation du véhicule thermique de comparaison en L/100 km et consommation BEV en kWh/100 km. Les facteurs électriques utilisent les dernières années publiées retenues ici (monde/UE/Chine 2025 ; Allemagne 2025 (provisoire) ; États-Unis 2023) et représentent des moyennes annuelles de production, pas des facteurs marginaux de recharge. Facteurs carburant : essence 2,31 kg CO₂/L, diesel 2,68 kg CO₂/L. Les valeurs sont des bases modélisées arrondies, pas des mesures de chaque véhicule ; la fiabilité varie selon la région.', impactRegion: 'Région', impactBevCol: 'BEV : km/an · thermique L/100 km · BEV kWh/100 km', impactGridCol: 'Réseau g CO₂/kWh', impactParamsTitle: 'Paramètres du modèle par région : distance annuelle et consommation',
+      impactTableUnitNote: 'Cellules essence, diesel et hybride : km/an · L/100 km. Cellule BEV : km/an · thermique comparable L/100 km · BEV kWh/100 km.',
+      impactElectric: 'BEV*', impactHybrid: 'Hybride', impactPetrol: 'Essence', impactDiesel: 'Diesel', impactAvoided: 'évités*',
       bevLabel: "VÉHICULES 100 % ÉLECTRIQUES",
       hybridLabel: "HEV + HYBRIDE RECHARGEABLE",
       iceLabel: "MOTEUR THERMIQUE",
@@ -161,6 +191,16 @@
       petrol: "GASOLINA",
       diesel: "DIÉSEL",
       vehiclesPerSecond: "vehículos / segundo",
+      impactShort: '≈ Flujo modelado de combustible y CO₂ operativo según el parque regional.',
+      impactHeading: 'Modelo de combustible y CO₂', impactWhatTitle: 'Visualización', impactCalcTitle: 'Cálculo', impactBevTitle: 'Comparación BEV', impactSourcesTitle: 'Fuentes y límites', impactUnitsTitle: 'Unidades',
+      impactCalc: 'Parque × km/año × L/100 km ÷ 100 ÷ segundos/año da L/s; combustible × kg CO₂/L da CO₂ de escape. Para BEV: emisiones de gasolina comparables evitadas menos kWh BEV × factor anual medio regional de la red. Flujos anuales repartidos uniformemente; no se miden trayectos.',
+      impactBev: 'BEV: comparación operativa neta para la misma distancia estimada: emisiones directas evitadas de un coche de gasolina comparable menos las de la recarga según la media anual regional de la red. Se excluyen fabricación y emisiones previas del combustible.',
+      impactSources: 'Alemania: parque KBA y datos Destatis. UE: actividad/energía Eurostat y datos reales EEA de coches recientes. EE. UU.: DOE/EPA; global/China: supuestos IEA y referencias nacionales. Sin mediciones completas de la flota, los parámetros son supuestos del modelo. Los híbridos enchufables son más inciertos por la carga. Los híbridos muestran combustible y CO₂ de escape; no se incluye la electricidad de los enchufables porque falta un desglose fiable de la flota.',
+      impactSessionTitle: 'Combustible / balance operativa de CO₂ desde que abriste la página (estimación)',
+      impactSinceData: 'Desde la fecha de datos',
+      impactParameterNote: 'Las columnas BEV muestran km/año, consumo del vehículo térmico comparador en L/100 km y consumo BEV en kWh/100 km. Los factores eléctricos usan los últimos años publicados empleados aquí (global/UE/China 2025; Alemania 2025 (provisional); EE. UU. 2023) y son promedios anuales de generación, no factores marginales de recarga. Factores de combustible: gasolina 2,31 kg CO₂/L, diésel 2,68 kg CO₂/L. Son valores base redondeados del modelo, no mediciones de cada vehículo; la confianza varía por región.', impactRegion: 'Región', impactBevCol: 'BEV: km/año · combustión L/100 km · BEV kWh/100 km', impactGridCol: 'Red g CO₂/kWh', impactParamsTitle: 'Parámetros del modelo por región: distancia anual y consumo',
+      impactTableUnitNote: 'Celdas gasolina, diésel e híbrido: km/año · L/100 km. Celda BEV: km/año · combustión comparable L/100 km · BEV kWh/100 km.',
+      impactElectric: 'BEV*', impactHybrid: 'Híbrido', impactPetrol: 'Gasolina', impactDiesel: 'Diésel', impactAvoided: 'evitado*',
       bevLabel: "VEHÍCULOS ELÉCTRICOS DE BATERÍA",
       hybridLabel: "HEV + HÍBRIDO ENCHUFABLE",
       iceLabel: "MOTOR DE COMBUSTIÓN",
@@ -203,6 +243,16 @@
       petrol: "BENZINA",
       diesel: "DIESEL",
       vehiclesPerSecond: "veicoli / secondo",
+      impactShort: '≈ Flusso modellato di carburante e CO₂ operativo in base al parco regionale.',
+      impactHeading: 'Modello carburante e CO₂', impactWhatTitle: 'Visualizzazione', impactCalcTitle: 'Calcolo', impactBevTitle: 'Confronto BEV', impactSourcesTitle: 'Fonti e limiti', impactUnitsTitle: 'Unità',
+      impactCalc: 'Parco × km/anno × L/100 km ÷ 100 ÷ secondi/anno dà L/s; carburante × kg CO₂/L dà CO₂ allo scarico. Per BEV: emissioni di benzina comparabili evitate meno kWh BEV × fattore medio annuo regionale della rete. Flussi distribuiti uniformemente; i viaggi non sono misurati.',
+      impactBev: 'BEV: confronto operativo netto a parità di distanza stimata: emissioni dirette evitate di un’auto a benzina comparabile meno quelle della ricarica secondo il mix elettrico medio annuo regionale. Produzione del veicolo e ciclo a monte del carburante sono esclusi.',
+      impactSources: 'Germania: parco KBA e dati Destatis. UE: attività/energia Eurostat e dati reali EEA per auto recenti. USA: DOE/EPA; globale/Cina: ipotesi IEA e riferimenti nazionali. Senza misure complete dell’intero parco, i parametri sono stime del modello. Gli ibridi plug-in sono più incerti per la ricarica. Gli ibridi mostrano carburante e CO₂ allo scarico; l’elettricità di ricarica dei plug-in non è ancora inclusa per mancanza di una suddivisione affidabile del parco.',
+      impactSessionTitle: 'Carburante / bilancio operativo CO₂ dall’apertura (stima)',
+      impactSinceData: 'Dalla data dei dati',
+      impactParameterNote: 'Le colonne BEV indicano km/anno, consumo del veicolo termico di confronto in L/100 km e consumo BEV in kWh/100 km. I fattori elettrici usano gli ultimi anni pubblicati qui (globale/UE/Cina 2025; Germania 2025 (provvisorio); USA 2023) e sono medie annue della generazione, non fattori marginali di ricarica. Fattori carburante: benzina 2,31 kg CO₂/L, diesel 2,68 kg CO₂/L. I valori sono basi modellate arrotondate, non misure di ogni veicolo; l’affidabilità varia per regione.', impactRegion: 'Regione', impactBevCol: 'BEV: km/anno · termica L/100 km · BEV kWh/100 km', impactGridCol: 'Rete g CO₂/kWh', impactParamsTitle: 'Parametri del modello per regione: distanza annua e consumo',
+      impactTableUnitNote: 'Celle benzina, diesel e ibrido: km/anno · L/100 km. Cella BEV: km/anno · termica comparabile L/100 km · BEV kWh/100 km.',
+      impactElectric: 'BEV*', impactHybrid: 'Ibrido', impactPetrol: 'Benzina', impactDiesel: 'Diesel', impactAvoided: 'evitato*',
       bevLabel: "VEICOLI ELETTRICI A BATTERIA",
       hybridLabel: "HEV + IBRIDO PLUG-IN",
       iceLabel: "MOTORE A COMBUSTIONE",
@@ -245,6 +295,16 @@
       petrol: "BENZYNA",
       diesel: "DIESEL",
       vehiclesPerSecond: "pojazdów / sekundę",
+      impactShort: '≈ Modelowany przepływ paliwa i operacyjnego CO₂ według regionalnego parku.',
+      impactHeading: 'Model paliwa i CO₂', impactWhatTitle: 'Wskazanie', impactCalcTitle: 'Obliczenie', impactBevTitle: 'Porównanie BEV', impactSourcesTitle: 'Źródła i ograniczenia', impactUnitsTitle: 'Jednostki',
+      impactCalc: 'Park × km/rok × L/100 km ÷ 100 ÷ sekund/rok daje L/s; paliwo × kg CO₂/L daje emisje z rury. Dla BEV: uniknięte emisje porównywalnej benzyny minus kWh BEV × regionalny roczny średni współczynnik sieci. Roczne przepływy rozłożone równomiernie; przejazdy nie są mierzone.',
+      impactBev: 'BEV: porównanie netto w eksploatacji przy tej samej szacowanej odległości: uniknięte emisje z rury wydechowej porównywalnego auta benzynowego minus emisje ładowania według regionalnej średniej rocznej miksu sieci. Produkcja pojazdu i emisje paliwa przed spalaniem są wyłączone.',
+      impactSources: 'Niemcy: park KBA i dane Destatis. UE: aktywność/energia Eurostat oraz pomiary EEA nowszych aut. USA: DOE/EPA; świat/Chiny: założenia IEA i krajowe punkty odniesienia. Przy braku pomiarów całego parku parametry są założeniami modelu. Hybrydy plug-in są bardziej niepewne z powodu ładowania. Hybrydy pokazują paliwo i CO₂ z rury wydechowej; energia do ładowania plug-in nie jest jeszcze uwzględniona z braku wiarygodnego podziału parku.',
+      impactSessionTitle: 'Paliwo / operacyjny bilans CO₂ od otwarcia strony (szacunek)',
+      impactSinceData: 'Od daty danych',
+      impactParameterNote: 'Kolumny BEV pokazują km/rok, zużycie porównywalnego auta spalinowego w L/100 km i zużycie BEV w kWh/100 km. Współczynniki sieci pochodzą z najnowszych użytych publikacji (świat/UE/Chiny 2025; Niemcy 2025 (wstępne); USA 2023) i są rocznymi średnimi emisji wytwarzania, nie krańcowymi wskaźnikami ładowania. Współczynniki paliw: benzyna 2,31 kg CO₂/L, diesel 2,68 kg CO₂/L. Wartości są zaokrąglonymi założeniami modelu, nie pomiarami każdego pojazdu; pewność zależy od regionu.', impactRegion: 'Region', impactBevCol: 'BEV: km/rok · spalinowy L/100 km · BEV kWh/100 km', impactGridCol: 'Sieć g CO₂/kWh', impactParamsTitle: 'Parametry modelu według regionu: roczny dystans i zużycie',
+      impactTableUnitNote: 'Komórki benzyna, diesel, hybryda: km/rok · L/100 km. Komórka BEV: km/rok · porównywalne ICE L/100 km · BEV kWh/100 km.',
+      impactElectric: 'BEV*', impactHybrid: 'Hybryda', impactPetrol: 'Benzyna', impactDiesel: 'Diesel', impactAvoided: 'uniknięte*',
       bevLabel: "SAMOCHODY ELEKTRYCZNE BEV",
       hybridLabel: "HEV + HYBRYDA PLUG-IN",
       iceLabel: "SILNIK SPALINOWY",
@@ -287,6 +347,16 @@
       petrol: "BENZINE",
       diesel: "DIESEL",
       vehiclesPerSecond: "voertuigen / seconde",
+      impactShort: '≈ Berekende brandstof- en operationele CO₂-stroom op basis van het regionale wagenpark.',
+      impactHeading: 'Brandstof- en CO₂-model', impactWhatTitle: 'Weergave', impactCalcTitle: 'Berekening', impactBevTitle: 'BEV-vergelijking', impactSourcesTitle: 'Bronnen en beperkingen', impactUnitsTitle: 'Eenheden',
+      impactCalc: 'Wagenpark × km/jaar × L/100 km ÷ 100 ÷ seconden/jaar geeft L/s; brandstof × kg CO₂/L geeft uitlaat-CO₂. Voor BEV: vermeden benzine-uitstoot minus BEV-kWh × regionale jaarlijkse gemiddelde netfactor. Jaarstromen zijn gelijkmatig verdeeld; ritten worden niet gemeten.',
+      impactBev: 'BEV: netto operationele vergelijking bij dezelfde geschatte afstand: vermeden directe uitstoot van een vergelijkbare benzineauto min laaduitstoot op basis van de regionale jaarlijkse gemiddelde stroommix. Voertuigproductie en upstream brandstofemissies zijn uitgesloten.',
+      impactSources: 'Duitsland gebruikt KBA-wagenpark en Destatis-rijafstand/verbruik. De EU combineert Eurostat-activiteit/energie met EEA-praktijkgegevens voor nieuwere auto’s. VS gebruikt DOE/EPA; wereldwijd/China IEA-aannames en nationale ankers. Zonder volledige vlootmetingen zijn parameters modelaannames. Vooral plug-inhybrides zijn onzekerder door laadgedrag. Hybrides tonen brandstof en uitlaat-CO₂; laadstroom voor plug-inhybrides is nog niet meegenomen omdat een betrouwbare vlootuitsplitsing ontbreekt.',
+      impactSessionTitle: 'Brandstof / operationele CO₂-balans sinds openen (models schatting)',
+      impactSinceData: 'Sinds de peildatum',
+      impactParameterNote: 'De BEV-kolommen tonen km/jaar, brandstofverbruik van de vergelijkingsauto in L/100 km en BEV-verbruik in kWh/100 km. Netfactoren gebruiken de meest recente hier gebruikte publicatiejaren (wereld/EU/China 2025; Duitsland 2025 (voorlopig); VS 2023) en zijn jaarlijkse gemiddelde opwekfactoren, geen marginale laadfactoren. Brandstoffactoren: benzine 2,31 kg CO₂/L, diesel 2,68 kg CO₂/L. Het zijn afgeronde modelbaselines, geen metingen van elk geregistreerd voertuig; de betrouwbaarheid verschilt per regio.', impactRegion: 'Regio', impactBevCol: 'BEV: km/jaar · brandstof L/100 km · BEV kWh/100 km', impactGridCol: 'Net g CO₂/kWh', impactParamsTitle: 'Modelparameters per regio: jaarlijkse afstand en verbruik',
+      impactTableUnitNote: 'Benzine-, diesel- en hybridecellen: km/jaar · L/100 km. BEV-cel: km/jaar · vergelijkbare ICE L/100 km · BEV kWh/100 km.',
+      impactElectric: 'BEV*', impactHybrid: 'Hybride', impactPetrol: 'Benzine', impactDiesel: 'Diesel', impactAvoided: 'vermeden*',
       bevLabel: "BATTERIJ-ELEKTRISCHE VOERTUIGEN",
       hybridLabel: "HEV + PLUG-IN HYBRIDE",
       iceLabel: "VERBRANDINGSMOTOR",
@@ -329,6 +399,16 @@
       petrol: "GASOLINA",
       diesel: "DIESEL",
       vehiclesPerSecond: "veículos / segundo",
+      impactShort: '≈ Fluxo modelado de combustível e CO₂ operacional com base na frota regional.',
+      impactHeading: 'Modelo de combustível e CO₂', impactWhatTitle: 'Visualização', impactCalcTitle: 'Cálculo', impactBevTitle: 'Comparação BEV', impactSourcesTitle: 'Fontes e limites', impactUnitsTitle: 'Unidades',
+      impactCalc: 'Frota × km/ano × L/100 km ÷ 100 ÷ segundos/ano dá L/s; combustível × kg CO₂/L dá CO₂ no escape. Para BEV: emissões de gasolina comparáveis evitadas menos kWh BEV × fator anual médio regional da rede. Fluxos anuais distribuídos uniformemente; viagens não são medidas.',
+      impactBev: 'BEV: comparação operacional líquida para a mesma distância estimada: emissões diretas evitadas de um carro a gasolina comparável menos as da recarga segundo a média anual regional da rede. Fabrico do veículo e emissões a montante do combustível são excluídos.',
+      impactSources: 'Alemanha: frota KBA e dados Destatis. UE: atividade/energia Eurostat e dados reais EEA de carros recentes. EUA: DOE/EPA; global/China: pressupostos IEA e referências nacionais. Sem medições completas da frota, os parâmetros são pressupostos do modelo. Híbridos plug-in têm maior incerteza devido ao carregamento. Os híbridos mostram combustível e CO₂ no escape; a eletricidade de carregamento dos plug-in ainda não é incluída por falta de uma divisão fiável da frota.',
+      impactSessionTitle: 'Combustível / balanço operacional de CO₂ desde a abertura (estimativa)',
+      impactSinceData: 'Desde a data dos dados',
+      impactParameterNote: 'As colunas BEV mostram km/ano, consumo do veículo de combustão comparável em L/100 km e consumo BEV em kWh/100 km. Os fatores elétricos usam os anos mais recentes aqui considerados (global/UE/China 2025; Alemanha 2025 (provisório); EUA 2023) e são médias anuais de geração, não fatores marginais de carregamento. Fatores de combustível: gasolina 2,31 kg CO₂/L, diesel 2,68 kg CO₂/L. São valores-base arredondados do modelo, não medições de cada veículo; a confiança varia por região.', impactRegion: 'Região', impactBevCol: 'BEV: km/ano · combustão L/100 km · BEV kWh/100 km', impactGridCol: 'Rede g CO₂/kWh', impactParamsTitle: 'Parâmetros do modelo por região: distância anual e consumo',
+      impactTableUnitNote: 'Células gasolina, diesel e híbrido: km/ano · L/100 km. Célula BEV: km/ano · combustão comparável L/100 km · BEV kWh/100 km.',
+      impactElectric: 'BEV*', impactHybrid: 'Híbrido', impactPetrol: 'Gasolina', impactDiesel: 'Diesel', impactAvoided: 'evitado*',
       bevLabel: "VEÍCULOS ELÉTRICOS A BATERIA",
       hybridLabel: "HEV + HÍBRIDO PLUG-IN",
       iceLabel: "MOTOR DE COMBUSTÃO",
@@ -371,6 +451,16 @@
       petrol: "BENSIN",
       diesel: "DIESEL",
       vehiclesPerSecond: "kjøretøy / sekund",
+      impactShort: '≈ Modellert drivstoff- og operativ CO₂-strøm basert på regional bilpark.',
+      impactHeading: 'Drivstoff- og CO₂-modell', impactWhatTitle: 'Visning', impactCalcTitle: 'Beregning', impactBevTitle: 'BEV-sammenligning', impactSourcesTitle: 'Kilder og begrensninger', impactUnitsTitle: 'Enheter',
+      impactCalc: 'Bilpark × km/år × L/100 km ÷ 100 ÷ sekunder/år gir L/s; drivstoff × kg CO₂/L gir eksos-CO₂. For BEV: unngåtte bensinutslipp minus BEV-kWh × regional årlig gjennomsnittlig nettfaktor. Årsflyten fordeles jevnt; kjøreturer måles ikke.',
+      impactBev: 'BEV: netto driftsammenligning for samme beregnede kjørelengde: unngåtte direkte utslipp fra en tilsvarende bensinbil minus ladeutslipp beregnet med regional årlig gjennomsnittlig strømmiks. Bilproduksjon og oppstrøms drivstoffutslipp er ikke med.',
+      impactSources: 'Tyskland bruker KBA-bestand og Destatis-kjørelengde/drivstoffdata. EU kombinerer Eurostat-aktivitet/energi og EEA-reelle data for nyere biler. USA bruker DOE/EPA; globalt/Kina brukes IEA-forutsetninger og nasjonale holdepunkter. Der komplette flåtemålinger mangler, er parametrene modellforutsetninger. Plug-in-hybrider er mer usikre på grunn av lading. Hybrid viser drivstoff og eksos-CO₂; ladestrøm for plug-in-hybrider er ennå ikke inkludert fordi en pålitelig flåtefordeling mangler.',
+      impactSessionTitle: 'Drivstoff / operativ CO₂-balanse siden åpning (modellestimat)',
+      impactSinceData: 'Siden datodato',
+      impactParameterNote: 'BEV-kolonnene viser km/år, drivstofforbruk for sammenligningsbilen i L/100 km og BEV-forbruk i kWh/100 km. Nettfaktorene bruker de nyeste publiseringsårene her (globalt/EU/Kina 2025; Tyskland 2025 (foreløpig); USA 2023) og er årlige gjennomsnitt for produksjon, ikke marginale ladefaktorer. Drivstoffaktorer: bensin 2,31 kg CO₂/L, diesel 2,68 kg CO₂/L. Verdiene er avrundede modellforutsetninger, ikke målinger av hver bil; sikkerheten varierer mellom regioner.', impactRegion: 'Region', impactBevCol: 'BEV: km/år · fossil L/100 km · BEV kWh/100 km', impactGridCol: 'Strømnett g CO₂/kWh', impactParamsTitle: 'Modellparametere per region: årlig kjørelengde og forbruk',
+      impactTableUnitNote: 'Bensin-, diesel- og hybridceller: km/år · L/100 km. BEV-celle: km/år · sammenlignbar fossilbil L/100 km · BEV kWh/100 km.',
+      impactElectric: 'BEV*', impactHybrid: 'Hybrid', impactPetrol: 'Bensin', impactDiesel: 'Diesel', impactAvoided: 'unngått*',
       bevLabel: "BATTERIELEKTRISKE KJØRETØY",
       hybridLabel: "HEV + LADBAR HYBRID",
       iceLabel: "FORBRENNINGSMOTOR",
@@ -413,6 +503,16 @@
       petrol: "汽油",
       diesel: "柴油",
       vehiclesPerSecond: "辆 / 秒",
+      impactShort: '≈ 根据各地区车辆保有量计算的燃料与运行 CO₂ 模型流量。',
+      impactHeading: '燃料与 CO₂ 模型', impactWhatTitle: '显示内容', impactCalcTitle: '计算方法', impactBevTitle: '纯电车对比', impactSourcesTitle: '来源与限制', impactUnitsTitle: '单位',
+      impactCalc: '车辆保有量 × 公里/年 × L/100 km ÷ 100 ÷ 每年秒数 = L/s；燃料 × kg CO₂/L = 尾气 CO₂。纯电车净值 = 避免的汽油车排放 − 纯电耗电量 × 地区年度平均电网因子。年度流量均匀分摊；并非实测行驶。',
+      impactBev: '纯电车：按相同估算里程进行净运行比较：可比汽油车避免的直接尾气排放，减去按地区年度平均电网排放因子计算的充电排放。不含车辆制造和燃料上游排放。',
+      impactSources: '德国采用 KBA 保有量与 Destatis 里程/燃料数据。欧盟结合 Eurostat 活动/能源数据和 EEA 较新车辆实测数据。美国采用 DOE/EPA；全球/中国采用 IEA 假设和国家基准。缺少完整车队测量时，参数属于模型假设。插混因充电行为而不确定性更高。混合动力显示燃料与尾气 CO₂；由于缺少可靠的车队拆分数据，暂未计入插电式混合动力的充电用电。',
+      impactSessionTitle: '自打开页面以来的燃料 / 运行 CO₂ 平衡（模型估算）',
+      impactSinceData: '自数据日期起',
+      impactParameterNote: '纯电车列依次为年行驶公里、对照燃油车油耗（L/100 km）和纯电车耗电量（kWh/100 km）。电网因子采用此处使用的最新发布年份（全球/欧盟/中国为2025，德国为2025（暂定）；美国为2023），是年度平均发电因子，并非充电的边际排放因子。燃料因子：汽油 2.31 kg CO₂/L，柴油 2.68 kg CO₂/L。这些是经过取整的模型基线，并非对每辆在用车的实测；各地区可靠性不同。', impactRegion: '地区', impactBevCol: '纯电车：公里/年 · 燃油车 L/100 km · 纯电车 kWh/100 km', impactGridCol: '电网 g CO₂/kWh', impactParamsTitle: '各地区模型参数：年行驶里程与能耗',
+      impactTableUnitNote: '汽油、柴油和混合动力单元：公里/年 · L/100 km。纯电单元：公里/年 · 对照燃油车 L/100 km · 纯电 kWh/100 km。',
+      impactElectric: '纯电*', impactHybrid: '混合动力', impactPetrol: '汽油', impactDiesel: '柴油', impactAvoided: '避免*',
       bevLabel: "纯电动汽车",
       hybridLabel: "HEV + 插电式混合动力",
       iceLabel: "内燃机",
@@ -536,7 +636,7 @@
     const germany = currentMode === "germany";
     const region = currentMode === "global" ? DATA : (DATA.regions?.[currentMode] || DATA.germany);
     if (el("modelVersion")) {
-      el("modelVersion").textContent = `${t("dataModel")}: V2.9.2${region?.methodTag ? ` · ${region.methodTag}` : ""}`;
+      el("modelVersion").textContent = `${t("dataModel")}: V3.0.0${region?.methodTag ? ` · ${region.methodTag}` : ""}`;
     }
     if (el("dataDate")) {
       const dataDate = region?.dataDate && /^\d{4}-\d{2}-\d{2}$/.test(region.dataDate)
@@ -653,8 +753,10 @@
       if (el(`count-${key}`)) el(`count-${key}`).textContent = formatInt(count);
       if (el(`rate-${key}`)) el(`rate-${key}`).textContent = signed(rate, 2);
       if (el(`since-${key}`)) el(`since-${key}`).textContent = signedInt(sessionChange);
+      renderImpact(key, market, count, sessionSeconds);
     });
 
+    renderSessionImpact(market, sessionSeconds);
     updateClock(now);
     updateSession(sessionSeconds);
     if (!animationFrameScheduled) {
@@ -664,6 +766,114 @@
         tick();
       });
     }
+  }
+
+
+  function impactParams(key, market) {
+    return (market.impact || DATA.impact)[key];
+  }
+
+  function impactFlow(key, market, fleetCount) {
+    const p = impactParams(key, market);
+    const factors = DATA.impactFactors;
+    const seconds = SECONDS_PER_YEAR;
+    if (!p) return { litres: 0, co2kg: 0 };
+    if (key === "electric") {
+      const litres = fleetCount * p.annualKm * p.comparatorLitresPer100Km / 100 / seconds;
+      const factor = factors[`${p.comparatorFuel}KgCO2PerLitre`];
+      const avoidedTailpipe = litres * factor;
+      const chargingKwh = fleetCount * p.annualKm * p.kwhPerKm / seconds;
+      const gridFactor = market.gridKgCO2PerKwh ?? DATA.gridKgCO2PerKwh;
+      const chargingCO2 = chargingKwh * gridFactor;
+      return { litres, co2kg: avoidedTailpipe - chargingCO2, avoidedTailpipe, chargingKwh, chargingCO2, avoided: true };
+    }
+    const litres = fleetCount * p.annualKm * p.litresPer100Km / 100 / seconds;
+    const factor = factors[`${p.fuel}KgCO2PerLitre`];
+    return { litres, co2kg: litres * factor, avoided: false };
+  }
+
+  function formatFlow(value, unit) {
+    const abs = Math.abs(value);
+    if (unit === "kg/s" && abs >= 1000) {
+      return `${formatDecimal(value / 1000, 2)} t/s`;
+    }
+    return `${formatDecimal(value, abs >= 100 ? 0 : 2)} ${unit}`;
+  }
+
+  function formatAccumulated(value, unit) {
+    const abs = Math.abs(value);
+    if (unit === "kg" && abs >= 1000) return `${formatDecimal(value / 1000, 2)} t`;
+    if (unit === "L" && abs >= 1000000) return `${formatDecimal(value / 1000000, 2)} M L`;
+    if (unit === "L" && abs >= 1000) return `${formatDecimal(value / 1000, 2)} k L`;
+    return `${formatDecimal(value, 2)} ${unit}`;
+  }
+
+  function accumulatedImpact(key, market, now = Date.now(), from = new Date(market.referenceDate).getTime()) {
+    const p = impactParams(key, market);
+    if (!p) return { litres: 0, co2kg: 0 };
+    const start = Math.min(Math.max(from, new Date(market.referenceDate).getTime()), now);
+    const duration = Math.max(0, (now - start) / 1000);
+    const initialCount = currentValue(market.categories[key], market, start);
+    const countRate = perSecond(market.categories[key], market);
+    const annualSeconds = SECONDS_PER_YEAR;
+    const annualFuel = key === "electric"
+      ? p.annualKm * p.comparatorLitresPer100Km / 100
+      : p.annualKm * p.litresPer100Km / 100;
+    const litresPerVehicleSecond = annualFuel / annualSeconds;
+    const litres = litresPerVehicleSecond * Math.max(0, initialCount * duration + 0.5 * countRate * duration * duration);
+    const fuel = key === "electric" ? p.comparatorFuel : p.fuel;
+    let co2kg = litres * DATA.impactFactors[`${fuel}KgCO2PerLitre`];
+    if (key === "electric") {
+      const chargingKwh = Math.max(0, initialCount * duration + 0.5 * countRate * duration * duration) * p.annualKm * p.kwhPerKm / annualSeconds;
+      co2kg -= chargingKwh * (market.gridKgCO2PerKwh ?? DATA.gridKgCO2PerKwh);
+    }
+    return { litres, co2kg };
+  }
+
+  function renderImpact(key, market, count) {
+    const node = el(`impact-${key}`);
+    if (!node) return;
+    const flow = impactFlow(key, market, count);
+    const litreText = formatFlow(flow.litres, "L/s");
+    const co2Text = formatFlow(flow.co2kg, "kg/s");
+    const cumulative = accumulatedImpact(key, market);
+    const cumulativeText = key === "electric"
+      ? `${formatAccumulated(cumulative.litres, "L")} · ${formatAccumulated(cumulative.co2kg, "kg")} CO₂ netto ${t("impactAvoided")}`
+      : `${formatAccumulated(cumulative.litres, "L")} · ${formatAccumulated(cumulative.co2kg, "kg")} CO₂`;
+    const liveText = key === "electric"
+      ? `≈ ${litreText} · ${co2Text} CO₂ netto ${t("impactAvoided")}`
+      : `≈ ${litreText} · ${co2Text} CO₂`;
+    node.innerHTML = `<span>${liveText}</span><small>${t("impactSinceData")}: ${cumulativeText}</small>`;
+    node.title = key === "electric"
+      ? `Netto-Betriebsvergleich: vermiedener Auspuffausstoß minus modellierte Emissionen der Stromerzeugung; ${litreText} Kraftstoffäquivalent vermieden.`
+      : `${litreText} Kraftstoff · ${co2Text} direktes Auspuff-CO₂ pro Sekunde, modelliert.`;
+  }
+
+  function renderSessionImpact(market, sessionSeconds) {
+    const root = el("sessionImpact");
+    if (!root) return;
+    root.replaceChildren();
+    const caption = document.createElement("div");
+    caption.className = "session-impact-title";
+    caption.textContent = t("impactSessionTitle");
+    root.appendChild(caption);
+    keys.forEach((key) => {
+      const item = market.categories[key];
+      const count = currentValue(item, market);
+      const sessionTotal = accumulatedImpact(key, market, Date.now(), startTime);
+      const liters = sessionTotal.litres;
+      const co2 = sessionTotal.co2kg;
+      const entry = document.createElement("div");
+      entry.className = `session-impact-item impact-${key}`;
+      const label = document.createElement("span");
+      label.textContent = key === "electric" ? t("impactElectric") : key === "hybrid" ? t("impactHybrid") : key === "petrol" ? t("impactPetrol") : t("impactDiesel");
+      const value = document.createElement("strong");
+      value.textContent = key === "electric"
+        ? `${formatAccumulated(liters, "L")} · ${formatAccumulated(co2, "kg")} CO₂ netto ${t("impactAvoided")}`
+        : `${formatAccumulated(liters, "L")} · ${formatAccumulated(co2, "kg")} CO₂`;
+      entry.append(label, value);
+      root.appendChild(entry);
+    });
   }
 
   function setupModeSwitch() {

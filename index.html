@@ -4,30 +4,30 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#05070a">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg?v=2.9.2">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=2.9.2">
-  <link rel="icon" type="image/png" sizes="192x192" href="favicon.png?v=2.9.2">
-  <link rel="shortcut icon" href="favicon.ico?v=2.9.2">
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=2.9.2">
-  <meta name="description" content="Der weltweite Antriebswandel: modellierte Entwicklung des Pkw-Bestands für Elektro, Hybrid, Benzin und Diesel. Mit Datenquellen und Methodik.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg?v=3.0.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=3.0.0">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon.png?v=3.0.0">
+  <link rel="shortcut icon" href="favicon.ico?v=3.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=3.0.0">
+  <meta name="description" content="Modellierte Pkw-Bestände, Kraftstoffflüsse und betriebliche CO₂-Bilanz für Global, Deutschland, EU, China und USA – mit Quellen und offengelegter Methodik.">
   <link rel="canonical" href="https://der-elektroauto-typ.github.io/global-drive-clock/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Global Drive Clock">
   <meta property="og:title" content="Global Drive Clock – Der weltweite Antriebswandel">
-  <meta property="og:description" content="Der weltweite Antriebswandel: modellierte Entwicklung des Pkw-Bestands für Elektro, Hybrid, Benzin und Diesel. Mit Datenquellen und Methodik.">
+  <meta property="og:description" content="Modellierte Pkw-Bestände, Kraftstoffflüsse und betriebliche CO₂-Bilanz für Global, Deutschland, EU, China und USA – mit Quellen und offengelegter Methodik.">
   <meta property="og:url" content="https://der-elektroauto-typ.github.io/global-drive-clock/">
-  <meta property="og:image" content="https://der-elektroauto-typ.github.io/global-drive-clock/social-preview.jpg?preview=homepage-session">
+  <meta property="og:image" content="https://der-elektroauto-typ.github.io/global-drive-clock/social-preview.jpg?v=3.0.0">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:alt" content="Global Drive Clock im Homepage-Stil mit vier Modellzählern und einer beispielhaften Live-Session-Ansicht.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Global Drive Clock – Der weltweite Antriebswandel">
-  <meta name="twitter:description" content="Der weltweite Antriebswandel: modellierte Entwicklung des Pkw-Bestands für Elektro, Hybrid, Benzin und Diesel. Mit Datenquellen und Methodik.">
-  <meta name="twitter:image" content="https://der-elektroauto-typ.github.io/global-drive-clock/social-preview.jpg?preview=homepage-session">
+  <meta name="twitter:description" content="Modellierte Pkw-Bestände, Kraftstoffflüsse und betriebliche CO₂-Bilanz für Global, Deutschland, EU, China und USA – mit Quellen und offengelegter Methodik.">
+  <meta name="twitter:image" content="https://der-elektroauto-typ.github.io/global-drive-clock/social-preview.jpg?v=3.0.0">
   <meta name="twitter:image:alt" content="Global Drive Clock mit vier Modellzählern und einer beispielhaften Live-Session-Ansicht.">
   <title>Global Drive Clock</title>
-  <link rel="stylesheet" href="style.css?v=2.9.2">
+  <link rel="stylesheet" href="style.css?v=3.0.0">
 </head>
 <body>
   <div class="language-switcher" id="languageSwitcher">
@@ -80,6 +80,7 @@
         </div>
         <div class="number" id="count-electric">0</div>
         <div class="rate"><span id="rate-electric">+0,00</span> <span data-i18n="vehiclesPerSecond">Fahrzeuge / Sekunde</span></div>
+        <div class="impact" id="impact-electric" aria-live="off"></div>
         <div class="progress"><div class="progress-fill" id="bar-electric"></div></div>
         <div class="card-foot"><span data-i18n="bevLabel">REINE BATTERIEFAHRZEUGE</span><span>BEV</span></div>
       </article>
@@ -94,6 +95,7 @@
         </div>
         <div class="number" id="count-hybrid">0</div>
         <div class="rate"><span id="rate-hybrid">+0,00</span> <span data-i18n="vehiclesPerSecond">Fahrzeuge / Sekunde</span></div>
+        <div class="impact" id="impact-hybrid" aria-live="off"></div>
         <div class="progress"><div class="progress-fill" id="bar-hybrid"></div></div>
         <div class="card-foot"><span data-i18n="hybridLabel">HEV + PLUG-IN-HYBRID</span><span>HYBRID</span></div>
       </article>
@@ -108,6 +110,7 @@
         </div>
         <div class="number" id="count-petrol">0</div>
         <div class="rate"><span id="rate-petrol">−0,00</span> <span data-i18n="vehiclesPerSecond">Fahrzeuge / Sekunde</span></div>
+        <div class="impact" id="impact-petrol" aria-live="off"></div>
         <div class="progress"><div class="progress-fill" id="bar-petrol"></div></div>
         <div class="card-foot"><span data-i18n="iceLabel">VERBRENNUNGSMOTOR</span><span>ICE</span></div>
       </article>
@@ -122,6 +125,7 @@
         </div>
         <div class="number" id="count-diesel">0</div>
         <div class="rate"><span id="rate-diesel">−0,00</span> <span data-i18n="vehiclesPerSecond">Fahrzeuge / Sekunde</span></div>
+        <div class="impact" id="impact-diesel" aria-live="off"></div>
         <div class="progress"><div class="progress-fill" id="bar-diesel"></div></div>
         <div class="card-foot"><span data-i18n="iceLabel">VERBRENNUNGSMOTOR</span><span>ICE</span></div>
       </article>
@@ -137,6 +141,7 @@
         <div class="session-item"><span data-i18n="diesel">DIESEL</span><strong class="negative" id="since-diesel">−0</strong></div>
       </div>
       <div class="session-time"><span data-i18n="observationTime">Beobachtungszeit:</span> <strong id="sessionTime">00:00:00</strong></div>
+      <div class="session-impact" id="sessionImpact" aria-live="off"></div>
     </section>
 
     <section class="method">
@@ -171,6 +176,41 @@
             LPG, CNG, FCEV und sonstige kleine Gruppen werden im Gesamtbestand berücksichtigt, aber nicht als
             eigener großer Zähler dargestellt.
           </p>
+          <h3 data-i18n="impactHeading">Modellierte Kraftstoff- und CO₂-Flüsse</h3>
+          <p><strong data-i18n="impactWhatTitle">Anzeige:</strong> <span data-i18n="impactShort">Modellierter Kraftstoff- und Auspuff-CO₂-Fluss.</span> Der Fluss wird aus dem aktuellen Bestand hochgerechnet. Die Kachel zählt seit ihrem Datenstichtag; „seit Seitenaufruf“ zählt denselben Fluss ab Besuchsbeginn.</p>
+          <p><strong data-i18n="impactCalcTitle">Berechnung:</strong> <span data-i18n="impactCalc"></span> CO₂ ergibt sich aus dem Kraftstofffluss multipliziert mit dem Kraftstoff-Emissionsfaktor. Jahresmengen werden gleichmäßig auf Sekunden verteilt; das ist keine Messung tatsächlicher Fahrten.</p>
+          <p><strong data-i18n="impactBevTitle">BEV-Vergleich:</strong> <span data-i18n="impactBev"></span></p>
+          <p><strong data-i18n="impactSourcesTitle">Quellen und Grenzen:</strong> <span data-i18n="impactSources"></span></p>
+          <p><strong data-i18n="impactUnitsTitle">Einheiten:</strong> Die Kacheln zeigen Liter/s und kg oder t CO₂/s; der Besuchszähler kumuliert die geschätzten Mengen. Biogene Beimischungen und weitere Lebenszyklus-Effekte sind nicht individuell aufgelöst.</p>
+          <p><strong data-i18n="impactParamsTitle">Verwendete Modellparameter je Region (Jahresfahrleistung / Liter je 100 km)</strong></p>
+          <p class="impact-table-note" data-i18n="impactTableUnitNote">Petrol, diesel and hybrid cells: km/year · L/100 km. BEV cell: km/year · comparator ICE L/100 km · BEV kWh/100 km.</p>
+          <div class="impact-table-wrap">
+            <table class="impact-table">
+              <thead><tr><th data-i18n="impactRegion">Region</th><th data-i18n="impactBevCol">BEV: km/year · ICE L/100 km · BEV kWh/100 km</th><th data-i18n="impactGridCol">Grid g CO₂/kWh</th><th data-i18n="hybrid">Hybrid</th><th data-i18n="petrol">Petrol</th><th data-i18n="diesel">Diesel</th></tr></thead>
+              <tbody>
+                <tr><th>Global</th><td>12.500 · 7,8 · 20</td><td>435 (2025)</td><td>12.800 · 5,0</td><td>12.000 · 7,8</td><td>12.000 · 6,5</td></tr>
+                <tr><th>Deutschland</th><td>12.500 · 7,7 · 21</td><td>344 (2025*)</td><td>12.500 · 5,4</td><td>10.300 · 7,8</td><td>17.300 · 7,0</td></tr>
+                <tr><th>EU</th><td>10.000 · 6,5 · 21</td><td>170 (2025)</td><td>11.000 · 4,8</td><td>10.000 · 6,5</td><td>11.000 · 5,5</td></tr>
+                <tr><th>China</th><td>8.000 · 5,3 · 16</td><td>530 (2025)</td><td>9.000 · 4,5</td><td>8.000 · 5,3</td><td>10.000 · 6,5</td></tr>
+                <tr><th>USA</th><td>17.000 · 9,9 · 19</td><td>350 (2023)</td><td>16.000 · 6,0</td><td>17.000 · 9,9</td><td>17.000 · 8,0</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p data-i18n="impactParameterNote">The BEV table columns show annual km, comparator fuel L/100 km and BEV consumption kWh/100 km. Grid factors use different latest published years (global/EU/China 2025; Germany 2025 preliminary; U.S. 2023) and are annual-average generation factors, not marginal charging factors. Fuel factors: petrol 2.31 kg CO₂/L, diesel 2.68 kg CO₂/L. Consumption and mileage values are rounded model baselines, not measurements of every currently registered vehicle; confidence varies by region.</p>
+          <div class="source-links">
+            <a href="https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Umwelt/UGR/verkehr-tourismus/Tabellen/fahrleistungen-kraftstoffverbrauch.html" target="_blank" rel="noopener noreferrer">Destatis · Fahrleistung und Kraftstoffverbrauch</a>
+            <a href="https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/07/PD26_233_32421.html" target="_blank" rel="noopener noreferrer">Destatis · Energieverbrauch Straßenverkehr</a>
+            <a href="https://ec.europa.eu/eurostat/databrowser/view/ROAD_PA_MOV/default/table?lang=en" target="_blank" rel="noopener noreferrer">Eurostat · Pkw-Verkehrsleistung</a>
+            <a href="https://ec.europa.eu/eurostat/databrowser/product/view/ten00126?lang=en" target="_blank" rel="noopener noreferrer">Eurostat · Energieverbrauch Verkehr</a>
+            <a href="https://climate-energy.eea.europa.eu/topics/transport/real-world-emissions/intro" target="_blank" rel="noopener noreferrer">EEA · reale Fahrzeugverbräuche</a>
+            <a href="https://www.epa.gov/automotive-trends/download-automotive-trends-report" target="_blank" rel="noopener noreferrer">EPA · Automotive Trends</a>
+            <a href="https://www.iea.org/reports/global-ev-outlook-2026/outlook-for-electric-mobility-chap-9-11" target="_blank" rel="noopener noreferrer">IEA · Kraftstoffverdrängung durch EV</a>
+            <a href="https://www.iea.org/reports/electricity-2026/emissions" target="_blank" rel="noopener noreferrer">IEA · regionale Stromintensitäten 2025</a>
+            <a href="https://www.umweltbundesamt.de/system/files/medien/11850/publikationen/2026-03/16_2026_CC.pdf" target="_blank" rel="noopener noreferrer">UBA · deutscher Strommix 2025 vorläufig</a>
+            <a href="https://www.mee.gov.cn/ywdt/zbft/202601/t20260105_1139911.shtml" target="_blank" rel="noopener noreferrer">China MEE · Vergleichswert 2023</a>
+            <a href="https://www.epa.gov/egrid/summary-data" target="_blank" rel="noopener noreferrer">US EPA · eGRID 2023</a>
+            <a href="https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2025" target="_blank" rel="noopener noreferrer">DESNZ · CO₂-Umrechnungsfaktoren</a>
+          </div>
           <div class="source-links">
             <a href="https://www.iea.org/reports/global-ev-outlook-2026/trends-in-electric-cars" target="_blank" rel="noopener noreferrer">IEA · Global EV Outlook 2026</a>
             <a href="https://www.iea.org/reports/electric-car-markets-in-a-time-of-uncertainty/executive-summary" target="_blank" rel="noopener noreferrer">IEA · H1 2026 Update</a>
@@ -212,7 +252,7 @@
     <div class="copyright">© 2026 DER ELEKTROAUTO TYP · GLOBAL DRIVE CLOCK · ALL RIGHTS RESERVED</div>
   </main>
 
-  <script src="data.js?v=2.9.2"></script>
-  <script src="app.js?v=2.9.2"></script>
+  <script src="data.js?v=3.0.0"></script>
+  <script src="app.js?v=3.0.0"></script>
 </body>
 </html>
