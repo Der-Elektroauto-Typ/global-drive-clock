@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#05070a">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg?v=3.0.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=3.0.0">
-  <link rel="icon" type="image/png" sizes="192x192" href="favicon.png?v=3.0.0">
-  <link rel="shortcut icon" href="favicon.ico?v=3.0.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=3.0.0">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg?v=3.0.1">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=3.0.1">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon.png?v=3.0.1">
+  <link rel="shortcut icon" href="favicon.ico?v=3.0.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=3.0.1">
   <meta name="description" content="Modellierte Pkw-Bestände, Kraftstoffflüsse und betriebliche CO₂-Bilanz für Global, Deutschland, EU, China und USA – mit Quellen und offengelegter Methodik.">
   <link rel="canonical" href="https://der-elektroauto-typ.github.io/global-drive-clock/">
   <meta property="og:type" content="website">
@@ -16,7 +16,7 @@
   <meta property="og:title" content="Global Drive Clock – Der weltweite Antriebswandel">
   <meta property="og:description" content="Modellierte Pkw-Bestände, Kraftstoffflüsse und betriebliche CO₂-Bilanz für Global, Deutschland, EU, China und USA – mit Quellen und offengelegter Methodik.">
   <meta property="og:url" content="https://der-elektroauto-typ.github.io/global-drive-clock/">
-  <meta property="og:image" content="https://der-elektroauto-typ.github.io/global-drive-clock/social-preview.jpg?v=3.0.0">
+  <meta property="og:image" content="https://der-elektroauto-typ.github.io/global-drive-clock/social-preview.jpg?v=3.0.1">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:type" content="image/jpeg">
@@ -24,10 +24,10 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Global Drive Clock – Der weltweite Antriebswandel">
   <meta name="twitter:description" content="Modellierte Pkw-Bestände, Kraftstoffflüsse und betriebliche CO₂-Bilanz für Global, Deutschland, EU, China und USA – mit Quellen und offengelegter Methodik.">
-  <meta name="twitter:image" content="https://der-elektroauto-typ.github.io/global-drive-clock/social-preview.jpg?v=3.0.0">
+  <meta name="twitter:image" content="https://der-elektroauto-typ.github.io/global-drive-clock/social-preview.jpg?v=3.0.1">
   <meta name="twitter:image:alt" content="Global Drive Clock mit vier Modellzählern und einer beispielhaften Live-Session-Ansicht.">
   <title>Global Drive Clock</title>
-  <link rel="stylesheet" href="style.css?v=3.0.0">
+  <link rel="stylesheet" href="style.css?v=3.0.1">
 </head>
 <body>
   <div class="language-switcher" id="languageSwitcher">
@@ -80,7 +80,7 @@
         </div>
         <div class="number" id="count-electric">0</div>
         <div class="rate"><span id="rate-electric">+0,00</span> <span data-i18n="vehiclesPerSecond">Fahrzeuge / Sekunde</span></div>
-        <div class="impact" id="impact-electric" aria-live="off"></div>
+        <div class="impact-total" id="impact-total-electric" aria-live="off"></div>
         <div class="progress"><div class="progress-fill" id="bar-electric"></div></div>
         <div class="card-foot"><span data-i18n="bevLabel">REINE BATTERIEFAHRZEUGE</span><span>BEV</span></div>
       </article>
@@ -95,7 +95,7 @@
         </div>
         <div class="number" id="count-hybrid">0</div>
         <div class="rate"><span id="rate-hybrid">+0,00</span> <span data-i18n="vehiclesPerSecond">Fahrzeuge / Sekunde</span></div>
-        <div class="impact" id="impact-hybrid" aria-live="off"></div>
+        <div class="impact-total" id="impact-total-hybrid" aria-live="off"></div>
         <div class="progress"><div class="progress-fill" id="bar-hybrid"></div></div>
         <div class="card-foot"><span data-i18n="hybridLabel">HEV + PLUG-IN-HYBRID</span><span>HYBRID</span></div>
       </article>
@@ -110,7 +110,7 @@
         </div>
         <div class="number" id="count-petrol">0</div>
         <div class="rate"><span id="rate-petrol">−0,00</span> <span data-i18n="vehiclesPerSecond">Fahrzeuge / Sekunde</span></div>
-        <div class="impact" id="impact-petrol" aria-live="off"></div>
+        <div class="impact-total" id="impact-total-petrol" aria-live="off"></div>
         <div class="progress"><div class="progress-fill" id="bar-petrol"></div></div>
         <div class="card-foot"><span data-i18n="iceLabel">VERBRENNUNGSMOTOR</span><span>ICE</span></div>
       </article>
@@ -125,7 +125,7 @@
         </div>
         <div class="number" id="count-diesel">0</div>
         <div class="rate"><span id="rate-diesel">−0,00</span> <span data-i18n="vehiclesPerSecond">Fahrzeuge / Sekunde</span></div>
-        <div class="impact" id="impact-diesel" aria-live="off"></div>
+        <div class="impact-total" id="impact-total-diesel" aria-live="off"></div>
         <div class="progress"><div class="progress-fill" id="bar-diesel"></div></div>
         <div class="card-foot"><span data-i18n="iceLabel">VERBRENNUNGSMOTOR</span><span>ICE</span></div>
       </article>
@@ -141,7 +141,13 @@
         <div class="session-item"><span data-i18n="diesel">DIESEL</span><strong class="negative" id="since-diesel">−0</strong></div>
       </div>
       <div class="session-time"><span data-i18n="observationTime">Beobachtungszeit:</span> <strong id="sessionTime">00:00:00</strong></div>
-      <div class="session-impact" id="sessionImpact" aria-live="off"></div>
+      <div class="session-impact-title" data-i18n="impactSessionTitle">KRAFTSTOFF / CO₂ (MODELLSCHÄTZUNG)</div>
+      <div class="session-impact" id="sessionImpact" aria-live="off">
+        <div class="session-impact-slot" id="session-impact-electric"></div>
+        <div class="session-impact-slot" id="session-impact-hybrid"></div>
+        <div class="session-impact-slot" id="session-impact-petrol"></div>
+        <div class="session-impact-slot" id="session-impact-diesel"></div>
+      </div>
     </section>
 
     <section class="method">
@@ -177,11 +183,17 @@
             eigener großer Zähler dargestellt.
           </p>
           <h3 data-i18n="impactHeading">Modellierte Kraftstoff- und CO₂-Flüsse</h3>
-          <p><strong data-i18n="impactWhatTitle">Anzeige:</strong> <span data-i18n="impactShort">Modellierter Kraftstoff- und Auspuff-CO₂-Fluss.</span> Der Fluss wird aus dem aktuellen Bestand hochgerechnet. Die Kachel zählt seit ihrem Datenstichtag; „seit Seitenaufruf“ zählt denselben Fluss ab Besuchsbeginn.</p>
+          <p><strong data-i18n="impactWhatTitle">Anzeige:</strong> <span data-i18n="impactShort">Modellierter Kraftstoff- und Auspuff-CO₂-Fluss.</span> Der laufende Fluss wird aus dem aktuellen Bestand hochgerechnet und hier statt in den Fahrzeugkacheln angezeigt. Die Kacheln behalten die kumulierte Schätzung seit Datenstichtag; „seit Seitenaufruf“ zählt ab Besuchsbeginn.</p>
+          <div class="method-impact-grid" aria-label="Laufende modellierte Kraftstoff- und CO₂-Flüsse">
+            <div class="method-impact-item"><span data-i18n="electric">ELEKTRO</span><div class="impact" id="impactFlow-electric"></div></div>
+            <div class="method-impact-item"><span data-i18n="hybrid">HYBRID</span><div class="impact" id="impactFlow-hybrid"></div></div>
+            <div class="method-impact-item"><span data-i18n="petrol">BENZIN</span><div class="impact" id="impactFlow-petrol"></div></div>
+            <div class="method-impact-item"><span data-i18n="diesel">DIESEL</span><div class="impact" id="impactFlow-diesel"></div></div>
+          </div>
           <p><strong data-i18n="impactCalcTitle">Berechnung:</strong> <span data-i18n="impactCalc"></span> CO₂ ergibt sich aus dem Kraftstofffluss multipliziert mit dem Kraftstoff-Emissionsfaktor. Jahresmengen werden gleichmäßig auf Sekunden verteilt; das ist keine Messung tatsächlicher Fahrten.</p>
           <p><strong data-i18n="impactBevTitle">BEV-Vergleich:</strong> <span data-i18n="impactBev"></span></p>
           <p><strong data-i18n="impactSourcesTitle">Quellen und Grenzen:</strong> <span data-i18n="impactSources"></span></p>
-          <p><strong data-i18n="impactUnitsTitle">Einheiten:</strong> Die Kacheln zeigen Liter/s und kg oder t CO₂/s; der Besuchszähler kumuliert die geschätzten Mengen. Biogene Beimischungen und weitere Lebenszyklus-Effekte sind nicht individuell aufgelöst.</p>
+          <p><strong data-i18n="impactUnitsTitle">Einheiten:</strong> Die laufenden Flüsse werden als Liter pro Sekunde (L/s) und Kilogramm CO₂ pro Sekunde (kg/s) beziehungsweise Tonnen CO₂ pro Sekunde (t/s) angegeben. M L bedeutet Millionen Liter, k L Tausend Liter. Die Kacheln zeigen kumulierte Mengen seit Datenstichtag; der Besuchszähler kumuliert ab Seitenaufruf. Biogene Beimischungen und weitere Lebenszyklus-Effekte sind nicht individuell aufgelöst.</p>
           <p><strong data-i18n="impactParamsTitle">Verwendete Modellparameter je Region (Jahresfahrleistung / Liter je 100 km)</strong></p>
           <p class="impact-table-note" data-i18n="impactTableUnitNote">Petrol, diesel and hybrid cells: km/year · L/100 km. BEV cell: km/year · comparator ICE L/100 km · BEV kWh/100 km.</p>
           <div class="impact-table-wrap">
@@ -252,7 +264,7 @@
     <div class="copyright">© 2026 DER ELEKTROAUTO TYP · GLOBAL DRIVE CLOCK · ALL RIGHTS RESERVED</div>
   </main>
 
-  <script src="data.js?v=3.0.0"></script>
-  <script src="app.js?v=3.0.0"></script>
+  <script src="data.js?v=3.0.1"></script>
+  <script src="app.js?v=3.0.1"></script>
 </body>
 </html>
