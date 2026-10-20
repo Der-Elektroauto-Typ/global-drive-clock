@@ -1,10 +1,76 @@
 {
-  "version": "V3.1.3",
-  "germanyIntervalDays": 365,
+  "version": "V3.2.0",
+  "germanyIntervalDays": 181,
   "germanyAnnualChangesVerified": true,
   "accountingCasesPassed": 720,
   "germanyAndEuComplementRecalculated": true,
   "stockEngineUnchanged": true,
   "javascriptSyntaxChecked": true,
-  "consumptionParametersUnchanged": true
+  "consumptionParametersUnchanged": true,
+  "fireReferenceRatesPer100kVehicleYears": {
+    "bev": 7.472326705068199,
+    "hybrid": 4.754578829218925,
+    "ice_mean_of_two_definitions": 47.81366117465373
+  },
+  "fireCounterScope": "selected_region_equal_stock_all_one_powertrain_scenarios",
+  "fireCounterStock": "selected_model_four_visible_powertrain_groups_electric_hybrid_petrol_diesel",
+  "fireRateArithmeticVerified": true,
+  "fireSessionCounterDecimals": {
+    "bev": 3,
+    "hybrid": 3,
+    "ice": 3
+  },
+  "fireCounterDecimals": {
+    "bev": 3,
+    "hybrid": 3,
+    "ice": 3
+  },
+  "fireNormalizedAnnualExpectedEvents": {
+    "bev": 7472.3267050682,
+    "hybrid": 4754.578829218925,
+    "ice_mean": 47813.66117465373
+  },
+  "fireNormalizedOrderingVerified": "hybrid < bev < ice",
+  "fireCounterStockGroups": [
+    "electric",
+    "hybrid",
+    "petrol",
+    "diesel"
+  ],
+  "fireCounterScenariosVerified": true,
+  "fireCounterChangesOnRegionSwitch": true,
+  "donationLinkVerified": "https://buymeacoffee.com/der_elektroauto_typ",
+  "bitcoinAddressBech32ChecksumVerified": true,
+  "translationCoverage": {
+    "buyMeCoffee": 10,
+    "bitcoinDonation": 10,
+    "privateDisclosure": 10
+  },
+  "ssbVehicleCategoryCaveatDocumented": true,
+  "sourceLinkAuditGenerated": "2026-10-01; reachability only, not a current recheck or evidence of empirical model accuracy.",
+  "germanyActiveInterval": {
+    "start": "2026-01-01",
+    "end": "2026-07-01",
+    "days": 181,
+    "method": "Observed KBA delta / 181 days; annual-equivalent rates preserve exact per-second changes."
+  },
+  "germanySixMonthDeltaVerified": {
+    "bev": 330787,
+    "hybrid": 444466,
+    "petrol": -330823,
+    "diesel": -228328,
+    "other": -5879,
+    "total": 210223
+  },
+  "germanySixMonthPercentagesVerified": {
+    "bev": 16.260802453963606,
+    "hybrid": 10.18818524798381,
+    "petrol": -1.1274060163853732,
+    "diesel": -1.7057654675577496
+  },
+  "germanyComplementRecalculated": true,
+  "curveChoiceReview": {
+    "selected": "linear short-term continuation",
+    "reason": "Only endpoint stock observations or explicit scenarios are available for several regions. Exponential or logistic curvature would add unsupported assumptions; S-curves require longer comparable series and saturation assumptions."
+  }
 }

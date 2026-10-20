@@ -7396,7 +7396,7 @@
     ],
     "plotOptions": {}
   },
-  "Germany_current_interval": "2025-07-01 to 2026-07-01, 365 days",
+  "Germany_current_interval": "2026-01-01 to 2026-07-01, 181 days",
   "AFDC_current2025": {
     "Electric (EV)": 5689100,
     "Plug-In Hybrid Electric (PHEV)": 1765700,

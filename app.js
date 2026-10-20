@@ -26,7 +26,7 @@
       germanyBevLabel: 'REINE BATTERIEFAHRZEUGE',
       germanyHybridLabel: 'HYBRID INKL. PLUG-IN',
       germanyIceLabel: 'VERBRENNUNGSMOTOR',
-      germanyMethodText: "Deutschland: KBA-Pkw-Bestände FZ 27 vom 1. Juli 2025 und 1. Juli 2026. Die Differenz wird gleichmäßig über 365 Tage verteilt. Der Zwölfmonatsvergleich glättet kurzfristige Einflüsse, reagiert aber langsamer auf neue Trends; er ist nicht nachweislich genauer für jeden aktuellen Zeitpunkt. Hybrid insgesamt enthält PHEV bereits. Referenzbestand 1. Juli 2026, danach lineare Modellfortschreibung.",
+      germanyMethodText: 'Deutschland: KBA-Pkw-Bestände FZ 27 vom 1. Januar und 1. Juli 2026. Die letzte Veränderung wird über 181 Tage berechnet und für den laufenden Zähler als lineare Rate fortgeschrieben; der Prozentwert zeigt die tatsächliche Änderung in diesen sechs Monaten. Der kürzere Zeitraum reagiert schneller auf neue Trends, kann saisonale Effekte aber stärker abbilden. Hybrid insgesamt enthält PHEV bereits. Referenzbestand: 1. Juli 2026.',
       kbaDataset: 'KBA · FZ 27 · Quartalsbestand 2026',
       kbaOverview: 'KBA · Produktübersicht FZ 27',
       heroCopy: "Rund um die Uhr verändert sich der globale Fahrzeugbestand. Diese Uhr macht den Wandel sichtbar.",
@@ -51,6 +51,7 @@
       liveSession: "LIVE SESSION",
       sinceOpened: "SEIT DU DIESE SEITE GEÖFFNET HAST",
       observationTime: "Beobachtungszeit:",
+      fireKicker: "🔥 BRANDMODELL 🔥", fireTitle: "Was wäre, wenn alle Fahrzeuge dieser Region BEV, Hybrid oder Verbrenner wären?", fireScope: "Alle drei Szenarien nutzen denselben Gesamtbestand · Regionsauswahl oben oder unten", fireBEV: "BEV", fireHybrid: "HYBRID", fireICE: "VERBRENNER", fireCaveat: "Je Antriebs-Szenario angenommene Brände, skaliert auf den gesamten Fahrzeugbestand der gewählten Region. Keine Live-Brandmeldungen.", fireMethodLink: "Brandmodell: Daten und Grenzen",
       modeledEstimate: "MODELLIERTE ECHTZEITSCHÄTZUNG",
       methodDetails: "DATEN & METHODIK",
       methodText: "Die Zähler schreiben veröffentlichte Bestände und ausdrücklich gekennzeichnete Annahmen linear fort. Global addiert EU, China, USA und den modellierten Rest der Welt; Deutschland ist in der EU enthalten. Die regionalen Fahrzeugabgrenzungen unterscheiden sich. Keine amtliche Live-Zählung.",
@@ -61,8 +62,9 @@
       brandCopy: "Elektromobilität. Fakten. Alltag.",
       sessionModelNote: "Modellschätzung – Berechnung und Grenzen",
       feedback: "Fragen, Ideen oder Feedback?",
+      buyMeCoffee: "Buy Me a Coffee", bitcoinDonation: "Oder per Bitcoin spenden:",
       facebook: "AUF FACEBOOK FOLGEN →",
-      privateDisclosure: 'Privates, nicht kommerzielles Hobbyprojekt. Keine Werbung, keine Einnahmen.', privateFacebook: 'Kontakt über Facebook (privater Kanal, keine Einnahmen)', lawDdg: '§ 5 DDG',
+      privateDisclosure: 'Privates, nicht kommerzielles Hobbyprojekt. Keine Werbung. Freiwillige Unterstützung ist möglich.', lawDdg: '§ 5 DDG',
       footerNote: "Modellierte Echtzeitschätzung – keine amtliche Live-Zählung"
     },
     en: {
@@ -82,7 +84,7 @@
       germanyBevLabel: 'BATTERY ELECTRIC VEHICLES',
       germanyHybridLabel: 'HYBRID INCLUDING PLUG-IN',
       germanyIceLabel: 'COMBUSTION ENGINE',
-      germanyMethodText: "Germany: KBA FZ 27 passenger-car stocks on 1 July 2025 and 1 July 2026. Differences are spread over 365 days. Twelve months smooth short-term effects but respond more slowly to new trends; this is not proven more accurate at every current time. Hybrid total already includes PHEV. The July 2026 reference stock is then linearly extrapolated.",
+      germanyMethodText: 'Germany: KBA FZ 27 passenger-car stocks on 1 January and 1 July 2026. The latest change is measured over 181 days and continued as a linear rate for the live counter; the percentage shows the actual change over those six months. The shorter period reacts faster to new trends but may reflect seasonal effects more strongly. Hybrid total already includes PHEVs. Reference stock: 1 July 2026.',
       kbaDataset: 'KBA · FZ 27 · quarterly fleet 2026',
       kbaOverview: 'KBA · FZ 27 data overview',
       heroCopy: "The global vehicle fleet changes around the clock. This clock makes the transition visible.",
@@ -107,6 +109,7 @@
       liveSession: "LIVE SESSION",
       sinceOpened: "SINCE YOU OPENED THIS PAGE",
       observationTime: "Observation time:",
+      fireKicker: "FIRE MODEL · SELECTED REGION", fireTitle: "What if every vehicle in this region were a BEV, hybrid or combustion vehicle?", fireScope: "All three scenarios use the same total fleet · either region selector", fireBEV: "BEV", fireHybrid: "HYBRID", fireICE: "COMBUSTION", fireCaveat: "Expected fires for each powertrain scenario, scaled to the selected region’s total vehicle stock. Not live fire reports.", fireMethodLink: "Fire model: data and limits",
       modeledEstimate: "MODELED REAL-TIME ESTIMATE",
       methodDetails: "DATA & METHODOLOGY",
       methodText: "The counters linearly extend published stocks and explicitly labeled assumptions. Global sums EU, China, USA and modeled rest of world; Germany is included in the EU. Regional vehicle scopes differ. Not an official live census.",
@@ -117,8 +120,9 @@
       brandCopy: "Electric mobility. Facts. Everyday life.",
       sessionModelNote: "Model estimate – calculation and limits",
       feedback: "Questions, ideas or feedback?",
+      buyMeCoffee: "Buy Me a Coffee", bitcoinDonation: "Donate by Bitcoin:",
       facebook: "FOLLOW ON FACEBOOK →",
-      privateDisclosure: 'Private, non-commercial hobby project. No advertising or income.', privateFacebook: 'Contact via Facebook (private channel, no income)', lawDdg: '§ 5 DDG',
+      privateDisclosure: 'Private, non-commercial hobby project. No advertising. Voluntary support is welcome.', lawDdg: '§ 5 DDG',
       footerNote: "Modeled real-time estimate – not an official live count"
     },
     fr: {
@@ -137,7 +141,7 @@
       germanyBevLabel: 'VÉHICULES 100 % ÉLECTRIQUES',
       germanyHybridLabel: 'HYBRIDE, RECHARGEABLE INCLUSE',
       germanyIceLabel: 'MOTEUR THERMIQUE',
-      germanyMethodText: "Allemagne : stocks KBA FZ 27 au 1er juillet 2025 et 2026, différence répartie sur 365 jours. Douze mois lissent les effets à court terme mais réagissent plus lentement aux nouvelles tendances. Le total hybride inclut déjà les PHEV. Extrapolation linéaire après juillet 2026.",
+      germanyMethodText: 'Allemagne : stocks de voitures particulières KBA FZ 27 au 1er janvier et au 1er juillet 2026. La variation récente est mesurée sur 181 jours puis prolongée à taux linéaire pour le compteur ; le pourcentage indique la variation réellement observée sur ces six mois. Cette période plus courte réagit plus vite aux tendances, mais peut davantage refléter les effets saisonniers. Le total hybride inclut déjà les PHEV. Stock de référence : 1er juillet 2026.',
       kbaDataset: 'KBA · FZ 27 · parc trimestriel 2026',
       kbaOverview: 'KBA · aperçu FZ 27',
       heroCopy: "Le parc automobile mondial évolue en permanence. Cette horloge rend cette transition visible.",
@@ -162,6 +166,7 @@
       liveSession: "SESSION EN DIRECT",
       sinceOpened: "DEPUIS L’OUVERTURE DE CETTE PAGE",
       observationTime: "Temps d’observation :",
+      fireKicker: "MODÈLE D’INCENDIE · RÉGION SÉLECTIONNÉE", fireTitle: "Et si tous les véhicules de cette région étaient électriques, hybrides ou thermiques ?", fireScope: "Les trois scénarios utilisent le même parc total · choisissez une région", fireBEV: "BEV", fireHybrid: "HYBRIDE", fireICE: "THERMIQUE", fireCaveat: "Incendies attendus par scénario de motorisation, calculés sur le parc total de la région sélectionnée. Pas de signalements en direct.", fireMethodLink: "Modèle d’incendie : données et limites",
       modeledEstimate: "ESTIMATION MODÉLISÉE EN TEMPS RÉEL",
       methodDetails: "DONNÉES & MÉTHODOLOGIE",
       methodText: "Les compteurs prolongent linéairement des parcs publiés et des hypothèses explicites. Global additionne UE, Chine, États-Unis et reste du monde modélisé ; l’Allemagne est incluse dans l’UE. Les périmètres diffèrent. Pas de recensement officiel en direct.",
@@ -172,8 +177,9 @@
       brandCopy: "Mobilité électrique. Faits. Quotidien.",
       sessionModelNote: "Estimation – calcul et limites",
       feedback: "Questions, idées ou avis ?",
+      buyMeCoffee: "Buy Me a Coffee", bitcoinDonation: "Faire un don en bitcoin :",
       facebook: "SUIVRE SUR FACEBOOK →",
-      privateDisclosure: 'Projet de loisir privé et non commercial. Sans publicité ni revenus.', privateFacebook: 'Contacter via Facebook (canal privé, sans revenus)', lawDdg: '§ 5 DDG',
+      privateDisclosure: 'Projet privé et non commercial. Sans publicité. Le soutien volontaire est possible.', lawDdg: '§ 5 DDG',
       footerNote: "Estimation modélisée en temps réel – pas un comptage officiel en direct"
     },
     es: {
@@ -192,7 +198,7 @@
       germanyBevLabel: 'VEHÍCULOS ELÉCTRICOS DE BATERÍA',
       germanyHybridLabel: 'HÍBRIDO INCL. ENCHUFABLE',
       germanyIceLabel: 'MOTOR DE COMBUSTIÓN',
-      germanyMethodText: "Alemania: parque KBA FZ 27 al 1 de julio de 2025 y 2026; diferencia repartida en 365 días. Doce meses suavizan efectos breves pero reaccionan más despacio a nuevas tendencias. Híbridos incluye PHEV. Extrapolación lineal tras julio de 2026.",
+      germanyMethodText: 'Alemania: parque de turismos KBA FZ 27 a 1 de enero y 1 de julio de 2026. La variación más reciente se mide en 181 días y se prolonga como una tasa lineal para el contador; el porcentaje muestra el cambio realmente observado en esos seis meses. El período más corto reacciona antes a las tendencias, pero puede reflejar más los efectos estacionales. El total híbrido ya incluye los PHEV. Parque de referencia: 1 de julio de 2026.',
       kbaDataset: 'KBA · FZ 27 · parque trimestral 2026',
       kbaOverview: 'KBA · información de FZ 27',
       heroCopy: "El parque mundial de vehículos cambia a todas horas. Este reloj hace visible esa transición.",
@@ -217,6 +223,7 @@
       liveSession: "SESIÓN EN DIRECTO",
       sinceOpened: "DESDE QUE ABRISTE ESTA PÁGINA",
       observationTime: "Tiempo de observación:",
+      fireKicker: "MODELO DE INCENDIOS · REGIÓN SELECCIONADA", fireTitle: "¿Y si todos los vehículos de esta región fueran eléctricos, híbridos o de combustión?", fireScope: "Los tres escenarios usan el mismo parque total · selecciona una región", fireBEV: "BEV", fireHybrid: "HÍBRIDO", fireICE: "COMBUSTIÓN", fireCaveat: "Incendios esperados por escenario de propulsión, calculados sobre el parque total de la región seleccionada. No son avisos en directo.", fireMethodLink: "Modelo de incendios: datos y límites",
       modeledEstimate: "ESTIMACIÓN MODELADA EN TIEMPO REAL",
       methodDetails: "DATOS & METODOLOGÍA",
       methodText: "Los contadores prolongan linealmente flotas publicadas y supuestos explícitos. Global suma UE, China, EE. UU. y resto del mundo modelado; Alemania está incluida en la UE. Los ámbitos regionales difieren. No es un censo oficial en directo.",
@@ -227,8 +234,9 @@
       brandCopy: "Movilidad eléctrica. Datos. Vida diaria.",
       sessionModelNote: "Estimación – cálculo y límites",
       feedback: "¿Preguntas, ideas o comentarios?",
+      buyMeCoffee: "Buy Me a Coffee", bitcoinDonation: "Donar también con Bitcoin:",
       facebook: "SEGUIR EN FACEBOOK →",
-      privateDisclosure: 'Proyecto personal y no comercial. Sin publicidad ni ingresos.', privateFacebook: 'Contacto por Facebook (canal privado, sin ingresos)', lawDdg: '§ 5 DDG',
+      privateDisclosure: 'Proyecto privado y no comercial. Sin publicidad. Se puede apoyar voluntariamente.', lawDdg: '§ 5 DDG',
       footerNote: "Estimación modelada en tiempo real – no es un recuento oficial en directo"
     },
     it: {
@@ -247,7 +255,7 @@
       germanyBevLabel: 'VEICOLI ELETTRICI A BATTERIA',
       germanyHybridLabel: 'IBRIDO, INCLUSO PLUG-IN',
       germanyIceLabel: 'MOTORE A COMBUSTIONE',
-      germanyMethodText: "Germania: parco KBA FZ 27 al 1 luglio 2025 e 2026; differenza distribuita su 365 giorni. Dodici mesi attenuano effetti brevi ma reagiscono più lentamente ai nuovi trend. Ibridi include PHEV. Estrapolazione lineare dopo luglio 2026.",
+      germanyMethodText: 'Germania: parco auto KBA FZ 27 al 1° gennaio e al 1° luglio 2026. La variazione più recente è misurata su 181 giorni e proiettata come tasso lineare nel contatore; la percentuale mostra il cambiamento effettivo nei sei mesi. Il periodo più breve reagisce prima alle nuove tendenze, ma può riflettere maggiormente gli effetti stagionali. Il totale ibrido include già i PHEV. Parco di riferimento: 1° luglio 2026.',
       kbaDataset: 'KBA · FZ 27 · parco trimestrale 2026',
       kbaOverview: 'KBA · panoramica FZ 27',
       heroCopy: "Il parco auto mondiale cambia continuamente. Questo orologio rende visibile la transizione.",
@@ -272,6 +280,7 @@
       liveSession: "SESSIONE LIVE",
       sinceOpened: "DA QUANDO HAI APERTO QUESTA PAGINA",
       observationTime: "Tempo di osservazione:",
+      fireKicker: "MODELLO INCENDI · REGIONE SELEZIONATA", fireTitle: "E se tutti i veicoli di questa regione fossero elettrici, ibridi o a combustione?", fireScope: "Tutti e tre gli scenari usano lo stesso parco totale · seleziona una regione", fireBEV: "BEV", fireHybrid: "IBRIDO", fireICE: "COMBUSTIONE", fireCaveat: "Incendi attesi per ogni scenario di motorizzazione, calcolati sul parco totale della regione selezionata. Non sono segnalazioni in tempo reale.", fireMethodLink: "Modello incendi: dati e limiti",
       modeledEstimate: "STIMA MODELLATA IN TEMPO REALE",
       methodDetails: "DATI & METODOLOGIA",
       methodText: "I contatori proiettano linearmente flotte pubblicate e ipotesi esplicite. Global somma UE, Cina, USA e resto del mondo modellato; la Germania è inclusa nell’UE. Gli ambiti regionali differiscono. Non è un censimento ufficiale in diretta.",
@@ -282,8 +291,9 @@
       brandCopy: "Mobilità elettrica. Fatti. Vita quotidiana.",
       sessionModelNote: "Stima – calcolo e limiti",
       feedback: "Domande, idee o commenti?",
+      buyMeCoffee: "Buy Me a Coffee", bitcoinDonation: "Oppure dona in Bitcoin:",
       facebook: "SEGUI SU FACEBOOK →",
-      privateDisclosure: 'Progetto privato e non commerciale per hobby. Nessuna pubblicità o entrata.', privateFacebook: 'Contatto via Facebook (canale privato, senza entrate)', lawDdg: '§ 5 DDG',
+      privateDisclosure: 'Progetto privato e non commerciale. Senza pubblicità. È possibile offrire un sostegno volontario.', lawDdg: '§ 5 DDG',
       footerNote: "Stima modellata in tempo reale – non è un conteggio ufficiale live"
     },
     pl: {
@@ -302,7 +312,7 @@
       germanyBevLabel: 'SAMOCHODY ELEKTRYCZNE BEV',
       germanyHybridLabel: 'HYBRYDY, W TYM PLUG-IN',
       germanyIceLabel: 'SILNIK SPALINOWY',
-      germanyMethodText: "Niemcy: dane KBA FZ 27 z 1 lipca 2025 i 2026; różnica rozłożona na 365 dni. Dwanaście miesięcy wygładza krótkie wahania, lecz wolniej reaguje na nowe trendy. Hybrydy obejmują PHEV. Liniowa ekstrapolacja po lipcu 2026.",
+      germanyMethodText: 'Niemcy: stan samochodów osobowych KBA FZ 27 na 1 stycznia i 1 lipca 2026 r. Najnowszą zmianę obliczono dla 181 dni i przedłużono jako liniowe tempo w liczniku; procent pokazuje rzeczywistą zmianę w tych sześciu miesiącach. Krótszy okres szybciej reaguje na nowe trendy, ale może silniej odzwierciedlać sezonowość. Łączna liczba hybryd obejmuje już PHEV. Stan odniesienia: 1 lipca 2026 r.',
       kbaDataset: 'KBA · FZ 27 · dane kwartalne 2026',
       kbaOverview: 'KBA · opis FZ 27',
       heroCopy: "Światowa flota samochodów zmienia się przez całą dobę. Ten zegar pokazuje tę zmianę na żywo.",
@@ -327,6 +337,7 @@
       liveSession: "SESJA NA ŻYWO",
       sinceOpened: "OD OTWARCIA TEJ STRONY",
       observationTime: "Czas obserwacji:",
+      fireKicker: "MODEL POŻARÓW · WYBRANY REGION", fireTitle: "A gdyby wszystkie pojazdy w tym regionie były elektryczne, hybrydowe lub spalinowe?", fireScope: "Wszystkie scenariusze używają tej samej liczby pojazdów · wybierz region", fireBEV: "BEV", fireHybrid: "HYBRYDA", fireICE: "SPALINOWE", fireCaveat: "Oczekiwane pożary dla każdego napędu, obliczone dla całej floty wybranego regionu. Nie są to bieżące zgłoszenia.", fireMethodLink: "Model pożarów: dane i ograniczenia",
       modeledEstimate: "MODELOWANA ESTYMACJA W CZASIE RZECZYWISTYM",
       methodDetails: "DANE & METODOLOGIA",
       methodText: "Liczniki liniowo ekstrapolują opublikowane stany i jawne założenia. Global sumuje UE, Chiny, USA i modelowaną resztę świata; Niemcy są częścią UE. Zakresy regionalne różnią się. To nie jest oficjalny pomiar na żywo.",
@@ -337,8 +348,9 @@
       brandCopy: "Elektromobilność. Fakty. Codzienność.",
       sessionModelNote: "Model – obliczenia i ograniczenia",
       feedback: "Pytania, pomysły lub uwagi?",
+      buyMeCoffee: "Buy Me a Coffee", bitcoinDonation: "Lub wesprzyj przez Bitcoin:",
       facebook: "OBSERWUJ NA FACEBOOKU →",
-      privateDisclosure: 'Prywatny, niekomercyjny projekt hobbystyczny. Bez reklam i dochodów.', privateFacebook: 'Kontakt przez Facebooka (kanał prywatny, bez dochodów)', lawDdg: '§ 5 DDG',
+      privateDisclosure: 'Prywatny, niekomercyjny projekt hobbystyczny. Bez reklam. Można go dobrowolnie wesprzeć.', lawDdg: '§ 5 DDG',
       footerNote: "Modelowana estymacja w czasie rzeczywistym – nieoficjalny licznik live"
     },
     nl: {
@@ -357,7 +369,7 @@
       germanyBevLabel: 'BATTERIJ-ELEKTRISCHE VOERTUIGEN',
       germanyHybridLabel: 'HYBRIDE, INCLUSIEF PLUG-IN',
       germanyIceLabel: 'VERBRANDINGSMOTOR',
-      germanyMethodText: "Duitsland: KBA FZ 27 op 1 juli 2025 en 2026; verschil verdeeld over 365 dagen. Twaalf maanden dempen korte schommelingen maar reageren trager op nieuwe trends. Hybride omvat PHEV. Lineaire extrapolatie na juli 2026.",
+      germanyMethodText: 'Duitsland: KBA FZ 27-personenwagenpark op 1 januari en 1 juli 2026. De meest recente verandering is gemeten over 181 dagen en wordt als lineaire snelheid doorgetrokken in de teller; het percentage toont de werkelijke verandering in die zes maanden. De kortere periode reageert sneller op trends, maar kan seizoenseffecten sterker weerspiegelen. Het hybride totaal omvat PHEV al. Referentiepark: 1 juli 2026.',
       kbaDataset: 'KBA · FZ 27 · kwartaalbestand 2026',
       kbaOverview: 'KBA · overzicht FZ 27',
       heroCopy: "Het wereldwijde wagenpark verandert voortdurend. Deze klok maakt die transitie zichtbaar.",
@@ -382,6 +394,7 @@
       liveSession: "LIVE SESSIE",
       sinceOpened: "SINDS JE DEZE PAGINA OPNENDE",
       observationTime: "Observatietijd:",
+      fireKicker: "BRANDMODEL · GESELECTEERDE REGIO", fireTitle: "Wat als alle voertuigen in deze regio elektrisch, hybride of op verbranding reden?", fireScope: "Alle scenario’s gebruiken dezelfde totale vloot · kies een regio", fireBEV: "BEV", fireHybrid: "HYBRIDE", fireICE: "VERBRANDING", fireCaveat: "Verwachte branden per aandrijvingsscenario, berekend over de totale vloot van de gekozen regio. Geen live brandmeldingen.", fireMethodLink: "Brandmodel: gegevens en beperkingen",
       modeledEstimate: "GEMODELLEERDE REALTIME-SCHATTING",
       methodDetails: "DATA & METHODIEK",
       methodText: "De tellers extrapoleren gepubliceerde wagenparken en expliciete aannames lineair. Global telt EU, China, VS en gemodelleerde rest van de wereld op; Duitsland valt binnen de EU. De regionale afbakeningen verschillen. Geen officiële live telling.",
@@ -392,8 +405,9 @@
       brandCopy: "Elektrische mobiliteit. Feiten. Dagelijks leven.",
       sessionModelNote: "Modelschatting – berekening en grenzen",
       feedback: "Vragen, ideeën of feedback?",
+      buyMeCoffee: "Buy Me a Coffee", bitcoinDonation: "Of doneer via Bitcoin:",
       facebook: "VOLG OP FACEBOOK →",
-      privateDisclosure: 'Privé, niet-commercieel hobbyproject. Geen advertenties of inkomsten.', privateFacebook: 'Contact via Facebook (privékanaal, geen inkomsten)', lawDdg: '§ 5 DDG',
+      privateDisclosure: 'Privé, niet-commercieel hobbyproject. Geen advertenties. Vrijwillige steun is welkom.', lawDdg: '§ 5 DDG',
       footerNote: "Gemodelleerde realtime-schatting – geen officiële live telling"
     },
     pt: {
@@ -412,7 +426,7 @@
       germanyBevLabel: 'VEÍCULOS ELÉTRICOS A BATERIA',
       germanyHybridLabel: 'HÍBRIDOS, INCLUINDO PLUG-IN',
       germanyIceLabel: 'MOTOR DE COMBUSTÃO',
-      germanyMethodText: "Alemanha: KBA FZ 27 em 1 de julho de 2025 e 2026; diferença distribuída por 365 dias. Doze meses suavizam variações breves mas reagem mais lentamente a novas tendências. Híbridos inclui PHEV. Extrapolação linear após julho de 2026.",
+      germanyMethodText: 'Alemanha: parque de automóveis ligeiros KBA FZ 27 em 1 de janeiro e 1 de julho de 2026. A variação mais recente é medida em 181 dias e prolongada como uma taxa linear no contador; a percentagem mostra a alteração efetivamente observada nesses seis meses. O período mais curto reage mais depressa às tendências, mas pode refletir mais os efeitos sazonais. O total de híbridos já inclui PHEV. Parque de referência: 1 de julho de 2026.',
       kbaDataset: 'KBA · FZ 27 · parque trimestral 2026',
       kbaOverview: 'KBA · visão geral FZ 27',
       heroCopy: "A frota automóvel mundial muda continuamente. Este relógio torna essa transição visível.",
@@ -437,6 +451,7 @@
       liveSession: "SESSÃO AO VIVO",
       sinceOpened: "DESDE QUE ABRIU ESTA PÁGINA",
       observationTime: "Tempo de observação:",
+      fireKicker: "MODELO DE INCÊNDIOS · REGIÃO SELECIONADA", fireTitle: "E se todos os veículos desta região fossem elétricos, híbridos ou a combustão?", fireScope: "Os três cenários usam a mesma frota total · selecione uma região", fireBEV: "BEV", fireHybrid: "HÍBRIDO", fireICE: "COMBUSTÃO", fireCaveat: "Incêndios esperados por cenário de motorização, calculados sobre a frota total da região selecionada. Não são alertas em direto.", fireMethodLink: "Modelo de incêndios: dados e limites",
       modeledEstimate: "ESTIMATIVA MODELADA EM TEMPO REAL",
       methodDetails: "DADOS & METODOLOGIA",
       methodText: "Os contadores extrapolam linearmente frotas publicadas e hipóteses explícitas. Global soma UE, China, EUA e resto do mundo modelado; a Alemanha está incluída na UE. Os âmbitos regionais diferem. Não é um censo oficial ao vivo.",
@@ -447,8 +462,9 @@
       brandCopy: "Mobilidade elétrica. Factos. Dia a dia.",
       sessionModelNote: "Estimativa – cálculo e limites",
       feedback: "Perguntas, ideias ou comentários?",
+      buyMeCoffee: "Buy Me a Coffee", bitcoinDonation: "Ou doe em Bitcoin:",
       facebook: "SEGUIR NO FACEBOOK →",
-      privateDisclosure: 'Projeto pessoal e não comercial. Sem publicidade nem receitas.', privateFacebook: 'Contacto pelo Facebook (canal privado, sem receitas)', lawDdg: '§ 5 DDG',
+      privateDisclosure: 'Projeto pessoal e não comercial. Sem publicidade. O apoio voluntário é bem-vindo.', lawDdg: '§ 5 DDG',
       footerNote: "Estimativa modelada em tempo real – não é uma contagem oficial ao vivo"
     },
     no: {
@@ -467,7 +483,7 @@
       germanyBevLabel: 'BATTERIELEKTRISKE BILER',
       germanyHybridLabel: 'HYBRID, INKL. PLUG-IN',
       germanyIceLabel: 'FORBRENNINGSMOTOR',
-      germanyMethodText: "Tyskland: KBA FZ 27 per 1. juli 2025 og 2026; forskjellen fordeles over 365 dager. Tolv måneder jevner ut korte svingninger, men reagerer langsommere på nye trender. Hybrid inkluderer PHEV. Lineær ekstrapolering etter juli 2026.",
+      germanyMethodText: 'Tyskland: KBA FZ 27-bestand for personbiler 1. januar og 1. juli 2026. Den siste endringen måles over 181 dager og videreføres som en lineær rate i telleren; prosenttallet viser den faktiske endringen i disse seks månedene. Den kortere perioden reagerer raskere på nye trender, men kan i større grad gjenspeile sesongvariasjoner. Hybrid totalt inkluderer allerede PHEV. Referansebestand: 1. juli 2026.',
       kbaDataset: 'KBA · FZ 27 · kvartalstall 2026',
       kbaOverview: 'KBA · FZ 27-oversikt',
       heroCopy: "Den globale bilparken endrer seg hele døgnet. Denne klokken gjør overgangen synlig.",
@@ -492,6 +508,7 @@
       liveSession: "LIVE-ØKT",
       sinceOpened: "SIDEN DU ÅPNET DENNE SIDEN",
       observationTime: "Observasjonstid:",
+      fireKicker: "BRANNMODELL · VALGT REGION", fireTitle: "Hva om alle kjøretøyene i denne regionen var elektriske, hybrider eller forbrenningsbiler?", fireScope: "Alle scenarioene bruker samme totale flåte · velg en region", fireBEV: "BEV", fireHybrid: "HYBRID", fireICE: "FORBRENNING", fireCaveat: "Forventede branner for hvert drivlinjescenario, beregnet for hele den valgte regionens bilbestand. Ikke direkte brannmeldinger.", fireMethodLink: "Brannmodell: data og begrensninger",
       modeledEstimate: "MODELLERT SANNTIDSESTIMAT",
       methodDetails: "DATA & METODE",
       methodText: "Tellerne fremskriver publiserte bestander og tydelige antakelser lineært. Global summerer EU, Kina, USA og modellert resten av verden; Tyskland inngår i EU. Regionale kjøretøyavgrensninger varierer. Ingen offisiell direktetelling.",
@@ -502,8 +519,9 @@
       brandCopy: "Elektrisk mobilitet. Fakta. Hverdagsliv.",
       sessionModelNote: "Modellestimat – beregning og grenser",
       feedback: "Spørsmål, ideer eller tilbakemeldinger?",
+      buyMeCoffee: "Buy Me a Coffee", bitcoinDonation: "Eller doner med Bitcoin:",
       facebook: "FØLG PÅ FACEBOOK →",
-      privateDisclosure: 'Privat, ikke-kommersielt hobbyprosjekt. Ingen reklame eller inntekter.', privateFacebook: 'Kontakt via Facebook (privat kanal, ingen inntekter)', lawDdg: '§ 5 DDG',
+      privateDisclosure: 'Privat, ikke-kommersielt hobbyprosjekt. Ingen reklame. Frivillig støtte er velkommen.', lawDdg: '§ 5 DDG',
       footerNote: "Modellert sanntidsestimat – ikke en offisiell live-telling"
     },
     zh: {
@@ -522,7 +540,7 @@
       germanyBevLabel: '纯电动汽车',
       germanyHybridLabel: '混合动力（含插电式）',
       germanyIceLabel: '内燃机汽车',
-      germanyMethodText: "德国：KBA FZ 27 乘用车保有量，2025年7月1日至2026年7月1日。变化均匀分摊至365天。12个月减少短期波动，但对新趋势反应较慢，并不保证每个时点更准确。混合动力已包含插电混动。2026年7月后线性外推。",
+      germanyMethodText: '德国：KBA FZ 27 的乘用车保有量数据，统计日期为2026年1月1日和7月1日。最新变化按181天计算，并以线性速度延续到计数器中；百分比显示这六个月的实际变化。较短的周期对新趋势反应更快，但也可能更多反映季节性影响。混合动力总量已包含插电式混合动力。参考保有量日期：2026年7月1日。',
       kbaDataset: 'KBA · FZ 27 · 2026季度保有量',
       kbaOverview: 'KBA · FZ 27数据说明',
       heroCopy: "全球乘用车保有量持续变化。这座时钟让动力结构的转型变得直观可见。",
@@ -547,6 +565,7 @@
       liveSession: "实时会话",
       sinceOpened: "自你打开此页面以来",
       observationTime: "观察时间：",
+      fireKicker: "火灾模型 · 所选地区", fireTitle: "如果该地区所有车辆都是纯电动、混合动力或燃油车呢？", fireScope: "三个情景采用相同的车辆总数 · 请使用地区选择器", fireBEV: "纯电动", fireHybrid: "混合动力", fireICE: "燃油车", fireCaveat: "按所选地区车辆总量计算的各动力类型预期火灾数，并非实时火灾警报。", fireMethodLink: "火灾模型：数据与限制",
       modeledEstimate: "模型化实时估算",
       methodDetails: "数据与方法",
       methodText: "计数器根据公布的保有量与明确标注的假设进行线性外推。全球等于欧盟、中国、美国和模型估算的世界其他地区之和；德国包含在欧盟内。各地区车辆统计范围不同，并非官方实时统计。",
@@ -557,13 +576,17 @@
       brandCopy: "电动出行。事实。日常。",
       sessionModelNote: "模型估算：计算方法与局限",
       feedback: "有问题、想法或反馈？",
+      buyMeCoffee: "Buy Me a Coffee", bitcoinDonation: "也可通过比特币捐赠：",
       facebook: "在 FACEBOOK 上关注 →",
-      privateDisclosure: '私人非商业爱好项目。无广告，无收入。', privateFacebook: '通过 Facebook 联系（私人频道，无收入）', lawDdg: '§ 5 DDG',
+      privateDisclosure: '私人非商业爱好项目，无广告。欢迎自愿支持。', lawDdg: '§ 5 DDG',
       footerNote: "模型化实时估算——并非官方实时计数"
     }
   };
 
   const SECONDS_PER_YEAR = 365.2425 * 24 * 60 * 60;
+  const FIRE_YEAR_SECONDS = DATA.fireModel?.yearSeconds || 31536000;
+  const FIRE_RATES = DATA.fireModel?.ratesPer100kVehicleYears || { bev: 0, hybrid: 0, ice: 0 };
+  const FIRE_DECIMALS = DATA.fireModel?.counterDecimals || { bev: 3, hybrid: 3, ice: 3 };
   const REGION_INFO = {
     de: { heading: "Regionale Modelle", eu: "EU: Eurostat meldet den EU-Pkw-Bestand mit Stand 31.12.2025; BEV-Bestand 7,59 Mio. und +31,5 % gegenüber 2024. Die übrigen Antriebsbestände und jährlichen Änderungen sind aus Bestands-/Neuzulassungsdaten modelliert; Eurostat weist auf teils ergänzte Daten und fehlende vollständige Harmonisierung hin.", china: "China: Das Ministerium für Öffentliche Sicherheit meldet zum 30.06.2026 371 Mio. Automobile und 48,97 Mio. NEV. BEV machen 68,77 % der NEV aus. Die amtliche Reihe trennt nicht alle vier Kachel-Kategorien; insbesondere Benzin und Diesel sind Modellzuordnungen. Gesamtbestand und Pkw-Abgrenzung sind nicht identisch mit der Global-/EU-Systemgrenze.", usa: "USA: DOE AFDC/NLR/Experian veröffentlicht Fahrzeugbestände bis 2025, nach Fahrzeugart und Kraftstoff. Die Grundgesamtheit umfasst Light-Duty-Fahrzeuge (auch leichte Trucks), nicht nur Pkw. Die Bestandszahlen wurden gerundet; Wachstumsraten können durch spätere Revisionen bzw. unterschiedliche Publikationstabellen abweichen. Daher sind die Kacheländerungen modellierte Schätzungen, keine amtliche fortlaufende Zählung." },
     en: { heading: "Regional models", eu: "EU: Eurostat reports the EU passenger-car fleet as of 31 Dec 2025; BEV stock was 7.59m, up 31.5% from 2024. Other fuel stocks and annual changes are modeled from fleet and registration data. Eurostat notes that some national data are supplemented and methods are not fully harmonized.", china: "China: The Ministry of Public Security reports 371m automobiles and 48.97m NEVs at 30 Jun 2026. BEVs are 68.77% of NEVs. The official series does not split all four card categories; petrol and diesel are model allocations. Its total fleet scope is not identical to the global/EU passenger-car definition.", usa: "U.S.: DOE AFDC/NLR/Experian publishes vehicle registrations through 2025 by vehicle and fuel type. The population includes light-duty vehicles (including light trucks), not only passenger cars. Counts are rounded, and growth rates can differ across revised publication tables. Card changes are modeled estimates, not a live official count." }
@@ -611,6 +634,12 @@
     return item.annualChange / (market.annualSeconds || SECONDS_PER_YEAR);
   }
 
+  function getCurrentMarketStock(market, now = Date.now()) {
+    const parts = MODEL.parts(market);
+    if (parts.length) return parts.reduce((sum, part) => sum + getCurrentMarketStock(part, now), 0);
+    return MODEL.keys.reduce((sum, key) => sum + MODEL.current(market, key, now), 0);
+  }
+
   function currentValue(item, market = activeMarket(), now = Date.now()) {
     const referenceTime = new Date(market.referenceDate).getTime();
     const seconds = (now - referenceTime) / 1000;
@@ -622,8 +651,8 @@
     return Math.round(value).toLocaleString(TRANSLATIONS[currentLang].locale);
   }
 
-  function formatDecimal(value, decimals = 1, allowTwoDecimals = false) {
-    decimals = Math.min(decimals, allowTwoDecimals ? 2 : 1);
+  function formatDecimal(value, decimals = 1, allowThreeDecimals = false) {
+    decimals = Math.min(decimals, allowThreeDecimals ? 3 : 1);
     return Math.abs(value).toLocaleString(
       TRANSLATIONS[currentLang].locale,
       { minimumFractionDigits: decimals, maximumFractionDigits: decimals }
@@ -668,8 +697,17 @@
     const market = activeMarket();
     const germany = currentMode === "germany";
     const region = currentMode === "global" ? DATA : (DATA.regions?.[currentMode] || DATA.germany);
+    if (el("fireScope")) {
+      const stock = formatInt(getCurrentMarketStock(market));
+      const regionName = currentMode === "global" ? (currentLang === "de" ? "Global" : "global")
+        : currentMode === "germany" ? (currentLang === "de" ? "Deutschland" : "Germany")
+        : currentMode.toUpperCase();
+      el("fireScope").textContent = currentLang === "de"
+        ? `${regionName}: ${stock} Fahrzeuge im Modellbestand · alle drei Antriebsszenarien nutzen diese Anzahl`
+        : `${regionName}: ${stock} vehicles in the modeled fleet · the same count is used in all three powertrain scenarios`;
+    }
     if (el("modelVersion")) {
-      el("modelVersion").textContent = `${t("dataModel")}: V3.1.3${region?.methodTag ? ` · ${region.methodTag}` : ""}`;
+      el("modelVersion").textContent = `${t("dataModel")}: ${DATA.modelVersion || "V3.2.0"}${region?.methodTag ? ` · ${region.methodTag}` : ""}`;
     }
     if (el("dataDate")) {
       const dataDate = region?.dataDate && /^\d{4}-\d{2}-\d{2}$/.test(region.dataDate)
@@ -785,6 +823,15 @@
     }
   }
 
+  function renderFireCounter(sessionSeconds) {
+    const regionalFleet = getCurrentMarketStock(activeMarket(), startTime);
+    const exposure = Math.max(0, sessionSeconds) / FIRE_YEAR_SECONDS;
+    const vehicleYearsScale = regionalFleet * exposure / 100000;
+    if (el("fireCountBEV")) el("fireCountBEV").textContent = formatDecimal(vehicleYearsScale * FIRE_RATES.bev, FIRE_DECIMALS.bev, true);
+    if (el("fireCountHybrid")) el("fireCountHybrid").textContent = formatDecimal(vehicleYearsScale * FIRE_RATES.hybrid, FIRE_DECIMALS.hybrid, true);
+    if (el("fireCountICE")) el("fireCountICE").textContent = formatDecimal(vehicleYearsScale * FIRE_RATES.ice, FIRE_DECIMALS.ice, true);
+  }
+
   function tick() {
     const now = Date.now();
     const sessionSeconds = (now - startTime) / 1000;
@@ -806,6 +853,7 @@
     });
 
     renderSessionImpact(market, sessionSeconds);
+    renderFireCounter(sessionSeconds);
     updateClock(now);
     updateSession(sessionSeconds);
     if (!animationFrameScheduled) {
@@ -952,16 +1000,16 @@
 
 
   const ACCOUNTING_LABELS = {
-    de:["Bestände, Datenlücken und globale Bilanz","Rest der Welt","EU ohne Deutschland","Modelländerung seit Seitenaufruf","Datenprüfung: 1. Oktober 2026"],
-    en:["Stocks, data gaps and global accounting","Rest of world","EU excluding Germany","Modeled change since page opened","Sources checked: 1 October 2026"],
-    fr:["Parcs, lacunes et bilan mondial","Reste du monde","UE hors Allemagne","Variation modélisée depuis l’ouverture","Sources vérifiées : 1 octobre 2026"],
-    es:["Flotas, lagunas y balance mundial","Resto del mundo","UE sin Alemania","Cambio modelado desde la apertura","Fuentes revisadas: 1 octubre 2026"],
-    it:["Flotte, lacune e bilancio mondiale","Resto del mondo","UE esclusa Germania","Variazione modellata dall’apertura","Fonti verificate: 1 ottobre 2026"],
-    pl:["Floty, braki danych i bilans globalny","Reszta świata","UE bez Niemiec","Modelowana zmiana od otwarcia strony","Weryfikacja źródeł: 1 października 2026"],
-    nl:["Wagenparken, ontbrekende gegevens en wereldbalans","Rest van de wereld","EU zonder Duitsland","Gemodelleerde verandering sinds openen","Bronnen gecontroleerd: 1 oktober 2026"],
-    pt:["Frotas, lacunas e balanço mundial","Resto do mundo","UE sem Alemanha","Variação modelada desde a abertura","Fontes verificadas: 1 outubro 2026"],
-    no:["Bilbestand, datamangler og global balanse","Resten av verden","EU uten Tyskland","Modellert endring siden siden ble åpnet","Kilder kontrollert: 1. oktober 2026"],
-    zh:["保有量、数据缺口与全球核算","世界其他地区","欧盟（不含德国）","自页面打开以来的模型变化","来源核查：2026年10月1日"]
+    de:["Bestände, Datenlücken und globale Bilanz","Rest der Welt","EU ohne Deutschland","Modelländerung seit Seitenaufruf","Datenprüfung: 20. Oktober 2026"],
+    en:["Stocks, data gaps and global accounting","Rest of world","EU excluding Germany","Modeled change since page opened","Sources checked: 20 October 2026"],
+    fr:["Parcs, lacunes et bilan mondial","Reste du monde","UE hors Allemagne","Variation modélisée depuis l’ouverture","Sources vérifiées : 20 octobre 2026"],
+    es:["Flotas, lagunas y balance mundial","Resto del mundo","UE sin Alemania","Cambio modelado desde la apertura","Fuentes revisadas: 20 octubre 2026"],
+    it:["Flotte, lacune e bilancio mondiale","Resto del mondo","UE esclusa Germania","Variazione modellata dall’apertura","Fonti verificate: 20 ottobre 2026"],
+    pl:["Floty, braki danych i bilans globalny","Reszta świata","UE bez Niemiec","Modelowana zmiana od otwarcia strony","Weryfikacja źródeł: 20 października 2026"],
+    nl:["Wagenparken, ontbrekende gegevens en wereldbalans","Rest van de wereld","EU zonder Duitsland","Gemodelleerde verandering sinds openen","Bronnen gecontroleerd: 20 oktober 2026"],
+    pt:["Frotas, lacunas e balanço mundial","Resto do mundo","UE sem Alemanha","Variação modelada desde a abertura","Fontes verificadas: 20 outubro 2026"],
+    no:["Bilbestand, datamangler og global balanse","Resten av verden","EU uten Tyskland","Modellert endring siden siden ble åpnet","Kilder kontrollert: 20. oktober 2026"],
+    zh:["保有量、数据缺口与全球核算","世界其他地区","欧盟（不含德国）","自页面打开以来的模型变化","来源核查：2026年10月20日"]
   };
   function renderAccountingMethod() {
     window.DRIVECOUNT_METHOD.render(currentLang, t, DATA, ACCOUNTING_LABELS[currentLang]);
@@ -1019,6 +1067,12 @@
   el("sessionModelNote")?.addEventListener("click", () => {
     const details = document.querySelector(".method-details");
     if (details) details.open = true;
+  });
+  document.querySelectorAll(".fire-counter a[href='#methodDetails']").forEach((link) => {
+    link.addEventListener("click", () => {
+      const details = document.querySelector(".method-details");
+      if (details) details.open = true;
+    });
   });
   currentMode = detectMode();
   applyLanguage(detectLanguage(), false);

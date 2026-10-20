@@ -528,17 +528,17 @@
   "scope": "EU/DE passenger cars; USA light-duty; China automobiles. Global is mixed-scope accounting model, not an official harmonized passenger-car census.",
   "Germany": {
     "source": "KBA FZ 27.2, passenger-car column, Germany total",
-    "start": "2025-07-01",
+    "start": "2026-01-01",
     "end": "2026-07-01",
-    "days": 365,
+    "days": 181,
     "startStocks": {
-      "Benzin": 29683063,
-      "Diesel": 13665434,
-      "Gas insgesamt": 362235,
-      "Elektro (BEV)": 1835578,
-      "Hybrid insgesamt": 3969754,
-      "  darunter Plug-in": 1041473,
-      "Sonstige": 9544
+      "Benzin": 29343732,
+      "Diesel": 13385662,
+      "Gas insgesamt": 350851,
+      "Elektro (BEV)": 2034260,
+      "Hybrid insgesamt": 4362563,
+      "  darunter Plug-in": 1122958,
+      "Sonstige": 9419
     },
     "endStocks": {
       "Benzin": 29012909,
@@ -550,8 +550,8 @@
       "Sonstige": 9793
     },
     "hybridNoDoubleCount": "Hybrid insgesamt already includes plug-in; do not add PHEV again",
-    "changeReason": "12-month baseline for a more stable full-year net-stock trend; not guaranteed closer to every current moment",
-    "EUcomplement": "EU without Germany recomputed from unchanged EU total at common accounting date",
+    "changeReason": "Use the latest comparable official KBA powertrain stocks. A six-month interval reacts faster to recent trends but may reflect seasonality more strongly; it is not established as more accurate at every current moment.",
+    "EUcomplement": "EU excluding Germany baseline and rates recomputed as complements so the EU reference stock and modeled EU total trend remain unchanged after Germany switches to the six-month comparison.",
     "comparison6vs12": {
       "Elektro (BEV)": {
         "stockJuly2026": 2365047,
@@ -585,6 +585,8 @@
         "vehiclesPerMinute6Months": -0.8760282381829343,
         "rateDifferencePercent": -9.379956309988147
       }
-    }
+    },
+    "activeComparison": "2026-01-01 to 2026-07-01; 181 days; observed six-month changes spread linearly across seconds.",
+    "rateConversion": "Observed delta over 181 days, multiplied by 365/181 for stored annual-equivalent delta; per-second rate therefore equals observed delta divided by 181 days."
   }
 }

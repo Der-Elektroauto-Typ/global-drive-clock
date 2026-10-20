@@ -1,12 +1,34 @@
-/* V3.1.3: Germany July-to-July 12-month stock comparison; see model-provenance.json. */
+/* V3.2.0: V3.1.3 fleet model plus a region-dependent vehicle-fire reference scenario. */
 window.DRIVECOUNT_DATA = {
-  "modelVersion": "V3.1.3",
+  "modelVersion": "V3.2.0",
   "dataDate": "2025-12-31",
   "referenceDate": "2025-12-31T00:00:00Z",
   "facebookUrl": "https://www.facebook.com/share/18Na7ZUv93/?mibextid=wwXIfr",
   "impactFactors": {
     "petrolKgCO2PerLitre": 2.31,
     "dieselKgCO2PerLitre": 2.68
+  },
+  "fireModel": {
+    "ratesPer100kVehicleYears": {
+      "bev": 7.472326705068199,
+      "hybrid": 4.754578829218925,
+      "ice": 47.81366117465373
+    },
+    "reference": "Norway DSB fire missions and SSB average vehicle stocks, pooled 2024-2025",
+    "iceRateDefinition": "Arithmetic mean of DSB ICE rates with and without motorhome mission types",
+    "stockScope": "For selected region, compare three all-one-powertrain scenarios using the same total modeled visible stock",
+    "regionalStockGroups": [
+      "electric",
+      "hybrid",
+      "petrol",
+      "diesel"
+    ],
+    "counterDecimals": {
+      "bev": 3,
+      "hybrid": 3,
+      "ice": 3
+    },
+    "yearSeconds": 31536000
   },
   "gridKgCO2PerKwh": 0.435,
   "impact": {
@@ -40,8 +62,8 @@ window.DRIVECOUNT_DATA = {
     "electric": {
       "label": "Elektro",
       "definition": "BEV",
-      "base": 51000000.0,
-      "annualChange": 13000000.0
+      "base": 51000000,
+      "annualChange": 13000000
     },
     "hybrid": {
       "label": "Hybrid",
@@ -59,14 +81,14 @@ window.DRIVECOUNT_DATA = {
       "label": "Diesel",
       "definition": "Diesel non-hybrid category as classified by source/model; MHEV treatment varies",
       "base": 324242345.8387236,
-      "annualChange": -3000000.0
+      "annualChange": -3000000
     }
   },
   "other": {
     "label": "Sonstige",
     "definition": "LPG/CNG/FCEV/other",
     "base": 14626275.693546068,
-    "annualChange": 500000.0
+    "annualChange": 500000
   },
   "germany": {
     "label": "Deutschland",
@@ -74,9 +96,9 @@ window.DRIVECOUNT_DATA = {
     "referenceDate": "2026-07-01T00:00:00Z",
     "annualSeconds": 31536000,
     "trendReference": "previous",
-    "methodTag": "KBA FZ 27 · 12M",
-    "lookbackStart": "2025-07-01",
-    "sourceName": "Quellen: KBA · FZ 27 · 12-Monats-Vergleich",
+    "methodTag": "KBA FZ 27 · 6M",
+    "lookbackStart": "2026-01-01",
+    "sourceName": "Quellen: KBA · FZ 27 · 6-Monats-Vergleich",
     "gridKgCO2PerKwh": 0.344,
     "impact": {
       "electric": {
@@ -103,39 +125,43 @@ window.DRIVECOUNT_DATA = {
     },
     "globalFleet": {
       "base": 49696710,
-      "annualChange": 171102
+      "annualChange": 423930.3591160221
     },
     "categories": {
       "electric": {
         "label": "Elektro (BEV)",
         "definition": "BEV",
         "base": 2365047,
-        "annualChange": 529469
+        "annualChange": 667056.6574585636,
+        "trendPercent": 16.260802453963606
       },
       "hybrid": {
         "label": "Hybrid insgesamt inkl. PHEV",
         "definition": "HEV + PHEV",
         "base": 4807029,
-        "annualChange": 837275
+        "annualChange": 896298.8397790055,
+        "trendPercent": 10.18818524798381
       },
       "petrol": {
         "label": "Benzin",
         "definition": "Pkw mit Benzinantrieb",
         "base": 29012909,
-        "annualChange": -670154
+        "annualChange": -667129.2541436465,
+        "trendPercent": -1.1274060163853732
       },
       "diesel": {
         "label": "Diesel",
         "definition": "Pkw mit Dieselantrieb",
         "base": 13157334,
-        "annualChange": -508100
+        "annualChange": -460440.4419889503,
+        "trendPercent": -1.7057654675577496
       }
     },
     "other": {
       "label": "Gas und Sonstige",
       "definition": "Gas + Sonstige, intern mitgezählt",
       "base": 354391,
-      "annualChange": -17388
+      "annualChange": -11855.441988950277
     }
   },
   "regions": {
@@ -145,9 +171,9 @@ window.DRIVECOUNT_DATA = {
       "referenceDate": "2026-07-01T00:00:00Z",
       "annualSeconds": 31536000,
       "trendReference": "previous",
-      "methodTag": "KBA FZ 27 · 12M",
-      "lookbackStart": "2025-07-01",
-      "sourceName": "Quellen: KBA · FZ 27 · 12-Monats-Vergleich",
+      "methodTag": "KBA FZ 27 · 6M",
+      "lookbackStart": "2026-01-01",
+      "sourceName": "Quellen: KBA · FZ 27 · 6-Monats-Vergleich",
       "gridKgCO2PerKwh": 0.344,
       "impact": {
         "electric": {
@@ -174,39 +200,43 @@ window.DRIVECOUNT_DATA = {
       },
       "globalFleet": {
         "base": 49696710,
-        "annualChange": 171102
+        "annualChange": 423930.3591160221
       },
       "categories": {
         "electric": {
           "label": "Elektro (BEV)",
           "definition": "BEV",
           "base": 2365047,
-          "annualChange": 529469
+          "annualChange": 667056.6574585636,
+          "trendPercent": 16.260802453963606
         },
         "hybrid": {
           "label": "Hybrid insgesamt inkl. PHEV",
           "definition": "HEV + PHEV",
           "base": 4807029,
-          "annualChange": 837275
+          "annualChange": 896298.8397790055,
+          "trendPercent": 10.18818524798381
         },
         "petrol": {
           "label": "Benzin",
           "definition": "Pkw mit Benzinantrieb",
           "base": 29012909,
-          "annualChange": -670154
+          "annualChange": -667129.2541436465,
+          "trendPercent": -1.1274060163853732
         },
         "diesel": {
           "label": "Diesel",
           "definition": "Pkw mit Dieselantrieb",
           "base": 13157334,
-          "annualChange": -508100
+          "annualChange": -460440.4419889503,
+          "trendPercent": -1.7057654675577496
         }
       },
       "other": {
         "label": "Gas und Sonstige",
         "definition": "Gas + Sonstige, intern mitgezählt",
         "base": 354391,
-        "annualChange": -17388
+        "annualChange": -11855.441988950277
       }
     },
     "eu": {
@@ -456,7 +486,7 @@ window.DRIVECOUNT_DATA = {
       }
     },
     "rest": {
-      "modelVersion": "V3.1.3",
+      "modelVersion": "V3.2.0",
       "dataDate": "2025-12-31",
       "referenceDate": "2025-12-31T00:00:00Z",
       "facebookUrl": "https://www.facebook.com/share/18Na7ZUv93/?mibextid=wwXIfr",
@@ -542,7 +572,7 @@ window.DRIVECOUNT_DATA = {
       "dataDate": "2025-12-31",
       "referenceDate": "2025-12-31T00:00:00Z",
       "annualSeconds": 31536000,
-      "methodTag": "EU minus Deutschland",
+      "methodTag": "EU minus Germany · Deutschland 6M",
       "lookbackStart": "2024-12-31",
       "sourceUrl": "https://ec.europa.eu/eurostat/databrowser/view/road_eqs_carpda/default/table?lang=de",
       "sourceName": "Eurostat road_eqs_carpda · ACEA · Lückenmodell",
@@ -571,40 +601,40 @@ window.DRIVECOUNT_DATA = {
         }
       },
       "globalFleet": {
-        "base": 214236474.61369863,
-        "annualChange": 3480929
+        "base": 214362542.4530387,
+        "annualChange": 3228100.640883978
       },
       "categories": {
         "electric": {
           "label": "Elektro (BEV)",
           "definition": "BEV",
-          "base": 5491687.2,
-          "annualChange": 1289077
+          "base": 5560292.552486188,
+          "annualChange": 1151489.3425414364
         },
         "hybrid": {
           "label": "Hybrid",
           "definition": "HEV + PHEV",
-          "base": 16564734.547945205,
-          "annualChange": 3318825
+          "base": 16594165.61325967,
+          "annualChange": 3259801.1602209946
         },
         "petrol": {
           "label": "Benzin",
           "definition": "Pkw Benzin",
-          "base": 96449967.01917808,
-          "annualChange": -423512
+          "base": 96451475.24861878,
+          "annualChange": -426536.74585635355
         },
         "diesel": {
           "label": "Diesel",
           "definition": "Pkw Diesel",
-          "base": 85650863.02739726,
-          "annualChange": -925850
+          "base": 85674627.51933701,
+          "annualChange": -973509.5580110496
         }
       },
       "other": {
         "label": "Sonstige",
         "definition": "Gas und übrige",
-        "base": 10079222.819178082,
-        "annualChange": 222389
+        "base": 10081981.519337017,
+        "annualChange": 216856.44198895028
       },
       "translations": {
         "de": {
