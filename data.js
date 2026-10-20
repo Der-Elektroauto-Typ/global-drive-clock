@@ -15,6 +15,7 @@ window.DRIVECOUNT_DATA = {
       "ice": 47.81366117465373
     },
     "reference": "Norway DSB fire missions and SSB average vehicle stocks, pooled 2024-2025",
+    "interpretation": "Norway reference point estimates only; the observed hybrid < BEV ordering is not established as a general or global ordering. Model counters are not local/global fire measurements.",
     "iceRateDefinition": "Arithmetic mean of DSB ICE rates with and without motorhome mission types",
     "stockScope": "For selected region, compare three all-one-powertrain scenarios using the same total modeled visible stock",
     "regionalStockGroups": [

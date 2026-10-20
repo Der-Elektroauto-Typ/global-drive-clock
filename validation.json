@@ -30,7 +30,6 @@
     "hybrid": 4754.578829218925,
     "ice_mean": 47813.66117465373
   },
-  "fireNormalizedOrderingVerified": "hybrid < bev < ice",
   "fireCounterStockGroups": [
     "electric",
     "hybrid",
@@ -72,5 +71,27 @@
   "curveChoiceReview": {
     "selected": "linear short-term continuation",
     "reason": "Only endpoint stock observations or explicit scenarios are available for several regions. Exponential or logistic curvature would add unsupported assumptions; S-curves require longer comparable series and saturation assumptions."
-  }
+  },
+  "fireReferencePointEstimateOrdering": {
+    "value": "hybrid < bev < ice",
+    "scope": "Norway DSB 2024-2025 pooled point estimates only; not an established general or global ranking"
+  },
+  "fireReferenceCounts": {
+    "bev": 120,
+    "hybrid": 35,
+    "ice_broad": 1680,
+    "ice_narrow": 1613
+  },
+  "fireReferenceVehicleYearsApprox": {
+    "bev": 1605925.5,
+    "hybrid": 736132.5,
+    "ice": 3443576.5
+  },
+  "fireHybridVsBevRateRatio": 0.636292,
+  "fireHybridVsBevApproxWald95CI": [
+    0.437,
+    0.927
+  ],
+  "fireHybridVsBevConditionalExactTwoSidedPApprox": 0.0192,
+  "fireHybridVsBevUncertaintyScope": "Independent Poisson count variation only; excludes exposure/classification mismatch, systematic bias and cross-country transferability"
 }
