@@ -4,15 +4,15 @@ Alle Dateien dieses ZIP gemeinsam hochladen und bestehende Dateien ersetzen. Sta
 
 ## Änderungen
 
-- Fahrzeug- und CO₂-Modell aus V3.1.3 übernommen.
-- Separater normierter Fahrzeugbrandzähler unter den CO₂-Werten ergänzt. Der untere Regionsumschalter erscheint auf Desktop und Mobilgeräten an derselben Stelle. Er ist mit dem oberen Umschalter synchronisiert.
-- Das Brandmodell folgt der Regionsauswahl und vergleicht drei hypothetische Antriebe auf Basis desselben modellierten Gesamtbestands der gewählten Region. Bei „Global“ verwendet es den globalen Modellbestand. Erwartungswerte sind keine Live-Brandmeldungen.
-- Referenzraten je 100.000 angenäherte Fahrzeugjahre: BEV 7,4723; Hybrid 4,7546; Verbrenner 47,8137. Letzterer ist der Mittelwert der beiden norwegischen ICE-Abgrenzungen. Auf je 100.000 Fahrzeuge und ein Modelljahr übertragen sind das 7,4723 / 4,7546 / 47,8137 Erwartungswerte. Hybrid liegt in dieser norwegischen Referenz unter BEV.
-- Hybrid bleibt eigene Gruppe. Der regionale Bestand für alle drei Szenarien umfasst die vier sichtbaren Gruppen BEV, Hybrid, Benzin und Diesel. Die nicht aufgelöste Gruppe „Sonstige“ wird ausgeschlossen.
-- Alle drei Brandzähler zeigen drei Nachkommastellen. Vollständige Branddaten, Annahmen, Quellen und Gegenbefunde: `METHODIK.md` und „Daten & Methodik“. Recherchepaket: `../vehicle-fire-research-2026-10-20/`.
+Gegenüber V3.1.3:
 
-- Deutschland nutzt für die vier Fahrzeugzähler den amtlichen KBA-Vergleich 1. Januar–1. Juli 2026 (181 Tage). Die gemessene Veränderung wird für die Live-Rate gleichmäßig auf Sekunden verteilt; der Prozentwert bleibt die tatsächliche Sechsmonatsänderung.
-- Die Bestandszähler bleiben kurzfristig linear. Exponentielle und S-Kurven würden mit den vorhandenen kurzen bzw. szenariobasierten Reihen zusätzliche, nicht belegte Annahmen einführen.
+- Die bisherigen Bestands- und CO₂-Parameter bleiben die Grundlage. Für Deutschland verwenden die vier Fahrzeugzähler jetzt den amtlichen KBA-Vergleich vom 1. Januar bis 1. Juli 2026 (181 Tage) statt des vorherigen Jahresvergleichs. Die beobachtete Sechsmonatsänderung wird gleichmäßig auf Sekunden verteilt; der Prozentwert zeigt genau diese gemessene Sechsmonatsänderung. Das EU-ohne-Deutschland-Komplement wurde passend neu berechnet, damit EU-Bestand und EU-Trend im Modell zusammenpassen.
+- Ein Brand-Szenariomodell ist hinzugekommen. Es folgt der Regionsauswahl und stellt für dieselbe modellierte Gesamtzahl drei hypothetische Fälle gegenüber: alle Fahrzeuge BEV, alle Hybrid oder alle Verbrenner. Der zweite Regionsumschalter ist auf Desktop und Mobilgeräten verfügbar und mit dem oberen Umschalter synchronisiert. Angezeigt werden modellierte Erwartungswerte, keine Live-Meldungen.
+- Das Brandmodell verwendet norwegische Feuerwehreinsätze und angenäherte Fahrzeugjahre als Referenz. Die Verbrennerrate mittelt zwei DSB-Abgrenzungen. Zahlen, Umrechnung, Kategorien und Einschränkungen sind in der Methodik dokumentiert; es handelt sich nicht um globale Messwerte.
+- Jedes Brand-Szenario setzt den Antrieb für den gesamten sichtbaren Bestand der gewählten Region an. Eingerechnet werden BEV, Hybrid, Benzin und Diesel; „Sonstige“ bleibt mangels aufgelösten Antriebsmixes ausgeschlossen. Alle drei Zähler zeigen drei Nachkommastellen, ohne damit eine entsprechende Messgenauigkeit zu behaupten.
+- Die Bestandszähler bleiben kurzfristig linear. Die vorhandenen kurzen oder szenariobasierten Reihen begründen keine exponentielle Fortschreibung oder S-Kurve.
+
+Details zu Datengrundlage, Umrechnung, Einschränkungen und Gegenbefunden stehen in `METHODIK.md` und „Daten & Methodik“.
 
 ## Einordnung
 
