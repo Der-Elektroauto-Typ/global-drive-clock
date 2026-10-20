@@ -319,6 +319,8 @@ body {
   text-align: center;
 }
 
+.session > #sessionModelNote { margin: 0 auto 12px; text-align: center; }
+
 .section-kicker {
   color: var(--cyan);
   font-size: 11px;
@@ -382,6 +384,8 @@ body {
   letter-spacing: 1.1px;
   text-align: center;
 }
+
+#sessionModelNote { margin: 0 auto 12px; text-align: center; }
 
 .session-impact-slot {
   min-width: 0;
@@ -988,6 +992,7 @@ html[lang="zh"] .brand-small {
 }
 
 .method-details-body p { margin: 0 0 14px; }
+.method-details-body #fireMethodSection { scroll-margin-top: 20px; }
 .method-details-body strong { color: #c7d0d8; }
 
 .source-links {
@@ -1180,10 +1185,14 @@ html[lang="zh"] .brand-small {
 .fire-counter-item:last-child { border: 0; }
 .fire-counter-item span { font-size: 10px; font-weight: 850; letter-spacing: 1.4px; color: #aab4be; }
 .fire-counter-item strong { font-family: "SFMono-Regular", Consolas, monospace; font-size: clamp(25px, 4vw, 37px); line-height: 1.15; font-variant-numeric: tabular-nums; }
+.fire-counter-item .fire-count-label { color: #8995a1; font-size: 9px; font-weight: 600; letter-spacing: .4px; line-height: 1; margin-top: -3px; }
 .fire-bev strong { color: var(--session-electric); }
 .fire-hybrid strong { color: var(--session-hybrid); }
 .fire-ice strong { color: #ef8d8d; }
 .fire-counter .session-model-note { margin-top: 10px; }
+@media (max-width: 650px) {
+  .fire-counter-item .fire-count-label { font-size: 8px; }
+}
 @media (max-width: 650px) {
   .fire-counter { margin-top: 24px; padding: 20px 10px 16px; }
   .fire-counter-grid { margin: 14px auto 10px; }

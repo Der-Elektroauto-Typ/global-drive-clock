@@ -1,8 +1,10 @@
-# Global Drive Clock V3.2.0
+# Global Drive Clock V3.2.1
 
-Alle Dateien dieses ZIP gemeinsam hochladen und bestehende Dateien ersetzen. Statische Website, kein Build erforderlich. Modellversion: 3.2.0; Cache-Kennung dieser Überarbeitung: 3.2.0-4. Quellenprüfung: 20. Oktober 2026.
+Alle Dateien dieses ZIP gemeinsam hochladen und bestehende Dateien ersetzen. Statische Website, kein Build erforderlich. Modellversion: 3.2.1; Cache-Kennung: 3.2.1-1. Quellenprüfung: 20. Oktober 2026.
 
 ## Änderungen
+
+V3.2.1 ergänzt gegenüber V3.2.0 die mittige Beschriftung unter den CO₂-Zählern, das Label „Brände“ in den drei Brandkarten und das direkte Sprungziel zum Brandmodell-Abschnitt in Daten & Methodik. Modellwerte und Referenzdaten bleiben unverändert.
 
 Gegenüber V3.1.3:
 
@@ -29,4 +31,4 @@ data.js: verwendete Parameter; model.js: Bilanz/Rundung; model-provenance.json: 
 
 ## Neue Social-Vorschau
 
-1200 × 630 Pixel, JPEG. Große Markenüberschrift und Begleittexte, Elektro-Kachel sowie vergrößertes LIVE-MODELL mit passendem grünen Punkt. Statische globale Modellvorschau zum 1. Oktober 2026; das Bild selbst aktualisiert sich nicht. Vorschau-URL mit neuem Cache-Schlüssel innerhalb V3.2.0.
+1200 × 630 Pixel, JPEG. Große Markenüberschrift und Begleittexte, Elektro-Kachel sowie vergrößertes LIVE-MODELL mit passendem grünen Punkt. Statische globale Modellvorschau zum 1. Oktober 2026; das Bild selbst aktualisiert sich nicht. Vorschau-URL mit eigenem Cache-Schlüssel innerhalb V3.2.0; die Vorschaugrafik bleibt in V3.2.1 unverändert.

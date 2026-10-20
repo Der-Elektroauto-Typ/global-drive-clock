@@ -10,6 +10,7 @@
 
   const TRANSLATIONS = {
     de: {
+      fireCountLabel: 'Brände',
       flag: "🇩🇪", code: "DE", locale: "de-DE",
       liveModel: "LIVE-MODELL",
       headline1: "DER WELTWEITE",
@@ -68,6 +69,7 @@
       footerNote: "Modellierte Echtzeitschätzung – keine amtliche Live-Zählung"
     },
     en: {
+      fireCountLabel: 'Fires',
       flag: "🇬🇧", code: "EN", locale: "en-GB",
       liveModel: "LIVE MODEL",
       headline1: "THE GLOBAL",
@@ -126,6 +128,7 @@
       footerNote: "Modeled real-time estimate – not an official live count"
     },
     fr: {
+      fireCountLabel: 'Incendies',
       flag: "🇫🇷", code: "FR", locale: "fr-FR",
       liveModel: "MODÈLE EN DIRECT",
       headline1: "LA TRANSITION",
@@ -183,6 +186,7 @@
       footerNote: "Estimation modélisée en temps réel – pas un comptage officiel en direct"
     },
     es: {
+      fireCountLabel: 'Incendios',
       flag: "🇪🇸", code: "ES", locale: "es-ES",
       liveModel: "MODELO EN DIRECTO",
       headline1: "EL CAMBIO MUNDIAL",
@@ -240,6 +244,7 @@
       footerNote: "Estimación modelada en tiempo real – no es un recuento oficial en directo"
     },
     it: {
+      fireCountLabel: 'Incendi',
       flag: "🇮🇹", code: "IT", locale: "it-IT",
       liveModel: "MODELLO LIVE",
       headline1: "LA TRANSIZIONE",
@@ -297,6 +302,7 @@
       footerNote: "Stima modellata in tempo reale – non è un conteggio ufficiale live"
     },
     pl: {
+      fireCountLabel: 'Pożary',
       flag: "🇵🇱", code: "PL", locale: "pl-PL",
       liveModel: "MODEL NA ŻYWO",
       headline1: "GLOBALNA ZMIANA",
@@ -354,6 +360,7 @@
       footerNote: "Modelowana estymacja w czasie rzeczywistym – nieoficjalny licznik live"
     },
     nl: {
+      fireCountLabel: 'Branden',
       flag: "🇳🇱", code: "NL", locale: "nl-NL",
       liveModel: "LIVE MODEL",
       headline1: "DE WERELDWIJDE",
@@ -411,6 +418,7 @@
       footerNote: "Gemodelleerde realtime-schatting – geen officiële live telling"
     },
     pt: {
+      fireCountLabel: 'Incêndios',
       flag: "🇵🇹", code: "PT", locale: "pt-PT",
       liveModel: "MODELO AO VIVO",
       headline1: "A TRANSIÇÃO GLOBAL",
@@ -468,6 +476,7 @@
       footerNote: "Estimativa modelada em tempo real – não é uma contagem oficial ao vivo"
     },
     no: {
+      fireCountLabel: 'Branner',
       flag: "🇳🇴", code: "NO", locale: "nb-NO",
       liveModel: "LIVE-MODELL",
       headline1: "DET GLOBALE",
@@ -525,6 +534,7 @@
       footerNote: "Modellert sanntidsestimat – ikke en offisiell live-telling"
     },
     zh: {
+      fireCountLabel: '火灾',
       flag: "🇨🇳", code: "中文", locale: "zh-CN",
       liveModel: "实时模型",
       headline1: "全球汽车",
@@ -689,6 +699,7 @@
     });
 
     renderStaticMeta();
+    renderAccountingMethod();
 
     if (persist) localStorage.setItem("driveclock-language", lang);
   }
@@ -707,7 +718,7 @@
         : `${regionName}: ${stock} vehicles in the modeled fleet · the same count is used in all three powertrain scenarios`;
     }
     if (el("modelVersion")) {
-      el("modelVersion").textContent = `${t("dataModel")}: ${DATA.modelVersion || "V3.2.0"}${region?.methodTag ? ` · ${region.methodTag}` : ""}`;
+      el("modelVersion").textContent = `${t("dataModel")}: ${DATA.modelVersion || "V3.2.1"}${region?.methodTag ? ` · ${region.methodTag}` : ""}`;
     }
     if (el("dataDate")) {
       const dataDate = region?.dataDate && /^\d{4}-\d{2}-\d{2}$/.test(region.dataDate)
@@ -1064,15 +1075,24 @@
 
   setupLanguageMenu();
   setupModeSwitch();
-  el("sessionModelNote")?.addEventListener("click", () => {
-    const details = document.querySelector(".method-details");
-    if (details) details.open = true;
-  });
-  document.querySelectorAll(".fire-counter a[href='#methodDetails']").forEach((link) => {
-    link.addEventListener("click", () => {
-      const details = document.querySelector(".method-details");
-      if (details) details.open = true;
-    });
+  el("fireMethodLink")?.addEventListener("click", (event) => {
+    event.preventDefault();
+    const details = el("methodDetails");
+    if (!details) return;
+    details.open = true;
+    const scrollToFireSection = () => {
+      const target = el("fireMethodSection");
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+        return true;
+      }
+      return false;
+    };
+    const tryScroll = (attempt = 0) => {
+      if (scrollToFireSection() || attempt >= 5) return;
+      requestAnimationFrame(() => tryScroll(attempt + 1));
+    };
+    requestAnimationFrame(() => requestAnimationFrame(() => tryScroll()));
   });
   currentMode = detectMode();
   applyLanguage(detectLanguage(), false);

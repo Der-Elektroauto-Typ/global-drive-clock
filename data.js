@@ -1,6 +1,6 @@
-/* V3.2.0: V3.1.3 fleet model plus a region-dependent vehicle-fire reference scenario. */
+/* V3.2.1: V3.2.0 model with improved labels and methodology navigation. */
 window.DRIVECOUNT_DATA = {
-  "modelVersion": "V3.2.0",
+  "modelVersion": "V3.2.1",
   "dataDate": "2025-12-31",
   "referenceDate": "2025-12-31T00:00:00Z",
   "facebookUrl": "https://www.facebook.com/share/18Na7ZUv93/?mibextid=wwXIfr",
@@ -487,7 +487,7 @@ window.DRIVECOUNT_DATA = {
       }
     },
     "rest": {
-      "modelVersion": "V3.2.0",
+      "modelVersion": "V3.2.1",
       "dataDate": "2025-12-31",
       "referenceDate": "2025-12-31T00:00:00Z",
       "facebookUrl": "https://www.facebook.com/share/18Na7ZUv93/?mibextid=wwXIfr",
