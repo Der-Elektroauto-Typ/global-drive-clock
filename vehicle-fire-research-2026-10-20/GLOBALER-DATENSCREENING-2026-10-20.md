@@ -1,0 +1,92 @@
+# Weltweite Zusatzrecherche zu Fahrzeugbränden
+
+**Recherchestand: 20. Oktober 2026**  
+**Zweck:** Rohmaterial und belastbare Anknüpfungspunkte für eine spätere Überarbeitung des Brandzählers sichern. Dieses Dokument ändert keine Produktdateien und setzt keine neue Brandrate fest.
+
+Die strukturierte Quellenliste mit Definitionen, Zeiträumen, Zählern, Nennern, Qualität und nächstem Verarbeitungsschritt liegt in [`global-fire-data-inventory.json`](global-fire-data-inventory.json). Das vorausgehende 195-Länder-Suchraster liegt in [`country-screening.json`](country-screening.json). Das Suchraster ist ausdrücklich ein englischsprachiges Erstscreening und kein Beleg dafür, dass jedes Land und jede einzelne Behörde umfassend geprüft wurde.
+
+## Wichtigste neue Funde
+
+### Dänemark: aktuelle amtliche Gruppenraten
+
+Die dänische Beredskabsstyrelse (BRS) hat am 2. Juli 2026 ein Faktenblatt für 2025 veröffentlicht. Die Zahl der Feuerwehreinsätze zu Bränden in Elektro- und Hybridautos stieg von 50 (2024) auf 62 (2025), während die ausgewiesene Rate von 1,2 auf 1,0 je 10.000 registrierte Elektro-/Hybridautos sank. Für andere Fahrzeuge nennt BRS 3,8 je 10.000 im Jahr 2024 und 4,0 im Jahr 2025. Der Bestand der zusammengefassten Elektro-/Hybridgruppe wird mit etwa 485.000 Ende 2024 und 693.000 Ende 2025 angegeben.
+
+Das ist eine starke unabhängige Plausibilitätsstütze für einen niedrigeren beobachteten Einsatzwert der gemeinsam ausgewiesenen Elektro-/Hybridgruppe gegenüber den übrigen Fahrzeugen. Es liefert **keine getrennten Raten für BEV, HEV und PHEV**. Außerdem sind die Zähler Feuerwehreinsätze und nicht zwingend einzelne betroffene Fahrzeuge; die Rate und der genaue Bestandsstichtag müssen vor einer Neuberechnung anhand des vollständigen Faktenblatts und der BIL54-/ODIN-Definitionen nachvollzogen werden. Das BRS-Faktenblatt für 2024 warnt ausdrücklich vor direkter Ländermittelung: In Schweden und Norwegen werden bestimmte auf Gebäude übergreifende Fahrzeugbrände anders oder gar nicht als Fahrzeugbrand gezählt.
+
+Quellen: [BRS-Mitteilung 2025-Zahlen](https://www.brs.dk/da/nyheder/2026/data-fra-beredskabsstyrelsen-viser-at-el--og-hybridbiler-gar-sjaldnere-i-brand-end-fossilbiler/), [BRS-Faktenblatt 2025](https://www.brs.dk/da/nyheder-og-publikationer/publikationer2/alle-publikationer/2026/brande-i-el--og-hybridbiler-2025/), [BRS-Faktenblatt 2024 mit Vergleichsmethodik](https://www.brs.dk/link/c58c00be93524e89b6e9567803e9443e.aspx).
+
+### Vereinigtes Königreich: Versicherungsraten mit Fahrzeugbestand als Nenner
+
+Eine schriftliche Antwort des britischen Verkehrsministeriums im Parlament vom 9. März 2026 gibt Zahlen aus einer Thatcham-Research-Auswertung von 2022 wieder: **1 Brand je 100.000 BEV, 3 je 100.000 Hybrid, 7 je 100.000 Benziner und 11 je 100.000 Diesel pro Jahr**. Die Auswertung verknüpfte Schadenmeldungen des Motor Insurance Anti-Fraud and Theft Register (MIAFTR) mit der Zahl der jeweiligen Antriebsfahrzeuge auf der Straße. Ein weiterer Parlamentsbescheid nennt den BEV-Wert als niedrigsten.
+
+Das ist ein wichtiger Gegencheck zur Annahme, Hybride müssten generell die höchste Brandrate haben. In dieser britischen Quelle liegt Hybrid zwischen BEV und Benzin/Diesel. Die volle Thatcham-Zusatzauswertung ist jedoch nicht veröffentlicht. Der Thatcham-/Innovate-UK-Bericht sagt, die MIAFTR-Fallzahl für EV-Brände sei sehr klein; die Brandhäufigkeit sei auch nach Berücksichtigung des Fahrzeugalters niedriger als bei Benzin/Diesel, für EVs älter als fünf Jahre sei die Sicherheit wegen kleiner Zahlen geringer. Diese Zahlen werden daher als **zugeschriebene unabhängige Versicherungs-Schätzung** archiviert, nicht als reproduzierbare amtliche Rohdaten oder universelle Rate.
+
+Quellen: [Parlamentsantwort mit 1/3/7/11 je 100.000](https://questions-statements.parliament.uk/written-questions/detail/2026-03-19/122293), [Folgeantwort mit BEV 1/100.000](https://questions-statements.parliament.uk/written-questions/detail/2026-03-24/123244), [Thatcham/Innovate-UK-Bericht](https://www.thatcham.org/wp-content/uploads/2023/07/Impact-of-BEV-Adoption-on-the-Repair-and-Insurance-Sectors-report-Innovate-UK-and-Thatcham-Research.pdf).
+
+### USA: Versicherungsdaten mit expliziten Fahrzeugjahren
+
+Der Highway Loss Data Institute (HLDI) analysierte mehr als 39,6 Millionen versicherte Fahrzeugjahre und mehr als 5.100 Schadenfälle für Modelljahre 2014–2016. Er definiert die Häufigkeit als bezahlte Brandansprüche pro 1.000 versicherte Fahrzeugjahre. Die Untersuchung umfasst **Nicht-Unfallbrände** und schließt Kollisions- und Vandalismusschäden aus. Sie zeigt modellspezifische statt harmonisierte Antriebsgruppen: etwa für Toyota Prius Hybrid 29 Ansprüche bei 259.856 versicherten Fahrzeugjahren, für Prius c Hybrid 8 bei 71.323 Fahrzeugjahren; beide mit relativer Anspruchshäufigkeit 83 gegenüber dem Durchschnitt aller Pkw = 100. Die Fahrzeuge mussten Mindestexpositionen oder Mindestfallzahlen erreichen.
+
+Das ist methodisch wertvoll, weil der Nenner tatsächlich Fahrzeugjahre abbildet. Es ist aber alt, auf versicherte Fahrzeuge und Nicht-Unfallbrände begrenzt und erlaubt keine direkte Drei-Gruppenrate. Ein HLDI-Bulletin von 2021 hält außerdem fest, dass EV-Nicht-Unfallbrandansprüche zunächst sehr selten waren; die frühere EV-Untersuchung fand 0,23 Ansprüche je 1.000 versicherte Fahrzeugjahre. Wegen zu weniger Fälle führte HLDI keine Regression durch und warnte, dass die Daten möglicherweise keine belastbare Aussage erlauben. Mit zunehmendem Alter der Fahrzeuge verschwand in der späteren Exploration der zuvor beobachtete Unterschied zu konventionellen Vergleichsmodellen. Das unterstreicht, dass Flottenalter und Definition des Ereignisses mitgeführt werden müssen.
+
+Quellen: [HLDI Fire Report 2014–16](https://www.iihs.org/media/cdecfefc-e9c2-4900-8a42-c6bc55416c7e/WhF61g/HLDI%20Research/Fire%20losses/HLDI_FireLosses_1216.pdf), [HLDI EV non-crash fire exploration](https://www.courthousenews.com/wp-content/uploads/2022/04/highway-loss-data-report-EV-noncrash-fire.pdf).
+
+### Schweden: Brandzahlen und Bestände, aber nicht deckungsgleiche Zählweisen
+
+Die schwedische Behörde MSB/MCF dokumentiert für 2024 **40 Elektro-/Hybridfahrzeuge**, die bei einem durch die Rettungsdienste alarmierten Brand beteiligt waren; 2022 waren es 23 und 2023 38. Am Ende des Jahres 2024 weist die amtliche Bestandsübersicht 358.260 Elektroautos, 522.698 Elektro-/Plug-in-Hybride und 4.096.833 Autos mit anderen Kraftstoffen aus.
+
+Die Kombination wirkt zunächst geeignet, eine Rate zu bilden. Die Definitionen sind aber aktuell nicht synchron: Der Bericht erklärt, die Auswahl elektrifizierter Fahrzeugbrände beruhe auf einer Freitextsuche nach Begriffen wie Batterie, Laden und Elektro/Hybrid; Anzündungen wurden ausgeschlossen. Für dieselbe Periode nennt der Bericht zugleich über 3.100 Brände von Pkw aller Kraftstoffe einschließlich Brandstiftung. Diese Gesamtzahl ist kein passender ICE-Zähler. **Keine neue Rate daraus berechnen**, bis alle Antriebe unter gleicher Definition vorliegen. Auch die Bestände sind Jahresendstände, keine mittleren Fahrzeugjahre.
+
+Quelle: [MSB/MCF-Bericht 2018–2024 (PDF)](https://rib.msb.se/filer/pdf/29438.pdf).
+
+### Niederlande: ausgezeichneter Zähler, fehlender Bestand
+
+Das NIPV zählte 2025 insgesamt **254 von der Feuerwehr besuchte Brände mit 264 beteiligten alternativ angetriebenen Fahrzeugen**. Bei den betroffenen Fahrzeugen entfielen laut Bericht 42,4 % auf vollelektrische und 56,8 % auf (Plug-in-)Hybride. Unter 262 Fahrzeugen mit Batterie war die Batterie in 18,7 % der Fälle am Brand beteiligt. Separat erfasst sind 176 Unfälle mit 185 AAV-Fahrzeugen; sieben Unfälle führten zu einem Fahrzeugbrand.
+
+Der Bericht unterscheidet hier nützlich zwischen Ereignissen und Fahrzeugen und erfasst Batterie- und Ladepunktbeteiligung. Er enthält aber kein parallel passendes ICE-Nennerkollektiv; „AAV“ umfasst weitere Antriebe und Fahrzeugklassen. Die Werte dienen der Ereignisabgrenzung, nicht als Brandrate.
+
+Quelle: [NIPV-Jahresbericht 2025 und Faktenblatt](https://nipv.nl/onderzoek/alternatief-aangedreven-voertuigen/jaarrapportage-2025-incidenten-met-alternatief-aangedreven-voertuigen/).
+
+### London und England: detaillierte Feuerwehreinsätze, aber Flottenabgleich nötig
+
+Eine LFB-FOI-Antwort enthält für 2019 bis September 2023 insgesamt 7.310 Fahrzeugbrandeinsätze mit Kraftstoffangabe, darunter separat Batterie-elektrisch, Benzin-/Elektro-Hybrid, Diesel-/Elektro-Hybrid, Benzin, Diesel, LPG, CNG und unbekannt. Allein 2023 wurden 71 batterieelektrische, 35 Benzin-Hybrid- und 26 Diesel-Hybrid-Einsätze neben 516 Benzin- und 288 Diesel-Einsätzen dokumentiert. Bei 4.570 von 7.310 Einsätzen über den Zeitraum war der Kraftstoff nicht im Einsatzsystem aufgezeichnet; in den frühen Jahren ist das besonders ausgeprägt. Die Population enthält außerdem Busse, Lkw, Lieferwagen, Motorräder und weitere Fahrzeuge, nicht nur Pkw. Ohne passenden Bestand und konsequente Behandlung fehlender Werte sind das keine vergleichbaren Raten.
+
+Die englischen FIRE0302-Tabellen zählen Primärbrände, Todesfälle und Verletzungen nach Motiv und Fahrzeugart, erfassen aber standardmäßig den Antrieb nicht. Das bestätigte die britische Regierung 2026 im Parlament. Ein lokaler Datensatz kann daher für Antriebsdetails besser sein als die nationale Statistik, bleibt aber regional und definitionsabhängig.
+
+Quellen: [London Fire Brigade FOI PDF](https://www.london-fire.gov.uk/media/8246/79641_response.pdf), [FIRE0302 Tabellen](https://www.gov.uk/government/statistical-data-sets/fire0302-previous-data-tables), [Parlamentsantwort zur fehlenden nationalen Antriebsvariable](https://questions-statements.parliament.uk/written-questions/detail/2026-03-19/122280).
+
+## Weitere gesicherte Quellen und Leads
+
+- **Indien:** Das Verkehrsministerium meldet im eDAR-System 26 EV-Unfälle mit Brandbeteiligung unter 23.865 erfassten EV-Unfällen der Jahre 2023–2025. Das sind ausschließlich gemeldete Straßenverkehrsunfälle, keine geparkten oder sonstigen Fahrzeugbrände. Geeignet als Anteil „Brand bei EV-Unfall“, nicht als Jahresrisiko pro Bestand. [PIB/Ministeriumsantwort](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2225866&lang=1&reg=1).
+- **USA, NIST:** Eine 2026 veröffentlichte Mehrquellenschätzung nennt seit 2011 geschätzt 5.718 EV-/PHEV-Brände (95-%-Intervall 2.866–10.846). Sie liefert keinen passenden Fahrzeugjahresnenner und keinen ICE-Vergleich. Als kumulative, modellierte Zahl und Unsicherheitsbeispiel erhalten, nicht als Rate. [NIST](https://www.nist.gov/publications/understanding-risk-lithium-ion-battery-fires-multi-source-data-analysis).
+- **USA, Gesamtbrände:** USFA/NFPA nennt eine NFPA-Schätzung von 211.500 Fahrzeugbränden für 2024. Das ist ein Gesamtwert ohne Antriebsaufschlüsselung; nicht daraus drei Antriebspunktraten ableiten. [USFA](https://www.usfa.fema.gov/statistics/outside-vehicle-fires/).
+- **Kanada:** Statistics Canada hat Fahrzeugbrandzahlen 2015–2021 aus sieben beitragenden Jurisdiktionen (Nova Scotia, New Brunswick, Ontario, Manitoba, British Columbia, Yukon und Canadian Armed Forces) veröffentlicht. Die Daten sind nicht landesvollständig und nicht nach Antrieb geteilt. Als regionales Gesamtbrand- und Folgeanfragen-Lead notiert. [Statistics Canada](https://www150.statcan.gc.ca/n1/daily-quotidien/230608/cg-a001-eng.htm).
+- **Neuseeland:** NZTA veröffentlicht einen amtlichen Fuhrpark-Snapshot für Dezember 2022: 3.480.432 ICE, 46.014 BEV, 17.711 PHEV und 156.673 weitere Fahrzeuge mit elektrischen Anteilen (einschließlich HEV und Brennstoffzellenfahrzeuge). Ein passender Zähler ist nicht beigefügt. FENZ-Incident-Reports warnen ausdrücklich, der laufende Feed sei unvollständig und nicht für statistische Analysen gedacht. [NZTA-Risikoplan](https://nzta.govt.nz/assets/resources/non-internal-combustion-engine-non-ice-vehicles-fire-and-emergency-response-risk/Non-ICE-vehicles-risk-implementation-plan-v9.0.pdf), [FENZ-Berichte](https://www.fireandemergency.nz/incidents-and-news/incident-reports/).
+- **China:** Eine veröffentlichte 2024er Zahl von 97.000 Bränden von „Verkehrsmitteln“ stammt aus einer breiteren Kategorie als Pkw und hat keine Antriebsaufteilung. Als Behörden-Lead sichern, aber nicht in Pkw-Raten übersetzen. [China Fire and Rescue / 119.gov.cn](https://www.119.gov.cn/qmxfxw/mtbd/wzbd/2025/48022.shtml).
+- **Japan:** FDMA veröffentlicht regelmäßige amtliche Brandstatistik mit Gesamtbränden von Fahrzeugen, jedoch in den geprüften Tabellen ohne Aufschlüsselung nach Kraftstoff/Antrieb. Als Gesamtkalibrierung bzw. Suchlead vermerken. [FDMA Fire Service White Papers](https://www.fdma.go.jp/publication/hakusho/).
+- **Südkorea:** Die National Fire Agency veröffentlicht Jahrbücher und einen offenen Vorfalldatensatz, der Brände in Fahrzeug-/Bahnobjekten abbildet. Antrieb und konsistenter Pkw-Bestand waren in der geprüften Übersicht nicht mitgeführt. Als mögliche Rohdatennachfrage vorgemerkt. [Korean National Fire Data System](https://www.nfds.go.kr/).
+- **Großbritannien, Thatcham:** 2022er MIAFTR-Auswertung ist eine der wenigen öffentlich referenzierten Quellen, die BEV, Hybrid, Benzin und Diesel gegen die jeweiligen Flottenzahlen setzt. Die Rohdaten sollten beim Herausgeber nachgefragt werden, weil die publizierte Rate geringe EV-Zahlen und keine öffentlichen Unsicherheitsintervalle enthält.
+- **Australien/Neuseeland, sekundärer Bericht:** Ein 2026er Branchenbericht von Drive Electric zitiert an prominenter Stelle „1.530 ICE, 25 BEV, 3.475 PHEV/HEV je 100.000“, ohne in der gefundenen Fundstelle einen nachvollziehbaren Nenner/Zähler dafür transparent auszurechnen. Diese auffälligen Hybridzahlen ähneln der vielfach falsch interpretierten AutoInsuranceEZ-Infografik. **Nicht verwenden.** Der Bericht enthält daneben eine Liste von Batterievorfällen in Australien und Neuseeland mit Kategorien wie Kollision, Brandübergriff und Brandstiftung; diese sind keine vollständige Erfassung aller Fahrzeugbrände und ohne identischen Nenner. [Drive Electric State of the Nation 2026](https://driveelectric.org.nz/wp-content/uploads/2026/06/Drive-Electric-State-of-the-Nation-Report-20260605-UPDATE-V15.pdf).
+
+## Fehlinterpretationen ausdrücklich ausschließen
+
+1. **„3.475 Brände je 100.000 Hybridfahrzeuge“ ist kein bestätigter allgemeiner Hybrid-Brandwert.** Eine britische Parlamentsantwort verbindet die auffällige Zahl mit einer schwedischen MSB-Angabe; diese erscheint in jüngeren Zusammenfassungen und einem Branchenbericht wieder. Der Primärbericht MSB/MCF, den wir eingesehen haben, ist eine Freitextauswahl von Bränden in Elektro-/Hybridfahrzeugen und nennt Bestandszahlen; er dokumentiert nicht 3.475 jährliche Hybridbrände je 100.000 als sauber definierte Fahrzeugjahresrate. Die Zahl nicht als Modellparameter übernehmen.
+2. **AutoInsuranceEZ/NTSB-Grafiken „Fires per 100,000 vehicles sold“ sind kein allgemeines Brandrisiko.** Die NTSB-Daten beziehen sich auf Fahrzeuge in tödlichen Unfällen und nicht auf alle Fahrzeugbrände oder Fahrzeugjahre. (Vorherige Recherche, siehe Hauptbericht.)
+3. **Fahrzeugbrand ist nicht gleich Batteriebrand.** NIPV und MCF dokumentieren Fahrzeuge, an denen ein Brand beteiligt war; die Traktionsbatterie war nur in einem Teil der Fälle betroffen. Das Modell muss vor Berechnung entscheiden, ob es jeden Brand eines Fahrzeugs oder nur Brände mit beteiligter Antriebsbatterie zählt.
+4. **Einsatz ist nicht Fahrzeug.** Ein Einsatz kann mehrere Fahrzeuge betreffen, und ein Fahrzeug kann in einem Ereignis mehrfach in Quellen erscheinen. Für die Rate muss die Einheit konsistent sein.
+5. **Flottenbestand am Jahresende ist nicht Fahrzeugjahr-Exposition.** Bei schnell wachsenden EV-Flotten kann die Division der Jahresbrände durch den Dezemberbestand die Häufigkeit unterschätzen; möglichst mittleren Jahresbestand bzw. versicherte Fahrzeugjahre verwenden.
+6. **Länder nicht ungeprüft mitteln.** Unterschiedliche Meldepflichten, Gebäudeübergriffe, Brandstiftung, Unfallbrände, Fahrzeugklassen, Kraftstoff-Codierung, Mehrfachfahrzeuge, Fahrzeugalter und Erfassung der Feuerwehreinsätze verändern den Zähler.
+
+## Arbeitsreihenfolge für die nächste Modellrunde
+
+1. Dänemark 2025 vollständiges Faktenblatt, ODIN-Einsatzdefinition und BIL54-Fuhrparkquelle auswerten. Rate zunächst nur als **BEV+Hybrid zusammen** in eine Vergleichstabelle aufnehmen.
+2. Von Thatcham/MIAFTR die vollständige Zähler-/Nenner-Tabelle, Altersadjustierung, Zeitfenster, Stichprobenumfang und Unsicherheiten anfordern oder suchen. Die veröffentlichten 1/3/7/11 je 100.000 als separate Quelle kennzeichnen.
+3. Schweden 2024 und London/England nach einem gemeinsamen Eventscope neu aufbauen; Fälle nach Fahrzeugklasse, Brandstiftung, Verkehrsunfall, Übergriff und unbekanntem Antrieb abgleichen.
+4. Den weltweiten Quellensatz nach der Datenstruktur bewerten: bevorzugt *Fahrzeugjahre mit versicherter/registrierter Exposition + individualisierte Fahrzeugbrände + dokumentierte Antriebscodes + gleiche Pkw-Klasse + gleiches Brandereignis*. Falls ein Kriterium fehlt, Quelle nur unterstützend nutzen.
+5. Erst danach Raten getrennt schätzen. Ein Land mit nur einer kombinierten E-/Hybridgruppe darf nicht als künstliche Evidenz für zwei Untergruppen aufgeteilt werden. Regionale Mischung erst mit hierarchischem Modell oder begründeten Gewichten und sichtbaren Unsicherheitsintervallen; Rohwerte nicht einfach arithmetisch mitteln.
+
+## Datenhaltung und Grenze dieser Runde
+
+Dieses Dossier hält die gefundenen amtlichen bzw. primären Kennzahlen, direkten Dokument-URLs, Definitionen, zeitliche Abdeckung, Grenzen und Bearbeitungshinweise fest. Die maschinenlesbare Liste ist [`global-fire-data-inventory.json`](global-fire-data-inventory.json). Es wurden keine Dateien im Brandzähler oder auf der Website geändert. Für Quellen, deren rohe Excel- oder PDF-Daten nicht bereits im Ordner liegen, sind die direkten Original-URLs und die relevanten Werte erfasst; die Binärdateien sind nicht als lokale Rohkopien ausgegeben.
+
+Auch mit einer globalen Suche kann man nicht seriös behaupten, jede Feuerwehr, Polizei, Pannenhilfe oder jeder Versicherer in allen 195 Ländern sei einzeln durchsucht worden. Diese Runde ergänzt die systematische Ausgangssuche um neue, konkrete Primärquellen und einen priorisierten Beschaffungsplan. Die bisherige Referenzrechnung Norwegen bleibt damit unberührt; Dänemark und UK sind unabhängige Stützen, die eine differenzierte BEV/Hybrid/ICE-Rangfolge gerade nicht in jedem Land identifizieren.

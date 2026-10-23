@@ -3,6 +3,8 @@
 
   const DATA = window.DRIVECOUNT_DATA;
   const MODEL = window.DRIVECOUNT_MODEL;
+  const SCENARIOS = window.DRIVECOUNT_SCENARIOS;
+  const HISTORY = window.DRIVECOUNT_HISTORY;
   if (!DATA) {
     console.error("DRIVECOUNT_DATA missing.");
     return;
@@ -10,9 +12,14 @@
 
   const TRANSLATIONS = {
     de: {
+      changeTitle: 'Wie sich der Bestand pro Jahr verändert',
+      changeCaption: 'Modellierte Nettoänderung im ausgewählten Gebiet. Positive und negative Werte teilen sich eine gemeinsame Skala.',
+      fireRateTitle: 'Brandrate der Referenz · ICE = 100',
+      fireRateCaption: 'Index der Brände je 100.000 Fahrzeugjahre; norwegische ICE-Punktrate = 100',
+      estimateNote: 'Modellierte Fortschreibung veröffentlichter Bestandsdaten und gekennzeichneter Annahmen · keine Live-Meldungen',
       fireCountLabel: 'Brände',
       flag: "🇩🇪", code: "DE", locale: "de-DE",
-      liveModel: "LIVE-MODELL",
+      liveModel: "MODELLIERTE LIVE-SCHÄTZUNG",
       headline1: "DER WELTWEITE",
       headline2: "ANTRIEBSWANDEL.",
       modeGlobal: 'GLOBAL',
@@ -69,9 +76,14 @@
       footerNote: "Modellierte Echtzeitschätzung – keine amtliche Live-Zählung"
     },
     en: {
+      changeTitle: 'How the fleet changes per year',
+      changeCaption: 'Modeled net change in the selected area. Positive and negative values share a common scale.',
+      fireRateTitle: 'Reference fire rate · ICE = 100',
+      fireRateCaption: 'Index of fires per 100,000 vehicle-years; Norwegian ICE point estimate = 100',
+      estimateNote: 'Modeled continuation of published fleet data and stated assumptions · no live reports',
       fireCountLabel: 'Fires',
       flag: "🇬🇧", code: "EN", locale: "en-GB",
-      liveModel: "LIVE MODEL",
+      liveModel: "MODELED LIVE ESTIMATE",
       headline1: "THE GLOBAL",
       headline2: "POWERTRAIN SHIFT.",
       modeGlobal: 'GLOBAL',
@@ -128,9 +140,14 @@
       footerNote: "Modeled real-time estimate – not an official live count"
     },
     fr: {
+      changeTitle: 'Évolution annuelle du parc',
+      changeCaption: 'Variation nette modélisée dans la zone sélectionnée. Les valeurs positives et négatives partagent la même échelle.',
+      fireRateTitle: 'Taux de référence des incendies · ICE = 100',
+      fireRateCaption: 'Indice des incendies pour 100 000 véhicules-années ; estimation norvégienne ICE = 100',
+      estimateNote: 'Prolongement modélisé de données de parc publiées et d’hypothèses explicites · aucun signalement en direct',
       fireCountLabel: 'Incendies',
       flag: "🇫🇷", code: "FR", locale: "fr-FR",
-      liveModel: "MODÈLE EN DIRECT",
+      liveModel: "ESTIMATION MODÉLISÉE EN DIRECT",
       headline1: "LA TRANSITION",
       headline2: "MONDIALE DES MOTORISATIONS.",
       modeGlobal: 'MONDE',
@@ -186,9 +203,14 @@
       footerNote: "Estimation modélisée en temps réel – pas un comptage officiel en direct"
     },
     es: {
+      changeTitle: 'Cambio anual del parque',
+      changeCaption: 'Cambio neto modelado en la región seleccionada. Los valores positivos y negativos comparten escala.',
+      fireRateTitle: 'Tasa de incendios de referencia · ICE = 100',
+      fireRateCaption: 'Índice de incendios por 100.000 vehículos-año; estimación noruega ICE = 100',
+      estimateNote: 'Prolongación modelada de datos publicados y supuestos explícitos · sin avisos en directo',
       fireCountLabel: 'Incendios',
       flag: "🇪🇸", code: "ES", locale: "es-ES",
-      liveModel: "MODELO EN DIRECTO",
+      liveModel: "ESTIMACIÓN MODELADA EN DIRECTO",
       headline1: "EL CAMBIO MUNDIAL",
       headline2: "DE PROPULSIÓN.",
       modeGlobal: 'GLOBAL',
@@ -244,9 +266,14 @@
       footerNote: "Estimación modelada en tiempo real – no es un recuento oficial en directo"
     },
     it: {
+      changeTitle: 'Come cambia il parco ogni anno',
+      changeCaption: 'Variazione netta modellata nell’area selezionata. Valori positivi e negativi condividono la stessa scala.',
+      fireRateTitle: 'Tasso di riferimento degli incendi · ICE = 100',
+      fireRateCaption: 'Indice degli incendi per 100.000 veicoli-anno; stima norvegese ICE = 100',
+      estimateNote: 'Proiezione modellata di dati pubblicati e ipotesi dichiarate · nessuna segnalazione in tempo reale',
       fireCountLabel: 'Incendi',
       flag: "🇮🇹", code: "IT", locale: "it-IT",
-      liveModel: "MODELLO LIVE",
+      liveModel: "STIMA MODELLATA IN TEMPO REALE",
       headline1: "LA TRANSIZIONE",
       headline2: "GLOBALE DELLE MOTORIZZAZIONI.",
       modeGlobal: 'GLOBALE',
@@ -302,9 +329,14 @@
       footerNote: "Stima modellata in tempo reale – non è un conteggio ufficiale live"
     },
     pl: {
+      changeTitle: 'Roczna zmiana liczby pojazdów',
+      changeCaption: 'Modelowana zmiana netto w wybranym obszarze. Wartości dodatnie i ujemne korzystają ze wspólnej skali.',
+      fireRateTitle: 'Referencyjna częstość pożarów · ICE = 100',
+      fireRateCaption: 'Indeks pożarów na 100 000 pojazdolat; norweski szacunek ICE = 100',
+      estimateNote: 'Modelowa ekstrapolacja opublikowanych danych o flocie i jawnych założeń · bez zgłoszeń na żywo',
       fireCountLabel: 'Pożary',
       flag: "🇵🇱", code: "PL", locale: "pl-PL",
-      liveModel: "MODEL NA ŻYWO",
+      liveModel: "MODELOWANE SZACOWANIE NA ŻYWO",
       headline1: "GLOBALNA ZMIANA",
       headline2: "RODZAJÓW NAPĘDU.",
       modeGlobal: 'GLOBALNIE',
@@ -360,9 +392,14 @@
       footerNote: "Modelowana estymacja w czasie rzeczywistym – nieoficjalny licznik live"
     },
     nl: {
+      changeTitle: 'Jaarlijkse verandering van het wagenpark',
+      changeCaption: 'Gemodelleerde nettowijziging in het geselecteerde gebied. Positieve en negatieve waarden gebruiken dezelfde schaal.',
+      fireRateTitle: 'Referentiebrandfrequentie · ICE = 100',
+      fireRateCaption: 'Index van branden per 100.000 voertuigjaren; Noorse ICE-puntschatting = 100',
+      estimateNote: 'Gemodelleerde doortrekking van gepubliceerde wagenparkgegevens en expliciete aannames · geen live meldingen',
       fireCountLabel: 'Branden',
       flag: "🇳🇱", code: "NL", locale: "nl-NL",
-      liveModel: "LIVE MODEL",
+      liveModel: "GEMODELLEERDE LIVE-SCHATTING",
       headline1: "DE WERELDWIJDE",
       headline2: "AANDRIJFTRANSITIE.",
       modeGlobal: 'WERELDWIJD',
@@ -418,9 +455,14 @@
       footerNote: "Gemodelleerde realtime-schatting – geen officiële live telling"
     },
     pt: {
+      changeTitle: 'Como a frota muda por ano',
+      changeCaption: 'Variação líquida modelada na região selecionada. Valores positivos e negativos usam a mesma escala.',
+      fireRateTitle: 'Taxa de referência de incêndios · ICE = 100',
+      fireRateCaption: 'Índice de incêndios por 100.000 veículos-ano; estimativa norueguesa ICE = 100',
+      estimateNote: 'Projeção modelada de dados publicados da frota e hipóteses explícitas · sem alertas em tempo real',
       fireCountLabel: 'Incêndios',
       flag: "🇵🇹", code: "PT", locale: "pt-PT",
-      liveModel: "MODELO AO VIVO",
+      liveModel: "ESTIMATIVA MODELADA EM TEMPO REAL",
       headline1: "A TRANSIÇÃO GLOBAL",
       headline2: "DAS MOTORIZAÇÕES.",
       modeGlobal: 'GLOBAL',
@@ -476,9 +518,14 @@
       footerNote: "Estimativa modelada em tempo real – não é uma contagem oficial ao vivo"
     },
     no: {
+      changeTitle: 'Årlig endring i kjøretøybestanden',
+      changeCaption: 'Modellert nettoendring i valgt område. Positive og negative verdier deler samme skala.',
+      fireRateTitle: 'Referanserate for bilbranner · ICE = 100',
+      fireRateCaption: 'Indeks for branner per 100 000 kjøretøyår; norsk ICE-punktestimat = 100',
+      estimateNote: 'Modellert videreføring av publiserte bestandstall og tydelige forutsetninger · ingen sanntidsmeldinger',
       fireCountLabel: 'Branner',
       flag: "🇳🇴", code: "NO", locale: "nb-NO",
-      liveModel: "LIVE-MODELL",
+      liveModel: "MODELLERT SANNTIDSANSLAG",
       headline1: "DET GLOBALE",
       headline2: "DRIVLINJESKIFTET.",
       modeGlobal: 'GLOBALT',
@@ -534,9 +581,14 @@
       footerNote: "Modellert sanntidsestimat – ikke en offisiell live-telling"
     },
     zh: {
+      changeTitle: '车辆保有量的年度变化',
+      changeCaption: '所选地区的模型净变化。正值与负值使用同一刻度。',
+      fireRateTitle: '火灾参考率 · ICE = 100',
+      fireRateCaption: '每10万辆车年火灾指数；挪威ICE点估计 = 100',
+      estimateNote: '根据已发布的保有量数据和明确假设进行模型外推 · 非实时报告',
       fireCountLabel: '火灾',
       flag: "🇨🇳", code: "中文", locale: "zh-CN",
-      liveModel: "实时模型",
+      liveModel: "模型实时估算",
       headline1: "全球汽车",
       headline2: "动力转型。",
       modeGlobal: '全球',
@@ -593,6 +645,10 @@
     }
   };
 
+  Object.entries(window.DRIVECOUNT_PRESENTATION || {}).forEach(([lang, copy]) => {
+    if (TRANSLATIONS[lang]) Object.assign(TRANSLATIONS[lang], copy);
+  });
+
   const SECONDS_PER_YEAR = 365.2425 * 24 * 60 * 60;
   const FIRE_YEAR_SECONDS = DATA.fireModel?.yearSeconds || 31536000;
   const FIRE_RATES = DATA.fireModel?.ratesPer100kVehicleYears || { bev: 0, hybrid: 0, ice: 0 };
@@ -602,6 +658,10 @@
     en: { heading: "Regional models", eu: "EU: Eurostat reports the EU passenger-car fleet as of 31 Dec 2025; BEV stock was 7.59m, up 31.5% from 2024. Other fuel stocks and annual changes are modeled from fleet and registration data. Eurostat notes that some national data are supplemented and methods are not fully harmonized.", china: "China: The Ministry of Public Security reports 371m automobiles and 48.97m NEVs at 30 Jun 2026. BEVs are 68.77% of NEVs. The official series does not split all four card categories; petrol and diesel are model allocations. Its total fleet scope is not identical to the global/EU passenger-car definition.", usa: "U.S.: DOE AFDC/NLR/Experian publishes vehicle registrations through 2025 by vehicle and fuel type. The population includes light-duty vehicles (including light trucks), not only passenger cars. Counts are rounded, and growth rates can differ across revised publication tables. Card changes are modeled estimates, not a live official count." }
   };
   const startTime = Date.now();
+  const currentYear = new Date(startTime).getFullYear();
+  let curveMode = "s-curve";
+  let scenarioHorizon = Math.max(2050, currentYear);
+  let bevCeiling = 0.9;
   const keys = ["electric", "hybrid", "petrol", "diesel"];
   const el = (id) => document.getElementById(id);
 
@@ -637,17 +697,189 @@
   }
 
   function t(key) {
-    return TRANSLATIONS[currentLang][key] ?? key;
+    return TRANSLATIONS[currentLang][key] ?? TRANSLATIONS.en[key] ?? key;
+  }
+
+  function makeNode(tag, className, text) {
+    const node = document.createElement(tag);
+    if (className) node.className = className;
+    if (text !== undefined) node.textContent = text;
+    return node;
+  }
+
+  function renderChangeChart(market) {
+    const root = el("changeChart");
+    if (!root) return;
+    root.replaceChildren();
+    const values = keys.map(key => ({ key, value: market.categories[key].annualChange }));
+    const max = Math.max(1, ...values.map(item => Math.abs(item.value)));
+    const locale = TRANSLATIONS[currentLang].locale;
+    const descriptions = [];
+    values.forEach(({ key, value }) => {
+      const row = makeNode("div", `change-row change-${key}`);
+      const label = makeNode("span", "change-label", t(key));
+      const number = makeNode("strong", "change-value", `${value >= 0 ? "+" : "−"}${formatInt(Math.abs(value))}`);
+      const track = makeNode("span", "change-track");
+      track.setAttribute("aria-hidden", "true");
+      const bar = makeNode("span", `change-bar ${value >= 0 ? "is-positive" : "is-negative"}`);
+      bar.style.width = `${Math.min(50, Math.abs(value) / max * 50)}%`;
+      track.appendChild(bar);
+      row.append(label, track, number);
+      root.appendChild(row);
+      descriptions.push(`${t(key)} ${value >= 0 ? "+" : "−"}${Math.round(Math.abs(value)).toLocaleString(locale)}`);
+    });
+    const title = t("changeTitle");
+    root.setAttribute("aria-label", `${title}: ${descriptions.join(", ")}`);
+  }
+
+  function fillCopy(key, values = {}) {
+    return t(key).replace(/\{(\w+)\}/g, (match, name) => values[name] ?? match);
+  }
+
+  function compactNumber(value) {
+    return new Intl.NumberFormat(TRANSLATIONS[currentLang].locale, {
+      notation: value >= 100000 ? "compact" : "standard", maximumFractionDigits: value >= 100000 ? 1 : 0
+    }).format(value);
+  }
+
+  function selectedHistory(year) {
+    const row = HISTORY.regions[currentMode]?.[String(year)];
+    const stock = row?.stock?.slice() || [null, null, null, null];
+    const complete = stock.every(value => typeof value === "number");
+    const total = complete ? stock.reduce((sum, value) => sum + value, 0) : null;
+    return { ...row, stock, total, shares: stock.map(value => complete && total > 0 ? value / total : null),
+      at: Date.parse(row?.date || `${year}-01-01`), kind: "history", year };
+  }
+
+  function scenarioBase(market) {
+    return SCENARIOS.snapshot(MODEL, market, startTime);
+  }
+
+  function selectedTimelineRow(base, year) {
+    if (year < currentYear) return selectedHistory(year);
+    if (year === currentYear) return { ...SCENARIOS.evaluate(base, base.time, curveMode, bevCeiling), kind: "current", year };
+    return { ...SCENARIOS.evaluate(base, Date.UTC(year + 1, 0, 1), curveMode, bevCeiling), kind: "scenario", year };
+  }
+
+  function renderProjection(market) {
+    const root = el("projectionChart"), slider = el("projectionYear");
+    if (!root || !slider) return;
+    const year = Number(slider.value), base = scenarioBase(market);
+    const minCeiling = Math.min(100, Math.max(50, Math.floor((base.stock[0] / Math.max(1, base.total)) * 20 + 1) * 5));
+    el("bevCeiling").min = String(minCeiling);
+    if (bevCeiling * 100 < minCeiling) bevCeiling = minCeiling / 100;
+    el("bevCeiling").value = String(Math.round(bevCeiling * 100));
+    const result = selectedTimelineRow(base, year);
+    el("projectionYearValue").textContent = String(year);
+    const thumbLabel = el("projectionYearThumbLabel");
+    const yearProgress = Math.max(0, Math.min(1, (year - Number(slider.min)) / Math.max(1, Number(slider.max) - Number(slider.min))));
+    if (thumbLabel) {
+      thumbLabel.textContent = String(year);
+      thumbLabel.style.left = `calc(${yearProgress * 100}% + ${8 - 16 * yearProgress}px)`;
+    }
+    slider.style.setProperty("--year-progress", `${yearProgress * 100}%`);
+    slider.setAttribute("aria-valuetext", `${year} · ${t(result.kind === "history" ? "historyLabel" : result.kind === "current" ? "currentEstimate" : "futureLabel")}`);
+    el("projectionYearMax").textContent = String(scenarioHorizon);
+    document.querySelectorAll("[data-curve]").forEach(button => button.setAttribute("aria-pressed", String(button.dataset.curve === curveMode)));
+    document.querySelectorAll("[data-horizon]").forEach(button => button.setAttribute("aria-pressed", String(Number(button.dataset.horizon) === scenarioHorizon)));
+    el("bevCeiling").disabled = curveMode !== "s-curve";
+    el("bevCeilingValue").textContent = `${Math.round(bevCeiling * 100)} %`;
+    el("projectionAssumptions").textContent = curveMode === "s-curve" ? fillCopy("scenarioAssumptionsS", { cap: Math.round(bevCeiling * 100) }) : t("scenarioAssumptionsLinear");
+    el("projectionBasis").textContent = t(currentMode === "germany" ? "scenarioBasisGermany" : "scenarioBasisOther");
+    el("projectionResultTitle").textContent = t(result.kind === "history" ? "scenarioResultHistory" : result.kind === "current" ? "scenarioResultCurrent" : "scenarioResultTitle");
+    el("projectionStatus").dataset.kind = result.kind;
+    el("projectionStatus").textContent = t(result.kind === "history" ? "historyLabel" : result.kind === "current" ? "currentEstimate" : "futureLabel");
+    el("projectionTotal").textContent = result.total !== null ? fillCopy("scenarioTotal", { total: compactNumber(result.total) }) : "";
+    const validCount = result.stock.filter(value => value !== null).length;
+    el("historyCoverage").textContent = result.kind === "history" ? t(validCount === 4 ? "historyComplete" : validCount ? "historyPartial" : "historyMissing") : "";
+    if (result.kind === "history" && currentMode === "germany") el("historyCoverage").textContent += " " + t("historyGermanBreaks");
+    el("historicalSourceTotal").textContent = result.kind === "history" && validCount < 4 && result.sourceTotal !== undefined
+      ? fillCopy("historySourceTotalLabel", { total: compactNumber(result.sourceTotal) }) + ` (${result.sourceTotalDate})` : "";
+    const sources = el("historySources"); sources.replaceChildren();
+    if (result.kind === "history" && result.sourceIds?.length) {
+      sources.appendChild(makeNode("span", "", `${t("historySourcesLabel")}: ${result.date} · `));
+      result.sourceIds.forEach(id => {
+        const source = HISTORY.sources[id]; if (!source) return;
+        const link = makeNode("a", "", source.shortTitle || source.title);
+        link.href = source.url; link.target = "_blank"; link.rel = "noopener noreferrer";
+        sources.append(link, document.createTextNode(" · "));
+      });
+    }
+    const max = Math.max(1, ...result.stock.filter(value => value !== null));
+    root.replaceChildren();
+    keys.forEach((key, index) => {
+      const value = result.stock[index];
+      const row = makeNode("div", `projection-row projection-${key}`);
+      const track = makeNode("span", `projection-track${value === null ? " is-missing" : ""}`);
+      track.setAttribute("aria-hidden", "true");
+      if (value !== null) { const bar = makeNode("span", "projection-bar"); bar.style.width = `${value / max * 100}%`; track.appendChild(bar); }
+      const number = makeNode("strong", "projection-amount", value === null ? "—" : `${value >= 100000 ? "≈ " : ""}${compactNumber(value)}`);
+      if (value !== null) number.title = `${formatInt(value)} · ${year}`;
+      const share = makeNode("span", "projection-share", result.shares[index] === null ? "—" : `${(result.shares[index] * 100).toLocaleString(TRANSLATIONS[currentLang].locale, { maximumFractionDigits: 1, minimumFractionDigits: 1 })} %`);
+      row.append(makeNode("span", "projection-label", t(key)), track, number, share); root.appendChild(row);
+    });
+    root.setAttribute("aria-label", `${el("projectionResultTitle").textContent} · ${year}`);
+  }
+
+  function downloadTimeline() {
+    const base = scenarioBase(activeMarket());
+    const columns = ["region", "year", "kind", "source_date", "model_start", "future_curve", "assumed_bev_ceiling", "BEV_vehicles", "hybrid_HEV_PHEV_vehicles", "petrol_vehicles", "diesel_vehicles", "visible_total", "separate_source_total", "separate_total_date", "source_urls"];
+    const csv = [columns];
+    for (let year = 2008; year <= 2100; year++) {
+      const row = selectedTimelineRow(base, year);
+      const urls = (row.sourceIds || []).map(id => HISTORY.sources[id]?.url).filter(Boolean).join(" | ");
+      csv.push([currentMode, year, row.kind === "history" && row.stock.every(n => n === null) ? "missing_powertrain_history" : row.kind,
+        row.kind === "history" ? (row.date || "") : new Date(row.at).toISOString(), new Date(base.time).toISOString(),
+        row.kind === "scenario" ? curveMode : "", row.kind === "scenario" && curveMode === "s-curve" ? bevCeiling : "",
+        ...row.stock.map(value => value === null ? "" : Math.round(value)), row.total === null ? "" : Math.round(row.total), row.sourceTotal ?? "", row.sourceTotalDate || "", urls]);
+    }
+    const escaped = csv.map(row => row.map(value => `"${String(value).replace(/"/g, '""')}"`).join(",")).join("\r\n");
+    const url = URL.createObjectURL(new Blob(["\uFEFF" + escaped], { type: "text/csv;charset=utf-8" }));
+    const link = makeNode("a"); link.href = url; link.download = `global-drive-clock-${currentMode}-${curveMode}-2008-2100.csv`;
+    document.body.appendChild(link); link.click(); link.remove(); setTimeout(() => URL.revokeObjectURL(url), 1000);
+  }
+
+  function renderFireRateChart() {
+    const root = el("fireRateChart");
+    if (!root) return;
+    root.replaceChildren();
+    const iceRate = FIRE_RATES.ice || 1;
+    const items = [
+      ["bev", t("fireBEV"), FIRE_RATES.bev],
+      ["hybrid", t("fireHybrid"), FIRE_RATES.hybrid],
+      ["ice", t("fireICE"), FIRE_RATES.ice]
+    ];
+    items.forEach(([key, label, rate]) => {
+      const index = rate / iceRate * 100;
+      const row = makeNode("div", `fire-rate-row fire-rate-${key}`);
+      const name = makeNode("span", "fire-rate-label", label);
+      const track = makeNode("span", "fire-rate-track");
+      track.setAttribute("aria-hidden", "true");
+      const bar = makeNode("span", "fire-rate-bar");
+      bar.style.width = `${Math.max(0, Math.min(100, index))}%`;
+      track.appendChild(bar);
+      const number = makeNode("strong", "fire-rate-value", index.toLocaleString(TRANSLATIONS[currentLang].locale, { minimumFractionDigits: 1, maximumFractionDigits: 1 }));
+      row.append(name, track, number);
+      root.appendChild(row);
+    });
+    root.setAttribute("aria-label", `${t("fireRateTitle")}: ${items.map(([name, , rate]) => `${t(name === "bev" ? "fireBEV" : name === "hybrid" ? "fireHybrid" : "fireICE")} ${((rate / iceRate) * 100).toLocaleString(TRANSLATIONS[currentLang].locale, { maximumFractionDigits: 1 })}`).join(", ")}`);
+  }
+
+  function renderVisualizations() {
+    const market = activeMarket();
+    renderChangeChart(market);
+    renderProjection(market);
+    renderFireRateChart();
   }
 
   function perSecond(item, market = activeMarket()) {
     return item.annualChange / (market.annualSeconds || SECONDS_PER_YEAR);
   }
 
-  function getCurrentMarketStock(market, now = Date.now()) {
+  function getVisibleMarketStock(market, now = Date.now()) {
     const parts = MODEL.parts(market);
-    if (parts.length) return parts.reduce((sum, part) => sum + getCurrentMarketStock(part, now), 0);
-    return MODEL.keys.reduce((sum, key) => sum + MODEL.current(market, key, now), 0);
+    if (parts.length) return parts.reduce((sum, part) => sum + getVisibleMarketStock(part, now), 0);
+    return keys.reduce((sum, key) => sum + MODEL.current(market, key, now), 0);
   }
 
   function currentValue(item, market = activeMarket(), now = Date.now()) {
@@ -691,6 +923,8 @@
       if (dict[key] !== undefined) node.textContent = dict[key];
     });
 
+    document.querySelectorAll("[data-i18n-aria]").forEach(node => node.setAttribute("aria-label", t(node.dataset.i18nAria)));
+
     if (el("languageFlag")) el("languageFlag").textContent = dict.flag;
     if (el("languageCode")) el("languageCode").textContent = dict.code;
 
@@ -709,16 +943,12 @@
     const germany = currentMode === "germany";
     const region = currentMode === "global" ? DATA : (DATA.regions?.[currentMode] || DATA.germany);
     if (el("fireScope")) {
-      const stock = formatInt(getCurrentMarketStock(market));
-      const regionName = currentMode === "global" ? (currentLang === "de" ? "Global" : "global")
-        : currentMode === "germany" ? (currentLang === "de" ? "Deutschland" : "Germany")
-        : currentMode.toUpperCase();
-      el("fireScope").textContent = currentLang === "de"
-        ? `${regionName}: ${stock} Fahrzeuge im Modellbestand · alle drei Antriebsszenarien nutzen diese Anzahl`
-        : `${regionName}: ${stock} vehicles in the modeled fleet · the same count is used in all three powertrain scenarios`;
+      const regionKey = { global: "modeGlobal", germany: "modeGermany", eu: "modeEU", china: "modeChina", usa: "modeUSA" }[currentMode];
+      el("fireScope").textContent = fillCopy("fireScopeText", { region: t(regionKey), stock: formatInt(getVisibleMarketStock(market, startTime)) });
     }
+    document.querySelectorAll("[data-region-switch]").forEach(node => node.setAttribute("aria-label", t("regionSwitchLabel")));
     if (el("modelVersion")) {
-      el("modelVersion").textContent = `${t("dataModel")}: ${DATA.modelVersion || "V3.2.1"}${region?.methodTag ? ` · ${region.methodTag}` : ""}`;
+      el("modelVersion").textContent = `${t("dataModel")}: ${DATA.modelVersion || "V3.2.2"}${region?.methodTag ? ` · ${region.methodTag}` : ""}`;
     }
     if (el("dataDate")) {
       const dataDate = region?.dataDate && /^\d{4}-\d{2}-\d{2}$/.test(region.dataDate)
@@ -727,10 +957,10 @@
       el("dataDate").textContent = `${t("dataAsOf")}: ${dataDate}`;
     }
     if (el("researchDate")) el("researchDate").textContent = (ACCOUNTING_LABELS[currentLang] || ACCOUNTING_LABELS.en)[4];
-    if (currentMode === "global" && el("dataDate")) el("dataDate").textContent += currentLang === "de" ? " (gemeinsamer Rechenstichtag; Regionalstände abweichend)" : " (common accounting date; regional anchors differ)";
+    if (currentMode === "global" && el("dataDate")) el("dataDate").textContent += ` (${t("commonAccountingDateNote")})`;
     const sourceBase = document.querySelector('[data-i18n="sourceBase"]');
     if (sourceBase) sourceBase.textContent = region?.sourceName || (germany ? t("germanySource") : t("sourceBase"));
-    const localizedRegion = region?.translations?.[currentLang] || region?.translations?.en || {};
+    const localizedRegion = region?.translations?.[currentLang] || {};
     const info = REGION_INFO[currentLang] || REGION_INFO.en;
     const methodHeading = document.querySelector("[data-i18n=regionModelHeading]");
     if (methodHeading) methodHeading.textContent = currentMode === "germany" ? t("germanyModelHeading") : (t("regionModelHeading") || info.heading);
@@ -740,16 +970,18 @@
     const headline1 = document.querySelector('[data-i18n="headline1"]');
     const headline2 = document.querySelector('[data-i18n="headline2"]');
     const heroCopy = document.querySelector('[data-i18n="heroCopy"]');
-    if (headline1) headline1.textContent = localizedRegion.headline1 || (germany ? t("germanyHeadline1") : t("headline1"));
-    if (headline2) headline2.textContent = localizedRegion.headline2 || (germany ? t("germanyHeadline2") : t("headline2"));
-    if (heroCopy) heroCopy.textContent = localizedRegion.heroCopy || (germany ? t("germanyHeroCopy") : t("heroCopy"));
+    const regional = currentMode !== "global" && !germany;
+    const regionKey = { eu: "modeEU", china: "modeChina", usa: "modeUSA" }[currentMode];
+    if (headline1) headline1.textContent = localizedRegion.headline1 || (regional ? t("regionalHeadline") : germany ? t("germanyHeadline1") : t("headline1"));
+    if (headline2) headline2.textContent = localizedRegion.headline2 || (regional ? t(regionKey) : germany ? t("germanyHeadline2") : t("headline2"));
+    if (heroCopy) heroCopy.textContent = localizedRegion.heroCopy || (regional ? fillCopy("regionalHeroCopy", { region: t(regionKey) }) : germany ? t("germanyHeroCopy") : t("heroCopy"));
     const bevLabel = document.querySelector('[data-i18n="bevLabel"]');
     const hybridLabel = document.querySelector('[data-i18n="hybridLabel"]');
     const iceLabels = document.querySelectorAll('[data-i18n="iceLabel"]');
     if (bevLabel) bevLabel.textContent = localizedRegion.bevLabel || (germany ? t("germanyBevLabel") : t("bevLabel"));
     if (hybridLabel) hybridLabel.textContent = localizedRegion.hybridLabel || (germany ? t("germanyHybridLabel") : t("hybridLabel"));
     iceLabels.forEach((node) => { node.textContent = localizedRegion.iceLabel || (germany ? t("germanyIceLabel") : t("iceLabel")); });
-    document.querySelectorAll(".mode-switch button[data-mode], .session-region-switch button[data-mode]").forEach((button) => {
+    document.querySelectorAll(".region-switch button[data-mode]").forEach((button) => {
       const active = button.dataset.mode === currentMode;
       button.classList.toggle("active", active);
       button.setAttribute("aria-pressed", String(active));
@@ -778,6 +1010,7 @@
         trend.parentElement.querySelector("span").textContent = up ? "▲" : "▼";
       }
     });
+    renderVisualizations();
   }
 
   function setMode(mode, persist = true) {
@@ -828,14 +1061,12 @@
     const h = Math.floor(total / 3600);
     const m = Math.floor((total % 3600) / 60);
     const s = total % 60;
-    if (el("sessionTime")) {
-      el("sessionTime").textContent =
-        `${String(h).padStart(2,"0")}:${String(m).padStart(2,"0")}:${String(s).padStart(2,"0")}`;
-    }
+    const text = `${String(h).padStart(2,"0")}:${String(m).padStart(2,"0")}:${String(s).padStart(2,"0")}`;
+    document.querySelectorAll("[data-session-time]").forEach(node => { if (node.textContent !== text) node.textContent = text; });
   }
 
   function renderFireCounter(sessionSeconds) {
-    const regionalFleet = getCurrentMarketStock(activeMarket(), startTime);
+    const regionalFleet = getVisibleMarketStock(activeMarket(), startTime);
     const exposure = Math.max(0, sessionSeconds) / FIRE_YEAR_SECONDS;
     const vehicleYearsScale = regionalFleet * exposure / 100000;
     if (el("fireCountBEV")) el("fireCountBEV").textContent = formatDecimal(vehicleYearsScale * FIRE_RATES.bev, FIRE_DECIMALS.bev, true);
@@ -1032,8 +1263,45 @@
   }
 
   function setupModeSwitch() {
-    document.querySelectorAll(".mode-switch button[data-mode], .session-region-switch button[data-mode]").forEach((button) => {
-      button.addEventListener("click", () => setMode(button.dataset.mode));
+    const regions = [["global", "🌐", "GLOBAL", "modeGlobal"], ["germany", "🇩🇪", "DE", "modeGermany"], ["eu", "🇪🇺", "EU", "modeEU"], ["china", "🇨🇳", "CN", "modeChina"], ["usa", "🇺🇸", "USA", "modeUSA"]];
+    document.querySelectorAll("[data-region-switch]").forEach(root => {
+      root.replaceChildren();
+      regions.forEach(([mode, flag, code, key]) => {
+        const button = makeNode("button"); button.type = "button"; button.dataset.mode = mode;
+        button.setAttribute("aria-pressed", String(mode === currentMode)); button.setAttribute("aria-label", t(key));
+        const icon = makeNode("span", "region-icon", flag); icon.setAttribute("aria-hidden", "true");
+        const name = makeNode("span", "region-name", t(key)); name.dataset.i18n = key; name.setAttribute("aria-hidden", "true");
+        const short = makeNode("span", "region-code", code); short.setAttribute("aria-hidden", "true");
+        button.append(icon, name, short); button.addEventListener("click", () => setMode(mode)); root.appendChild(button);
+      });
+    });
+  }
+
+  function setupScenarioControls() {
+    const slider = el("projectionYear"); slider.min = "2008"; slider.max = String(scenarioHorizon); slider.value = String(currentYear);
+    el("projectionYearMin").textContent = "2008";
+    slider.addEventListener("input", () => renderProjection(activeMarket()));
+    document.querySelectorAll("[data-curve]").forEach(button => button.addEventListener("click", () => {
+      curveMode = button.dataset.curve; renderProjection(activeMarket());
+    }));
+    document.querySelectorAll("[data-horizon]").forEach(button => button.addEventListener("click", () => {
+      scenarioHorizon = Math.max(currentYear, Number(button.dataset.horizon)); slider.max = String(scenarioHorizon);
+      if (Number(slider.value) > scenarioHorizon) slider.value = String(scenarioHorizon);
+      renderProjection(activeMarket());
+    }));
+    el("bevCeiling").addEventListener("input", event => { bevCeiling = Number(event.target.value) / 100; renderProjection(activeMarket()); });
+    el("downloadScenario").addEventListener("click", downloadTimeline);
+  }
+
+  function setupMethodLink(linkId, targetId) {
+    el(linkId)?.addEventListener("click", event => {
+      event.preventDefault(); const details = el("methodDetails"); if (!details) return;
+      details.open = true;
+      requestAnimationFrame(() => {
+        const target = el(targetId) || details;
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+        target.setAttribute("tabindex", "-1"); target.focus({ preventScroll: true });
+      });
     });
   }
 
@@ -1074,27 +1342,12 @@
   }
 
   setupLanguageMenu();
-  setupModeSwitch();
-  el("fireMethodLink")?.addEventListener("click", (event) => {
-    event.preventDefault();
-    const details = el("methodDetails");
-    if (!details) return;
-    details.open = true;
-    const scrollToFireSection = () => {
-      const target = el("fireMethodSection");
-      if (target) {
-        target.scrollIntoView({ behavior: "smooth", block: "start" });
-        return true;
-      }
-      return false;
-    };
-    const tryScroll = (attempt = 0) => {
-      if (scrollToFireSection() || attempt >= 5) return;
-      requestAnimationFrame(() => tryScroll(attempt + 1));
-    };
-    requestAnimationFrame(() => requestAnimationFrame(() => tryScroll()));
-  });
   currentMode = detectMode();
+  setupModeSwitch();
+  setupScenarioControls();
+  setupMethodLink("fireMethodLink", "fireMethodSection");
+  setupMethodLink("scenarioMethodLink", "scenarioMethodSection");
+  setupMethodLink("sessionModelNote", "impactMethodSection");
   applyLanguage(detectLanguage(), false);
   tick();
 })();

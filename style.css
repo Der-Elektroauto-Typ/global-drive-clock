@@ -1097,6 +1097,107 @@ html[lang="zh"] .brand-small {
   .session-impact-item .impact-status { font-size: 6px; }
 }
 
+/* V3.2.2: compact mobile overview and transparent model visuals. */
+.hero-estimate-note {
+  width: fit-content;
+  max-width: min(760px, 100%);
+  margin: 0 auto 18px;
+  padding: 8px 13px;
+  border: 1px solid rgba(71,221,255,.16);
+  border-radius: 999px;
+  background: rgba(71,221,255,.045);
+  color: #aab8c3;
+  font-size: 11px;
+  line-height: 1.45;
+}
+.insights {
+  margin: 54px auto 18px;
+  padding: clamp(22px, 4vw, 42px);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: linear-gradient(145deg, rgba(255,255,255,.025), rgba(11,16,22,.92));
+}
+.insights-heading { max-width: 760px; margin: 0 auto 26px; text-align: center; }
+.insights-heading .section-kicker { color: var(--cyan); }
+.insights-heading h2 { margin: 12px 0 8px; font-size: clamp(22px, 3vw, 34px); line-height: 1.15; }
+.insights-heading p, .projection-heading p, .projection-disclaimer, .fire-rate-chart p { color: var(--muted); font-size: 13px; line-height: 1.6; }
+.insights-heading p { margin: 0; }
+.change-chart { max-width: 900px; margin: 0 auto; }
+.change-row { display: grid; grid-template-columns: 120px minmax(70px, 1fr) minmax(95px, auto); gap: 14px; align-items: center; min-height: 38px; }
+.change-label, .projection-label, .fire-rate-label { color: #b9c3cc; font-size: 12px; font-weight: 750; }
+.change-value { color: #dce4eb; font-family: "SFMono-Regular", Consolas, monospace; font-size: 12px; text-align: right; white-space: nowrap; }
+.change-track { position: relative; display: block; height: 13px; border-radius: 8px; background: rgba(255,255,255,.035); overflow: hidden; }
+.change-track::after { content: ""; position: absolute; top: 0; bottom: 0; left: 50%; width: 1px; background: rgba(255,255,255,.2); }
+.change-bar { position: absolute; top: 3px; display: block; height: 7px; border-radius: 6px; }
+.change-bar.is-positive { left: 50%; background: var(--green); }
+.change-bar.is-negative { right: 50%; background: var(--red); }
+.change-electric .change-label, .projection-electric .projection-label { color: var(--session-electric); }
+.change-hybrid .change-label, .projection-hybrid .projection-label { color: var(--session-hybrid); }
+.change-petrol .change-label, .projection-petrol .projection-label { color: var(--session-petrol); }
+.change-diesel .change-label, .projection-diesel .projection-label { color: var(--session-diesel); }
+.projection-panel { max-width: 1000px; margin: 36px auto 0; padding: 22px; border: 1px solid rgba(139,151,164,.17); border-radius: 14px; background: rgba(5,7,10,.48); }
+.projection-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 22px; }
+.projection-heading h3 { margin: 0 0 5px; font-size: 17px; }
+.projection-heading p { margin: 0; }
+.projection-heading label { display: flex; flex-direction: column; align-items: flex-end; gap: 3px; color: var(--muted); font-size: 11px; white-space: nowrap; }
+.projection-heading label strong { color: var(--cyan); font-size: 27px; font-variant-numeric: tabular-nums; }
+.projection-slider { display: block; width: 100%; margin: 14px 0 5px; accent-color: var(--cyan); cursor: pointer; }
+.projection-slider:focus-visible { outline: 2px solid var(--cyan); outline-offset: 4px; }
+.projection-years { display: flex; justify-content: space-between; color: var(--muted-2); font-size: 10px; }
+.projection-chart { display: grid; gap: 11px; margin-top: 20px; }
+.projection-row { display: grid; grid-template-columns: 100px minmax(70px,1fr) minmax(105px,auto) 55px; gap: 12px; align-items: center; }
+.projection-track, .fire-rate-track { display: block; height: 11px; overflow: hidden; border-radius: 7px; background: rgba(255,255,255,.065); }
+.projection-bar, .fire-rate-bar { display: block; height: 100%; border-radius: inherit; transition: width .16s ease; }
+.projection-electric .projection-bar, .fire-rate-bev .fire-rate-bar { background: var(--session-electric); }
+.projection-hybrid .projection-bar, .fire-rate-hybrid .fire-rate-bar { background: var(--session-hybrid); }
+.projection-petrol .projection-bar, .fire-rate-ice .fire-rate-bar { background: var(--session-petrol); }
+.projection-diesel .projection-bar { background: var(--session-diesel); }
+.projection-amount, .projection-share { color: #e0e6eb; font-family: "SFMono-Regular", Consolas, monospace; font-size: 11px; text-align: right; white-space: nowrap; }
+.projection-share { color: var(--muted); }
+.projection-disclaimer { margin: 18px 0 0; font-size: 11px; }
+.fire-rate-chart { max-width: 620px; margin: 24px auto 0; padding: 15px 16px 14px; border: 1px solid rgba(139,151,164,.14); border-radius: 11px; background: rgba(5,7,10,.32); text-align: left; }
+.fire-rate-chart h4 { margin: 0 0 4px; color: #c7d0d8; font-size: 12px; }
+.fire-rate-chart p { margin: 0 0 13px; font-size: 10px; }
+.fire-rate-rows { display: grid; gap: 9px; }
+.fire-rate-row { display: grid; grid-template-columns: 105px minmax(60px,1fr) 45px; gap: 10px; align-items: center; }
+.fire-rate-label { font-size: 10px; }
+.fire-rate-value { color: #e0e6eb; font-family: "SFMono-Regular", Consolas, monospace; font-size: 10px; text-align: right; }
+.fire-rate-ice .fire-rate-bar { width: 100%; }
+@media (max-width: 650px) {
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
+  .card { min-width: 0; min-height: 205px; padding: 14px 11px 12px; border-radius: 16px; }
+  .card-head { gap: 5px; }
+  .card .icon { min-height: 22px; font-size: 19px; }
+  .card .label { margin-top: 3px; font-size: 10px; letter-spacing: 1px; }
+  .card .trend { gap: 4px; padding: 6px 7px; font-size: 10px; }
+  .card .number { margin-top: 24px; font-size: clamp(15px, 4.8vw, 23px); letter-spacing: -.9px; }
+  .card .rate { margin-top: 8px; font-size: 9px; }
+  .card .progress { margin-top: 14px; }
+  .card .card-foot { gap: 5px; font-size: 7px; letter-spacing: .35px; }
+  .hero-estimate-note { border-radius: 12px; font-size: 10px; }
+  .insights { margin-top: 30px; padding: 21px 13px; border-radius: 15px; }
+  .insights-heading { margin-bottom: 20px; }
+  .change-row { grid-template-columns: 72px minmax(35px,1fr) 83px; gap: 8px; min-height: 35px; }
+  .change-label, .change-value { font-size: 10px; }
+  .projection-panel { margin-top: 25px; padding: 16px 10px; }
+  .projection-heading { gap: 10px; }
+  .projection-heading h3 { font-size: 14px; }
+  .projection-heading p { font-size: 11px; }
+  .projection-heading label { font-size: 9px; }
+  .projection-heading label strong { font-size: 22px; }
+  .projection-row { grid-template-columns: 58px minmax(35px,1fr) minmax(72px,auto) 39px; gap: 6px; }
+  .projection-label, .projection-amount, .projection-share { font-size: 9px; }
+  .projection-disclaimer { font-size: 10px; }
+  .fire-rate-chart { margin-top: 19px; padding: 12px 10px; }
+  .fire-rate-row { grid-template-columns: 76px minmax(40px,1fr) 36px; gap: 7px; }
+  .fire-rate-label, .fire-rate-value { font-size: 9px; }
+}
+@media (max-width: 370px) {
+  .card { padding-right: 8px; padding-left: 8px; }
+  .card .number { font-size: 15px; }
+  .projection-row { grid-template-columns: 53px minmax(25px,1fr) minmax(65px,auto) 34px; gap: 5px; }
+}
+
 /* V3.1.0 accounting: aligned numeric columns, readable without changing the hero. */
 #accountingLive td { text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap; }
 #accountingLive th:first-child { text-align:left; }

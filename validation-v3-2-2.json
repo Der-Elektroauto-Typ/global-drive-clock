@@ -1,0 +1,84 @@
+{
+  "version": "V3.2.2",
+  "checkedAt": "2026-10-23T08:48:40.495Z",
+  "kind": "static DOM and numerical checks; no browser rendering",
+  "checks": [
+    {
+      "name": "S-curve anchors, first derivatives, nonnegative finite stocks and balanced shares for all five regions to 2100",
+      "passed": true
+    },
+    {
+      "name": "Historic zero/missing distinction, original KBA date, EU partial records and HEV/PHEV boundaries",
+      "passed": true
+    },
+    {
+      "name": "Existing input parameters and CO2 implementation preserved",
+      "passed": true
+    },
+    {
+      "name": "Six identical linked selector groups, current-year startup, source/model/scenario separation",
+      "passed": true
+    },
+    {
+      "name": "Timeline back to 2000, missing values, immutable past when changing future assumptions",
+      "passed": true
+    },
+    {
+      "name": "All ten languages update region selectors, timeline controls, chart labels and methods",
+      "passed": true
+    },
+    {
+      "name": "All running sections retain a single session time across region changes",
+      "passed": true
+    },
+    {
+      "name": "Direct method links open and target the matching section",
+      "passed": true
+    },
+    {
+      "name": "Startup always follows the actual year rather than a previously selected scenario year",
+      "passed": true
+    },
+    {
+      "name": "Download covers 2000–2100 with dates, data kinds and source links",
+      "passed": true
+    },
+    {
+      "name": "All five regions and curve settings render finite timeline paths and preserve history",
+      "passed": true
+    },
+    {
+      "name": "Mobile chart uses a taller viewBox and sufficient axis margin; CSS parses",
+      "passed": true
+    },
+    {
+      "name": "Rendered IDs are unique and all local asset/method links resolve",
+      "passed": true
+    }
+  ],
+  "limits": [
+    "No graphical browser verification: the file URL browser action was blocked by browser security policy.",
+    "These checks establish implementation behavior, not empirical forecast accuracy."
+  ],
+  "numericalCases": 8250,
+  "domChecksLanguageCount": 10,
+  "regionSelectorCount": 6,
+  "browserRenderingVerified": false,
+  "javascriptSyntaxCheckedFiles": [
+    "app.js",
+    "data.js",
+    "history-data.js",
+    "interface-copy.js",
+    "methodology.js",
+    "model.js",
+    "scenario.js"
+  ],
+  "cssParsedFiles": [
+    "style.css",
+    "layout.css"
+  ],
+  "assetCache": "3.2.2-3",
+  "markdownLinksChecked": true,
+  "jsonFilesParsed": true,
+  "scopeNote": "Historical report for asset cache 3.2.2-3, before removal of the timeline line chart and change of the visible/export range to 2008–2100. Not a test report for asset cache 3.2.2-4."
+}

@@ -1,0 +1,981 @@
+{
+  "scope": "Initial English-language web screening; not a complete national-language agency audit. A query does not establish availability or absence of data.",
+  "searchDate": "2026-10-20",
+  "countries": [
+    {
+      "country": "Afghanistan",
+      "query": "\"Afghanistan\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Albania",
+      "query": "\"Albania\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Algeria",
+      "query": "\"Algeria\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Andorra",
+      "query": "\"Andorra\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Angola",
+      "query": "\"Angola\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Antigua and Barbuda",
+      "query": "\"Antigua and Barbuda\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Argentina",
+      "query": "\"Argentina\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Armenia",
+      "query": "\"Armenia\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Australia",
+      "query": "\"Australia\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Austria",
+      "query": "\"Austria\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Azerbaijan",
+      "query": "\"Azerbaijan\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Bahamas",
+      "query": "\"Bahamas\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Bahrain",
+      "query": "\"Bahrain\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Bangladesh",
+      "query": "\"Bangladesh\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Barbados",
+      "query": "\"Barbados\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Belarus",
+      "query": "\"Belarus\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Belgium",
+      "query": "\"Belgium\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Belize",
+      "query": "\"Belize\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Benin",
+      "query": "\"Benin\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Bhutan",
+      "query": "\"Bhutan\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Bolivia",
+      "query": "\"Bolivia\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Bosnia and Herzegovina",
+      "query": "\"Bosnia and Herzegovina\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Botswana",
+      "query": "\"Botswana\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Brazil",
+      "query": "\"Brazil\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Brunei",
+      "query": "\"Brunei\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Bulgaria",
+      "query": "\"Bulgaria\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Burkina Faso",
+      "query": "\"Burkina Faso\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Burundi",
+      "query": "\"Burundi\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Cabo Verde",
+      "query": "\"Cabo Verde\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Cambodia",
+      "query": "\"Cambodia\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Cameroon",
+      "query": "\"Cameroon\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Canada",
+      "query": "\"Canada\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Central African Republic",
+      "query": "\"Central African Republic\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Chad",
+      "query": "\"Chad\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Chile",
+      "query": "\"Chile\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "China",
+      "query": "\"China\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Colombia",
+      "query": "\"Colombia\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Comoros",
+      "query": "\"Comoros\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Republic of Congo",
+      "query": "\"Republic of Congo\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Costa Rica",
+      "query": "\"Costa Rica\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Cote d'Ivoire",
+      "query": "\"Cote d'Ivoire\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Croatia",
+      "query": "\"Croatia\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Cuba",
+      "query": "\"Cuba\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Cyprus",
+      "query": "\"Cyprus\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Czechia",
+      "query": "\"Czechia\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Democratic Republic of Congo",
+      "query": "\"Democratic Republic of Congo\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Denmark",
+      "query": "\"Denmark\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Djibouti",
+      "query": "\"Djibouti\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Dominica",
+      "query": "\"Dominica\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Dominican Republic",
+      "query": "\"Dominican Republic\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Ecuador",
+      "query": "\"Ecuador\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Egypt",
+      "query": "\"Egypt\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "El Salvador",
+      "query": "\"El Salvador\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Equatorial Guinea",
+      "query": "\"Equatorial Guinea\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Eritrea",
+      "query": "\"Eritrea\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Estonia",
+      "query": "\"Estonia\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Eswatini",
+      "query": "\"Eswatini\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Ethiopia",
+      "query": "\"Ethiopia\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Fiji",
+      "query": "\"Fiji\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Finland",
+      "query": "\"Finland\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "France",
+      "query": "\"France\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Gabon",
+      "query": "\"Gabon\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Gambia",
+      "query": "\"Gambia\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Georgia",
+      "query": "\"Georgia\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Germany",
+      "query": "\"Germany\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Ghana",
+      "query": "\"Ghana\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Greece",
+      "query": "\"Greece\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Grenada",
+      "query": "\"Grenada\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Guatemala",
+      "query": "\"Guatemala\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Guinea",
+      "query": "\"Guinea\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Guinea-Bissau",
+      "query": "\"Guinea-Bissau\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Guyana",
+      "query": "\"Guyana\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Haiti",
+      "query": "\"Haiti\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Holy See Vatican",
+      "query": "\"Holy See Vatican\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Honduras",
+      "query": "\"Honduras\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Hungary",
+      "query": "\"Hungary\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Iceland",
+      "query": "\"Iceland\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "India",
+      "query": "\"India\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Indonesia",
+      "query": "\"Indonesia\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Iran",
+      "query": "\"Iran\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Iraq",
+      "query": "\"Iraq\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Ireland",
+      "query": "\"Ireland\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Israel",
+      "query": "\"Israel\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Italy",
+      "query": "\"Italy\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Jamaica",
+      "query": "\"Jamaica\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Japan",
+      "query": "\"Japan\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Jordan",
+      "query": "\"Jordan\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Kazakhstan",
+      "query": "\"Kazakhstan\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Kenya",
+      "query": "\"Kenya\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Kiribati",
+      "query": "\"Kiribati\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Kuwait",
+      "query": "\"Kuwait\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Kyrgyzstan",
+      "query": "\"Kyrgyzstan\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Laos",
+      "query": "\"Laos\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Latvia",
+      "query": "\"Latvia\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Lebanon",
+      "query": "\"Lebanon\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Lesotho",
+      "query": "\"Lesotho\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Liberia",
+      "query": "\"Liberia\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Libya",
+      "query": "\"Libya\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Liechtenstein",
+      "query": "\"Liechtenstein\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Lithuania",
+      "query": "\"Lithuania\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Luxembourg",
+      "query": "\"Luxembourg\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Madagascar",
+      "query": "\"Madagascar\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Malawi",
+      "query": "\"Malawi\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Malaysia",
+      "query": "\"Malaysia\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Maldives",
+      "query": "\"Maldives\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Mali",
+      "query": "\"Mali\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Malta",
+      "query": "\"Malta\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Marshall Islands",
+      "query": "\"Marshall Islands\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Mauritania",
+      "query": "\"Mauritania\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Mauritius",
+      "query": "\"Mauritius\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Mexico",
+      "query": "\"Mexico\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Micronesia",
+      "query": "\"Micronesia\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Moldova",
+      "query": "\"Moldova\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Monaco",
+      "query": "\"Monaco\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Mongolia",
+      "query": "\"Mongolia\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Montenegro",
+      "query": "\"Montenegro\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Morocco",
+      "query": "\"Morocco\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Mozambique",
+      "query": "\"Mozambique\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Myanmar",
+      "query": "\"Myanmar\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Namibia",
+      "query": "\"Namibia\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Nauru",
+      "query": "\"Nauru\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Nepal",
+      "query": "\"Nepal\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Netherlands",
+      "query": "\"Netherlands\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "New Zealand",
+      "query": "\"New Zealand\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Nicaragua",
+      "query": "\"Nicaragua\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Niger",
+      "query": "\"Niger\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Nigeria",
+      "query": "\"Nigeria\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "North Korea",
+      "query": "\"North Korea\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "North Macedonia",
+      "query": "\"North Macedonia\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Norway",
+      "query": "\"Norway\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Oman",
+      "query": "\"Oman\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Pakistan",
+      "query": "\"Pakistan\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Palau",
+      "query": "\"Palau\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Palestine",
+      "query": "\"Palestine\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Panama",
+      "query": "\"Panama\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Papua New Guinea",
+      "query": "\"Papua New Guinea\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Paraguay",
+      "query": "\"Paraguay\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Peru",
+      "query": "\"Peru\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Philippines",
+      "query": "\"Philippines\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Poland",
+      "query": "\"Poland\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Portugal",
+      "query": "\"Portugal\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Qatar",
+      "query": "\"Qatar\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Romania",
+      "query": "\"Romania\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Russia",
+      "query": "\"Russia\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Rwanda",
+      "query": "\"Rwanda\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Saint Kitts and Nevis",
+      "query": "\"Saint Kitts and Nevis\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Saint Lucia",
+      "query": "\"Saint Lucia\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Saint Vincent and the Grenadines",
+      "query": "\"Saint Vincent and the Grenadines\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Samoa",
+      "query": "\"Samoa\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "San Marino",
+      "query": "\"San Marino\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Sao Tome and Principe",
+      "query": "\"Sao Tome and Principe\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Saudi Arabia",
+      "query": "\"Saudi Arabia\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Senegal",
+      "query": "\"Senegal\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Serbia",
+      "query": "\"Serbia\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Seychelles",
+      "query": "\"Seychelles\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Sierra Leone",
+      "query": "\"Sierra Leone\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Singapore",
+      "query": "\"Singapore\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Slovakia",
+      "query": "\"Slovakia\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Slovenia",
+      "query": "\"Slovenia\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Solomon Islands",
+      "query": "\"Solomon Islands\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Somalia",
+      "query": "\"Somalia\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "South Africa",
+      "query": "\"South Africa\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "South Korea",
+      "query": "\"South Korea\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "South Sudan",
+      "query": "\"South Sudan\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Spain",
+      "query": "\"Spain\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Sri Lanka",
+      "query": "\"Sri Lanka\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Sudan",
+      "query": "\"Sudan\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Suriname",
+      "query": "\"Suriname\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Sweden",
+      "query": "\"Sweden\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Switzerland",
+      "query": "\"Switzerland\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Syria",
+      "query": "\"Syria\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Tajikistan",
+      "query": "\"Tajikistan\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Tanzania",
+      "query": "\"Tanzania\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Thailand",
+      "query": "\"Thailand\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Timor-Leste",
+      "query": "\"Timor-Leste\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Togo",
+      "query": "\"Togo\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Tonga",
+      "query": "\"Tonga\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Trinidad and Tobago",
+      "query": "\"Trinidad and Tobago\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Tunisia",
+      "query": "\"Tunisia\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Turkey",
+      "query": "\"Turkey\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Turkmenistan",
+      "query": "\"Turkmenistan\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Tuvalu",
+      "query": "\"Tuvalu\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Uganda",
+      "query": "\"Uganda\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Ukraine",
+      "query": "\"Ukraine\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "United Arab Emirates",
+      "query": "\"United Arab Emirates\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "United Kingdom",
+      "query": "\"United Kingdom\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "United States",
+      "query": "\"United States\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Uruguay",
+      "query": "\"Uruguay\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Uzbekistan",
+      "query": "\"Uzbekistan\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Vanuatu",
+      "query": "\"Vanuatu\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Venezuela",
+      "query": "\"Venezuela\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Vietnam",
+      "query": "\"Vietnam\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Yemen",
+      "query": "\"Yemen\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Zambia",
+      "query": "\"Zambia\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    },
+    {
+      "country": "Zimbabwe",
+      "query": "\"Zimbabwe\" \"vehicle fires\" statistics annual",
+      "status": "screened; individual results not harmonised"
+    }
+  ]
+}

@@ -1,0 +1,374 @@
+{
+  "status": "research_reference_scenario_only_not_a_validated_global_estimate",
+  "as_of": "2026-10-20T00:00:00+00:00",
+  "source_site_version": "V3.1.3",
+  "source_site_data_sha256": "40a63c8652a6c82a857861b0e3288e30ac71e8dbc193329d633e27e4fc989459",
+  "year_seconds": 31536000,
+  "norway_rows": [
+    {
+      "year": 2024,
+      "group": "bev",
+      "stock_start": 689169,
+      "stock_end": 788750,
+      "vehicle_years_approx": 738959.5,
+      "fire_missions_cars": 63,
+      "fire_missions_cars_and_motorhomes": 63,
+      "rate_cars_and_motorhomes_per_100k": 8.525501059259675
+    },
+    {
+      "year": 2025,
+      "group": "bev",
+      "stock_start": 788750,
+      "stock_end": 945182,
+      "vehicle_years_approx": 866966.0,
+      "fire_missions_cars": 57,
+      "fire_missions_cars_and_motorhomes": 57,
+      "rate_cars_and_motorhomes_per_100k": 6.574652293169513
+    },
+    {
+      "year": 2024,
+      "group": "hybrid",
+      "stock_start": 362040,
+      "stock_end": 369668,
+      "vehicle_years_approx": 365854.0,
+      "fire_missions_cars": 17,
+      "fire_missions_cars_and_motorhomes": 17,
+      "rate_cars_and_motorhomes_per_100k": 4.646662329781826
+    },
+    {
+      "year": 2025,
+      "group": "hybrid",
+      "stock_start": 369668,
+      "stock_end": 370889,
+      "vehicle_years_approx": 370278.5,
+      "fire_missions_cars": 18,
+      "fire_missions_cars_and_motorhomes": 18,
+      "rate_cars_and_motorhomes_per_100k": 4.861205822104173
+    },
+    {
+      "year": 2024,
+      "group": "ice",
+      "stock_start": 1825324,
+      "stock_end": 1721140,
+      "vehicle_years_approx": 1773232.0,
+      "fire_missions_cars": 796,
+      "fire_missions_cars_and_motorhomes": 830,
+      "rate_cars_and_motorhomes_per_100k": 46.807185974536885
+    },
+    {
+      "year": 2025,
+      "group": "ice",
+      "stock_start": 1721140,
+      "stock_end": 1619549,
+      "vehicle_years_approx": 1670344.5,
+      "fire_missions_cars": 817,
+      "fire_missions_cars_and_motorhomes": 850,
+      "rate_cars_and_motorhomes_per_100k": 50.88770609895145
+    }
+  ],
+  "norway_pooled": {
+    "bev": {
+      "count": 120,
+      "vehicle_years_approx": 1605925.5,
+      "rate_per_100k": 7.472326705068199,
+      "cars_only_numerator_rate_per_100k": 7.472326705068199,
+      "approx_conditional_poisson_95_interval": [
+        6.2481393896028585,
+        8.936366957527873
+      ]
+    },
+    "hybrid": {
+      "count": 35,
+      "vehicle_years_approx": 736132.5,
+      "rate_per_100k": 4.754578829218925,
+      "cars_only_numerator_rate_per_100k": 4.754578829218925,
+      "approx_conditional_poisson_95_interval": [
+        3.413737219347794,
+        6.622073812575345
+      ]
+    },
+    "ice": {
+      "count": 1680,
+      "vehicle_years_approx": 3443576.5,
+      "rate_per_100k": 48.78648695622124,
+      "cars_only_numerator_rate_per_100k": 46.84083539308623,
+      "approx_conditional_poisson_95_interval": [
+        46.508461524322385,
+        51.17609208132634
+      ]
+    }
+  },
+  "norway_bev_reduction": 0.8468361390363376,
+  "norway_other_missing": {
+    "cars": {
+      "2024": {
+        "bev": 63,
+        "hybrid": 17,
+        "ice": 796,
+        "other": 5,
+        "missing": 0
+      },
+      "2025": {
+        "bev": 57,
+        "hybrid": 18,
+        "ice": 817,
+        "other": 4,
+        "missing": 0
+      }
+    },
+    "cars_and_motorhomes": {
+      "2024": {
+        "bev": 63,
+        "hybrid": 17,
+        "ice": 830,
+        "other": 6,
+        "missing": 0
+      },
+      "2025": {
+        "bev": 57,
+        "hybrid": 18,
+        "ice": 850,
+        "other": 4,
+        "missing": 0
+      }
+    }
+  },
+  "temporal_holdout": {
+    "bev": {
+      "train_year": 2024,
+      "held_out_year": 2025,
+      "predicted": 73.91319551342123,
+      "observed": 57,
+      "relative_error": 0.2967227283056355
+    },
+    "hybrid": {
+      "train_year": 2024,
+      "held_out_year": 2025,
+      "predicted": 17.2055915747812,
+      "observed": 18,
+      "relative_error": -0.0441338014010445
+    },
+    "ice": {
+      "train_year": 2024,
+      "held_out_year": 2025,
+      "predicted": 781.8412565304483,
+      "observed": 850,
+      "relative_error": -0.08018675702300204
+    }
+  },
+  "global_fleet": {
+    "bev": 61435616.43835616,
+    "hybrid": 94108558.3592844,
+    "ice_petrol_diesel": 1217028711.297687,
+    "unresolved_other": 15027645.556559766
+  },
+  "scenarios": [
+    {
+      "id": "working_reference",
+      "meaning": "Author-selected rounded Norway reference assumptions, not estimated world rates.",
+      "rates_per_100k_vehicle_year": {
+        "bev": 8,
+        "hybrid": 5,
+        "ice": 50
+      },
+      "annualised_at_frozen_snapshot": {
+        "bev": 4914.849315068493,
+        "hybrid": 4705.42791796422,
+        "ice_petrol_diesel": 608514.3556488436
+      },
+      "unresolved_gas_addition_interval": [
+        0,
+        7513.822778279883
+      ],
+      "annualised_total_interval_gas_only": [
+        618134.6328818763,
+        625648.4556601562
+      ],
+      "daily_total_interval_gas_only": [
+        1693.519542142127,
+        1714.1053579730308
+      ],
+      "model_bev_relative_reduction": 0.84
+    },
+    {
+      "id": "norway_unrounded",
+      "meaning": "Direct transfer of the selected 2024-2025 reference calculation; scope caveats apply.",
+      "rates_per_100k_vehicle_year": {
+        "bev": 7.472326705068199,
+        "hybrid": 4.754578829218925,
+        "ice": 48.78648695622124
+      },
+      "annualised_at_frozen_snapshot": {
+        "bev": 4590.669973546555,
+        "hybrid": 4474.465592233673,
+        "ice_petrol_diesel": 593745.5534907135
+      },
+      "unresolved_gas_addition_interval": [
+        0,
+        7331.46033927819
+      ],
+      "annualised_total_interval_gas_only": [
+        602810.6890564937,
+        610142.1493957719
+      ],
+      "daily_total_interval_gas_only": [
+        1651.5361344013527,
+        1671.622327111704
+      ],
+      "model_bev_relative_reduction": 0.8468361390363376
+    },
+    {
+      "id": "poland_published",
+      "meaning": "Transfer of published 2025 registration-based indicators, not harmonised vehicle-year rates.",
+      "rates_per_100k_vehicle_year": {
+        "bev": 36.2,
+        "hybrid": 8.2,
+        "ice": 41.5
+      },
+      "annualised_at_frozen_snapshot": {
+        "bev": 22239.693150684932,
+        "hybrid": 7716.901785461319,
+        "ice_petrol_diesel": 505066.9151885401
+      },
+      "unresolved_gas_addition_interval": [
+        0,
+        6236.472905972303
+      ],
+      "annualised_total_interval_gas_only": [
+        535023.5101246864,
+        541259.9830306587
+      ],
+      "daily_total_interval_gas_only": [
+        1465.817835958045,
+        1482.904063097695
+      ],
+      "model_bev_relative_reduction": 0.12771084337349392
+    },
+    {
+      "id": "common_half_level",
+      "meaning": "Arbitrary 0.5x sensitivity of working reference; no estimated confidence bound.",
+      "rates_per_100k_vehicle_year": {
+        "bev": 4,
+        "hybrid": 2.5,
+        "ice": 25
+      },
+      "annualised_at_frozen_snapshot": {
+        "bev": 2457.4246575342463,
+        "hybrid": 2352.71395898211,
+        "ice_petrol_diesel": 304257.1778244218
+      },
+      "unresolved_gas_addition_interval": [
+        0,
+        3756.9113891399415
+      ],
+      "annualised_total_interval_gas_only": [
+        309067.31644093816,
+        312824.2278300781
+      ],
+      "daily_total_interval_gas_only": [
+        846.7597710710635,
+        857.0526789865154
+      ],
+      "model_bev_relative_reduction": 0.84
+    },
+    {
+      "id": "common_double_level",
+      "meaning": "Arbitrary 2x sensitivity of working reference; no estimated confidence bound.",
+      "rates_per_100k_vehicle_year": {
+        "bev": 16,
+        "hybrid": 10,
+        "ice": 100
+      },
+      "annualised_at_frozen_snapshot": {
+        "bev": 9829.698630136985,
+        "hybrid": 9410.85583592844,
+        "ice_petrol_diesel": 1217028.7112976871
+      },
+      "unresolved_gas_addition_interval": [
+        0,
+        15027.645556559766
+      ],
+      "annualised_total_interval_gas_only": [
+        1236269.2657637526,
+        1251296.9113203124
+      ],
+      "daily_total_interval_gas_only": [
+        3387.039084284254,
+        3428.2107159460616
+      ],
+      "model_bev_relative_reduction": 0.84
+    },
+    {
+      "id": "no_transfer_of_advantage",
+      "meaning": "Deliberate stress assumption: all groups share the same rate. Not an observed finding.",
+      "rates_per_100k_vehicle_year": {
+        "bev": 50,
+        "hybrid": 50,
+        "ice": 50
+      },
+      "annualised_at_frozen_snapshot": {
+        "bev": 30717.80821917808,
+        "hybrid": 47054.2791796422,
+        "ice_petrol_diesel": 608514.3556488436
+      },
+      "unresolved_gas_addition_interval": [
+        0,
+        7513.822778279883
+      ],
+      "annualised_total_interval_gas_only": [
+        686286.4430476639,
+        693800.2658259438
+      ],
+      "daily_total_interval_gas_only": [
+        1880.2368302675723,
+        1900.822646098476
+      ],
+      "model_bev_relative_reduction": 0.0
+    }
+  ],
+  "poland_exposure_sensitivity_only": {
+    "warning": "Diagnostic only: passenger stock may not match fire numerator including vans; not an adjusted national rate.",
+    "bev_fires": 44,
+    "passenger_stock_end_2024": 72580,
+    "passenger_stock_end_2025": 121259,
+    "hypothetical_average_stock_rate_per_100k": 45.398500817688905
+  },
+  "limitations": [
+    "DSB counts approved missions, not every burned vehicle; building and crash fires are excluded.",
+    "SSB private-car stock and DSB passenger-car/motorhome taxonomy are only approximately matched; both numerator variants retained.",
+    "Average of year-end stocks approximates exposure; no monthly exposure or mileage/age adjustment.",
+    "Conditional Poisson intervals describe reference count variation only, not world transfer or reporting error.",
+    "Published Poland indicators are not harmonised with DSB; never pooled as though equivalent.",
+    "Other global stock contains gas/FCEV/unknown; gas share remains a bounded sensitivity, not all reclassified as ICE.",
+    "Existing global fleet is heterogeneous and includes model assumptions and some FCEV in China's hybrid residual.",
+    "No globally representative sample, no fitted global calibration, no measured worldwide 84% reduction.",
+    "Annualised snapshot outputs are not observed calendar-year 2026 counts or a forecast integrating future stock growth."
+  ],
+  "interpretation": {
+    "point_estimate_ordering": "hybrid < bev < ice",
+    "scope": "Norway DSB 2024-2025 pooled reference only; not an established general or global ranking",
+    "hybrid_vs_bev_rate_ratio": 0.6362916153002347,
+    "hybrid_vs_bev_approx_wald_95_interval": [
+      0.4366486970139156,
+      0.9272145376136989
+    ],
+    "hybrid_vs_bev_conditional_exact_two_sided_p_approx": 0.0192,
+    "counts": {
+      "bev": 120,
+      "hybrid": 35
+    },
+    "approx_vehicle_years": {
+      "bev": 1605925.5,
+      "hybrid": 736132.5
+    },
+    "limits": "Count-based uncertainty assumes independent Poisson events and treats approximate exposures as fixed; it does not account for classification/exposure mismatch, systematic reporting, mileage, fleet age, climate, maintenance or transfer to other countries."
+  },
+  "implemented_in_v3_2_0": {
+    "rates_per_100k_vehicle_year": {
+      "bev": 7.472326705068199,
+      "hybrid": 4.754578829218925,
+      "ice_mean_of_two_dsb_scopes": 47.81366117465373
+    },
+    "rounded_preimplementation_scenarios_are_historical": true
+  }
+}

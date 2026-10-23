@@ -1,0 +1,228 @@
+{
+  "id": "9B13517C-F1CD-490F-82A1-57B9CA38ACA5",
+  "created": "2021-12-15T08:43:15.724Z",
+  "name": "Brann i personbil pr år og drivstofftype",
+  "title": "Hva slags drivstofftype har personbiler som brenner?",
+  "description": null,
+  "tags": null,
+  "diagramText": "Diagrammet viser alle branner i personbiler, gruppert etter hvilken drivstofftype de har og hvilket år hendelsen skjedde. Personbiler er biler for persontransport med høyest 8 sitteplasser i tillegg til førersetet. Statistikken inneholder kun hendelser hvor brann- og redningsvesenet har rykket ut.\n\nBranner i personbiler som starter i en bygning er ikke med i tallene. De er kategorisert på som brann i bygning, med kjøretøy som antatt startsted. Biler som begynner å brenne etter en trafikkulykke er heller ikke med i oversikten.",
+  "tableText": "Diagrammet viser alle branner i personbiler, gruppert etter hvilken drivstofftype de har og hvilket år hendelsen skjedde. Personbiler er biler for persontransport med høyest 8 sitteplasser i tillegg til førersetet. Statistikken inneholder kun hendelser hvor brann- og redningsvesenet har rykket ut.\n\nBranner i personbiler som starter i en bygning er ikke med i tallene. De er kategorisert på som brann i bygning, med kjøretøy som antatt startsted. Biler som begynner å brenne etter en trafikkulykke er heller ikke med i oversikten.",
+  "mapText": "Diagrammet viser alle branner i personbiler, gruppert etter hvilken drivstofftype de har og hvilket år hendelsen skjedde. Personbiler er biler for persontransport med høyest 8 sitteplasser i tillegg til førersetet. Statistikken inneholder kun hendelser hvor brann- og redningsvesenet har rykket ut.\n\nBranner i personbiler som starter i en bygning er ikke med i tallene. De er kategorisert på som brann i bygning, med kjøretøy som antatt startsted. Biler som begynner å brenne etter en trafikkulykke er heller ikke med i oversikten.",
+  "searchResultsText": "Diagrammet viser alle branner i personbiler, gruppert etter hvilken drivstofftype de har og hvilket år hendelsen skjedde. Personbiler er biler for persontransport med høyest 8 sitteplasser i tillegg til førersetet. Statistikken inneholder kun hendelser hvor brann- og redningsvesenet har rykket ut.\n\nBranner i personbiler som starter i en bygning er ikke med i tallene. De er kategorisert på som brann i bygning, med kjøretøy som antatt startsted. Biler som begynner å brenne etter en trafikkulykke er heller ikke med i oversikten.",
+  "shared": true,
+  "ownedByUser": false,
+  "searchCriteria": {
+    "hitsToReturn": 10,
+    "skipped": 0,
+    "missionId": "",
+    "revisedMissionTypes": {
+      "ids": [
+        10147
+      ],
+      "isMissingValue": false
+    },
+    "missionTypes": {
+      "ids": [],
+      "isMissingValue": false
+    },
+    "periodStart": null,
+    "periodEnd": null,
+    "sambasModifiedStart": null,
+    "sambasModifiedEnd": null,
+    "approvedDate": null,
+    "timeStart": null,
+    "timeEnd": null,
+    "monthNumbers": {
+      "ids": [],
+      "isMissingValue": false
+    },
+    "dayOfWeek": {
+      "ids": [],
+      "isMissingValue": false
+    },
+    "responseTimeLimit": null,
+    "responseTimeLimitGreaterThan": true,
+    "callOutTimeLimit": null,
+    "callOutTimeLimitGreaterThan": true,
+    "effortDuration": null,
+    "effortDurationGreaterThan": true,
+    "counties": {
+      "ids": [],
+      "isMissingValue": false
+    },
+    "municipalities": {
+      "ids": [],
+      "isMissingValue": false
+    },
+    "basicStatisticalUnits": {
+      "ids": [],
+      "isMissingValue": false
+    },
+    "streetAddress": "",
+    "fireDepartments": {
+      "ids": [],
+      "isMissingValue": false
+    },
+    "geoShapeFilter": {
+      "polygons": [],
+      "circles": []
+    },
+    "fireStations": {
+      "ids": [],
+      "isMissingValue": false
+    },
+    "dispatchedFireDepartments": {
+      "ids": [],
+      "isMissingValue": false
+    },
+    "hundredAndTenCentrals": {
+      "ids": [],
+      "isMissingValue": false
+    },
+    "callSignal": null,
+    "callSignalArrivedAtLocation": null,
+    "buildingTypes": {
+      "ids": [],
+      "isMissingValue": false
+    },
+    "naceCodes": {
+      "ids": [],
+      "isMissingValue": false
+    },
+    "includeExercises": false,
+    "includeMissionsHandledByHundredAndTen": false,
+    "includePoliceCauseWithNoMission": false,
+    "includeRVRMissionsFromBris": false,
+    "answers": [],
+    "onlyApprovedMissions": true,
+    "includeApprovedMissions": true,
+    "includeAssistanceMissions": false,
+    "isRestricted": false,
+    "aggregationQuery": null,
+    "searchCombinationId": ""
+  },
+  "presentation": {
+    "tablePresentations": [
+      {
+        "form": {
+          "groupBy": {
+            "id": "352",
+            "name": "Drivstofftype for bilen/kjøretøyet det startet å brenne i",
+            "type": "TERMS",
+            "interval": null,
+            "restricted": false,
+            "question": true,
+            "groupAnswer": false,
+            "includeMissing": true,
+            "nextLevelAggregationDefinition": null,
+            "calculatedSubAggregationDefinitions": [],
+            "category": "Bakgrunn og omfang",
+            "label": "Drivstofftype for bilen/kjøretøyet det startet å brenne i",
+            "isDisabled": false
+          },
+          "subAggregations": [
+            {
+              "id": "MISSION_RESPONSE_TIME",
+              "name": "Responstid",
+              "validTypes": [
+                "MIN",
+                "MAX",
+                "AVG",
+                "MEDIAN"
+              ],
+              "selectedType": "MEDIAN",
+              "restricted": false,
+              "question": false
+            }
+          ],
+          "includeCount": true,
+          "includePercent": true,
+          "includeMissing": true,
+          "includeNationalFigures": false,
+          "sortBy": {
+            "id": "352",
+            "sortDesc": false
+          }
+        }
+      }
+    ],
+    "chartPresentations": [
+      {
+        "form": {
+          "groupBy": {
+            "id": "352",
+            "name": "Drivstofftype for bilen/kjøretøyet det startet å brenne i",
+            "type": "TERMS",
+            "interval": null,
+            "restricted": false,
+            "question": true,
+            "groupAnswer": false,
+            "includeMissing": true,
+            "nextLevelAggregationDefinition": null,
+            "calculatedSubAggregationDefinitions": [],
+            "category": "Bakgrunn og omfang",
+            "label": "Drivstofftype for bilen/kjøretøyet det startet å brenne i",
+            "isDisabled": false
+          },
+          "subAggregateBy": {
+            "id": "MISSION_CALL_TIME_YEAR",
+            "name": "År",
+            "type": "DATE_HISTOGRAM",
+            "interval": "YEAR",
+            "restricted": false,
+            "question": false,
+            "groupAnswer": false,
+            "includeMissing": true,
+            "nextLevelAggregationDefinition": null,
+            "calculatedSubAggregationDefinitions": [],
+            "label": "År",
+            "isDisabled": false
+          },
+          "subAggregations": []
+        },
+        "charts": [
+          {
+            "id": "cacfc2db-e471-4e55-b582-579f97e69c13",
+            "options": {
+              "type": "column",
+              "title": "Drivstofftype for bilen/kjøretøyet det startet å brenne i pr år",
+              "selectedSorting": "sortDefault",
+              "description": "Fra 2016 til dagens dato",
+              "showDataLabels": true,
+              "showColors": false,
+              "showLegend": true,
+              "includeMissing": false,
+              "includeDescription": true,
+              "percentGroupBy": false,
+              "dataLabelsVerticalOrientation": true,
+              "showTitle": true
+            }
+          }
+        ]
+      }
+    ],
+    "geoAggPresentations": [
+      {
+        "zoomLevel": 5,
+        "boundingBox": {
+          "_southWest": {
+            "lat": 55.4040698270061,
+            "lng": -26.279296875000004
+          },
+          "_northEast": {
+            "lat": 72.76406472320436,
+            "lng": 62.35839843750001
+          }
+        },
+        "mapMode": "counties"
+      }
+    ]
+  },
+  "usedInSearchCombination": false,
+  "type": "SEARCH_DEFINITION",
+  "showOnFrontPage": true,
+  "image": "BRANN",
+  "order": 180,
+  "permalink": "46b26a001f314ebcaa765ef7c0fa8dd9",
+  "createdByDsbAdmin": true
+}

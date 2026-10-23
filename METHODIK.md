@@ -1,7 +1,10 @@
-# Global Drive Clock V3.2.0 — Daten & Methodik
+# Global Drive Clock V3.2.2 — Daten & Methodik
 
-Quellenprüfung: 20. Oktober 2026. Deutschland: Sechsmonatsvergleich 1. Januar–1. Juli 2026; Referenzbestand 1. Juli 2026.
+V3.2.2 gliedert die Seite in sechs einheitliche Bereiche mit gekoppelten Regionsumschaltern. Der Zeitregler beginnt bei 2008 und startet bei jedem Aufruf im aktuellen Jahr. Das Balkendiagramm zeigt das ausgewählte Jahr. Vorhandene Quellenwerte und Datenlücken bilden den Rückblick; für die Zukunft gibt es eine einstellbare S-Kurve und einen linearen Vergleich bis 2050, optional sichtbar bis 2100. Die vollständigen historischen Quellen, Abgrenzungen, Formeln und Grenzen stehen in [SZENARIEN.md](SZENARIEN.md) und [history-data.json](history-data.json). Historische Quellenwerte werden durch Zukunftseinstellungen nicht verändert. Es gibt keine rückwärts erfundene Geschichte und keine garantierte Prognose.
 
+Die Fahrzeug-, Verbrauchs-, CO₂- und Brandratenparameter bleiben unverändert. Die Brandzählung verwendet die dokumentierten vier sichtbaren Gruppen, ohne Sonstige. Deren Ausschluss gegenüber V3.2.1 betrifft global rund 15 Millionen Fahrzeuge beziehungsweise etwa 1,08 % am 23. Oktober 2026; die genaue laufende Zahl ändert sich mit dem Modellzeitpunkt.
+
+Bestehende Parameter-Quellenprüfung: 20. Oktober 2026. Ergänzende Historien-/Szenarioquellen geprüft am 23. Oktober 2026. Deutschland: Sechsmonatsvergleich 1. Januar–1. Juli 2026; Referenzbestand 1. Juli 2026.
 
 ### Fahrzeugbrand-Referenzmodell für die ausgewählte Region
 
@@ -25,7 +28,7 @@ Quellen: [DSB, öffentliche norwegische Brandstatistik](https://brannstatistikk.
 
 Die vier Hauptzähler zeigen den modellierten Bestand zu einem Referenzstichtag und verteilen eine beobachtete oder ausdrücklich angenommene Nettoänderung gleichmäßig über die Zeit. Für Deutschland ist das die aktuelle Differenz zwischen zwei amtlichen Stichtagen; in anderen Regionen liegen meist Jahresvergleiche oder Modellannahmen vor. Linear bedeutet hier eine transparente Kurzfrist-Fortschreibung, keine langfristige Marktprognose.
 
-Eine exponentielle Kurve würde eine dauerhaft konstante prozentuale Wachstumsrate des gesamten Fahrzeugbestands unterstellen. Die vorhandenen Daten belegen diese Annahme nicht; bei sinkenden Antrieben könnte sie zudem unrealistische negative Bestände erzeugen. Eine S-Kurve würde Marktsättigung und eine langfristige Diffusion modellieren. Dafür bräuchten wir längere, vergleichbare Zeitreihen und belastbare Sättigungsgrenzen je Region und Antrieb. Mit den derzeitigen, teils nur zwei passenden Stichtagen wäre die zusätzliche Krümmung eine unbelegte Annahme. Deshalb bleibt die kurze Bestandsfortschreibung linear und wird bei neuen amtlichen Ständen aktualisiert.
+Eine exponentielle Kurve würde eine dauerhaft konstante prozentuale Wachstumsrate des gesamten Fahrzeugbestands unterstellen. Die vorhandenen Daten belegen diese Annahme nicht; sie könnte zudem bei wachsender Flotte unbegrenzt zunehmende Bestände unterstellen. Eine S-Kurve würde Marktsättigung und eine langfristige Diffusion modellieren. Dafür bräuchten wir längere, vergleichbare Zeitreihen und belastbare Sättigungsgrenzen je Region und Antrieb. Mit den derzeitigen, teils nur zwei passenden Stichtagen wäre die zusätzliche Krümmung eine unbelegte Annahme. Deshalb bleibt die kurze Bestandsfortschreibung linear und wird bei neuen amtlichen Ständen aktualisiert.
 
 ### Was diese Seite zeigt
 
@@ -173,6 +176,6 @@ Jahresfahrleistung und Verbrauch bleiben im Modell konstant. Saison, Tageszeit, 
 Die mitgelieferten Dateien ermöglichen die Prüfung der tatsächlich verwendeten Werte: [Bestands- und Verbrauchsparameter](data.js), [Bilanz und gemeinsame Rundung](model.js), [Anzeige und Verbrauchsintegration](app.js), [Herleitung und Lückenmodell](model-provenance.json), [verwendete Quellenauszüge](source-extracts.json) und [Linkprüfung mit Quellenrolle](source-link-audit.json). Die [Rechenprüfungen](validation.json) bestätigen Summen und Funktionen, nicht die empirische Richtigkeit aller Annahmen.
 
 
-V3.2.0 enthält das Fahrzeug- und CO₂-Modell sowie das oben dokumentierte regionsabhängige Fahrzeugbrand-Referenzmodell. Eine künftige Datenaktualisierung muss Quellenstände, Vergleichszeiträume, Definitionen, Annahmen und Bilanz gemeinsam prüfen.
+V3.2.2 enthält das Fahrzeug- und CO₂-Modell, das oben dokumentierte regionsabhängige Fahrzeugbrand-Referenzmodell und zusätzliche erklärende Visualisierungen. Eine künftige Datenaktualisierung muss Quellenstände, Vergleichszeiträume, Definitionen, Annahmen und Bilanz gemeinsam prüfen.
 
 

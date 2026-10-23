@@ -1,0 +1,120 @@
+{
+  "hitsToReturn": 10,
+  "skipped": 0,
+  "missionId": "",
+  "revisedMissionTypes": {
+    "ids": [
+      10147
+    ],
+    "isMissingValue": false
+  },
+  "missionTypes": {
+    "ids": [],
+    "isMissingValue": false
+  },
+  "periodStart": null,
+  "periodEnd": null,
+  "sambasModifiedStart": null,
+  "sambasModifiedEnd": null,
+  "approvedDate": null,
+  "timeStart": null,
+  "timeEnd": null,
+  "monthNumbers": {
+    "ids": [],
+    "isMissingValue": false
+  },
+  "dayOfWeek": {
+    "ids": [],
+    "isMissingValue": false
+  },
+  "responseTimeLimit": null,
+  "responseTimeLimitGreaterThan": true,
+  "callOutTimeLimit": null,
+  "callOutTimeLimitGreaterThan": true,
+  "effortDuration": null,
+  "effortDurationGreaterThan": true,
+  "counties": {
+    "ids": [],
+    "isMissingValue": false
+  },
+  "municipalities": {
+    "ids": [],
+    "isMissingValue": false
+  },
+  "basicStatisticalUnits": {
+    "ids": [],
+    "isMissingValue": false
+  },
+  "streetAddress": "",
+  "fireDepartments": {
+    "ids": [],
+    "isMissingValue": false
+  },
+  "geoShapeFilter": {
+    "polygons": [],
+    "circles": []
+  },
+  "fireStations": {
+    "ids": [],
+    "isMissingValue": false
+  },
+  "dispatchedFireDepartments": {
+    "ids": [],
+    "isMissingValue": false
+  },
+  "hundredAndTenCentrals": {
+    "ids": [],
+    "isMissingValue": false
+  },
+  "callSignal": null,
+  "callSignalArrivedAtLocation": null,
+  "buildingTypes": {
+    "ids": [],
+    "isMissingValue": false
+  },
+  "naceCodes": {
+    "ids": [],
+    "isMissingValue": false
+  },
+  "includeExercises": false,
+  "includeMissionsHandledByHundredAndTen": false,
+  "includePoliceCauseWithNoMission": false,
+  "includeRVRMissionsFromBris": false,
+  "answers": [],
+  "onlyApprovedMissions": true,
+  "includeApprovedMissions": true,
+  "includeAssistanceMissions": false,
+  "isRestricted": false,
+  "aggregationQuery": {
+    "includeNationalFigures": false,
+    "aggregationDefinition": {
+      "id": "352",
+      "name": "Drivstofftype for bilen/kjøretøyet det startet å brenne i",
+      "type": "TERMS",
+      "interval": null,
+      "restricted": false,
+      "question": true,
+      "groupAnswer": false,
+      "includeMissing": true,
+      "nextLevelAggregationDefinition": {
+        "id": "MISSION_CALL_TIME_YEAR",
+        "name": "År",
+        "type": "DATE_HISTOGRAM",
+        "interval": "YEAR",
+        "restricted": false,
+        "question": false,
+        "groupAnswer": false,
+        "includeMissing": true,
+        "nextLevelAggregationDefinition": null,
+        "calculatedSubAggregationDefinitions": [],
+        "label": "År",
+        "isDisabled": false
+      },
+      "calculatedSubAggregationDefinitions": [],
+      "category": "Bakgrunn og omfang",
+      "label": "Drivstofftype for bilen/kjøretøyet det startet å brenne i",
+      "isDisabled": false
+    }
+  },
+  "searchCombinationId": ""
+}

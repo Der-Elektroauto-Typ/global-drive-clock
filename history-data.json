@@ -1,0 +1,2413 @@
+{
+  "version": "V3.2.2",
+  "reviewed": "2026-10-23",
+  "keys": [
+    "electric",
+    "hybrid",
+    "petrol",
+    "diesel"
+  ],
+  "policy": "No historical backcasting, no zero-fill, no PHEV substitution for total hybrids. Nominal years keep the exact source dates. Partial and total source scopes may differ. No numeric interpolation is used for slider years without records.",
+  "sources": {
+    "kba2016": {
+      "title": "KBA FZ 13, 1. Januar 2016, Seite 10 (archivierte Originaltabelle)",
+      "url": "https://www.hyundaiboard.de/cms/attachment/15366-pkw-bestand-kba-pdf/",
+      "localReceipt": "kba-fz13-2016-table-original.pdf",
+      "origin": "Kraftfahrt-Bundesamt; original publication hosted by a third-party archive",
+      "scope": "German passenger cars; classification changes in 2006 and registration-status change in 2008. Hybrid not separated in the 2000/2005 table. The 2000 reference date is 1 July.",
+      "retrieved": "2026-10-23",
+      "sha256": "582b1bab2af40939b847842c4a37db54b3d3ea913e31fd675f6acbe051acc466"
+    },
+    "ubaFuel": {
+      "title": "UBA / KBA: Entwicklung der Pkw im Bestand nach Kraftstoffart, 2026",
+      "url": "https://www.umweltbundesamt.de/system/files/medien/384/bilder/dateien/4_Abb_Entwicklung-Pkw-Bestand-Kraftstoffart_2026-04-28.xlsx",
+      "localReceipt": "uba-fuel-history.xlsx",
+      "scope": "German passenger cars, 1 January; hybrid total includes PHEV; four groups retained, gas/other excluded.",
+      "retrieved": "2026-10-23",
+      "sha256": "4f40b1184d7b54076cf5f848d0ea9279e8df6c60f8548853df54342c12c5b6e7"
+    },
+    "eurostat": {
+      "title": "Eurostat road_eqs_carpda, EU27_2020, NR, TOTAL legal form",
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/road_eqs_carpda?lang=EN&sinceTimePeriod=2000&leg_form=TOTAL",
+      "localReceipt": "eurostat-fuel-history.json",
+      "scope": "EU-27 passenger cars, end-year; aggregate BEV and total available, other displayed powertrain aggregates missing. Missing is not zero.",
+      "retrieved": "2026-10-23",
+      "sha256": "465c1307ebbd27f6ecc328be78cc86f11e6c1ef3fe7506026c6a1de5b1cbfc91"
+    },
+    "iea2023": {
+      "title": "IEA: Global electric car stock, 2010–2022 (2023 edition)",
+      "url": "https://www.iea.org/data-and-statistics/charts/global-electric-car-stock-2010-2022",
+      "localReceipt": "iea-chart-stock-2010-2022.csv",
+      "licence": "CC BY 4.0",
+      "scope": "BEV passenger light-duty car stock, million vehicles, converted to vehicles. Global is the sum of China, Europe, United States and Other BEV. Europe is not EU-27. PHEV is not used as HEV+PHEV.",
+      "retrieved": "2026-10-23",
+      "sha256": "0318caedd42076db23dcdbc4fc88cd87ecc664776d7a437f980aef7defa90dd3"
+    },
+    "iea2026": {
+      "title": "IEA Global EV Outlook 2026: historical Cars / BEV stock, 2024 and 2025",
+      "url": "https://www.iea.org/data-and-statistics/data-tools/global-ev-data-explorer",
+      "scope": "Existing source extracts iea-stock-2024.csv / iea-stock-2025.csv; BEV car stock only, not HEV+PHEV. API returned 404 during this history refresh; local archived extracts retained.",
+      "retrieved": "existing verified project extract, 2026-10-20"
+    },
+    "afdc2025": {
+      "title": "US DOE AFDC: 2025 light-duty vehicle registrations",
+      "url": "https://afdc.energy.gov/vehicle-registration",
+      "scope": "Existing verified 2025 AFDC anchors, rounded to 100 vehicles; gasoline includes E85-capable, diesel includes biodiesel-capable; HEV+PHEV added. Scope differs from IEA car-only series.",
+      "retrieved": "existing verified project extract, 2026-10-20"
+    },
+    "ubaWorld": {
+      "title": "UBA / VDA: Weltweiter Autobestand, 2026 release",
+      "url": "https://www.umweltbundesamt.de/system/files/medien/384/bilder/dateien/7_Abb_Autobestand-weltweit_2026-05-15.xlsx",
+      "localReceipt": "uba-global-history.xlsx",
+      "scope": "Passenger cars without commercial vehicles, 1 January, millions. Standalone source total only; not a denominator for partial powertrain records and not the site mixed-scope global total.",
+      "retrieved": "2026-10-23",
+      "sha256": "54e7affbac139801afffbdeedad2745bb35e34d6119dab32bc059d474dcfb766"
+    },
+    "ubaDECN": {
+      "title": "UBA / VDA: Autobestand in Deutschland und China, 2026 release",
+      "url": "https://www.umweltbundesamt.de/system/files/medien/384/bilder/dateien/9_Abb_Autobestand-D-China_2026-05-15.xlsx",
+      "localReceipt": "uba-de-china-history.xlsx",
+      "scope": "Passenger cars without commercial vehicles, 1 January, millions. Standalone total; China scope differs from current MPS automobiles including commercial vehicles.",
+      "retrieved": "2026-10-23",
+      "sha256": "cc3b9f852af1524bfc11d5c6b4ec911a0583fc730fc9ea04f3285cef562485f3"
+    }
+  },
+  "regions": {
+    "global": {
+      "2010": {
+        "year": 2010,
+        "stock": [
+          16912,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "iea2023",
+          "ubaWorld"
+        ],
+        "seriesKeys": [
+          "iea-cars-global",
+          null,
+          null,
+          null
+        ],
+        "date": "2010-12-31",
+        "sourceTotal": 835848000,
+        "sourceTotalId": "ubaWorld",
+        "sourceTotalDate": "2010-01-01"
+      },
+      "2011": {
+        "year": 2011,
+        "stock": [
+          55273,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "iea2023",
+          "ubaWorld"
+        ],
+        "seriesKeys": [
+          "iea-cars-global",
+          null,
+          null,
+          null
+        ],
+        "date": "2011-12-31",
+        "sourceTotal": 851272000,
+        "sourceTotalId": "ubaWorld",
+        "sourceTotalDate": "2011-01-01"
+      },
+      "2012": {
+        "year": 2012,
+        "stock": [
+          115449,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "iea2023",
+          "ubaWorld"
+        ],
+        "seriesKeys": [
+          "iea-cars-global",
+          null,
+          null,
+          null
+        ],
+        "date": "2012-12-31",
+        "sourceTotal": 887335000,
+        "sourceTotalId": "ubaWorld",
+        "sourceTotalDate": "2012-01-01"
+      },
+      "2013": {
+        "year": 2013,
+        "stock": [
+          226749,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "iea2023",
+          "ubaWorld"
+        ],
+        "seriesKeys": [
+          "iea-cars-global",
+          null,
+          null,
+          null
+        ],
+        "date": "2013-12-31",
+        "sourceTotal": 919028000,
+        "sourceTotalId": "ubaWorld",
+        "sourceTotalDate": "2013-01-01"
+      },
+      "2014": {
+        "year": 2014,
+        "stock": [
+          408871,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "iea2023",
+          "ubaWorld"
+        ],
+        "seriesKeys": [
+          "iea-cars-global",
+          null,
+          null,
+          null
+        ],
+        "date": "2014-12-31",
+        "sourceTotal": 972450000,
+        "sourceTotalId": "ubaWorld",
+        "sourceTotalDate": "2014-01-01"
+      },
+      "2015": {
+        "year": 2015,
+        "stock": [
+          736927,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "iea2023",
+          "ubaWorld"
+        ],
+        "seriesKeys": [
+          "iea-cars-global",
+          null,
+          null,
+          null
+        ],
+        "date": "2015-12-31",
+        "sourceTotal": 1013241000,
+        "sourceTotalId": "ubaWorld",
+        "sourceTotalDate": "2015-01-01"
+      },
+      "2016": {
+        "year": 2016,
+        "stock": [
+          1192788,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "iea2023",
+          "ubaWorld"
+        ],
+        "seriesKeys": [
+          "iea-cars-global",
+          null,
+          null,
+          null
+        ],
+        "date": "2016-12-31",
+        "sourceTotal": 1056010000,
+        "sourceTotalId": "ubaWorld",
+        "sourceTotalDate": "2016-01-01"
+      },
+      "2017": {
+        "year": 2017,
+        "stock": [
+          1938473,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "iea2023",
+          "ubaWorld"
+        ],
+        "seriesKeys": [
+          "iea-cars-global",
+          null,
+          null,
+          null
+        ],
+        "date": "2017-12-31",
+        "sourceTotal": 1094030000,
+        "sourceTotalId": "ubaWorld",
+        "sourceTotalDate": "2017-01-01"
+      },
+      "2018": {
+        "year": 2018,
+        "stock": [
+          3261588,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "iea2023",
+          "ubaWorld"
+        ],
+        "seriesKeys": [
+          "iea-cars-global",
+          null,
+          null,
+          null
+        ],
+        "date": "2018-12-31",
+        "sourceTotal": 1125360000,
+        "sourceTotalId": "ubaWorld",
+        "sourceTotalDate": "2018-01-01"
+      },
+      "2019": {
+        "year": 2019,
+        "stock": [
+          4765363,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "iea2023",
+          "ubaWorld"
+        ],
+        "seriesKeys": [
+          "iea-cars-global",
+          null,
+          null,
+          null
+        ],
+        "date": "2019-12-31",
+        "sourceTotal": 1167572000,
+        "sourceTotalId": "ubaWorld",
+        "sourceTotalDate": "2019-01-01"
+      },
+      "2020": {
+        "year": 2020,
+        "stock": [
+          6829623,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "iea2023",
+          "ubaWorld"
+        ],
+        "seriesKeys": [
+          "iea-cars-global",
+          null,
+          null,
+          null
+        ],
+        "date": "2020-12-31",
+        "sourceTotal": 1196706000,
+        "sourceTotalId": "ubaWorld",
+        "sourceTotalDate": "2020-01-01"
+      },
+      "2021": {
+        "year": 2021,
+        "stock": [
+          11339109,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "iea2023",
+          "ubaWorld"
+        ],
+        "seriesKeys": [
+          "iea-cars-global",
+          null,
+          null,
+          null
+        ],
+        "date": "2021-12-31",
+        "sourceTotal": 1245205000,
+        "sourceTotalId": "ubaWorld",
+        "sourceTotalDate": "2021-01-01"
+      },
+      "2022": {
+        "year": 2022,
+        "stock": [
+          18293040,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "iea2023",
+          "ubaWorld"
+        ],
+        "seriesKeys": [
+          "iea-cars-global",
+          null,
+          null,
+          null
+        ],
+        "date": "2022-12-31",
+        "sourceTotal": 1270099000,
+        "sourceTotalId": "ubaWorld",
+        "sourceTotalDate": "2022-01-01"
+      },
+      "2024": {
+        "year": 2024,
+        "stock": [
+          38000000,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "iea2026",
+          "ubaWorld"
+        ],
+        "seriesKeys": [
+          "iea-cars-global",
+          null,
+          null,
+          null
+        ],
+        "date": "2024-12-31",
+        "sourceTotal": 1342447304,
+        "sourceTotalId": "ubaWorld",
+        "sourceTotalDate": "2024-01-01"
+      },
+      "2025": {
+        "year": 2025,
+        "stock": [
+          51000000,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "iea2026",
+          "ubaWorld"
+        ],
+        "seriesKeys": [
+          "iea-cars-global",
+          null,
+          null,
+          null
+        ],
+        "date": "2025-12-31",
+        "sourceTotal": 1371876844,
+        "sourceTotalId": "ubaWorld",
+        "sourceTotalDate": "2025-01-01"
+      },
+      "2000": {
+        "year": 2000,
+        "stock": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "ubaWorld"
+        ],
+        "seriesKeys": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceTotal": 595065000,
+        "sourceTotalId": "ubaWorld",
+        "sourceTotalDate": "2000-01-01",
+        "date": "2000-01-01"
+      },
+      "2001": {
+        "year": 2001,
+        "stock": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "ubaWorld"
+        ],
+        "seriesKeys": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceTotal": 621942000,
+        "sourceTotalId": "ubaWorld",
+        "sourceTotalDate": "2001-01-01",
+        "date": "2001-01-01"
+      },
+      "2002": {
+        "year": 2002,
+        "stock": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "ubaWorld"
+        ],
+        "seriesKeys": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceTotal": 656124000,
+        "sourceTotalId": "ubaWorld",
+        "sourceTotalDate": "2002-01-01",
+        "date": "2002-01-01"
+      },
+      "2003": {
+        "year": 2003,
+        "stock": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "ubaWorld"
+        ],
+        "seriesKeys": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceTotal": 672816000,
+        "sourceTotalId": "ubaWorld",
+        "sourceTotalDate": "2003-01-01",
+        "date": "2003-01-01"
+      },
+      "2004": {
+        "year": 2004,
+        "stock": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "ubaWorld"
+        ],
+        "seriesKeys": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceTotal": 687664000,
+        "sourceTotalId": "ubaWorld",
+        "sourceTotalDate": "2004-01-01",
+        "date": "2004-01-01"
+      },
+      "2005": {
+        "year": 2005,
+        "stock": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "ubaWorld"
+        ],
+        "seriesKeys": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceTotal": 704977000,
+        "sourceTotalId": "ubaWorld",
+        "sourceTotalDate": "2005-01-01",
+        "date": "2005-01-01"
+      },
+      "2006": {
+        "year": 2006,
+        "stock": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "ubaWorld"
+        ],
+        "seriesKeys": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceTotal": 732666000,
+        "sourceTotalId": "ubaWorld",
+        "sourceTotalDate": "2006-01-01",
+        "date": "2006-01-01"
+      },
+      "2007": {
+        "year": 2007,
+        "stock": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "ubaWorld"
+        ],
+        "seriesKeys": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceTotal": 758574000,
+        "sourceTotalId": "ubaWorld",
+        "sourceTotalDate": "2007-01-01",
+        "date": "2007-01-01"
+      },
+      "2008": {
+        "year": 2008,
+        "stock": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "ubaWorld"
+        ],
+        "seriesKeys": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceTotal": 786128000,
+        "sourceTotalId": "ubaWorld",
+        "sourceTotalDate": "2008-01-01",
+        "date": "2008-01-01"
+      },
+      "2009": {
+        "year": 2009,
+        "stock": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "ubaWorld"
+        ],
+        "seriesKeys": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceTotal": 807081000,
+        "sourceTotalId": "ubaWorld",
+        "sourceTotalDate": "2009-01-01",
+        "date": "2009-01-01"
+      },
+      "2023": {
+        "year": 2023,
+        "stock": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "ubaWorld"
+        ],
+        "seriesKeys": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceTotal": 1312626000,
+        "sourceTotalId": "ubaWorld",
+        "sourceTotalDate": "2023-01-01",
+        "date": "2023-01-01"
+      }
+    },
+    "germany": {
+      "2000": {
+        "year": 2000,
+        "stock": [
+          2632,
+          null,
+          36868006,
+          5960676
+        ],
+        "sourceIds": [
+          "kba2016"
+        ],
+        "seriesKeys": [
+          "de-pre2008",
+          null,
+          "de-pre2008",
+          "de-pre2008"
+        ],
+        "date": "2000-07-01",
+        "sourceTotal": 42839906,
+        "sourceTotalId": "kba2016",
+        "sourceTotalDate": "2000-07-01"
+      },
+      "2005": {
+        "year": 2005,
+        "stock": [
+          2038,
+          null,
+          36256631,
+          9071536
+        ],
+        "sourceIds": [
+          "kba2016"
+        ],
+        "seriesKeys": [
+          "de-pre2008",
+          null,
+          "de-pre2008",
+          "de-pre2008"
+        ],
+        "date": "2005-01-01",
+        "sourceTotal": 45375526,
+        "sourceTotalId": "kba2016",
+        "sourceTotalDate": "2005-01-01"
+      },
+      "2007": {
+        "year": 2007,
+        "stock": [
+          1790,
+          11275,
+          35594333,
+          10819760
+        ],
+        "sourceIds": [
+          "kba2016"
+        ],
+        "seriesKeys": [
+          "de-pre2008",
+          "de-pre2008",
+          "de-pre2008",
+          "de-pre2008"
+        ],
+        "date": "2007-01-01",
+        "sourceTotal": 46569657,
+        "sourceTotalId": "kba2016",
+        "sourceTotalDate": "2007-01-01"
+      },
+      "2008": {
+        "year": 2008,
+        "stock": [
+          1436,
+          17307,
+          30905204,
+          10045903
+        ],
+        "sourceIds": [
+          "kba2016"
+        ],
+        "seriesKeys": [
+          "de-registered-2008plus",
+          "de-registered-2008plus",
+          "de-registered-2008plus",
+          "de-registered-2008plus"
+        ],
+        "date": "2008-01-01",
+        "sourceTotal": 41183594,
+        "sourceTotalId": "kba2016",
+        "sourceTotalDate": "2008-01-01"
+      },
+      "2009": {
+        "year": 2009,
+        "stock": [
+          1452,
+          22330,
+          30639015,
+          10290288
+        ],
+        "sourceIds": [
+          "kba2016"
+        ],
+        "seriesKeys": [
+          "de-registered-2008plus",
+          "de-registered-2008plus",
+          "de-registered-2008plus",
+          "de-registered-2008plus"
+        ],
+        "date": "2009-01-01",
+        "sourceTotal": 41321171,
+        "sourceTotalId": "kba2016",
+        "sourceTotalDate": "2009-01-01"
+      },
+      "2010": {
+        "year": 2010,
+        "stock": [
+          1588,
+          28862,
+          30449617,
+          10817769
+        ],
+        "sourceIds": [
+          "kba2016"
+        ],
+        "seriesKeys": [
+          "de-registered-2008plus",
+          "de-registered-2008plus",
+          "de-registered-2008plus",
+          "de-registered-2008plus"
+        ],
+        "date": "2010-01-01",
+        "sourceTotal": 41737627,
+        "sourceTotalId": "kba2016",
+        "sourceTotalDate": "2010-01-01"
+      },
+      "2011": {
+        "year": 2011,
+        "stock": [
+          2307,
+          37256,
+          30487578,
+          11266644
+        ],
+        "sourceIds": [
+          "kba2016"
+        ],
+        "seriesKeys": [
+          "de-registered-2008plus",
+          "de-registered-2008plus",
+          "de-registered-2008plus",
+          "de-registered-2008plus"
+        ],
+        "date": "2011-01-01",
+        "sourceTotal": 42301563,
+        "sourceTotalId": "kba2016",
+        "sourceTotalDate": "2011-01-01"
+      },
+      "2012": {
+        "year": 2012,
+        "stock": [
+          4541,
+          47642,
+          30452019,
+          11891375
+        ],
+        "sourceIds": [
+          "kba2016"
+        ],
+        "seriesKeys": [
+          "de-registered-2008plus",
+          "de-registered-2008plus",
+          "de-registered-2008plus",
+          "de-registered-2008plus"
+        ],
+        "date": "2012-01-01",
+        "sourceTotal": 42927647,
+        "sourceTotalId": "kba2016",
+        "sourceTotalDate": "2012-01-01"
+      },
+      "2013": {
+        "year": 2013,
+        "stock": [
+          7114,
+          64995,
+          30206742,
+          12578950
+        ],
+        "sourceIds": [
+          "ubaFuel",
+          "ubaDECN"
+        ],
+        "seriesKeys": [
+          "de-registered-2008plus",
+          "de-registered-2008plus",
+          "de-registered-2008plus",
+          "de-registered-2008plus"
+        ],
+        "date": "2013-01-01",
+        "sourceTotal": 43431000,
+        "sourceTotalId": "ubaDECN",
+        "sourceTotalDate": "2013-01-01"
+      },
+      "2014": {
+        "year": 2014,
+        "stock": [
+          12156,
+          85575,
+          29956296,
+          13215190
+        ],
+        "sourceIds": [
+          "ubaFuel",
+          "ubaDECN"
+        ],
+        "seriesKeys": [
+          "de-registered-2008plus",
+          "de-registered-2008plus",
+          "de-registered-2008plus",
+          "de-registered-2008plus"
+        ],
+        "date": "2014-01-01",
+        "sourceTotal": 43851000,
+        "sourceTotalId": "ubaDECN",
+        "sourceTotalDate": "2014-01-01"
+      },
+      "2015": {
+        "year": 2015,
+        "stock": [
+          18948,
+          107754,
+          29837614,
+          13861404
+        ],
+        "sourceIds": [
+          "ubaFuel",
+          "ubaDECN"
+        ],
+        "seriesKeys": [
+          "de-registered-2008plus",
+          "de-registered-2008plus",
+          "de-registered-2008plus",
+          "de-registered-2008plus"
+        ],
+        "date": "2015-01-01",
+        "sourceTotal": 44403000,
+        "sourceTotalId": "ubaDECN",
+        "sourceTotalDate": "2015-01-01"
+      },
+      "2016": {
+        "year": 2016,
+        "stock": [
+          25502,
+          130365,
+          29825223,
+          14532426
+        ],
+        "sourceIds": [
+          "ubaFuel",
+          "ubaDECN"
+        ],
+        "seriesKeys": [
+          "de-registered-2008plus",
+          "de-registered-2008plus",
+          "de-registered-2008plus",
+          "de-registered-2008plus"
+        ],
+        "date": "2016-01-01",
+        "sourceTotal": 45071000,
+        "sourceTotalId": "ubaDECN",
+        "sourceTotalDate": "2016-01-01"
+      },
+      "2017": {
+        "year": 2017,
+        "stock": [
+          34022,
+          165405,
+          29978635,
+          15089392
+        ],
+        "sourceIds": [
+          "ubaFuel",
+          "ubaDECN"
+        ],
+        "seriesKeys": [
+          "de-registered-2008plus",
+          "de-registered-2008plus",
+          "de-registered-2008plus",
+          "de-registered-2008plus"
+        ],
+        "date": "2017-01-01",
+        "sourceTotal": 45803560,
+        "sourceTotalId": "ubaDECN",
+        "sourceTotalDate": "2017-01-01"
+      },
+      "2018": {
+        "year": 2018,
+        "stock": [
+          53861,
+          236710,
+          30451268,
+          15225296
+        ],
+        "sourceIds": [
+          "ubaFuel",
+          "ubaDECN"
+        ],
+        "seriesKeys": [
+          "de-registered-2008plus",
+          "de-registered-2008plus",
+          "de-registered-2008plus",
+          "de-registered-2008plus"
+        ],
+        "date": "2018-01-01",
+        "sourceTotal": 46474594,
+        "sourceTotalId": "ubaDECN",
+        "sourceTotalDate": "2018-01-01"
+      },
+      "2019": {
+        "year": 2019,
+        "stock": [
+          83175,
+          341411,
+          31031021,
+          15153364
+        ],
+        "sourceIds": [
+          "ubaFuel",
+          "ubaDECN"
+        ],
+        "seriesKeys": [
+          "de-registered-2008plus",
+          "de-registered-2008plus",
+          "de-registered-2008plus",
+          "de-registered-2008plus"
+        ],
+        "date": "2019-01-01",
+        "sourceTotal": 47096000,
+        "sourceTotalId": "ubaDECN",
+        "sourceTotalDate": "2019-01-01"
+      },
+      "2020": {
+        "year": 2020,
+        "stock": [
+          136617,
+          539383,
+          31464680,
+          15111382
+        ],
+        "sourceIds": [
+          "ubaFuel",
+          "ubaDECN"
+        ],
+        "seriesKeys": [
+          "de-registered-2008plus",
+          "de-registered-2008plus",
+          "de-registered-2008plus",
+          "de-registered-2008plus"
+        ],
+        "date": "2020-01-01",
+        "sourceTotal": 47716000,
+        "sourceTotalId": "ubaDECN",
+        "sourceTotalDate": "2020-01-01"
+      },
+      "2022": {
+        "year": 2022,
+        "stock": [
+          618460,
+          1669051,
+          31005134,
+          14824262
+        ],
+        "sourceIds": [
+          "ubaFuel",
+          "ubaDECN"
+        ],
+        "seriesKeys": [
+          "de-registered-2008plus",
+          "de-registered-2008plus",
+          "de-registered-2008plus",
+          "de-registered-2008plus"
+        ],
+        "date": "2022-01-01",
+        "sourceTotal": 48540900,
+        "sourceTotalId": "ubaDECN",
+        "sourceTotalDate": "2022-01-01"
+      },
+      "2023": {
+        "year": 2023,
+        "stock": [
+          1013009,
+          2337897,
+          30556538,
+          14437489
+        ],
+        "sourceIds": [
+          "ubaFuel",
+          "ubaDECN"
+        ],
+        "seriesKeys": [
+          "de-registered-2008plus",
+          "de-registered-2008plus",
+          "de-registered-2008plus",
+          "de-registered-2008plus"
+        ],
+        "date": "2023-01-01",
+        "sourceTotal": 48763000,
+        "sourceTotalId": "ubaDECN",
+        "sourceTotalDate": "2023-01-01"
+      },
+      "2024": {
+        "year": 2024,
+        "stock": [
+          1408681,
+          2911262,
+          30235032,
+          14142184
+        ],
+        "sourceIds": [
+          "ubaFuel",
+          "ubaDECN"
+        ],
+        "seriesKeys": [
+          "de-registered-2008plus",
+          "de-registered-2008plus",
+          "de-registered-2008plus",
+          "de-registered-2008plus"
+        ],
+        "date": "2024-01-01",
+        "sourceTotal": 49099000,
+        "sourceTotalId": "ubaDECN",
+        "sourceTotalDate": "2024-01-01"
+      },
+      "2025": {
+        "year": 2025,
+        "stock": [
+          1651643,
+          3556956,
+          29918520,
+          13829261
+        ],
+        "sourceIds": [
+          "ubaFuel",
+          "ubaDECN"
+        ],
+        "seriesKeys": [
+          "de-registered-2008plus",
+          "de-registered-2008plus",
+          "de-registered-2008plus",
+          "de-registered-2008plus"
+        ],
+        "date": "2025-01-01",
+        "sourceTotal": 49339166,
+        "sourceTotalId": "ubaDECN",
+        "sourceTotalDate": "2025-01-01"
+      },
+      "2026": {
+        "year": 2026,
+        "stock": [
+          2034260,
+          4362536,
+          29343732,
+          13385662
+        ],
+        "sourceIds": [
+          "ubaFuel"
+        ],
+        "seriesKeys": [
+          "de-registered-2008plus",
+          "de-registered-2008plus",
+          "de-registered-2008plus",
+          "de-registered-2008plus"
+        ],
+        "date": "2026-01-01"
+      },
+      "2001": {
+        "year": 2001,
+        "stock": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "ubaDECN"
+        ],
+        "seriesKeys": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceTotal": 43772000,
+        "sourceTotalId": "ubaDECN",
+        "sourceTotalDate": "2001-01-01",
+        "date": "2001-01-01"
+      },
+      "2002": {
+        "year": 2002,
+        "stock": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "ubaDECN"
+        ],
+        "seriesKeys": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceTotal": 44383000,
+        "sourceTotalId": "ubaDECN",
+        "sourceTotalDate": "2002-01-01",
+        "date": "2002-01-01"
+      },
+      "2003": {
+        "year": 2003,
+        "stock": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "ubaDECN"
+        ],
+        "seriesKeys": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceTotal": 44657000,
+        "sourceTotalId": "ubaDECN",
+        "sourceTotalDate": "2003-01-01",
+        "date": "2003-01-01"
+      },
+      "2004": {
+        "year": 2004,
+        "stock": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "ubaDECN"
+        ],
+        "seriesKeys": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceTotal": 45022000,
+        "sourceTotalId": "ubaDECN",
+        "sourceTotalDate": "2004-01-01",
+        "date": "2004-01-01"
+      },
+      "2006": {
+        "year": 2006,
+        "stock": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "ubaDECN"
+        ],
+        "seriesKeys": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceTotal": 46090000,
+        "sourceTotalId": "ubaDECN",
+        "sourceTotalDate": "2006-01-01",
+        "date": "2006-01-01"
+      },
+      "2021": {
+        "year": 2021,
+        "stock": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "ubaDECN"
+        ],
+        "seriesKeys": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceTotal": 48249000,
+        "sourceTotalId": "ubaDECN",
+        "sourceTotalDate": "2021-01-01",
+        "date": "2021-01-01"
+      }
+    },
+    "eu": {
+      "2013": {
+        "year": 2013,
+        "stock": [
+          50278,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "eurostat"
+        ],
+        "seriesKeys": [
+          "eu27-eurostat",
+          null,
+          null,
+          null
+        ],
+        "date": "2013-12-31",
+        "sourceTotal": 221705164,
+        "sourceTotalId": "eurostat",
+        "sourceTotalDate": "2013-12-31"
+      },
+      "2014": {
+        "year": 2014,
+        "stock": [
+          76277,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "eurostat"
+        ],
+        "seriesKeys": [
+          "eu27-eurostat",
+          null,
+          null,
+          null
+        ],
+        "date": "2014-12-31",
+        "sourceTotal": 224317337,
+        "sourceTotalId": "eurostat",
+        "sourceTotalDate": "2014-12-31"
+      },
+      "2015": {
+        "year": 2015,
+        "stock": [
+          120093,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "eurostat"
+        ],
+        "seriesKeys": [
+          "eu27-eurostat",
+          null,
+          null,
+          null
+        ],
+        "date": "2015-12-31",
+        "sourceTotal": 225651590,
+        "sourceTotalId": "eurostat",
+        "sourceTotalDate": "2015-12-31"
+      },
+      "2016": {
+        "year": 2016,
+        "stock": [
+          168279,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "eurostat"
+        ],
+        "seriesKeys": [
+          "eu27-eurostat",
+          null,
+          null,
+          null
+        ],
+        "date": "2016-12-31",
+        "sourceTotal": 230249119,
+        "sourceTotalId": "eurostat",
+        "sourceTotalDate": "2016-12-31"
+      },
+      "2017": {
+        "year": 2017,
+        "stock": [
+          246125,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "eurostat"
+        ],
+        "seriesKeys": [
+          "eu27-eurostat",
+          null,
+          null,
+          null
+        ],
+        "date": "2017-12-31",
+        "sourceTotal": 236047946,
+        "sourceTotalId": "eurostat",
+        "sourceTotalDate": "2017-12-31"
+      },
+      "2018": {
+        "year": 2018,
+        "stock": [
+          357373,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "eurostat"
+        ],
+        "seriesKeys": [
+          "eu27-eurostat",
+          null,
+          null,
+          null
+        ],
+        "date": "2018-12-31",
+        "sourceTotal": 240409941,
+        "sourceTotalId": "eurostat",
+        "sourceTotalDate": "2018-12-31"
+      },
+      "2019": {
+        "year": 2019,
+        "stock": [
+          590389,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "eurostat"
+        ],
+        "seriesKeys": [
+          "eu27-eurostat",
+          null,
+          null,
+          null
+        ],
+        "date": "2019-12-31",
+        "sourceTotal": 244852589,
+        "sourceTotalId": "eurostat",
+        "sourceTotalDate": "2019-12-31"
+      },
+      "2020": {
+        "year": 2020,
+        "stock": [
+          1093868,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "eurostat"
+        ],
+        "seriesKeys": [
+          "eu27-eurostat",
+          null,
+          null,
+          null
+        ],
+        "date": "2020-12-31",
+        "sourceTotal": 247658524,
+        "sourceTotalId": "eurostat",
+        "sourceTotalDate": "2020-12-31"
+      },
+      "2021": {
+        "year": 2021,
+        "stock": [
+          1941460,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "eurostat"
+        ],
+        "seriesKeys": [
+          "eu27-eurostat",
+          null,
+          null,
+          null
+        ],
+        "date": "2021-12-31",
+        "sourceTotal": 250251134,
+        "sourceTotalId": "eurostat",
+        "sourceTotalDate": "2021-12-31"
+      },
+      "2022": {
+        "year": 2022,
+        "stock": [
+          3015656,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "eurostat"
+        ],
+        "seriesKeys": [
+          "eu27-eurostat",
+          null,
+          null,
+          null
+        ],
+        "date": "2022-12-31",
+        "sourceTotal": 252729075,
+        "sourceTotalId": "eurostat",
+        "sourceTotalDate": "2022-12-31"
+      },
+      "2023": {
+        "year": 2023,
+        "stock": [
+          4434882,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "eurostat"
+        ],
+        "seriesKeys": [
+          "eu27-eurostat",
+          null,
+          null,
+          null
+        ],
+        "date": "2023-12-31",
+        "sourceTotal": 256229781,
+        "sourceTotalId": "eurostat",
+        "sourceTotalDate": "2023-12-31"
+      },
+      "2024": {
+        "year": 2024,
+        "stock": [
+          5774179,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "eurostat"
+        ],
+        "seriesKeys": [
+          "eu27-eurostat",
+          null,
+          null,
+          null
+        ],
+        "date": "2024-12-31",
+        "sourceTotal": 260195837,
+        "sourceTotalId": "eurostat",
+        "sourceTotalDate": "2024-12-31"
+      },
+      "2025": {
+        "year": 2025,
+        "stock": [
+          7592725,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "eurostat"
+        ],
+        "seriesKeys": [
+          "eu27-eurostat",
+          null,
+          null,
+          null
+        ],
+        "date": "2025-12-31",
+        "sourceTotal": 263847868,
+        "sourceTotalId": "eurostat",
+        "sourceTotalDate": "2025-12-31"
+      }
+    },
+    "china": {
+      "2010": {
+        "year": 2010,
+        "stock": [
+          1569,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "iea2023",
+          "ubaDECN"
+        ],
+        "seriesKeys": [
+          "iea-cars-china",
+          null,
+          null,
+          null
+        ],
+        "date": "2010-12-31",
+        "sourceTotal": 31360000,
+        "sourceTotalId": "ubaDECN",
+        "sourceTotalDate": "2010-01-01"
+      },
+      "2011": {
+        "year": 2011,
+        "stock": [
+          6319,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "iea2023",
+          "ubaDECN"
+        ],
+        "seriesKeys": [
+          "iea-cars-china",
+          null,
+          null,
+          null
+        ],
+        "date": "2011-12-31",
+        "sourceTotal": 40290000,
+        "sourceTotalId": "ubaDECN",
+        "sourceTotalDate": "2011-01-01"
+      },
+      "2012": {
+        "year": 2012,
+        "stock": [
+          15959,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "iea2023",
+          "ubaDECN"
+        ],
+        "seriesKeys": [
+          "iea-cars-china",
+          null,
+          null,
+          null
+        ],
+        "date": "2012-12-31",
+        "sourceTotal": 49620000,
+        "sourceTotalId": "ubaDECN",
+        "sourceTotalDate": "2012-01-01"
+      },
+      "2013": {
+        "year": 2013,
+        "stock": [
+          30569,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "iea2023",
+          "ubaDECN"
+        ],
+        "seriesKeys": [
+          "iea-cars-china",
+          null,
+          null,
+          null
+        ],
+        "date": "2013-12-31",
+        "sourceTotal": 59890000,
+        "sourceTotalId": "ubaDECN",
+        "sourceTotalDate": "2013-01-01"
+      },
+      "2014": {
+        "year": 2014,
+        "stock": [
+          59400,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "iea2023",
+          "ubaDECN"
+        ],
+        "seriesKeys": [
+          "iea-cars-china",
+          null,
+          null,
+          null
+        ],
+        "date": "2014-12-31",
+        "sourceTotal": 71260000,
+        "sourceTotalId": "ubaDECN",
+        "sourceTotalDate": "2014-01-01"
+      },
+      "2015": {
+        "year": 2015,
+        "stock": [
+          206119,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "iea2023",
+          "ubaDECN"
+        ],
+        "seriesKeys": [
+          "iea-cars-china",
+          null,
+          null,
+          null
+        ],
+        "date": "2015-12-31",
+        "sourceTotal": 83070000,
+        "sourceTotalId": "ubaDECN",
+        "sourceTotalDate": "2015-01-01"
+      },
+      "2016": {
+        "year": 2016,
+        "stock": [
+          463119,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "iea2023",
+          "ubaDECN"
+        ],
+        "seriesKeys": [
+          "iea-cars-china",
+          null,
+          null,
+          null
+        ],
+        "date": "2016-12-31",
+        "sourceTotal": 95080000,
+        "sourceTotalId": "ubaDECN",
+        "sourceTotalDate": "2016-01-01"
+      },
+      "2017": {
+        "year": 2017,
+        "stock": [
+          931119,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "iea2023",
+          "ubaDECN"
+        ],
+        "seriesKeys": [
+          "iea-cars-china",
+          null,
+          null,
+          null
+        ],
+        "date": "2017-12-31",
+        "sourceTotal": 108760000,
+        "sourceTotalId": "ubaDECN",
+        "sourceTotalDate": "2017-01-01"
+      },
+      "2018": {
+        "year": 2018,
+        "stock": [
+          1746989,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "iea2023",
+          "ubaDECN"
+        ],
+        "seriesKeys": [
+          "iea-cars-china",
+          null,
+          null,
+          null
+        ],
+        "date": "2018-12-31",
+        "sourceTotal": 121850000,
+        "sourceTotalId": "ubaDECN",
+        "sourceTotalDate": "2018-01-01"
+      },
+      "2019": {
+        "year": 2019,
+        "stock": [
+          2581186,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "iea2023",
+          "ubaDECN"
+        ],
+        "seriesKeys": [
+          "iea-cars-china",
+          null,
+          null,
+          null
+        ],
+        "date": "2019-12-31",
+        "sourceTotal": 134510000,
+        "sourceTotalId": "ubaDECN",
+        "sourceTotalDate": "2019-01-01"
+      },
+      "2020": {
+        "year": 2020,
+        "stock": [
+          3502140,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "iea2023",
+          "ubaDECN"
+        ],
+        "seriesKeys": [
+          "iea-cars-china",
+          null,
+          null,
+          null
+        ],
+        "date": "2020-12-31",
+        "sourceTotal": 146440000,
+        "sourceTotalId": "ubaDECN",
+        "sourceTotalDate": "2020-01-01"
+      },
+      "2021": {
+        "year": 2021,
+        "stock": [
+          6246490,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "iea2023",
+          "ubaDECN"
+        ],
+        "seriesKeys": [
+          "iea-cars-china",
+          null,
+          null,
+          null
+        ],
+        "date": "2021-12-31",
+        "sourceTotal": 156400000,
+        "sourceTotalId": "ubaDECN",
+        "sourceTotalDate": "2021-01-01"
+      },
+      "2022": {
+        "year": 2022,
+        "stock": [
+          10689015,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "iea2023",
+          "ubaDECN"
+        ],
+        "seriesKeys": [
+          "iea-cars-china",
+          null,
+          null,
+          null
+        ],
+        "date": "2022-12-31",
+        "sourceTotal": 167390000,
+        "sourceTotalId": "ubaDECN",
+        "sourceTotalDate": "2022-01-01"
+      },
+      "2024": {
+        "year": 2024,
+        "stock": [
+          22000000,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "iea2026",
+          "ubaDECN"
+        ],
+        "seriesKeys": [
+          "iea-cars-china",
+          null,
+          null,
+          null
+        ],
+        "date": "2024-12-31",
+        "sourceTotal": 186680000,
+        "sourceTotalId": "ubaDECN",
+        "sourceTotalDate": "2024-01-01"
+      },
+      "2025": {
+        "year": 2025,
+        "stock": [
+          29000000,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "iea2026",
+          "ubaDECN"
+        ],
+        "seriesKeys": [
+          "iea-cars-china",
+          null,
+          null,
+          null
+        ],
+        "date": "2025-12-31",
+        "sourceTotal": 193430000,
+        "sourceTotalId": "ubaDECN",
+        "sourceTotalDate": "2025-01-01"
+      },
+      "2000": {
+        "year": 2000,
+        "stock": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "ubaDECN"
+        ],
+        "seriesKeys": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceTotal": 6870000,
+        "sourceTotalId": "ubaDECN",
+        "sourceTotalDate": "2000-01-01",
+        "date": "2000-01-01"
+      },
+      "2001": {
+        "year": 2001,
+        "stock": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "ubaDECN"
+        ],
+        "seriesKeys": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceTotal": 7402000,
+        "sourceTotalId": "ubaDECN",
+        "sourceTotalDate": "2001-01-01",
+        "date": "2001-01-01"
+      },
+      "2002": {
+        "year": 2002,
+        "stock": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "ubaDECN"
+        ],
+        "seriesKeys": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceTotal": 8000000,
+        "sourceTotalId": "ubaDECN",
+        "sourceTotalDate": "2002-01-01",
+        "date": "2002-01-01"
+      },
+      "2003": {
+        "year": 2003,
+        "stock": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "ubaDECN"
+        ],
+        "seriesKeys": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceTotal": 8600000,
+        "sourceTotalId": "ubaDECN",
+        "sourceTotalDate": "2003-01-01",
+        "date": "2003-01-01"
+      },
+      "2004": {
+        "year": 2004,
+        "stock": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "ubaDECN"
+        ],
+        "seriesKeys": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceTotal": 10000000,
+        "sourceTotalId": "ubaDECN",
+        "sourceTotalDate": "2004-01-01",
+        "date": "2004-01-01"
+      },
+      "2005": {
+        "year": 2005,
+        "stock": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "ubaDECN"
+        ],
+        "seriesKeys": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceTotal": 12000000,
+        "sourceTotalId": "ubaDECN",
+        "sourceTotalDate": "2005-01-01",
+        "date": "2005-01-01"
+      },
+      "2006": {
+        "year": 2006,
+        "stock": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "ubaDECN"
+        ],
+        "seriesKeys": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceTotal": 15000000,
+        "sourceTotalId": "ubaDECN",
+        "sourceTotalDate": "2006-01-01",
+        "date": "2006-01-01"
+      },
+      "2007": {
+        "year": 2007,
+        "stock": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "ubaDECN"
+        ],
+        "seriesKeys": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceTotal": 18800000,
+        "sourceTotalId": "ubaDECN",
+        "sourceTotalDate": "2007-01-01",
+        "date": "2007-01-01"
+      },
+      "2009": {
+        "year": 2009,
+        "stock": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "ubaDECN"
+        ],
+        "seriesKeys": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceTotal": 27800000,
+        "sourceTotalId": "ubaDECN",
+        "sourceTotalDate": "2009-01-01",
+        "date": "2009-01-01"
+      },
+      "2023": {
+        "year": 2023,
+        "stock": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "ubaDECN"
+        ],
+        "seriesKeys": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "sourceTotal": 177400000,
+        "sourceTotalId": "ubaDECN",
+        "sourceTotalDate": "2023-01-01",
+        "date": "2023-01-01"
+      }
+    },
+    "usa": {
+      "2010": {
+        "year": 2010,
+        "stock": [
+          3774,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "iea2023"
+        ],
+        "seriesKeys": [
+          "iea-cars-usa",
+          null,
+          null,
+          null
+        ],
+        "date": "2010-12-31"
+      },
+      "2011": {
+        "year": 2011,
+        "stock": [
+          13524,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "iea2023"
+        ],
+        "seriesKeys": [
+          "iea-cars-usa",
+          null,
+          null,
+          null
+        ],
+        "date": "2011-12-31"
+      },
+      "2012": {
+        "year": 2012,
+        "stock": [
+          28174,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "iea2023"
+        ],
+        "seriesKeys": [
+          "iea-cars-usa",
+          null,
+          null,
+          null
+        ],
+        "date": "2012-12-31"
+      },
+      "2013": {
+        "year": 2013,
+        "stock": [
+          75864,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "iea2023"
+        ],
+        "seriesKeys": [
+          "iea-cars-usa",
+          null,
+          null,
+          null
+        ],
+        "date": "2013-12-31"
+      },
+      "2014": {
+        "year": 2014,
+        "stock": [
+          139284,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "iea2023"
+        ],
+        "seriesKeys": [
+          "iea-cars-usa",
+          null,
+          null,
+          null
+        ],
+        "date": "2014-12-31"
+      },
+      "2015": {
+        "year": 2015,
+        "stock": [
+          210328,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "iea2023"
+        ],
+        "seriesKeys": [
+          "iea-cars-usa",
+          null,
+          null,
+          null
+        ],
+        "date": "2015-12-31"
+      },
+      "2016": {
+        "year": 2016,
+        "stock": [
+          297059,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "iea2023"
+        ],
+        "seriesKeys": [
+          "iea-cars-usa",
+          null,
+          null,
+          null
+        ],
+        "date": "2016-12-31"
+      },
+      "2017": {
+        "year": 2017,
+        "stock": [
+          401546,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "iea2023"
+        ],
+        "seriesKeys": [
+          "iea-cars-usa",
+          null,
+          null,
+          null
+        ],
+        "date": "2017-12-31"
+      },
+      "2018": {
+        "year": 2018,
+        "stock": [
+          640369,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "iea2023"
+        ],
+        "seriesKeys": [
+          "iea-cars-usa",
+          null,
+          null,
+          null
+        ],
+        "date": "2018-12-31"
+      },
+      "2019": {
+        "year": 2019,
+        "stock": [
+          882281,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "iea2023"
+        ],
+        "seriesKeys": [
+          "iea-cars-usa",
+          null,
+          null,
+          null
+        ],
+        "date": "2019-12-31"
+      },
+      "2020": {
+        "year": 2020,
+        "stock": [
+          1138654,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "iea2023"
+        ],
+        "seriesKeys": [
+          "iea-cars-usa",
+          null,
+          null,
+          null
+        ],
+        "date": "2020-12-31"
+      },
+      "2021": {
+        "year": 2021,
+        "stock": [
+          1454000,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "iea2023"
+        ],
+        "seriesKeys": [
+          "iea-cars-usa",
+          null,
+          null,
+          null
+        ],
+        "date": "2021-12-31"
+      },
+      "2022": {
+        "year": 2022,
+        "stock": [
+          2137432,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "iea2023"
+        ],
+        "seriesKeys": [
+          "iea-cars-usa",
+          null,
+          null,
+          null
+        ],
+        "date": "2022-12-31"
+      },
+      "2024": {
+        "year": 2024,
+        "stock": [
+          4700000,
+          null,
+          null,
+          null
+        ],
+        "sourceIds": [
+          "iea2026"
+        ],
+        "seriesKeys": [
+          "iea-cars-usa",
+          null,
+          null,
+          null
+        ],
+        "date": "2024-12-31"
+      },
+      "2025": {
+        "year": 2025,
+        "stock": [
+          5689100,
+          15695300,
+          260243200,
+          10551500
+        ],
+        "sourceIds": [
+          "afdc2025"
+        ],
+        "seriesKeys": [
+          "us-afdc-light-duty",
+          "us-afdc-light-duty",
+          "us-afdc-light-duty",
+          "us-afdc-light-duty"
+        ],
+        "date": "2025-12-31"
+      }
+    }
+  }
+}
