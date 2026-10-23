@@ -1,14 +1,24 @@
-# Global Drive Clock V3.2.2
+# Global Drive Clock V3.2.3
 
-Lokaler Stand: 23. Oktober 2026. Cache-Kennung: **3.2.2.
+Lokaler Stand: 23. Oktober 2026. Cache-Kennung: **3.2.3-2**. Alle Dateien und Unterordner des ZIP gemeinsam in das Website-Wurzelverzeichnis übernehmen. Kein Build erforderlich. Dieses Paket bestätigt keine Veröffentlichung auf GitHub Pages.
+
+## Änderungen in V3.2.3
+
+- Live-Session auf Desktop und Mobil mit genau einer Nachkommastelle. Ganze Zahl und Vorzeichen bleiben groß; Dezimaltrennzeichen und Nachkommastelle erscheinen in 52 % der Schriftgröße. Die Anzeige verwendet die kontinuierliche Modelländerung statt bereits gerundeter Ganzzahlen. Auch diese Anzeige aktualisiert vorhandene Elemente.
+- Live-Session auf Desktop und Mobil als erster Inhaltsbereich unter dem Kopfbereich; Navigation entsprechend angeordnet. Die Reihenfolge der übrigen Bereiche bleibt erhalten.
+- Nur mobil (bis 650 px): Zukunftskurve und Endjahr nebeneinander, Beschriftungen jeweils darüber. Die große separate Jahreszahl entfällt; das Jahr über dem Reglerpunkt bleibt erhalten. Direkt auf den Regler folgt das Balkendiagramm.
+- Nur mobil: Erklärungstexte und Quellenangaben stehen im eingeklappten Menü „Info zur Zeitreise“ unter dem Diagramm, danach folgen „Annahmen und Berechnung anpassen“ und die bisherigen Schlussinformationen. Die Kennzeichnung als Quellenwert, Modellschätzung oder Szenario steht auch am Info-Menü.
+- Nur mobil: stabile Anzeigeelemente, unveränderte Texte werden nicht erneut geschrieben, höchstens zehn Aktualisierungen pro Sekunde; die geschlossene Methodik erhält keine laufenden Wertänderungen. Zahlen werden weiterhin aus der tatsächlich verstrichenen Zeit berechnet. Einheitenbeschriftungen reservieren Platz für zwei Zeilen.
+- Keine neue Datenrecherche oder Änderung von Raten, Annahmen, Formeln und Quellenzahlen. Das finale Vorschaubild und die bereinigten Dateien aus V3.2.2 sind übernommen.
+
 ## Gestaltung und Bedienung
 
 Die Seite hat sechs eigenständige Bereiche mit derselben Rahmen-, Flächen-, Schrift- und Abstandslogik:
 
-1. Fahrzeugbestand und aktuelle Änderungsraten
-2. Diagramm der modellierten Jahresänderungen
-3. Zeitreise mit Quellenrückblick und Zukunftsszenario
-4. Live-Session: Bestandsänderung seit Seitenaufruf
+1. Live-Session: Bestandsänderung seit Seitenaufruf
+2. Fahrzeugbestand und aktuelle Änderungsraten
+3. Diagramm der modellierten Jahresänderungen
+4. Zeitreise mit Quellenrückblick und Zukunftsszenario
 5. Kraftstoff-/CO₂-Schätzung während des Besuchs
 6. Brand-Szenariomodell mit Referenzratenvergleich
 
@@ -42,9 +52,11 @@ Kraftstoff/CO₂ sind modellierte Mengen der gesamten Flotte über die Besuchsda
 
 ## Prüfung und Dateien
 
-Die vor dieser Änderung ausgeführten Funktions- und Zahlenprüfungen des Stands **3.2.2-3** sind in [validation-v3-2-2.json](validation-v3-2-2.json) aufgeführt: 8.250 Zukunftskombinationen, Startwerte und Anfangsableitungen, nicht negative Bestände und stimmige Summen, sechs gekoppelte Umschalter, zehn UI-Sprachen, Jahresstart und Zeitauswahl, unveränderliche historische Werte, Methodik-Ziele und CSV-Ausgabe. Diese Prüfungen verwenden eine DOM-Simulation und kein grafisches Browserfenster. Eine grafische Browserprüfung war durch die Sicherheitsrichtlinie für den lokalen Datei-Aufruf blockiert. Die Prüfungen belegen weder empirische Prognosegenauigkeit noch ein kontrolliertes Layout auf jedem Gerät. Für **3.2.2-5** (Kurvendiagramm entfernt, Balkendiagramm beibehalten, Anzeige und Export ab 2008, mitwandernde Jahreszahl am Reglerpunkt) wurden keine neuen Funktionstests ausgeführt; der Bericht bleibt als historischer Beleg erhalten.
+Die aktuellen Prüfungen sind in [validation-v3-2-3.json](validation-v3-2-3.json) dokumentiert: zwölf Funktions- und Vergleichsprüfungen mit DOM-Simulation, zehn Sprachen, fünf Regionen, gekoppelten Umschaltern, Jahreswahl, Methodenlinks, Ansichtswechseln und Zahlenvergleich mit V3.2.2. Die Live-Session-Reihenfolge sowie kontinuierliche Dezimalwerte, Sprachformatierung und stabile Zahlenelemente sind für Desktop und Mobil geprüft. Die numerischen Modellparameter, Historienwerte und Szenariorechnung entsprechen V3.2.2.
 
-`validation.json`, `data-review-v3-1-3.json` und `source-link-audit.json` sind übernommene historische Prüfbelege; ihre Ergebnisse werden nicht als neue V3.2.2-Prüfungen ausgegeben. Quellen der bisherigen Modellparameter wurden am 20. Oktober 2026 geprüft; zusätzliche Historien-/Szenarioquellen am 23. Oktober 2026.
+Bei 60 simulierten Animationsschritten pro Sekunde erzeugte V3.2.2 mobil 2.160 neue Elemente und ersetzte die vier Kraftstoff-/CO₂-Container 240-mal. V3.2.3 erzeugt nach dem Aufbau keine neuen Anzeigeelemente, ersetzt keine Container und zeichnet die mobilen Werte höchstens zehnmal pro Sekunde. Das Desktop-Verhalten bleibt erhalten. Diese Prüfung ersetzt keinen Scrolltest auf einem physischen iPhone und keine grafische Layoutkontrolle.
+
+`validation-v3-2-2.json`, `validation.json`, `data-review-v3-1-3.json` und `source-link-audit.json` bleiben historische Prüfbelege mit ihrem ursprünglichen Geltungsbereich. Quellen der bisherigen Modellparameter wurden am 20. Oktober 2026 geprüft; zusätzliche Historien-/Szenarioquellen am 23. Oktober 2026.
 
 - `data.js` / `model.js`: bisherige Parameter und Bestandsbilanz
 - `scenario.js`: getrennte S-Kurven-/Linearrechnung
@@ -62,4 +74,4 @@ Quellendaten behalten die jeweiligen Lizenzen. IEA-Grafikauszug: CC BY 4.0; KBA-
 
 Aktiv ist [social-preview-v3-2-2-v5.png](social-preview-v3-2-2-v5.png), 1734 × 907 Pixel. Typografisch getrennte kräftige, schmale Wortmarke „Global Drive Clock“ und etwas kleinere geometrische Leitfrage „Wer fährt in Zukunft?“ mit Diesel, Benzin, Hybrid und Elektro. Die vier Themen Antriebswandel, Zeitreise 2008–2100, CO₂ im Vergleich und Brandmodell stehen in großen Textfeldern ohne Symbole. Die Einordnung „Bestände als Modell · Zukunft als Szenario“ bleibt im Bild sichtbar. Der Planet mit Uhrbogen ist verkleinert und von der Schrift abgesetzt.
 
-Open Graph und Twitter/X verwenden die neue Bildadresse und passende Titel sowie Alternativtexte. HTML und Bild gemeinsam veröffentlichen; Plattform-Caches können zunächst ältere Motive zeigen. Das Paket enthält nur das finale Vorschaubild und die verwendeten Website-Icons; frühere Motive und überholte Entwurfsnotizen wurden entfernt.
+Open Graph und Twitter/X verwenden die neue Bildadresse und passende Titel sowie Alternativtexte. HTML und Bild gemeinsam veröffentlichen; Plattform-Caches können zunächst ältere Motive zeigen. Das Paket enthält nur das finale Vorschaubild und die verwendeten Website-Icons; frühere Motive und überholte Entwurfsnotizen wurden entfernt. Der vollständige Bearbeitungsprompt des finalen Motivs steht in [SOCIAL-PREVIEW-V5.md](SOCIAL-PREVIEW-V5.md). Die Seitenressourcen behalten Kennung 3.2.3-2.

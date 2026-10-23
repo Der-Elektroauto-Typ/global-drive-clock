@@ -668,6 +668,47 @@
   let currentLang = "de";
   let currentMode = "global";
   let animationFrameScheduled = false;
+  const mobileQuery = window.matchMedia?.("(max-width: 650px)");
+  const isMobileView = () => Boolean(mobileQuery?.matches);
+  const mobileImpactNodes = new WeakMap();
+  let lastMobilePaint = -Infinity;
+  let lastMobileClock = "";
+  function setLiveText(node, text) {
+    if (node && (!isMobileView() || node.textContent !== text)) node.textContent = text;
+  }
+  function mobileMethodVisible() {
+    return !isMobileView() || el("methodDetails")?.hasAttribute("open");
+  }
+
+  function setupMobileTimeline() {
+    const info = el("scenarioMobileInfo"), body = el("scenarioMobileInfoBody");
+    const selectors = ["#scenarioSection .section-heading > p", "#scenarioSection .timeline-scope",
+      "#projectionAssumptions", "#projectionStatus", "#scenarioSection .scenario-result-heading",
+      "#historyCoverage", "#historicalSourceTotal", "#historySources", "#scenarioSection p[data-i18n='historyIntro']"];
+    const slots = selectors.map(selector => {
+      const node = document.querySelector(selector), marker = document.createComment("desktop timeline position");
+      node.parentNode.insertBefore(marker, node);
+      return { node, marker };
+    });
+    let previous;
+    const arrange = () => {
+      const mobile = isMobileView();
+      if (mobile === previous) return;
+      previous = mobile;
+      slots.forEach(({ node, marker }) => {
+        if (mobile) body.appendChild(node);
+        else marker.parentNode.insertBefore(node, marker.nextSibling);
+      });
+      info.hidden = !mobile;
+      if (!mobile) info.removeAttribute("open");
+      lastMobilePaint = -Infinity;
+    };
+    arrange();
+    if (mobileQuery?.addEventListener) mobileQuery.addEventListener("change", arrange);
+    else mobileQuery?.addListener?.(arrange);
+    el("methodDetails").addEventListener("toggle", () => { if (isMobileView()) tick(); });
+  }
+
 
   function detectMode() {
     const saved = localStorage.getItem("driveclock-mode");
@@ -788,6 +829,7 @@
     el("projectionBasis").textContent = t(currentMode === "germany" ? "scenarioBasisGermany" : "scenarioBasisOther");
     el("projectionResultTitle").textContent = t(result.kind === "history" ? "scenarioResultHistory" : result.kind === "current" ? "scenarioResultCurrent" : "scenarioResultTitle");
     el("projectionStatus").dataset.kind = result.kind;
+    setLiveText(el("scenarioInfoKind"), t(result.kind === "history" ? "historyLabel" : result.kind === "current" ? "currentEstimate" : "futureLabel"));
     el("projectionStatus").textContent = t(result.kind === "history" ? "historyLabel" : result.kind === "current" ? "currentEstimate" : "futureLabel");
     el("projectionTotal").textContent = result.total !== null ? fillCopy("scenarioTotal", { total: compactNumber(result.total) }) : "";
     const validCount = result.stock.filter(value => value !== null).length;
@@ -906,6 +948,36 @@
     return sign + formatDecimal(value, decimals);
   }
 
+  const sessionNumberNodes = new WeakMap();
+  let sessionNumberFormatter, sessionNumberLocale;
+
+  function continuousSessionChange(market, key, seconds) {
+    const parts = MODEL.parts(market);
+    return parts.length
+      ? parts.reduce((sum, part) => sum + continuousSessionChange(part, key, seconds), 0)
+      : MODEL.rate(market, key) * seconds;
+  }
+
+  function renderSessionNumber(node, value) {
+    if (!node) return;
+    let nodes = sessionNumberNodes.get(node);
+    if (!nodes) {
+      nodes = { whole: node.querySelector(".session-whole"), fraction: node.querySelector(".session-fraction") };
+      sessionNumberNodes.set(node, nodes);
+    }
+    const locale = TRANSLATIONS[currentLang].locale;
+    if (sessionNumberLocale !== locale) {
+      sessionNumberLocale = locale;
+      sessionNumberFormatter = new Intl.NumberFormat(locale, { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+    }
+    const parts = sessionNumberFormatter.formatToParts(Math.abs(value));
+    const whole = (value >= 0 ? "+" : "−") + parts.filter(part => !["decimal", "fraction"].includes(part.type)).map(part => part.value).join("");
+    const fraction = parts.filter(part => ["decimal", "fraction"].includes(part.type)).map(part => part.value).join("");
+    // Keep both existing spans, even on desktop; only changed digits are written.
+    if (nodes.whole.textContent !== whole) nodes.whole.textContent = whole;
+    if (nodes.fraction.textContent !== fraction) nodes.fraction.textContent = fraction;
+  }
+
   function signedInt(value) {
     const sign = value >= 0 ? "+" : "−";
     return sign + Math.abs(Math.round(value)).toLocaleString(TRANSLATIONS[currentLang].locale);
@@ -948,7 +1020,7 @@
     }
     document.querySelectorAll("[data-region-switch]").forEach(node => node.setAttribute("aria-label", t("regionSwitchLabel")));
     if (el("modelVersion")) {
-      el("modelVersion").textContent = `${t("dataModel")}: ${DATA.modelVersion || "V3.2.2"}${region?.methodTag ? ` · ${region.methodTag}` : ""}`;
+      el("modelVersion").textContent = `${t("dataModel")}: ${DATA.modelVersion || "V3.2.3"}${region?.methodTag ? ` · ${region.methodTag}` : ""}`;
     }
     if (el("dataDate")) {
       const dataDate = region?.dataDate && /^\d{4}-\d{2}-\d{2}$/.test(region.dataDate)
@@ -1021,6 +1093,11 @@
   }
 
   function updateClock(now) {
+    if (isMobileView()) {
+      const key = `${currentLang}:${Math.floor(now / 1000)}`;
+      if (key === lastMobileClock) return;
+      lastMobileClock = key;
+    }
     const d = new Date(now);
     const dict = TRANSLATIONS[currentLang];
     const locale = dict?.locale || navigator.language || "en-US";
@@ -1051,7 +1128,7 @@
     } catch (_) {}
 
     if (el("utcClock")) {
-      el("utcClock").textContent = `${timeText} ${zoneText}`;
+      setLiveText(el("utcClock"), `${timeText} ${zoneText}`);
       el("utcClock").title = timeZone;
     }
   }
@@ -1069,13 +1146,21 @@
     const regionalFleet = getVisibleMarketStock(activeMarket(), startTime);
     const exposure = Math.max(0, sessionSeconds) / FIRE_YEAR_SECONDS;
     const vehicleYearsScale = regionalFleet * exposure / 100000;
-    if (el("fireCountBEV")) el("fireCountBEV").textContent = formatDecimal(vehicleYearsScale * FIRE_RATES.bev, FIRE_DECIMALS.bev, true);
-    if (el("fireCountHybrid")) el("fireCountHybrid").textContent = formatDecimal(vehicleYearsScale * FIRE_RATES.hybrid, FIRE_DECIMALS.hybrid, true);
-    if (el("fireCountICE")) el("fireCountICE").textContent = formatDecimal(vehicleYearsScale * FIRE_RATES.ice, FIRE_DECIMALS.ice, true);
+    if (el("fireCountBEV")) setLiveText(el("fireCountBEV"), formatDecimal(vehicleYearsScale * FIRE_RATES.bev, FIRE_DECIMALS.bev, true));
+    if (el("fireCountHybrid")) setLiveText(el("fireCountHybrid"), formatDecimal(vehicleYearsScale * FIRE_RATES.hybrid, FIRE_DECIMALS.hybrid, true));
+    if (el("fireCountICE")) setLiveText(el("fireCountICE"), formatDecimal(vehicleYearsScale * FIRE_RATES.ice, FIRE_DECIMALS.ice, true));
   }
 
-  function tick() {
+  function tick(force = true) {
     const now = Date.now();
+    if (!animationFrameScheduled) {
+      animationFrameScheduled = true;
+      requestAnimationFrame(() => { animationFrameScheduled = false; tick(false); });
+    }
+    if (isMobileView()) {
+      if (!force && now - lastMobilePaint < 100) return;
+      lastMobilePaint = now;
+    }
     const sessionSeconds = (now - startTime) / 1000;
     const market = activeMarket();
     const counts = MODEL.ledger(now, startTime);
@@ -1086,25 +1171,18 @@
       const item = market.categories[key];
       const rate = perSecond(item, market);
       const count = currentValue(item, market, now);
-      const sessionChange = rate * sessionSeconds;
+      const sessionChange = continuousSessionChange(market, key, sessionSeconds);
 
-      if (el(`count-${key}`)) el(`count-${key}`).textContent = formatInt(counts[currentMode][key]);
-      if (el(`rate-${key}`)) el(`rate-${key}`).textContent = signed(rate * 60, 1);
-      if (el(`since-${key}`)) el(`since-${key}`).textContent = signedInt(changes[currentMode][key]);
-      renderImpact(key, market, count, sessionSeconds);
+      if (el(`count-${key}`)) setLiveText(el(`count-${key}`), formatInt(counts[currentMode][key]));
+      if (el(`rate-${key}`)) setLiveText(el(`rate-${key}`), signed(rate * 60, 1));
+      renderSessionNumber(el(`since-${key}`), sessionChange);
+      if (mobileMethodVisible()) renderImpact(key, market, count, sessionSeconds);
     });
 
     renderSessionImpact(market, sessionSeconds);
     renderFireCounter(sessionSeconds);
     updateClock(now);
     updateSession(sessionSeconds);
-    if (!animationFrameScheduled) {
-      animationFrameScheduled = true;
-      requestAnimationFrame(() => {
-        animationFrameScheduled = false;
-        tick();
-      });
-    }
   }
 
 
@@ -1189,7 +1267,11 @@
     const liveText = key === "electric"
       ? `≈ ${litreText} · ${co2Text} CO₂ ${t("impactAvoided")}`
       : `≈ ${litreText} · ${co2Text} CO₂ ${t("impactProduced")}`;
-    node.innerHTML = `<span>${liveText}</span>`;
+    if (isMobileView()) {
+      let span = node.querySelector("span");
+      if (!span) { span = makeNode("span"); node.appendChild(span); }
+      setLiveText(span, liveText);
+    } else node.innerHTML = `<span>${liveText}</span>`;
     node.title = key === "electric"
       ? `Netto-Betriebsvergleich: vermiedener Auspuffausstoß minus modellierte Emissionen der Stromerzeugung; ${litreText} Kraftstoffäquivalent vermieden.`
       : `${litreText} Kraftstoff · ${co2Text} direktes Auspuff-CO₂ pro Sekunde, modelliert.`;
@@ -1212,6 +1294,27 @@
     keys.forEach((key) => {
       const target = root.querySelector(`#session-impact-${key}`);
       if (!target) return;
+      if (isMobileView()) {
+        let metrics = mobileImpactNodes.get(target);
+        if (!metrics || !target.contains(metrics[0].amount)) {
+          const entry = makeNode("div", `session-impact-item impact-${key}`);
+          metrics = [false, true].map(isCo2 => {
+            const group = makeNode("div", `session-metric-group${isCo2 ? " session-metric-co2" : ""}`);
+            const amount = makeNode("strong", "impact-amount"), unit = makeNode("span", "impact-unit"), status = makeNode("small", "impact-status");
+            group.append(amount, unit, status); entry.appendChild(group);
+            return { amount, unit, status };
+          });
+          target.replaceChildren(entry);
+          mobileImpactNodes.set(target, metrics);
+        }
+        const total = accumulatedImpact(key, market, Date.now(), startTime);
+        metrics.forEach((nodes, index) => {
+          const metric = splitSessionAmount(index ? total.co2kg : total.litres, index ? "kg" : "L");
+          setLiveText(nodes.amount, metric.number); setLiveText(nodes.unit, metric.label);
+          setLiveText(nodes.status, t(index ? (key === "electric" ? "impactAvoided" : "impactProduced") : (key === "electric" ? "fuelSaved" : "fuelBurned")));
+        });
+        return;
+      }
       target.replaceChildren();
       const sessionTotal = accumulatedImpact(key, market, Date.now(), startTime);
       const entry = document.createElement("div");
@@ -1257,8 +1360,9 @@
     window.DRIVECOUNT_METHOD.render(currentLang, t, DATA, ACCOUNTING_LABELS[currentLang]);
   }
   function renderAccountingLive(ledger) {
+    if (!mobileMethodVisible()) return;
     for(const [id,values] of Object.entries(ledger)) for(const key of keys) {
-      const cell=el(`audit-${id}-${key}`);if(cell)cell.textContent=signedInt(values[key]);
+      const cell=el(`audit-${id}-${key}`);if(cell)setLiveText(cell,signedInt(values[key]));
     }
   }
 
@@ -1345,6 +1449,7 @@
   currentMode = detectMode();
   setupModeSwitch();
   setupScenarioControls();
+  setupMobileTimeline();
   setupMethodLink("fireMethodLink", "fireMethodSection");
   setupMethodLink("scenarioMethodLink", "scenarioMethodSection");
   setupMethodLink("sessionModelNote", "impactMethodSection");

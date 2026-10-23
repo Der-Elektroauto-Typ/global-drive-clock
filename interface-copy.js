@@ -1,4 +1,4 @@
-/* V3.2.2 presentation and timeline copy for all ten interface languages. */
+/* V3.2.3 presentation and timeline copy for all ten interface languages. */
 window.DRIVECOUNT_PRESENTATION = {
   "de": {
     "projectionYearLabel": "Jahr",
@@ -56,7 +56,8 @@ window.DRIVECOUNT_PRESENTATION = {
     "fireScopeText": "{region}: {stock} Fahrzeuge im Modellbestand · dieselbe Anzahl in allen drei Antriebsszenarien",
     "scenarioResultHistory": "Historische Quellenwerte",
     "scenarioResultCurrent": "Aktueller Modellbestand",
-    "historyIntro": "Historische Balken zeigen vorhandene Quellenwerte. Fehlende Daten bleiben offen; Stichtage und Abgrenzungen können sich unterscheiden."
+    "historyIntro": "Historische Balken zeigen vorhandene Quellenwerte. Fehlende Daten bleiben offen; Stichtage und Abgrenzungen können sich unterscheiden.",
+    "scenarioInfo": "Info zur Zeitreise"
   },
   "en": {
     "projectionYearLabel": "Year",
@@ -114,7 +115,8 @@ window.DRIVECOUNT_PRESENTATION = {
     "fireScopeText": "{region}: {stock} vehicles in the model · the same count in all three powertrain scenarios",
     "scenarioResultHistory": "Historical source values",
     "scenarioResultCurrent": "Current modeled stock",
-    "historyIntro": "Historical bars show available source records. Missing data remain missing; source dates and definitions may differ."
+    "historyIntro": "Historical bars show available source records. Missing data remain missing; source dates and definitions may differ.",
+    "scenarioInfo": "Timeline information"
   },
   "fr": {
     "projectionYearLabel": "Année",
@@ -172,7 +174,8 @@ window.DRIVECOUNT_PRESENTATION = {
     "fireScopeText": "{region} : {stock} véhicules · même nombre dans les trois scénarios",
     "scenarioResultHistory": "Valeurs historiques",
     "scenarioResultCurrent": "Parc modélisé actuel",
-    "historyIntro": "Les barres historiques montrent les données disponibles. Les données manquantes restent absentes ; les dates et définitions peuvent différer."
+    "historyIntro": "Les barres historiques montrent les données disponibles. Les données manquantes restent absentes ; les dates et définitions peuvent différer.",
+    "scenarioInfo": "Informations sur la chronologie"
   },
   "es": {
     "projectionYearLabel": "Año",
@@ -230,7 +233,8 @@ window.DRIVECOUNT_PRESENTATION = {
     "fireScopeText": "{region}: {stock} vehículos · misma cantidad en los tres escenarios",
     "scenarioResultHistory": "Valores históricos",
     "scenarioResultCurrent": "Parque modelado actual",
-    "historyIntro": "Las barras históricas muestran los datos disponibles. Los datos ausentes siguen sin completarse; las fechas y definiciones pueden variar."
+    "historyIntro": "Las barras históricas muestran los datos disponibles. Los datos ausentes siguen sin completarse; las fechas y definiciones pueden variar.",
+    "scenarioInfo": "Información de la línea temporal"
   },
   "it": {
     "projectionYearLabel": "Anno",
@@ -288,7 +292,8 @@ window.DRIVECOUNT_PRESENTATION = {
     "fireScopeText": "{region}: {stock} veicoli · stesso numero nei tre scenari",
     "scenarioResultHistory": "Valori storici",
     "scenarioResultCurrent": "Parco modellato attuale",
-    "historyIntro": "Le barre storiche mostrano i dati disponibili. I dati mancanti restano tali; date e definizioni possono differire."
+    "historyIntro": "Le barre storiche mostrano i dati disponibili. I dati mancanti restano tali; date e definizioni possono differire.",
+    "scenarioInfo": "Informazioni sulla cronologia"
   },
   "pl": {
     "projectionYearLabel": "Rok",
@@ -346,7 +351,8 @@ window.DRIVECOUNT_PRESENTATION = {
     "fireScopeText": "{region}: {stock} pojazdów · ta sama liczba w trzech scenariuszach",
     "scenarioResultHistory": "Historyczne dane źródłowe",
     "scenarioResultCurrent": "Obecna modelowana flota",
-    "historyIntro": "Historyczne słupki pokazują dostępne dane źródłowe. Braki pozostają widoczne; daty i definicje mogą się różnić."
+    "historyIntro": "Historyczne słupki pokazują dostępne dane źródłowe. Braki pozostają widoczne; daty i definicje mogą się różnić.",
+    "scenarioInfo": "Informacje o osi czasu"
   },
   "nl": {
     "projectionYearLabel": "Jaar",
@@ -404,7 +410,8 @@ window.DRIVECOUNT_PRESENTATION = {
     "fireScopeText": "{region}: {stock} voertuigen · hetzelfde aantal in alle drie scenario’s",
     "scenarioResultHistory": "Historische bronwaarden",
     "scenarioResultCurrent": "Huidige modelvoorraad",
-    "historyIntro": "Historische balken tonen beschikbare brongegevens. Ontbrekende gegevens blijven ontbreken; peildata en definities kunnen verschillen."
+    "historyIntro": "Historische balken tonen beschikbare brongegevens. Ontbrekende gegevens blijven ontbreken; peildata en definities kunnen verschillen.",
+    "scenarioInfo": "Informatie over de tijdlijn"
   },
   "pt": {
     "projectionYearLabel": "Ano",
@@ -462,7 +469,8 @@ window.DRIVECOUNT_PRESENTATION = {
     "fireScopeText": "{region}: {stock} veículos · mesma quantidade nos três cenários",
     "scenarioResultHistory": "Valores históricos",
     "scenarioResultCurrent": "Frota modelada atual",
-    "historyIntro": "As barras históricas mostram os dados disponíveis. Os dados em falta permanecem ausentes; as datas e definições podem variar."
+    "historyIntro": "As barras históricas mostram os dados disponíveis. Os dados em falta permanecem ausentes; as datas e definições podem variar.",
+    "scenarioInfo": "Informações da linha temporal"
   },
   "no": {
     "projectionYearLabel": "År",
@@ -520,7 +528,8 @@ window.DRIVECOUNT_PRESENTATION = {
     "fireScopeText": "{region}: {stock} kjøretøy · samme antall i alle tre scenarier",
     "scenarioResultHistory": "Historiske kildetall",
     "scenarioResultCurrent": "Dagens modellbestand",
-    "historyIntro": "Historiske stolper viser tilgjengelige kildetall. Manglende data forblir manglende; datoer og definisjoner kan variere."
+    "historyIntro": "Historiske stolper viser tilgjengelige kildetall. Manglende data forblir manglende; datoer og definisjoner kan variere.",
+    "scenarioInfo": "Informasjon om tidslinjen"
   },
   "zh": {
     "projectionYearLabel": "年份",
@@ -578,6 +587,7 @@ window.DRIVECOUNT_PRESENTATION = {
     "fireScopeText": "{region}：模型中{stock}辆车，三种动力情景采用相同总数",
     "scenarioResultHistory": "历史来源记录",
     "scenarioResultCurrent": "当前模型保有量",
-    "historyIntro": "历史条形图显示已有来源记录。缺失数据保持空缺；统计日期与定义可能不同。"
+    "historyIntro": "历史条形图显示已有来源记录。缺失数据保持空缺；统计日期与定义可能不同。",
+    "scenarioInfo": "时间轴说明"
   }
 };

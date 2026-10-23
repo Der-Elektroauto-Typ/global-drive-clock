@@ -27,8 +27,8 @@
   <meta name="twitter:image" content="https://der-elektroauto-typ.github.io/global-drive-clock/social-preview-v3-2-2-v5.png">
   <meta name="twitter:image:alt" content="Global Drive Clock. Wer fährt in Zukunft? Diesel, Benzin, Hybrid, Elektro? Antriebswandel, Zeitreise 2008–2100, CO₂ im Vergleich und Brandmodell. Bestände als Modell, Zukunft als Szenario.">
   <title>Global Drive Clock</title>
-  <link rel="stylesheet" href="style.css?v=3.2.2-5">
-  <link rel="stylesheet" href="layout.css?v=3.2.2-5">
+  <link rel="stylesheet" href="style.css?v=3.2.3-2">
+  <link rel="stylesheet" href="layout.css?v=3.2.3-2">
 </head>
 <body>
   <div class="language-switcher" id="languageSwitcher">
@@ -63,14 +63,30 @@
       <p class="hero-estimate-note" data-i18n="estimateNote">Fortschreibung veröffentlichter Bestandsdaten und gekennzeichneter Annahmen · keine Live-Meldungen</p>
       <div class="utc" id="utcClock" title="">--:--:--</div>
       <nav class="section-nav" aria-label="Seitenabschnitte" data-i18n-aria="navSections">
+        <a href="#sessionSection" data-i18n="navSession">Live-Session</a>
         <a href="#fleetSection" data-i18n="navFleet">Bestand</a>
         <a href="#trendSection" data-i18n="navTrends">Veränderung</a>
         <a href="#scenarioSection" data-i18n="navScenario">Zukunftsszenario</a>
-        <a href="#sessionSection" data-i18n="navSession">Live-Session</a>
         <a href="#impactSection" data-i18n="navImpact">Kraftstoff / CO₂</a>
         <a href="#fireSection" data-i18n="navFire">Brandmodell</a>
       </nav>
       <p class="shared-region-hint" data-i18n="sharedRegionHint">Jede Regionsauswahl steuert alle Abschnitte gemeinsam.</p>
+    </section>
+
+    <section class="dashboard-section session" id="sessionSection" aria-labelledby="sessionTitle">
+      <header class="section-heading">
+        <div class="section-kicker" data-i18n="liveSession">LIVE SESSION</div>
+        <h2 id="sessionTitle" data-i18n="sinceOpened">SEIT DU DIESE SEITE GEÖFFNET HAST</h2>
+        <p data-i18n="sessionIntro">Die modellierte Bestandsänderung während deines Besuchs. Alle Regionen teilen sich dieselbe Besuchszeit.</p>
+      </header>
+      <div class="region-switch" data-region-switch="session" role="group" aria-label="Region für alle Abschnitte"></div>
+      <div class="session-time"><span data-i18n="observationTime">Beobachtungszeit:</span> <strong id="sessionTime" data-session-time>00:00:00</strong></div>
+      <div class="session-grid">
+        <div class="session-item session-electric"><span data-i18n="electric">ELEKTRO</span><strong class="positive" id="since-electric"><span class="session-whole">+0</span><span class="session-fraction">,0</span></strong></div>
+        <div class="session-item session-hybrid"><span data-i18n="hybrid">HYBRID</span><strong class="positive" id="since-hybrid"><span class="session-whole">+0</span><span class="session-fraction">,0</span></strong></div>
+        <div class="session-item session-petrol"><span data-i18n="petrol">BENZIN</span><strong class="negative" id="since-petrol"><span class="session-whole">−0</span><span class="session-fraction">,0</span></strong></div>
+        <div class="session-item session-diesel"><span data-i18n="diesel">DIESEL</span><strong class="negative" id="since-diesel"><span class="session-whole">−0</span><span class="session-fraction">,0</span></strong></div>
+      </div>
     </section>
 
     <section class="dashboard-section fleet-section" id="fleetSection" aria-labelledby="fleetTitle">
@@ -183,6 +199,10 @@
       <div class="projection-status" id="projectionStatus" aria-live="polite"></div>
       <div class="scenario-result-heading"><h3 id="projectionResultTitle" data-i18n="scenarioResultTitle">Modellbestand zum Jahresende</h3><span id="projectionTotal"></span></div>
       <div class="projection-chart" id="projectionChart" aria-live="polite"></div>
+      <details class="scenario-mobile-info" id="scenarioMobileInfo" hidden>
+        <summary><span data-i18n="scenarioInfo">Info zur Zeitreise</span><span id="scenarioInfoKind"></span></summary>
+        <div class="scenario-mobile-info-body" id="scenarioMobileInfoBody"></div>
+      </details>
       <p id="historyCoverage" class="history-coverage"></p>
       <p id="historicalSourceTotal" class="history-coverage"></p>
       <div id="historySources" class="history-sources"></div>
@@ -203,21 +223,6 @@
       <a class="session-model-note" id="scenarioMethodLink" href="#scenarioMethodSection" data-i18n="scenarioMethodLink">Szenario: Annahmen und Grenzen</a>
     </section>
 
-    <section class="dashboard-section session" id="sessionSection" aria-labelledby="sessionTitle">
-      <header class="section-heading">
-        <div class="section-kicker" data-i18n="liveSession">LIVE SESSION</div>
-        <h2 id="sessionTitle" data-i18n="sinceOpened">SEIT DU DIESE SEITE GEÖFFNET HAST</h2>
-        <p data-i18n="sessionIntro">Die modellierte Bestandsänderung während deines Besuchs. Alle Regionen teilen sich dieselbe Besuchszeit.</p>
-      </header>
-      <div class="region-switch" data-region-switch="session" role="group" aria-label="Region für alle Abschnitte"></div>
-      <div class="session-time"><span data-i18n="observationTime">Beobachtungszeit:</span> <strong id="sessionTime" data-session-time>00:00:00</strong></div>
-      <div class="session-grid">
-        <div class="session-item session-electric"><span data-i18n="electric">ELEKTRO</span><strong class="positive" id="since-electric">+0</strong></div>
-        <div class="session-item session-hybrid"><span data-i18n="hybrid">HYBRID</span><strong class="positive" id="since-hybrid">+0</strong></div>
-        <div class="session-item session-petrol"><span data-i18n="petrol">BENZIN</span><strong class="negative" id="since-petrol">−0</strong></div>
-        <div class="session-item session-diesel"><span data-i18n="diesel">DIESEL</span><strong class="negative" id="since-diesel">−0</strong></div>
-      </div>
-    </section>
 
     <section class="dashboard-section impact-section" id="impactSection" aria-labelledby="impactTitle">
       <header class="section-heading">
@@ -274,7 +279,7 @@
       <details id="methodDetails" class="method-details">
         <summary data-i18n="methodDetails">DATEN &amp; METHODIK</summary>
         <div class="method-details-body">
-          <p>V3.2.2 · sechs einheitliche Bereiche mit gekoppelten Regionsumschaltern; Zeitreise als Balkendiagramm ab 2008, beim aktuellen Jahr gestartet; historische Quellenwerte mit sichtbaren Datenlücken und einstellbare S-Kurven-/Linearszenarien bis 2050/2100. Fahrzeug-, CO₂- und Brandratenparameter bleiben gleich. <a href="SZENARIEN.md">Quellen und Szenariorechnung</a>.</p>
+          <p>V3.2.3 · Live-Session zuerst auf Desktop und Mobil; mobile Zeitreise kompakter mit Info-Menü und stabilisierten laufenden Anzeigen; sechs einheitliche Bereiche mit gekoppelten Regionsumschaltern; Zeitreise als Balkendiagramm ab 2008, beim aktuellen Jahr gestartet; historische Quellenwerte mit sichtbaren Datenlücken und einstellbare S-Kurven-/Linearszenarien bis 2050/2100. Fahrzeug-, CO₂- und Brandratenparameter bleiben gleich. <a href="SZENARIEN.md">Quellen und Szenariorechnung</a>.</p>
           <p>Gegenüber V3.1.3 bleiben die bisherigen Fahrzeug- und CO₂-Modellparameter die Grundlage. Für Deutschland verwenden die vier Fahrzeugzähler nun den KBA-Vergleich vom 1. Januar bis 1. Juli 2026 (181 Tage); die Sechsmonatsänderung wird linear fortgeschrieben und das EU-ohne-Deutschland-Komplement angepasst. Hinzu kommt das regionsabhängige Brand-Szenariomodell: Für denselben modellierten Regionalbestand werden „alle BEV“, „alle Hybrid“ und „alle Verbrenner“ verglichen. Es verwendet norwegische Feuerwehreinsätze und angenäherte Fahrzeugjahre als Referenz, keine globalen Messwerte. In der norwegischen Referenz liegt die Hybrid-Punktrate unter BEV (35 gegenüber 120 Einsätzen; vereinfachtes Zählratenverhältnis etwa 0,64), doch das ist keine gesicherte allgemeine Rangfolge. „Sonstige“ bleibt ausgeschlossen; polnische Zahlen sind ein nicht harmonisierter Gegenbefund. Vollständige Raten, Unsicherheit, Umrechnung und Einordnung stehen in der Methodik.</p>
           <p>Regionale Bestandsabgrenzungen unterscheiden sich. Kein Zähler ist eine amtliche Live-Meldung; CO₂ ist keine vollständige Lebenszyklusbilanz. Quellen, Formeln, Definitionen und Grenzen stehen in der <a href="METHODIK.md">vollständigen Methodik</a> und werden mit JavaScript angezeigt. <a href="model-provenance.json">Datenherleitung</a> · <a href="source-extracts.json">Quellenauszüge</a>.</p>
         </div>
@@ -318,12 +323,12 @@
     </div>
   </main>
 
-  <script src="data.js?v=3.2.2-5"></script>
-  <script src="model.js?v=3.2.2-5"></script>
-  <script src="methodology.js?v=3.2.2-5"></script>
-  <script src="history-data.js?v=3.2.2-5"></script>
-  <script src="scenario.js?v=3.2.2-5"></script>
-  <script src="interface-copy.js?v=3.2.2-5"></script>
-  <script src="app.js?v=3.2.2-5"></script>
+  <script src="data.js?v=3.2.3-2"></script>
+  <script src="model.js?v=3.2.3-2"></script>
+  <script src="methodology.js?v=3.2.3-2"></script>
+  <script src="history-data.js?v=3.2.3-2"></script>
+  <script src="scenario.js?v=3.2.3-2"></script>
+  <script src="interface-copy.js?v=3.2.3-2"></script>
+  <script src="app.js?v=3.2.3-2"></script>
 </body>
 </html>

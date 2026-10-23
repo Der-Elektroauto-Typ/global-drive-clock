@@ -1,6 +1,8 @@
-# Global Drive Clock V3.2.2 — Daten & Methodik
+# Global Drive Clock V3.2.3 — Daten & Methodik
 
-V3.2.2 gliedert die Seite in sechs einheitliche Bereiche mit gekoppelten Regionsumschaltern. Der Zeitregler beginnt bei 2008 und startet bei jedem Aufruf im aktuellen Jahr. Das Balkendiagramm zeigt das ausgewählte Jahr. Vorhandene Quellenwerte und Datenlücken bilden den Rückblick; für die Zukunft gibt es eine einstellbare S-Kurve und einen linearen Vergleich bis 2050, optional sichtbar bis 2100. Die vollständigen historischen Quellen, Abgrenzungen, Formeln und Grenzen stehen in [SZENARIEN.md](SZENARIEN.md) und [history-data.json](history-data.json). Historische Quellenwerte werden durch Zukunftseinstellungen nicht verändert. Es gibt keine rückwärts erfundene Geschichte und keine garantierte Prognose.
+V3.2.3 stellt die Live-Session auf Desktop und Mobil an den Anfang. Die mobile Zeitreise bündelt Erläuterungen in einem Info-Menü unter dem Balkendiagramm. Die mobile Anzeige aktualisiert vorhandene Zahlenfelder höchstens zehnmal pro Sekunde; Rechenwerte und verstrichene Besuchszeit werden dadurch nicht verändert. Der Methodiktext bleibt erhalten. Die vier Live-Session-Fahrzeugzähler zeigen die kontinuierliche Modelländerung mit einer Nachkommastelle; Dezimaltrennzeichen und Nachkommastelle erscheinen kleiner. Die Raten der Teilregionen werden vor der Formatierung addiert. Die Nachkommastelle dient der sichtbaren Fortschreibung und ist keine Messgenauigkeit. Bestandszähler und Bilanzprüfung behalten ihre gemeinsame Ganzzahlrundung.
+
+V3.2.3 gliedert die Seite in sechs einheitliche Bereiche mit gekoppelten Regionsumschaltern. Der Zeitregler beginnt bei 2008 und startet bei jedem Aufruf im aktuellen Jahr. Das Balkendiagramm zeigt das ausgewählte Jahr. Vorhandene Quellenwerte und Datenlücken bilden den Rückblick; für die Zukunft gibt es eine einstellbare S-Kurve und einen linearen Vergleich bis 2050, optional sichtbar bis 2100. Die vollständigen historischen Quellen, Abgrenzungen, Formeln und Grenzen stehen in [SZENARIEN.md](SZENARIEN.md) und [history-data.json](history-data.json). Historische Quellenwerte werden durch Zukunftseinstellungen nicht verändert. Es gibt keine rückwärts erfundene Geschichte und keine garantierte Prognose.
 
 Die Fahrzeug-, Verbrauchs-, CO₂- und Brandratenparameter bleiben unverändert. Die Brandzählung verwendet die dokumentierten vier sichtbaren Gruppen, ohne Sonstige. Deren Ausschluss gegenüber V3.2.1 betrifft global rund 15 Millionen Fahrzeuge beziehungsweise etwa 1,08 % am 23. Oktober 2026; die genaue laufende Zahl ändert sich mit dem Modellzeitpunkt.
 
@@ -32,7 +34,7 @@ Eine exponentielle Kurve würde eine dauerhaft konstante prozentuale Wachstumsra
 
 ### Was diese Seite zeigt
 
-Die Global Drive Clock macht Veränderungen eines Fahrzeugbestandsmodells sichtbar. Die oberen Kacheln zeigen geschätzte Bestände und deren Nettoänderung. Die Live-Session darunter zeigt dieselbe modellierte Änderung seit deinem Seitenaufruf sowie eine Schätzung von Kraftstoff und betrieblichem CO₂ für den gesamten jeweiligen Bestand. Es werden keine einzelnen Zulassungen, Fahrten, Tankvorgänge oder Emissionen live erfasst.
+Die Global Drive Clock macht Veränderungen eines Fahrzeugbestandsmodells sichtbar. Die oberen Kacheln zeigen geschätzte Bestände und deren Nettoänderung. Die Live-Session am Anfang zeigt die modellierte Änderung seit deinem Seitenaufruf. Der separate Kraftstoff-/CO₂-Bereich zeigt geschätzte Mengen für den gesamten jeweiligen Bestand während deines Besuchs. Es werden keine einzelnen Zulassungen, Fahrten, Tankvorgänge oder Emissionen live erfasst.
 
 
 Unser Anspruch: Veröffentlichte Daten werden als Ausgangspunkte verwendet, Rechenwege offengelegt und fehlende Werte als Annahmen gekennzeichnet. Eine nachvollziehbare Rechnung ist kein Beweis dafür, dass jede Annahme genau der Realität entspricht. Insbesondere für China und den Rest der Welt ist die Unsicherheit größer.
@@ -176,6 +178,6 @@ Jahresfahrleistung und Verbrauch bleiben im Modell konstant. Saison, Tageszeit, 
 Die mitgelieferten Dateien ermöglichen die Prüfung der tatsächlich verwendeten Werte: [Bestands- und Verbrauchsparameter](data.js), [Bilanz und gemeinsame Rundung](model.js), [Anzeige und Verbrauchsintegration](app.js), [Herleitung und Lückenmodell](model-provenance.json), [verwendete Quellenauszüge](source-extracts.json) und [Linkprüfung mit Quellenrolle](source-link-audit.json). Die [Rechenprüfungen](validation.json) bestätigen Summen und Funktionen, nicht die empirische Richtigkeit aller Annahmen.
 
 
-V3.2.2 enthält das Fahrzeug- und CO₂-Modell, das oben dokumentierte regionsabhängige Fahrzeugbrand-Referenzmodell und zusätzliche erklärende Visualisierungen. Eine künftige Datenaktualisierung muss Quellenstände, Vergleichszeiträume, Definitionen, Annahmen und Bilanz gemeinsam prüfen.
+V3.2.3 enthält das Fahrzeug- und CO₂-Modell, das oben dokumentierte regionsabhängige Fahrzeugbrand-Referenzmodell und zusätzliche erklärende Visualisierungen. Eine künftige Datenaktualisierung muss Quellenstände, Vergleichszeiträume, Definitionen, Annahmen und Bilanz gemeinsam prüfen.
 
 

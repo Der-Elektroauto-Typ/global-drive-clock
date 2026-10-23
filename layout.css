@@ -1,4 +1,4 @@
-/* V3.2.2 — common section, control and scenario layout. Loaded after legacy styles. */
+/* V3.2.3 — common section, control and scenario layout. Loaded after legacy styles. */
 html { scroll-behavior: smooth; scroll-padding-top: 26px; }
 .page-shell { --max: 1400px; width: min(100% - 48px, var(--max)); padding-top: 62px; }
 .hero { margin-bottom: 36px; }
@@ -254,3 +254,33 @@ section.dashboard-section.fire-counter { border: 1px solid #66503e; border-top: 
 
 .timeline-scope { color: #a7bac8; font-size: 12px; line-height: 1.65; margin: 18px 0 0; }
 @media (max-width:650px) { .timeline-scope { font-size: 11px; } }
+
+/* V3.2.3: compact timeline and stable live displays, mobile only. */
+@media (max-width: 650px) {
+  #scenarioSection .scenario-toolbar { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: start; gap: 12px; margin-bottom: 14px; }
+  #scenarioSection .scenario-field { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; min-width: 0; }
+  #scenarioSection .control-label { line-height: 1.25; }
+  #scenarioSection .option-switch { display: flex; width: 100%; min-width: 0; }
+  #scenarioSection .option-switch button { flex: 1; min-width: 0; padding: 10px 4px; min-height: 44px; font-size: clamp(9px, 2.8vw, 11px); white-space: nowrap; }
+  #scenarioSection .scenario-year { display: none; }
+  #scenarioSection .section-heading { margin-bottom: 12px; }
+  #scenarioSection .region-switch { margin-top: 14px; margin-bottom: 18px; }
+  #scenarioSection .projection-chart { margin-top: 14px; gap: 13px; }
+  #scenarioSection .projection-years { margin-bottom: 0; }
+  #scenarioMobileInfo:not([hidden]) { display: block; margin-top: 18px; border: 1px solid #304554; border-radius: 12px; background: rgba(7,13,19,.5); }
+  #scenarioMobileInfo[hidden] { display: none; }
+  #scenarioMobileInfo > summary { padding: 12px 14px; color: #c4d6e2; cursor: pointer; font-size: 12px; font-weight: 750; }
+  #scenarioInfoKind { display: block; margin-top: 5px; padding-left: 14px; color: #9fb4c2; font-size: 9px; font-weight: 500; }
+  .scenario-mobile-info-body { padding: 0 14px 10px; }
+  #scenarioSection .scenario-mobile-info-body > p { color: #a0b3c1; font-size: 11px; line-height: 1.65; margin: 12px 0; }
+  #scenarioSection .scenario-mobile-info-body .scenario-result-heading { margin: 12px 0; }
+  #scenarioSection .scenario-settings { margin-top: 12px; }
+  .session-impact-item .impact-unit { min-height: 2.4em; display: flex; align-items: center; justify-content: center; }
+  .session-impact-item .impact-amount, .fire-counter-item strong, .card .number, .session-item strong { font-variant-numeric: tabular-nums; }
+  #sessionImpact, .session-grid, .fire-counter-grid, .method-impact-grid, #accountingLive { overflow-anchor: none; }
+}
+
+/* V3.2.3: session fractions stay subordinate to the whole number, in both views. */
+#sessionSection .session-item strong { white-space: nowrap; }
+#sessionSection .session-item strong > span { display: inline; margin: 0; color: inherit; font-size: inherit; font-weight: inherit; letter-spacing: inherit; }
+#sessionSection .session-item strong > .session-fraction { font-size: .52em; font-weight: 650; letter-spacing: 0; }

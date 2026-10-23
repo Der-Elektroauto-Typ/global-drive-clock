@@ -1,8 +1,10 @@
-# Zeitreise und Zukunftsszenarien — V3.2.2
+# Zeitreise und Zukunftsszenarien — V3.2.3
 
 Stand der Quellenprüfung für diese Ergänzung: 23. Oktober 2026. Die bisherigen Bestands-, Verbrauchs-, CO₂- und Brandratenparameter wurden dabei nicht aktualisiert.
 
 ## Zeitraum und Bedienung
+
+Auf Mobilgeräten (bis 650 px) stehen Kurvenwahl und Endjahr nebeneinander. Unter dem Regler folgen direkt die Balken. Erläuterungen, Datenart, Quellenstichtage und Datenlückenhinweise liegen im Info-Menü darunter. Die Annahmeneinstellungen und bisherigen Schlusshinweise folgen anschließend. Auf Desktop bleibt die bisherige Zeitreise-Anordnung bestehen. Die Live-Session steht in beiden Ansichten als erster Inhaltsbereich.
 
 Der Regler reicht von 2008 bis 2050; die Ansicht kann bis 2100 erweitert werden. Bei jedem Seitenaufruf startet er im aktuellen Kalenderjahr des Geräts. Ein Regions- oder Sprachwechsel erhält die gewählte Jahresposition. Jeder der sechs Regionsumschalter steuert dieselbe globale Auswahl. Die Beobachtungszeit der laufenden Zähler beginnt beim Seitenaufruf und wird dadurch nicht zurückgesetzt.
 

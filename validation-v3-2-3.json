@@ -1,0 +1,94 @@
+{
+  "version": "V3.2.3",
+  "assetCache": "3.2.3-2",
+  "kind": "DOM simulation and source comparison",
+  "checks": [
+    {
+      "name": "Live session is first content section; remaining order retained on desktop and mobile",
+      "passed": true
+    },
+    {
+      "name": "Mobile controls, slider and bars precede the info menu and assumptions; extra year label hidden only by mobile CSS",
+      "passed": true
+    },
+    {
+      "name": "2008 start, current-year startup, horizon switching, thumb year and both calculation choices work",
+      "passed": true
+    },
+    {
+      "name": "All ten languages translate the new information menu and retain all six synchronized selectors",
+      "passed": true
+    },
+    {
+      "name": "Mobile and desktop resizing restores the original explanatory positions and keeps counters working",
+      "passed": true
+    },
+    {
+      "name": "Mobile no longer rebuilds metric containers, while the desktop rendering path is retained",
+      "passed": true
+    },
+    {
+      "name": "Hidden methodology does not update; open methodology retains its nodes and receives current values",
+      "passed": true
+    },
+    {
+      "name": "Numbers, fuel/CO2 texts, fire counts and elapsed time match V3.2.2 for all five regions",
+      "passed": true
+    },
+    {
+      "name": "Desktop scenario arrangement and live displayed values match V3.2.2, apart from requested session order and version label",
+      "passed": true
+    },
+    {
+      "name": "Session counters use continuous one-decimal model changes, locale separators and stable fractional spans in both views",
+      "passed": true
+    },
+    {
+      "name": "Numerical input parameters, scenario engine and history datasets are unchanged",
+      "passed": true
+    },
+    {
+      "name": "All IDs unique and method links still target the matching section",
+      "passed": true
+    }
+  ],
+  "browserRenderingVerified": false,
+  "physicalIPhoneVerified": false,
+  "limits": [
+    "No physical iPhone reproduction or graphical layout verification. DOM checks do not prove that all Safari scrolling symptoms are eliminated."
+  ],
+  "beforeMobile": {
+    "createdElements": 2160,
+    "containerRebuilds": 240,
+    "paintedFrames": 60,
+    "fullMethodRenders": 0,
+    "metricNodePreserved": false,
+    "scrollCalls": 0
+  },
+  "afterMobile": {
+    "createdElements": 0,
+    "containerRebuilds": 0,
+    "paintedFrames": 10,
+    "fullMethodRenders": 0,
+    "metricNodePreserved": true,
+    "scrollCalls": 0
+  },
+  "desktop": {
+    "createdElements": 2160,
+    "containerRebuilds": 240,
+    "paintedFrames": 60,
+    "fullMethodRenders": 0,
+    "metricNodePreserved": false,
+    "scrollCalls": 0
+  },
+  "checkedAt": "2026-10-23T10:26:46.142Z",
+  "javascriptSyntaxCheckedFiles": [
+    "app.js",
+    "data.js",
+    "history-data.js",
+    "interface-copy.js",
+    "methodology.js",
+    "model.js",
+    "scenario.js"
+  ]
+}
