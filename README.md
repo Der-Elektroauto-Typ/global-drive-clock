@@ -1,7 +1,6 @@
 # Global Drive Clock V3.2.2
 
-Lokaler Stand: 23. Oktober 2026. Cache-Kennung: **3.2.2-5**. Alle Dateien und Unterordner des ZIP gemeinsam in das Website-Wurzelverzeichnis übernehmen. Kein Build erforderlich. Dieses Paket bestätigt keine Veröffentlichung auf GitHub Pages.
-
+Lokaler Stand: 23. Oktober 2026. Cache-Kennung: **3.2.2.
 ## Gestaltung und Bedienung
 
 Die Seite hat sechs eigenständige Bereiche mit derselben Rahmen-, Flächen-, Schrift- und Abstandslogik:
@@ -63,4 +62,4 @@ Quellendaten behalten die jeweiligen Lizenzen. IEA-Grafikauszug: CC BY 4.0; KBA-
 
 Aktiv ist [social-preview-v3-2-2-v5.png](social-preview-v3-2-2-v5.png), 1734 × 907 Pixel. Typografisch getrennte kräftige, schmale Wortmarke „Global Drive Clock“ und etwas kleinere geometrische Leitfrage „Wer fährt in Zukunft?“ mit Diesel, Benzin, Hybrid und Elektro. Die vier Themen Antriebswandel, Zeitreise 2008–2100, CO₂ im Vergleich und Brandmodell stehen in großen Textfeldern ohne Symbole. Die Einordnung „Bestände als Modell · Zukunft als Szenario“ bleibt im Bild sichtbar. Der Planet mit Uhrbogen ist verkleinert und von der Schrift abgesetzt.
 
-Open Graph und Twitter/X verwenden die neue Bildadresse und passende Titel sowie Alternativtexte. HTML und Bild gemeinsam veröffentlichen; Plattform-Caches können zunächst ältere Motive zeigen. Das Paket enthält nur das finale Vorschaubild und die verwendeten Website-Icons; frühere Motive und überholte Entwurfsnotizen wurden entfernt. Der vollständige Bearbeitungsprompt des finalen Motivs steht in [SOCIAL-PREVIEW-V5.md](SOCIAL-PREVIEW-V5.md). Die Seitenressourcen behalten Kennung 3.2.2-5.
+Open Graph und Twitter/X verwenden die neue Bildadresse und passende Titel sowie Alternativtexte. HTML und Bild gemeinsam veröffentlichen; Plattform-Caches können zunächst ältere Motive zeigen. Das Paket enthält nur das finale Vorschaubild und die verwendeten Website-Icons; frühere Motive und überholte Entwurfsnotizen wurden entfernt.
