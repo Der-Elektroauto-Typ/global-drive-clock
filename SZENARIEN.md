@@ -1,10 +1,10 @@
-# Zeitreise und Zukunftsszenarien — V3.2.3
+# Zeitreise und Zukunftsszenarien — V3.2.4
 
 Stand der Quellenprüfung für diese Ergänzung: 23. Oktober 2026. Die bisherigen Bestands-, Verbrauchs-, CO₂- und Brandratenparameter wurden dabei nicht aktualisiert.
 
 ## Zeitraum und Bedienung
 
-Auf Mobilgeräten (bis 650 px) stehen Kurvenwahl und Endjahr nebeneinander. Unter dem Regler folgen direkt die Balken. Erläuterungen, Datenart, Quellenstichtage und Datenlückenhinweise liegen im Info-Menü darunter. Die Annahmeneinstellungen und bisherigen Schlusshinweise folgen anschließend. Auf Desktop bleibt die bisherige Zeitreise-Anordnung bestehen. Die Live-Session steht in beiden Ansichten als erster Inhaltsbereich.
+Auf Mobilgeräten (bis 650 px) stehen Kurvenwahl und Endjahr in einer gemeinsamen Zeile nebeneinander; die jeweilige Beschriftung steht darüber. Der gekoppelte Regionsumschalter der Zeitreise steht mobil direkt unter dem Jahresregler, vor dem Info-Menü. Die Regionsauswahl im Brandmodell folgt direkt auf die Brandzahlen, bei Kraftstoff/CO₂ direkt auf die Werte und vor dem Methodik-Link. Die übrigen Regionsumschalter stehen am Abschnittsende. Direkt unter den Balken folgt der Jahresregler mit seiner mitwandernden Jahreszahl. Erläuterungen, Datenart, Quellenstichtage und Datenlückenhinweise liegen im Info-Menü unter dem Regler. Die Annahmeneinstellungen und bisherigen Schlusshinweise folgen anschließend. Auf Desktop bleibt die bisherige Zeitreise-Anordnung bestehen. Die Live-Session steht in beiden Ansichten als erster Inhaltsbereich.
 
 Der Regler reicht von 2008 bis 2050; die Ansicht kann bis 2100 erweitert werden. Bei jedem Seitenaufruf startet er im aktuellen Kalenderjahr des Geräts. Ein Regions- oder Sprachwechsel erhält die gewählte Jahresposition. Jeder der sechs Regionsumschalter steuert dieselbe globale Auswahl. Die Beobachtungszeit der laufenden Zähler beginnt beim Seitenaufruf und wird dadurch nicht zurückgesetzt.
 

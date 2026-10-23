@@ -690,6 +690,17 @@
       node.parentNode.insertBefore(marker, node);
       return { node, marker };
     });
+    const yearControls = [document.querySelector("#scenarioSection .projection-year-control"), document.querySelector("#scenarioSection .projection-years")];
+    const yearSlots = yearControls.map(node => {
+      const marker = document.createComment("desktop year slider position");
+      node.parentNode.insertBefore(marker, node);
+      return { node, marker };
+    });
+    const regionSlots = [...document.querySelectorAll("[data-region-switch]")].map(node => {
+      const marker = document.createComment("desktop region selector position");
+      node.parentNode.insertBefore(marker, node);
+      return { node, marker };
+    });
     let previous;
     const arrange = () => {
       const mobile = isMobileView();
@@ -698,6 +709,22 @@
       slots.forEach(({ node, marker }) => {
         if (mobile) body.appendChild(node);
         else marker.parentNode.insertBefore(node, marker.nextSibling);
+      });
+      if (mobile) {
+        const chart = el("projectionChart");
+        chart.parentNode.insertBefore(yearControls[0], chart.nextSibling);
+        chart.parentNode.insertBefore(yearControls[1], yearControls[0].nextSibling);
+      } else {
+        yearSlots.forEach(({ node, marker }) => marker.parentNode.insertBefore(node, marker.nextSibling));
+      }
+      regionSlots.forEach(({ node, marker }) => {
+        if (mobile) {
+          const after = node.dataset.regionSwitch === "scenario" ? yearControls[1]
+            : node.dataset.regionSwitch === "fire" ? document.querySelector("#fireSection .fire-counter-grid")
+            : node.dataset.regionSwitch === "impact" ? el("sessionImpact") : null;
+          if (after) after.parentNode.insertBefore(node, after.nextSibling);
+          else marker.parentNode.appendChild(node);
+        } else marker.parentNode.insertBefore(node, marker.nextSibling);
       });
       info.hidden = !mobile;
       if (!mobile) info.removeAttribute("open");
@@ -1020,7 +1047,7 @@
     }
     document.querySelectorAll("[data-region-switch]").forEach(node => node.setAttribute("aria-label", t("regionSwitchLabel")));
     if (el("modelVersion")) {
-      el("modelVersion").textContent = `${t("dataModel")}: ${DATA.modelVersion || "V3.2.3"}${region?.methodTag ? ` · ${region.methodTag}` : ""}`;
+      el("modelVersion").textContent = `${t("dataModel")}: ${DATA.modelVersion || "V3.2.4"}${region?.methodTag ? ` · ${region.methodTag}` : ""}`;
     }
     if (el("dataDate")) {
       const dataDate = region?.dataDate && /^\d{4}-\d{2}-\d{2}$/.test(region.dataDate)

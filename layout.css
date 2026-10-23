@@ -1,4 +1,4 @@
-/* V3.2.3 — common section, control and scenario layout. Loaded after legacy styles. */
+/* V3.2.4 — common section, control and scenario layout. Loaded after legacy styles. */
 html { scroll-behavior: smooth; scroll-padding-top: 26px; }
 .page-shell { --max: 1400px; width: min(100% - 48px, var(--max)); padding-top: 62px; }
 .hero { margin-bottom: 36px; }
@@ -257,14 +257,16 @@ section.dashboard-section.fire-counter { border: 1px solid #66503e; border-top: 
 
 /* V3.2.3: compact timeline and stable live displays, mobile only. */
 @media (max-width: 650px) {
-  #scenarioSection .scenario-toolbar { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: start; gap: 12px; margin-bottom: 14px; }
-  #scenarioSection .scenario-field { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; min-width: 0; }
-  #scenarioSection .control-label { line-height: 1.25; }
-  #scenarioSection .option-switch { display: flex; width: 100%; min-width: 0; }
+  #scenarioSection > .scenario-toolbar { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 12px; margin-bottom: 14px; width: 100%; }
+  #scenarioSection .scenario-toolbar > .scenario-field { display: flex; flex-direction: column; align-items: stretch; gap: 6px; min-width: 0; grid-row: 1; }
+  #scenarioSection .scenario-toolbar > .scenario-field:nth-child(1) { grid-column: 1; }
+  #scenarioSection .scenario-toolbar > .scenario-field:nth-child(2) { grid-column: 2; }
+  #scenarioSection .scenario-field > .control-label { display: block; width: 100%; line-height: 1.25; text-align: left; }
+  #scenarioSection .scenario-field > .option-switch { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); width: 100%; min-width: 0; }
   #scenarioSection .option-switch button { flex: 1; min-width: 0; padding: 10px 4px; min-height: 44px; font-size: clamp(9px, 2.8vw, 11px); white-space: nowrap; }
   #scenarioSection .scenario-year { display: none; }
   #scenarioSection .section-heading { margin-bottom: 12px; }
-  #scenarioSection .region-switch { margin-top: 14px; margin-bottom: 18px; }
+  #scenarioSection > .region-switch { margin: 22px auto 0; }
   #scenarioSection .projection-chart { margin-top: 14px; gap: 13px; }
   #scenarioSection .projection-years { margin-bottom: 0; }
   #scenarioMobileInfo:not([hidden]) { display: block; margin-top: 18px; border: 1px solid #304554; border-radius: 12px; background: rgba(7,13,19,.5); }
@@ -284,3 +286,20 @@ section.dashboard-section.fire-counter { border: 1px solid #66503e; border-top: 
 #sessionSection .session-item strong { white-space: nowrap; }
 #sessionSection .session-item strong > span { display: inline; margin: 0; color: inherit; font-size: inherit; font-weight: inherit; letter-spacing: inherit; }
 #sessionSection .session-item strong > .session-fraction { font-size: .52em; font-weight: 650; letter-spacing: 0; }
+
+/* V3.2.4: on mobile the year slider follows the bars, clear of the chart while dragging. */
+@media (max-width: 650px) {
+  #scenarioSection > .projection-year-control { margin-top: 18px; }
+}
+
+/* V3.2.4: mobile selectors close their corresponding section. */
+@media (max-width: 650px) {
+  section.dashboard-section > .region-switch { margin: 22px auto 0; }
+}
+
+/* V3.2.4: region selection immediately follows the corresponding mobile display. */
+@media (max-width: 650px) {
+  #scenarioSection > .region-switch,
+  #fireSection > .region-switch,
+  #impactSection > .region-switch { margin: 18px auto 20px; }
+}

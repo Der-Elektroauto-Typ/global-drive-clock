@@ -1,6 +1,6 @@
-/* V3.2.3: presentation and explanatory visualizations; model parameters unchanged. */
+/* V3.2.4: presentation and explanatory visualizations; model parameters unchanged. */
 window.DRIVECOUNT_DATA = {
-  "modelVersion": "V3.2.3",
+  "modelVersion": "V3.2.4",
   "dataDate": "2025-12-31",
   "referenceDate": "2025-12-31T00:00:00Z",
   "facebookUrl": "https://www.facebook.com/share/18Na7ZUv93/?mibextid=wwXIfr",
@@ -487,7 +487,7 @@ window.DRIVECOUNT_DATA = {
       }
     },
     "rest": {
-      "modelVersion": "V3.2.3",
+      "modelVersion": "V3.2.4",
       "dataDate": "2025-12-31",
       "referenceDate": "2025-12-31T00:00:00Z",
       "facebookUrl": "https://www.facebook.com/share/18Na7ZUv93/?mibextid=wwXIfr",

@@ -1,8 +1,12 @@
-# Global Drive Clock V3.2.3
+# Global Drive Clock V3.2.4
 
-Lokaler Stand: 23. Oktober 2026. Cache-Kennung: **3.2.3-2**. Alle Dateien und Unterordner des ZIP gemeinsam in das Website-Wurzelverzeichnis übernehmen. Kein Build erforderlich. Dieses Paket bestätigt keine Veröffentlichung auf GitHub Pages.
+Lokaler Stand: 23. Oktober 2026. Cache-Kennung: **3.2.4-3**. Alle Dateien und Unterordner des ZIP gemeinsam in das Website-Wurzelverzeichnis übernehmen. Kein Build erforderlich. Dieses Paket bestätigt keine Veröffentlichung auf GitHub Pages.
 
-## Änderungen in V3.2.3
+## Änderungen in V3.2.4
+
+Nur auf Mobilgeräten (bis 650 px) stehen die Regionsumschalter bei den zugehörigen Anzeigen: Zeitreise direkt unter Jahresregler und Randjahren; Brandmodell direkt unter den Brandzahlen; Kraftstoff/CO₂ direkt unter den Werten und vor dem Methodik-Link. Die übrigen Regionsumschalter stehen am Ende ihres Abschnitts. Alle sechs bleiben gekoppelt. Zukunftskurve (S-Kurve/Linear) und Endjahr (2050/2100) stehen explizit in derselben Rasterzeile nebeneinander, ihre Beschriftungen jeweils darüber. Der Jahresregler folgt direkt auf das Balkendiagramm. So bleibt das Diagramm oberhalb des Fingers sichtbar. Die mitwandernde Jahreszahl und die Randjahre bleiben beim Regler. Die mobile Zeitreise-Reihenfolge ist: Kurven-/Endjahr-Umschalter nebeneinander → Balkendiagramm → Jahresregler → Regionsumschalter → Info-Menü → Annahmen und Berechnung → Schlusshinweise. Beim Wechsel zur Desktopbreite werden die bisherigen Positionen von Jahresregler und Regionsumschaltern wiederhergestellt. Rechenmodell und laufende Zähler sind übernommen.
+
+## Übernommene Änderungen aus V3.2.3
 
 - Live-Session auf Desktop und Mobil mit genau einer Nachkommastelle. Ganze Zahl und Vorzeichen bleiben groß; Dezimaltrennzeichen und Nachkommastelle erscheinen in 52 % der Schriftgröße. Die Anzeige verwendet die kontinuierliche Modelländerung statt bereits gerundeter Ganzzahlen. Auch diese Anzeige aktualisiert vorhandene Elemente.
 - Live-Session auf Desktop und Mobil als erster Inhaltsbereich unter dem Kopfbereich; Navigation entsprechend angeordnet. Die Reihenfolge der übrigen Bereiche bleibt erhalten.
@@ -22,7 +26,7 @@ Die Seite hat sechs eigenständige Bereiche mit derselben Rahmen-, Flächen-, Sc
 5. Kraftstoff-/CO₂-Schätzung während des Besuchs
 6. Brand-Szenariomodell mit Referenzratenvergleich
 
-Jeder Bereich hat denselben Regionsumschalter. Alle sechs Umschalter steuern gemeinsam Global, Deutschland, EU, China oder USA. Am Desktop sind die Namen ausgeschrieben; auf Smartphones erscheinen Flaggen und Kurzbezeichnungen. Die Besuchszeit läuft über Regionswechsel weiter. Das Brandmodell hat einen sichtbaren Rahmen mit orangefarbenem Akzent und nutzt ansonsten dieselbe Gestaltung wie die übrigen Bereiche. Die bestehende Kraftstoff-/CO₂-Beschriftung, Zahlenformatierung und Berechnung bleiben erhalten. Der gemeinsame Methodik-Link steht direkt unter diesen Werten und öffnet den zugehörigen Abschnitt. Brand- und Zeitreise-Links öffnen jeweils ihre eigenen Abschnitte in Daten & Methodik.
+Jeder Bereich hat denselben Regionsumschalter. Alle sechs Umschalter steuern gemeinsam Global, Deutschland, EU, China oder USA. Am Desktop sind die Namen ausgeschrieben; auf Smartphones erscheinen Flaggen und Kurzbezeichnungen. Die Besuchszeit läuft über Regionswechsel weiter. Das Brandmodell hat einen sichtbaren Rahmen mit orangefarbenem Akzent und nutzt ansonsten dieselbe Gestaltung wie die übrigen Bereiche. Die bestehende Kraftstoff-/CO₂-Beschriftung, Zahlenformatierung und Berechnung bleiben erhalten. Der gemeinsame Methodik-Link steht unter diesen Werten und öffnet den zugehörigen Abschnitt; mobil liegt die Regionsauswahl dazwischen. Brand- und Zeitreise-Links öffnen jeweils ihre eigenen Abschnitte in Daten & Methodik.
 
 ## Zeitreise 2008–2050, optional bis 2100
 
@@ -52,7 +56,7 @@ Kraftstoff/CO₂ sind modellierte Mengen der gesamten Flotte über die Besuchsda
 
 ## Prüfung und Dateien
 
-Die aktuellen Prüfungen sind in [validation-v3-2-3.json](validation-v3-2-3.json) dokumentiert: zwölf Funktions- und Vergleichsprüfungen mit DOM-Simulation, zehn Sprachen, fünf Regionen, gekoppelten Umschaltern, Jahreswahl, Methodenlinks, Ansichtswechseln und Zahlenvergleich mit V3.2.2. Die Live-Session-Reihenfolge sowie kontinuierliche Dezimalwerte, Sprachformatierung und stabile Zahlenelemente sind für Desktop und Mobil geprüft. Die numerischen Modellparameter, Historienwerte und Szenariorechnung entsprechen V3.2.2.
+Die übernommenen Prüfungen für V3.2.3 (Cache 3.2.3-2) sind in [validation-v3-2-3.json](validation-v3-2-3.json) dokumentiert. Sie sind kein neuer Funktionsprüfbericht für die in V3.2.4 geänderte Reglerposition. Für diesen Stand wurde die JavaScript-Syntax geprüft. Der historische Bericht umfasst: zwölf Funktions- und Vergleichsprüfungen mit DOM-Simulation, zehn Sprachen, fünf Regionen, gekoppelten Umschaltern, Jahreswahl, Methodenlinks, Ansichtswechseln und Zahlenvergleich mit V3.2.2. Die Live-Session-Reihenfolge sowie kontinuierliche Dezimalwerte, Sprachformatierung und stabile Zahlenelemente sind für Desktop und Mobil geprüft. Die numerischen Modellparameter, Historienwerte und Szenariorechnung entsprechen V3.2.2.
 
 Bei 60 simulierten Animationsschritten pro Sekunde erzeugte V3.2.2 mobil 2.160 neue Elemente und ersetzte die vier Kraftstoff-/CO₂-Container 240-mal. V3.2.3 erzeugt nach dem Aufbau keine neuen Anzeigeelemente, ersetzt keine Container und zeichnet die mobilen Werte höchstens zehnmal pro Sekunde. Das Desktop-Verhalten bleibt erhalten. Diese Prüfung ersetzt keinen Scrolltest auf einem physischen iPhone und keine grafische Layoutkontrolle.
 
@@ -74,4 +78,4 @@ Quellendaten behalten die jeweiligen Lizenzen. IEA-Grafikauszug: CC BY 4.0; KBA-
 
 Aktiv ist [social-preview-v3-2-2-v5.png](social-preview-v3-2-2-v5.png), 1734 × 907 Pixel. Typografisch getrennte kräftige, schmale Wortmarke „Global Drive Clock“ und etwas kleinere geometrische Leitfrage „Wer fährt in Zukunft?“ mit Diesel, Benzin, Hybrid und Elektro. Die vier Themen Antriebswandel, Zeitreise 2008–2100, CO₂ im Vergleich und Brandmodell stehen in großen Textfeldern ohne Symbole. Die Einordnung „Bestände als Modell · Zukunft als Szenario“ bleibt im Bild sichtbar. Der Planet mit Uhrbogen ist verkleinert und von der Schrift abgesetzt.
 
-Open Graph und Twitter/X verwenden die neue Bildadresse und passende Titel sowie Alternativtexte. HTML und Bild gemeinsam veröffentlichen; Plattform-Caches können zunächst ältere Motive zeigen. Das Paket enthält nur das finale Vorschaubild und die verwendeten Website-Icons; frühere Motive und überholte Entwurfsnotizen wurden entfernt. Der vollständige Bearbeitungsprompt des finalen Motivs steht in [SOCIAL-PREVIEW-V5.md](SOCIAL-PREVIEW-V5.md). Die Seitenressourcen behalten Kennung 3.2.3-2.
+Open Graph und Twitter/X verwenden die neue Bildadresse und passende Titel sowie Alternativtexte. HTML und Bild gemeinsam veröffentlichen; Plattform-Caches können zunächst ältere Motive zeigen. Das Paket enthält nur das finale Vorschaubild und die verwendeten Website-Icons; frühere Motive und überholte Entwurfsnotizen wurden entfernt. Der vollständige Bearbeitungsprompt des finalen Motivs steht in [SOCIAL-PREVIEW-V5.md](SOCIAL-PREVIEW-V5.md). Die Seitenressourcen behalten Kennung 3.2.4-3.
