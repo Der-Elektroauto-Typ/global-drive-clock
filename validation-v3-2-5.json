@@ -1,0 +1,77 @@
+{
+  "version": "V3.2.5",
+  "assetCache": "3.2.5-2",
+  "checks": [
+    {
+      "name": "Compact brand followed immediately by live session, with navigation after the first meaningful value",
+      "passed": true
+    },
+    {
+      "name": "All original live numbers and impact amounts match V3.2.4 in both layouts and all five regions",
+      "passed": true
+    },
+    {
+      "name": "Today equals component net rates since local midnight, with explicit date, time zone and model label",
+      "passed": true
+    },
+    {
+      "name": "Local-day calculation handles the 25-hour autumn daylight-saving days in Berlin and New York",
+      "passed": true
+    },
+    {
+      "name": "2035 card reproduces the selected S-curve or linear scenario and opens the existing timeline without resetting visit time",
+      "passed": true
+    },
+    {
+      "name": "New copy is available in all ten languages and region controls remain coupled",
+      "passed": true
+    },
+    {
+      "name": "Mobile timeline still has bars, year slider, region switch, info and assumptions in that order; other region controls retain requested positions",
+      "passed": true
+    },
+    {
+      "name": "Steady mobile updates create no display elements and retain featured, today and fuel/CO2 nodes",
+      "passed": true
+    },
+    {
+      "name": "Native share captures model context and a canonical public link, without automatically sharing",
+      "passed": true
+    },
+    {
+      "name": "Today sharing contains local date/time context and BEV model wording; copy fallback reports success only after copying",
+      "passed": true
+    },
+    {
+      "name": "The single page share link restores region, language, selected year, curve and saturation; invalid params are ignored or normalized",
+      "passed": true
+    },
+    {
+      "name": "Manual fallback works without sharing or clipboard; cancelling native share does not copy anything",
+      "passed": true
+    },
+    {
+      "name": "Model parameters, source history and scenario formulas remain unchanged except release version metadata",
+      "passed": true
+    },
+    {
+      "name": "Exactly one share button appears at the end of the homepage; no share controls in the entry or insight cards",
+      "passed": true
+    },
+    {
+      "name": "IDs are unique and the main method deep links remain functional",
+      "passed": true
+    }
+  ],
+  "kind": "DOM simulation, numerical comparison and mocked sharing APIs",
+  "browserRenderingVerified": false,
+  "physicalIPhoneVerified": false,
+  "limits": [
+    "No graphical browser rendering or physical iPhone test.",
+    "Sharing API behavior was tested with mocks; real OS share sheets and recipient apps were not exercised.",
+    "No measured conversion, engagement or virality improvement."
+  ],
+  "mobileCreatedElementsPer60Frames": 0,
+  "checkedAt": "2026-10-23T12:04:04.197Z",
+  "scopeNote": "Historical checks for asset cache 3.2.5-2. Subsequent 3.2.5-3 UI edits remove the 2035 button, always initialize the slider to the current device year and move sharing below Buy Me a Coffee; these edits have not been re-tested. Cache 3.2.5-4 additionally gives the closing action buttons a common compact height and adds a share icon; this styling has not been browser-tested."
+}

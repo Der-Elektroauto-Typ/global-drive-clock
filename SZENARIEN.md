@@ -1,8 +1,10 @@
-# Zeitreise und Zukunftsszenarien — V3.2.4
+# Zeitreise und Zukunftsszenarien — V3.2.5
 
 Stand der Quellenprüfung für diese Ergänzung: 23. Oktober 2026. Die bisherigen Bestands-, Verbrauchs-, CO₂- und Brandratenparameter wurden dabei nicht aktualisiert.
 
 ## Zeitraum und Bedienung
+
+V3.2.5 ergänzt eine kompakte 2035-Karte im Bereich „Veränderung“. Sie verwendet dieselbe Kurve und Sättigungsannahme wie die Zeitreise und zeigt den BEV-Anteil am Jahresende 2035. Ein Sprungknopf ist nicht vorhanden. Geteilte Links übernehmen Region, Sprache und Szenarioannahmen; der Jahresregler startet auch dort im aktuellen Kalenderjahr. Das Szenario ist keine Prognose oder Garantie.
 
 Auf Mobilgeräten (bis 650 px) stehen Kurvenwahl und Endjahr in einer gemeinsamen Zeile nebeneinander; die jeweilige Beschriftung steht darüber. Der gekoppelte Regionsumschalter der Zeitreise steht mobil direkt unter dem Jahresregler, vor dem Info-Menü. Die Regionsauswahl im Brandmodell folgt direkt auf die Brandzahlen, bei Kraftstoff/CO₂ direkt auf die Werte und vor dem Methodik-Link. Die übrigen Regionsumschalter stehen am Abschnittsende. Direkt unter den Balken folgt der Jahresregler mit seiner mitwandernden Jahreszahl. Erläuterungen, Datenart, Quellenstichtage und Datenlückenhinweise liegen im Info-Menü unter dem Regler. Die Annahmeneinstellungen und bisherigen Schlusshinweise folgen anschließend. Auf Desktop bleibt die bisherige Zeitreise-Anordnung bestehen. Die Live-Session steht in beiden Ansichten als erster Inhaltsbereich.
 

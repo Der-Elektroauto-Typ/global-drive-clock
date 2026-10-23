@@ -657,6 +657,8 @@
     de: { heading: "Regionale Modelle", eu: "EU: Eurostat meldet den EU-Pkw-Bestand mit Stand 31.12.2025; BEV-Bestand 7,59 Mio. und +31,5 % gegenüber 2024. Die übrigen Antriebsbestände und jährlichen Änderungen sind aus Bestands-/Neuzulassungsdaten modelliert; Eurostat weist auf teils ergänzte Daten und fehlende vollständige Harmonisierung hin.", china: "China: Das Ministerium für Öffentliche Sicherheit meldet zum 30.06.2026 371 Mio. Automobile und 48,97 Mio. NEV. BEV machen 68,77 % der NEV aus. Die amtliche Reihe trennt nicht alle vier Kachel-Kategorien; insbesondere Benzin und Diesel sind Modellzuordnungen. Gesamtbestand und Pkw-Abgrenzung sind nicht identisch mit der Global-/EU-Systemgrenze.", usa: "USA: DOE AFDC/NLR/Experian veröffentlicht Fahrzeugbestände bis 2025, nach Fahrzeugart und Kraftstoff. Die Grundgesamtheit umfasst Light-Duty-Fahrzeuge (auch leichte Trucks), nicht nur Pkw. Die Bestandszahlen wurden gerundet; Wachstumsraten können durch spätere Revisionen bzw. unterschiedliche Publikationstabellen abweichen. Daher sind die Kacheländerungen modellierte Schätzungen, keine amtliche fortlaufende Zählung." },
     en: { heading: "Regional models", eu: "EU: Eurostat reports the EU passenger-car fleet as of 31 Dec 2025; BEV stock was 7.59m, up 31.5% from 2024. Other fuel stocks and annual changes are modeled from fleet and registration data. Eurostat notes that some national data are supplemented and methods are not fully harmonized.", china: "China: The Ministry of Public Security reports 371m automobiles and 48.97m NEVs at 30 Jun 2026. BEVs are 68.77% of NEVs. The official series does not split all four card categories; petrol and diesel are model allocations. Its total fleet scope is not identical to the global/EU passenger-car definition.", usa: "U.S.: DOE AFDC/NLR/Experian publishes vehicle registrations through 2025 by vehicle and fuel type. The population includes light-duty vehicles (including light trucks), not only passenger cars. Counts are rounded, and growth rates can differ across revised publication tables. Card changes are modeled estimates, not a live official count." }
   };
+  const PUBLIC_URL = "https://der-elektroauto-typ.github.io/global-drive-clock/";
+  const sharedQuery = new URLSearchParams(window.location?.search || "");
   const startTime = Date.now();
   const currentYear = new Date(startTime).getFullYear();
   let curveMode = "s-curve";
@@ -738,6 +740,8 @@
 
 
   function detectMode() {
+    const requested = sharedQuery.get("region");
+    if (["global", "germany", "eu", "china", "usa"].includes(requested)) return requested;
     const saved = localStorage.getItem("driveclock-mode");
     return saved && (saved === "global" || DATA.regions?.[saved]) ? saved : "global";
   }
@@ -747,6 +751,8 @@
   }
 
   function detectLanguage() {
+    const requested = sharedQuery.get("lang");
+    if (requested && Object.prototype.hasOwnProperty.call(TRANSLATIONS, requested)) return requested;
     const saved = localStorage.getItem("driveclock-language");
     if (saved && TRANSLATIONS[saved]) return saved;
 
@@ -888,6 +894,7 @@
       row.append(makeNode("span", "projection-label", t(key)), track, number, share); root.appendChild(row);
     });
     root.setAttribute("aria-label", `${el("projectionResultTitle").textContent} · ${year}`);
+    renderShareInsights(market);
   }
 
   function downloadTimeline() {
@@ -1047,7 +1054,7 @@
     }
     document.querySelectorAll("[data-region-switch]").forEach(node => node.setAttribute("aria-label", t("regionSwitchLabel")));
     if (el("modelVersion")) {
-      el("modelVersion").textContent = `${t("dataModel")}: ${DATA.modelVersion || "V3.2.4"}${region?.methodTag ? ` · ${region.methodTag}` : ""}`;
+      el("modelVersion").textContent = `${t("dataModel")}: ${DATA.modelVersion || "V3.2.5"}${region?.methodTag ? ` · ${region.methodTag}` : ""}`;
     }
     if (el("dataDate")) {
       const dataDate = region?.dataDate && /^\d{4}-\d{2}-\d{2}$/.test(region.dataDate)
@@ -1210,6 +1217,7 @@
     renderFireCounter(sessionSeconds);
     updateClock(now);
     updateSession(sessionSeconds);
+    updateTodayInsight(now);
   }
 
 
@@ -1411,6 +1419,9 @@
   function setupScenarioControls() {
     const slider = el("projectionYear"); slider.min = "2008"; slider.max = String(scenarioHorizon); slider.value = String(currentYear);
     el("projectionYearMin").textContent = "2008";
+    if (sharedQuery.get("curve") === "linear") curveMode = "linear";
+    const sharedCap = Number(sharedQuery.get("cap"));
+    if (sharedQuery.has("cap") && Number.isFinite(sharedCap) && sharedCap >= 50 && sharedCap <= 100) bevCeiling = Math.round(sharedCap / 5) * 5 / 100;
     slider.addEventListener("input", () => renderProjection(activeMarket()));
     document.querySelectorAll("[data-curve]").forEach(button => button.addEventListener("click", () => {
       curveMode = button.dataset.curve; renderProjection(activeMarket());
@@ -1422,6 +1433,97 @@
     }));
     el("bevCeiling").addEventListener("input", event => { bevCeiling = Number(event.target.value) / 100; renderProjection(activeMarket()); });
     el("downloadScenario").addEventListener("click", downloadTimeline);
+  }
+
+  function selectedRegionName() {
+    const key = { global: "modeGlobal", germany: "modeGermany", eu: "modeEU", china: "modeChina", usa: "modeUSA" }[currentMode];
+    return currentMode === "global" ? t("entryWorld") : t(key);
+  }
+
+  function future2035(market = activeMarket()) {
+    const base = scenarioBase(market);
+    return SCENARIOS.evaluate(base, Date.UTC(2036, 0, 1), curveMode, bevCeiling);
+  }
+
+  function futureBasisText() {
+    return curveMode === "s-curve" ? fillCopy("futureBasisS", { cap: Math.round(bevCeiling * 100) }) : t("futureBasisLinear");
+  }
+
+  function renderShareInsights(market) {
+    const region = selectedRegionName(), result = future2035(market);
+    setLiveText(el("entryScope"), fillCopy("entryScope", { region }));
+    setLiveText(el("todayCaption"), fillCopy("todayCaption", { region }));
+    setLiveText(el("futureCaption"), fillCopy("futureCaption", { region }));
+    setLiveText(el("futureBevShare"), `${formatDecimal(result.shares[0] * 100, 1)} %`);
+    setLiveText(el("futureBasis"), futureBasisText());
+  }
+
+  let todayMetaKey = "";
+  function localDayStart(now) {
+    const date = new Date(now); date.setHours(0, 0, 0, 0); return date.getTime();
+  }
+
+  function updateTodayInsight(now) {
+    const from = localDayStart(now);
+    renderSessionNumber(el("todayBevValue"), continuousSessionChange(activeMarket(), "electric", Math.max(0, now - from) / 1000));
+    const locale = TRANSLATIONS[currentLang].locale;
+    const key = `${locale}:${from}`;
+    if (key !== todayMetaKey) {
+      todayMetaKey = key;
+      const date = new Intl.DateTimeFormat(locale, { dateStyle: "medium" }).format(new Date(now));
+      const zone = Intl.DateTimeFormat().resolvedOptions().timeZone || "UTC";
+      setLiveText(el("todayClock"), fillCopy("todayClock", { date, zone }));
+    }
+  }
+
+  function publicShareUrl() {
+    const query = new URLSearchParams({ region: currentMode, lang: currentLang, curve: curveMode });
+    if (curveMode === "s-curve") query.set("cap", String(Math.round(bevCeiling * 100)));
+    return `${PUBLIC_URL}?${query.toString()}`;
+  }
+
+  function shareSnapshot() {
+    const now = Date.now(), market = activeMarket(), region = selectedRegionName();
+    const locale = TRANSLATIONS[currentLang].locale;
+    const date = new Intl.DateTimeFormat(locale, { dateStyle: "medium", timeStyle: "medium" }).format(new Date(now));
+    const zone = Intl.DateTimeFormat().resolvedOptions().timeZone || "UTC";
+    const seconds = Math.max(0, (now - startTime) / 1000);
+    const visit = signed(continuousSessionChange(market, "electric", seconds), 1);
+    const today = signed(continuousSessionChange(market, "electric", Math.max(0, now - localDayStart(now)) / 1000), 1);
+    const lines = [
+      t("entryTagline"),
+      fillCopy("entryScope", { region }),
+      `${t("shareVisitHeading")}: ${visit} BEV (${t("observationTime")} ${Math.floor(seconds)} s)`,
+      `${t("todayTitle")}: ${today} BEV`,
+      t("entryModelNote"),
+      `${t("futureTitle")}: ${formatDecimal(future2035(market).shares[0] * 100, 1)} %`,
+      fillCopy("futureCaption", { region }), futureBasisText(), t("futureLimit"),
+      `${t("snapshotLabel")}: ${date} · ${zone}`, `Global Drive Clock · ${DATA.modelVersion}`
+    ];
+    return { title: "Global Drive Clock", text: lines.join("\n"), url: publicShareUrl() };
+  }
+
+  async function shareInsight(button) {
+    const payload = shareSnapshot();
+    const status = el("shareStatus"), box = el("shareFallback"), text = `${payload.text}\n${payload.url}`;
+    button.disabled = true; box.hidden = true; status.textContent = "";
+    try {
+      if (typeof navigator.share === "function") {
+        try {
+          await navigator.share(payload); status.textContent = t("shareDone"); setTimeout(() => { if (status.textContent === t("shareDone")) status.textContent = ""; }, 6000); return;
+        } catch (error) { if (error?.name === "AbortError") return; }
+      }
+      if (typeof navigator.clipboard?.writeText === "function") {
+        try { await navigator.clipboard.writeText(text); status.textContent = t("shareCopied"); setTimeout(() => { if (status.textContent === t("shareCopied")) status.textContent = ""; }, 6000); return; } catch (_) {}
+      }
+      el("shareText").value = text; box.hidden = false; status.textContent = t("shareManual");
+      box.scrollIntoView({ behavior: "smooth", block: "center" });
+      el("shareText").focus({ preventScroll: true }); el("shareText").select();
+    } finally { button.disabled = false; }
+  }
+
+  function setupEngagement() {
+    document.querySelectorAll("[data-share]").forEach(button => button.addEventListener("click", () => { void shareInsight(button); }));
   }
 
   function setupMethodLink(linkId, targetId) {
@@ -1477,6 +1579,7 @@
   setupModeSwitch();
   setupScenarioControls();
   setupMobileTimeline();
+  setupEngagement();
   setupMethodLink("fireMethodLink", "fireMethodSection");
   setupMethodLink("scenarioMethodLink", "scenarioMethodSection");
   setupMethodLink("sessionModelNote", "impactMethodSection");

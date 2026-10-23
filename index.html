@@ -9,12 +9,12 @@
   <link rel="icon" type="image/png" sizes="192x192" href="favicon.png?v=3.2.0">
   <link rel="shortcut icon" href="favicon.ico?v=3.2.0">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=3.2.0">
-  <meta name="description" content="Antriebswandel, Zeitreise 2008–2100, CO₂-Schätzungen und Brandmodell entdecken – mit offenen Quellen und klaren Modellannahmen.">
+  <meta name="description" content="Sieh den modellierten Elektro-Zuwachs während deines Besuchs. Entdecke Tageszuwachs, Szenarien für 2035 und die Zeitreise bis 2100 – mit offenen Quellen.">
   <link rel="canonical" href="https://der-elektroauto-typ.github.io/global-drive-clock/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Global Drive Clock">
-  <meta property="og:title" content="Wer fährt in Zukunft? Diesel, Benzin, Hybrid, Elektro? | Global Drive Clock">
-  <meta property="og:description" content="Antriebswandel, Zeitreise 2008–2100, CO₂-Schätzungen und Brandmodell entdecken – mit offenen Quellen und klaren Modellannahmen.">
+  <meta property="og:title" content="Wie schnell wird die Autowelt elektrisch? | Global Drive Clock">
+  <meta property="og:description" content="Sieh den modellierten Elektro-Zuwachs während deines Besuchs. Entdecke Tageszuwachs, Szenarien für 2035 und die Zeitreise bis 2100 – mit offenen Quellen.">
   <meta property="og:url" content="https://der-elektroauto-typ.github.io/global-drive-clock/">
   <meta property="og:image" content="https://der-elektroauto-typ.github.io/global-drive-clock/social-preview-v3-2-2-v5.png">
   <meta property="og:image:width" content="1734">
@@ -22,13 +22,13 @@
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:alt" content="Global Drive Clock. Wer fährt in Zukunft? Diesel, Benzin, Hybrid, Elektro? Antriebswandel, Zeitreise 2008–2100, CO₂ im Vergleich und Brandmodell. Bestände als Modell, Zukunft als Szenario.">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Wer fährt in Zukunft? Diesel, Benzin, Hybrid, Elektro? | Global Drive Clock">
-  <meta name="twitter:description" content="Antriebswandel, Zeitreise 2008–2100, CO₂-Schätzungen und Brandmodell entdecken – mit offenen Quellen und klaren Modellannahmen.">
+  <meta name="twitter:title" content="Wie schnell wird die Autowelt elektrisch? | Global Drive Clock">
+  <meta name="twitter:description" content="Sieh den modellierten Elektro-Zuwachs während deines Besuchs. Entdecke Tageszuwachs, Szenarien für 2035 und die Zeitreise bis 2100 – mit offenen Quellen.">
   <meta name="twitter:image" content="https://der-elektroauto-typ.github.io/global-drive-clock/social-preview-v3-2-2-v5.png">
   <meta name="twitter:image:alt" content="Global Drive Clock. Wer fährt in Zukunft? Diesel, Benzin, Hybrid, Elektro? Antriebswandel, Zeitreise 2008–2100, CO₂ im Vergleich und Brandmodell. Bestände als Modell, Zukunft als Szenario.">
   <title>Global Drive Clock</title>
-  <link rel="stylesheet" href="style.css?v=3.2.4-3">
-  <link rel="stylesheet" href="layout.css?v=3.2.4-3">
+  <link rel="stylesheet" href="style.css?v=3.2.5-4">
+  <link rel="stylesheet" href="layout.css?v=3.2.5-4">
 </head>
 <body>
   <div class="language-switcher" id="languageSwitcher">
@@ -53,15 +53,30 @@
   </div>
 
   <main class="page-shell">
-    <section class="hero">
-      <div class="eyebrow"><span class="pulse-dot"></span> <span data-i18n="liveModel">MODELLIERTE LIVE-SCHÄTZUNG</span></div>
-      <div class="brand-top">GLOBAL DRIVE CLOCK</div>
-      <h1><span data-i18n="headline1">DER WELTWEITE</span><br><span data-i18n="headline2">ANTRIEBSWANDEL.</span></h1>
-      <p class="hero-copy" data-i18n="heroCopy">
-        Rund um die Uhr verändert sich der globale Fahrzeugbestand. Diese Uhr macht den Wandel sichtbar.
-      </p>
-      <p class="hero-estimate-note" data-i18n="estimateNote">Fortschreibung veröffentlichter Bestandsdaten und gekennzeichneter Annahmen · keine Live-Meldungen</p>
-      <div class="utc" id="utcClock" title="">--:--:--</div>
+    <header class="hero entry-brand">
+      <h1>Global <span>Drive</span> Clock</h1>
+      <p class="entry-tagline" data-i18n="entryTagline">Die Autowelt verändert sich.</p>
+    </header>
+
+    <section class="dashboard-section session" id="sessionSection" aria-labelledby="sessionTitle">
+      <header class="section-heading">
+        <div class="section-kicker" data-i18n="liveSession">LIVE SESSION</div>
+        <h2 id="sessionTitle" data-i18n="sinceOpened">SEIT DU DIESE SEITE GEÖFFNET HAST</h2>
+      </header>
+      <div class="session-grid">
+        <div class="session-item session-electric"><span data-i18n="electric">ELEKTRO</span><strong class="positive" id="since-electric"><span class="session-whole">+0</span><span class="session-fraction">,0</span></strong><small class="entry-bev-more" data-i18n="entryBevMore">mehr im Bestand</small></div>
+        <div class="session-item session-hybrid"><span data-i18n="hybrid">HYBRID</span><strong class="positive" id="since-hybrid"><span class="session-whole">+0</span><span class="session-fraction">,0</span></strong></div>
+        <div class="session-item session-petrol"><span data-i18n="petrol">BENZIN</span><strong class="negative" id="since-petrol"><span class="session-whole">−0</span><span class="session-fraction">,0</span></strong></div>
+        <div class="session-item session-diesel"><span data-i18n="diesel">DIESEL</span><strong class="negative" id="since-diesel"><span class="session-whole">−0</span><span class="session-fraction">,0</span></strong></div>
+      </div>
+      <p class="entry-scope" id="entryScope"></p>
+      <div class="entry-meta">
+        <span data-i18n="entryModelNote">Modellschätzung · keine Live-Neuzulassungen</span>
+        <span class="session-time"><span data-i18n="observationTime">Beobachtungszeit:</span> <strong id="sessionTime" data-session-time>00:00:00</strong></span>
+      </div>
+      <div class="region-switch" data-region-switch="session" role="group" aria-label="Region für alle Abschnitte"></div>
+    </section>
+
       <nav class="section-nav" aria-label="Seitenabschnitte" data-i18n-aria="navSections">
         <a href="#sessionSection" data-i18n="navSession">Live-Session</a>
         <a href="#fleetSection" data-i18n="navFleet">Bestand</a>
@@ -70,24 +85,7 @@
         <a href="#impactSection" data-i18n="navImpact">Kraftstoff / CO₂</a>
         <a href="#fireSection" data-i18n="navFire">Brandmodell</a>
       </nav>
-      <p class="shared-region-hint" data-i18n="sharedRegionHint">Jede Regionsauswahl steuert alle Abschnitte gemeinsam.</p>
-    </section>
-
-    <section class="dashboard-section session" id="sessionSection" aria-labelledby="sessionTitle">
-      <header class="section-heading">
-        <div class="section-kicker" data-i18n="liveSession">LIVE SESSION</div>
-        <h2 id="sessionTitle" data-i18n="sinceOpened">SEIT DU DIESE SEITE GEÖFFNET HAST</h2>
-        <p data-i18n="sessionIntro">Die modellierte Bestandsänderung während deines Besuchs. Alle Regionen teilen sich dieselbe Besuchszeit.</p>
-      </header>
-      <div class="region-switch" data-region-switch="session" role="group" aria-label="Region für alle Abschnitte"></div>
-      <div class="session-time"><span data-i18n="observationTime">Beobachtungszeit:</span> <strong id="sessionTime" data-session-time>00:00:00</strong></div>
-      <div class="session-grid">
-        <div class="session-item session-electric"><span data-i18n="electric">ELEKTRO</span><strong class="positive" id="since-electric"><span class="session-whole">+0</span><span class="session-fraction">,0</span></strong></div>
-        <div class="session-item session-hybrid"><span data-i18n="hybrid">HYBRID</span><strong class="positive" id="since-hybrid"><span class="session-whole">+0</span><span class="session-fraction">,0</span></strong></div>
-        <div class="session-item session-petrol"><span data-i18n="petrol">BENZIN</span><strong class="negative" id="since-petrol"><span class="session-whole">−0</span><span class="session-fraction">,0</span></strong></div>
-        <div class="session-item session-diesel"><span data-i18n="diesel">DIESEL</span><strong class="negative" id="since-diesel"><span class="session-whole">−0</span><span class="session-fraction">,0</span></strong></div>
-      </div>
-    </section>
+      <div class="utc entry-clock" id="utcClock" title="">--:--:--</div>
 
     <section class="dashboard-section fleet-section" id="fleetSection" aria-labelledby="fleetTitle">
       <header class="section-heading">
@@ -163,6 +161,22 @@
       </header>
       <div class="region-switch" data-region-switch="trend" role="group" aria-label="Region für alle Abschnitte"></div>
       <div class="change-chart" id="changeChart" role="img" aria-label=""></div>
+      <div class="aha-grid" aria-label="Zum Weiterzeigen" data-i18n-aria="ahaLabel">
+        <article class="aha-card aha-today">
+          <h3 data-i18n="todayTitle">Heute seit 00:00</h3>
+          <strong class="aha-value" id="todayBevValue"><span class="session-whole">+0</span><span class="session-fraction">,0</span></strong>
+          <p class="aha-caption" id="todayCaption"></p>
+          <p class="aha-note" id="todayClock"></p>
+          <p class="aha-note" data-i18n="entryModelNote">Modellschätzung · keine Live-Neuzulassungen</p>
+        </article>
+        <article class="aha-card aha-future">
+          <h3 data-i18n="futureTitle">Dein Blick auf 2035</h3>
+          <strong class="aha-value" id="futureBevShare">—</strong>
+          <p class="aha-caption" id="futureCaption"></p>
+          <p class="aha-note" id="futureBasis"></p>
+          <p class="aha-note" data-i18n="futureLimit">Szenario, keine Prognose · vier Antriebsgruppen ohne Sonstige</p>
+        </article>
+      </div>
     </section>
 
     <section class="dashboard-section scenario-section" id="scenarioSection" aria-labelledby="projectionTitle">
@@ -279,7 +293,7 @@
       <details id="methodDetails" class="method-details">
         <summary data-i18n="methodDetails">DATEN &amp; METHODIK</summary>
         <div class="method-details-body">
-          <p>V3.2.4 · Live-Session zuerst auf Desktop und Mobil; mobile Zeitreise mit Jahresregler direkt unter dem Balkendiagramm, Info-Menü und stabilisierten laufenden Anzeigen; sechs einheitliche Bereiche mit gekoppelten Regionsumschaltern; Zeitreise als Balkendiagramm ab 2008, beim aktuellen Jahr gestartet; historische Quellenwerte mit sichtbaren Datenlücken und einstellbare S-Kurven-/Linearszenarien bis 2050/2100. Fahrzeug-, CO₂- und Brandratenparameter bleiben gleich. <a href="SZENARIEN.md">Quellen und Szenariorechnung</a>.</p>
+          <p>V3.2.5 · kompakter Einstieg mit Elektro-Nettoänderung, Tageszuwachs und teilbarem 2035-Szenario; Live-Session zuerst auf Desktop und Mobil; mobile Zeitreise mit Jahresregler direkt unter dem Balkendiagramm, Info-Menü und stabilisierten laufenden Anzeigen; sechs einheitliche Bereiche mit gekoppelten Regionsumschaltern; Zeitreise als Balkendiagramm ab 2008, beim aktuellen Jahr gestartet; historische Quellenwerte mit sichtbaren Datenlücken und einstellbare S-Kurven-/Linearszenarien bis 2050/2100. Fahrzeug-, CO₂- und Brandratenparameter bleiben gleich. <a href="SZENARIEN.md">Quellen und Szenariorechnung</a>.</p>
           <p>Gegenüber V3.1.3 bleiben die bisherigen Fahrzeug- und CO₂-Modellparameter die Grundlage. Für Deutschland verwenden die vier Fahrzeugzähler nun den KBA-Vergleich vom 1. Januar bis 1. Juli 2026 (181 Tage); die Sechsmonatsänderung wird linear fortgeschrieben und das EU-ohne-Deutschland-Komplement angepasst. Hinzu kommt das regionsabhängige Brand-Szenariomodell: Für denselben modellierten Regionalbestand werden „alle BEV“, „alle Hybrid“ und „alle Verbrenner“ verglichen. Es verwendet norwegische Feuerwehreinsätze und angenäherte Fahrzeugjahre als Referenz, keine globalen Messwerte. In der norwegischen Referenz liegt die Hybrid-Punktrate unter BEV (35 gegenüber 120 Einsätzen; vereinfachtes Zählratenverhältnis etwa 0,64), doch das ist keine gesicherte allgemeine Rangfolge. „Sonstige“ bleibt ausgeschlossen; polnische Zahlen sind ein nicht harmonisierter Gegenbefund. Vollständige Raten, Unsicherheit, Umrechnung und Einordnung stehen in der Methodik.</p>
           <p>Regionale Bestandsabgrenzungen unterscheiden sich. Kein Zähler ist eine amtliche Live-Meldung; CO₂ ist keine vollständige Lebenszyklusbilanz. Quellen, Formeln, Definitionen und Grenzen stehen in der <a href="METHODIK.md">vollständigen Methodik</a> und werden mit JavaScript angezeigt. <a href="model-provenance.json">Datenherleitung</a> · <a href="source-extracts.json">Quellenauszüge</a>.</p>
         </div>
@@ -305,6 +319,7 @@
           <span data-i18n="buyMeCoffee">Buy Me a Coffee</span>
           <span aria-hidden="true">↗</span>
         </a>
+        <div class="page-share-action"><button type="button" class="feedback-button page-share-button" id="sharePage" data-share="page"><span data-i18n="sharePage">Seite teilen</span><svg class="feedback-icon" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" focusable="false"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 10.5 6.8-4M8.6 13.5l6.8 4"/></svg></button></div>
         <p class="bitcoin-support"><span data-i18n="bitcoinDonation">Oder per Bitcoin spenden:</span> <code id="bitcoinAddress">bc1qcfmrdr3z4v7jenlx4fkx67me22dcgtt05ztfnm</code></p>
       </div>
     </section>
@@ -323,12 +338,17 @@
     </div>
   </main>
 
-  <script src="data.js?v=3.2.4-3"></script>
-  <script src="model.js?v=3.2.4-3"></script>
-  <script src="methodology.js?v=3.2.4-3"></script>
-  <script src="history-data.js?v=3.2.4-3"></script>
-  <script src="scenario.js?v=3.2.4-3"></script>
-  <script src="interface-copy.js?v=3.2.4-3"></script>
-  <script src="app.js?v=3.2.4-3"></script>
+  <section class="share-fallback" id="shareFallback" hidden>
+    <label for="shareText" data-i18n="shareCopyLabel">Momentaufnahme zum Kopieren</label>
+    <textarea id="shareText" rows="8" readonly></textarea>
+  </section>
+  <p class="share-status" id="shareStatus" role="status" aria-live="polite"></p>
+  <script src="data.js?v=3.2.5-4"></script>
+  <script src="model.js?v=3.2.5-4"></script>
+  <script src="methodology.js?v=3.2.5-4"></script>
+  <script src="history-data.js?v=3.2.5-4"></script>
+  <script src="scenario.js?v=3.2.5-4"></script>
+  <script src="interface-copy.js?v=3.2.5-4"></script>
+  <script src="app.js?v=3.2.5-4"></script>
 </body>
 </html>
