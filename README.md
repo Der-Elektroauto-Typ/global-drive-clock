@@ -1,8 +1,14 @@
-# Global Drive Clock V3.2.5
+# Global Drive Clock V3.2.6
 
-Lokaler Stand: 23. Oktober 2026. Cache-Kennung: **3.2.5-4**. Alle Dateien und Unterordner des ZIP gemeinsam in das Website-Wurzelverzeichnis übernehmen. Kein Build erforderlich. Dieses Paket bestätigt keine Veröffentlichung auf GitHub Pages.
+Lokaler Stand: 23. Oktober 2026. Cache-Kennung: **3.2.6-1**. Alle Dateien und Unterordner des ZIP gemeinsam in das Website-Wurzelverzeichnis übernehmen. Kein Build erforderlich. Dieses Paket bestätigt keine Veröffentlichung auf GitHub Pages.
 
-## Änderungen in V3.2.5
+## Änderungen in V3.2.6
+
+- Bei „Veränderung“ steht der gekoppelte Regionsumschalter auf Desktop und Mobil direkt unter dem Balkendiagramm, vor den Karten für Heute und 2035.
+- Die deutsche Überschrift lautet „Heute seit 00:00 Uhr“.
+- Rechenmodell und Parameter sind unverändert. Die vorhandenen Prüfberichte dokumentieren frühere Stände; für diese Layoutänderung wurden keine neuen Tests ausgeführt.
+
+## Übernommene Änderungen aus V3.2.5
 
 - Kurzer Projektkopf; die laufende Elektro-Nettoänderung ist sofort sichtbar. Alle vier Besuchszähler stehen auf gleicher Höhe in vier Spalten. „Elektro“ steht über der ersten Zahl, „mehr im Bestand“ darunter. Navigation und Uhr folgen darunter. Weltweit ist die Standardauswahl neuer Besucher; gespeicherte oder geteilte Regionen bleiben maßgeblich.
 - Alle vier Besuchszähler verwenden dieselbe Zahlengröße und gemeinsame Zeilenhöhen. Elektro bleibt durch Farbe und sparsame Schrift-/Rahmenakzente hervorgehoben. Die Vergleichsantriebe und die Modellkennzeichnung bleiben sichtbar.
@@ -14,7 +20,7 @@ Entscheidung, Gestaltungsquellen, Formeln und Grenzen: [EINSTIEG-UND-TEILEN.md](
 
 ## Übernommene Änderungen aus V3.2.4
 
-Nur auf Mobilgeräten (bis 650 px) stehen die Regionsumschalter bei den zugehörigen Anzeigen: Zeitreise direkt unter Jahresregler und Randjahren; Brandmodell direkt unter den Brandzahlen; Kraftstoff/CO₂ direkt unter den Werten und vor dem Methodik-Link. Die übrigen Regionsumschalter stehen am Ende ihres Abschnitts. Alle sechs bleiben gekoppelt. Zukunftskurve (S-Kurve/Linear) und Endjahr (2050/2100) stehen explizit in derselben Rasterzeile nebeneinander, ihre Beschriftungen jeweils darüber. Der Jahresregler folgt direkt auf das Balkendiagramm. So bleibt das Diagramm oberhalb des Fingers sichtbar. Die mitwandernde Jahreszahl und die Randjahre bleiben beim Regler. Die mobile Zeitreise-Reihenfolge ist: Kurven-/Endjahr-Umschalter nebeneinander → Balkendiagramm → Jahresregler → Regionsumschalter → Info-Menü → Annahmen und Berechnung → Schlusshinweise. Beim Wechsel zur Desktopbreite werden die bisherigen Positionen von Jahresregler und Regionsumschaltern wiederhergestellt. Rechenmodell und laufende Zähler sind übernommen.
+Nur auf Mobilgeräten (bis 650 px) stehen die Regionsumschalter bei den zugehörigen Anzeigen: Zeitreise direkt unter Jahresregler und Randjahren; Brandmodell direkt unter den Brandzahlen; Kraftstoff/CO₂ direkt unter den Werten und vor dem Methodik-Link. Bei Veränderung folgt der Regionsumschalter direkt auf das Balkendiagramm; die übrigen Regionsumschalter stehen am Ende ihres Abschnitts. Alle sechs bleiben gekoppelt. Zukunftskurve (S-Kurve/Linear) und Endjahr (2050/2100) stehen explizit in derselben Rasterzeile nebeneinander, ihre Beschriftungen jeweils darüber. Der Jahresregler folgt direkt auf das Balkendiagramm. So bleibt das Diagramm oberhalb des Fingers sichtbar. Die mitwandernde Jahreszahl und die Randjahre bleiben beim Regler. Die mobile Zeitreise-Reihenfolge ist: Kurven-/Endjahr-Umschalter nebeneinander → Balkendiagramm → Jahresregler → Regionsumschalter → Info-Menü → Annahmen und Berechnung → Schlusshinweise. Beim Wechsel zur Desktopbreite werden die bisherigen Positionen von Jahresregler und Regionsumschaltern wiederhergestellt. Rechenmodell und laufende Zähler sind übernommen.
 
 ## Übernommene Änderungen aus V3.2.3
 
@@ -91,4 +97,4 @@ Quellendaten behalten die jeweiligen Lizenzen. IEA-Grafikauszug: CC BY 4.0; KBA-
 
 Aktiv ist [social-preview-v3-2-2-v5.png](social-preview-v3-2-2-v5.png), 1734 × 907 Pixel. Typografisch getrennte kräftige, schmale Wortmarke „Global Drive Clock“ und etwas kleinere geometrische Leitfrage „Wer fährt in Zukunft?“ mit Diesel, Benzin, Hybrid und Elektro. Die vier Themen Antriebswandel, Zeitreise 2008–2100, CO₂ im Vergleich und Brandmodell stehen in großen Textfeldern ohne Symbole. Die Einordnung „Bestände als Modell · Zukunft als Szenario“ bleibt im Bild sichtbar. Der Planet mit Uhrbogen ist verkleinert und von der Schrift abgesetzt.
 
-Open Graph und Twitter/X verwenden die neue Bildadresse und passende Titel sowie Alternativtexte. HTML und Bild gemeinsam veröffentlichen; Plattform-Caches können zunächst ältere Motive zeigen. Das Paket enthält nur das finale Vorschaubild und die verwendeten Website-Icons; frühere Motive und überholte Entwurfsnotizen wurden entfernt. Der vollständige Bearbeitungsprompt des finalen Motivs steht in [SOCIAL-PREVIEW-V5.md](SOCIAL-PREVIEW-V5.md). Die Seitenressourcen behalten Kennung 3.2.5-4.
+Open Graph und Twitter/X verwenden die neue Bildadresse und passende Titel sowie Alternativtexte. HTML und Bild gemeinsam veröffentlichen; Plattform-Caches können zunächst ältere Motive zeigen. Das Paket enthält nur das finale Vorschaubild und die verwendeten Website-Icons; frühere Motive und überholte Entwurfsnotizen wurden entfernt. Der vollständige Bearbeitungsprompt des finalen Motivs steht in [SOCIAL-PREVIEW-V5.md](SOCIAL-PREVIEW-V5.md). Die Seitenressourcen behalten Kennung 3.2.6-1.

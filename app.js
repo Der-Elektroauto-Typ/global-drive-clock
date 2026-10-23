@@ -723,7 +723,8 @@
         if (mobile) {
           const after = node.dataset.regionSwitch === "scenario" ? yearControls[1]
             : node.dataset.regionSwitch === "fire" ? document.querySelector("#fireSection .fire-counter-grid")
-            : node.dataset.regionSwitch === "impact" ? el("sessionImpact") : null;
+            : node.dataset.regionSwitch === "impact" ? el("sessionImpact")
+            : node.dataset.regionSwitch === "trend" ? el("changeChart") : null;
           if (after) after.parentNode.insertBefore(node, after.nextSibling);
           else marker.parentNode.appendChild(node);
         } else marker.parentNode.insertBefore(node, marker.nextSibling);

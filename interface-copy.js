@@ -63,7 +63,7 @@ window.DRIVECOUNT_PRESENTATION = {
     "entryScope": "{region} · modellierter Nettozuwachs",
     "entryModelNote": "Modellschätzung · keine Live-Neuzulassungen",
     "ahaLabel": "Zum Weiterzeigen",
-    "todayTitle": "Heute seit 00:00",
+    "todayTitle": "Heute seit 00:00 Uhr",
     "todayCaption": "Modellierter Nettozuwachs reiner Elektroautos · {region}",
     "todayClock": "{date} · {zone} · Tagesbeginn auf deinem Gerät",
     "futureTitle": "Dein Blick auf 2035",

@@ -1,3 +1,5 @@
+V3.2.6 übernimmt das Rechenmodell unverändert. Die Regionsauswahl bei Veränderung folgt jetzt auf Desktop und Mobil direkt auf das Balkendiagramm, vor „Heute seit 00:00 Uhr“.
+
 # Global Drive Clock V3.2.5 — Daten & Methodik
 
 V3.2.5 verkürzt den Kopfbereich und stellt die modellierte Elektro-Nettoänderung seit Seitenaufruf in den Vordergrund. „Heute seit 00:00“ verwendet dieselbe Nettorate ab lokalem Tagesbeginn des Geräts; Datum und Zeitzone sind angegeben. Die 2035-Karte zeigt den BEV-Anteil der vier sichtbaren Gruppen aus der gewählten Szenariorechnung zum Jahresende, keine Prognose. Teilen erzeugt nur nach Klick eine gekennzeichnete Momentaufnahme mit öffentlichem Link. Einzelheiten: [EINSTIEG-UND-TEILEN.md](EINSTIEG-UND-TEILEN.md).

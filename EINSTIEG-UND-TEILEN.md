@@ -1,4 +1,4 @@
-# V3.2.5 — Einstieg und teilbare Einblicke
+# V3.2.6 — Einstieg und teilbare Einblicke
 
 Stand: 23. Oktober 2026. Ergänzung auf Basis von V3.2.4; keine neuen numerischen Modellparameter oder Quellenzahlen.
 
@@ -29,6 +29,8 @@ Die Empfehlungen von [Nielsen Norman Group zu Startseiten](https://www.nngroup.c
 Das ist dieselbe kontinuierliche Modelländerung wie in V3.2.4, formatiert mit einer Nachkommastelle. Sie ist keine Anzahl beobachteter Neuzulassungen oder Verkäufe. Änderungen durch Abgänge, Registereffekte und Modellannahmen sind Teil der zugrunde liegenden Nettorate.
 
 ### Heute
+
+In V3.2.6 steht der Regionsumschalter direkt unter dem Veränderungs-Balkendiagramm und vor diesen Karten, auf Desktop und Mobil. Die deutsche Überschrift lautet „Heute seit 00:00 Uhr“.
 
 Der Tagesbeginn wird mit `Date.setHours(0, 0, 0, 0)` in der lokalen Zeitzone des Geräts bestimmt. Die tatsächlich seit diesem Zeitpunkt verstrichenen Sekunden werden mit derselben BEV-Nettorate der ausgewählten Region multipliziert. Das berücksichtigt die reale Dauer eines Tages mit Sommerzeitwechsel. Die Karte nennt Datum, IANA-Zeitzone und den Gerätebezug. Verschiedene Zeitzonen können deshalb gleichzeitig unterschiedliche „Heute“-Werte sehen. Es sind modellierte Nettoänderungen seit lokalem Mitternacht, keine seit Mitternacht gemeldeten Registrierungen.
 
